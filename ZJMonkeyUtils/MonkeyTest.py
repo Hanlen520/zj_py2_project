@@ -19,7 +19,7 @@ global_parse_keyword = 'tv.fun'
 
 # format
 global_date = time.strftime('%Y%m%d')
-global_num = '02'
+global_num = '01'
 
 # set monkey parms
 global_times = '1000000'  # default 1000000
