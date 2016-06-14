@@ -230,12 +230,76 @@
 #     print item
 
 
+# EXAMPLE 16
+#
+# import os
+# import sys
+# 
+# def verify_adb_connection():
+#     output = os.popen('adb get-serialno')
+#     lines = output.readlines()
+#     
+#     if (len(lines) == 1):
+#         if (lines[0] == 'unknown\n'):
+#             print 'There is no adb connection.'
+#             sys.exit(1)
+#         else:
+#             return
+#     elif (len(lines) > 1):
+#         print 'There are more than one adb connection.'
+#         sys.exit(1)
+#     else:
+#         print 'unknown error, checking the adb connection.'
+#         sys.exit(1)
+
+
+# EXAMPLE 17
+#
+# def format_test_report():
+#     f = open(r'e:\testre.txt', 'r')
+#     test_case = ''
+#     test_class = ''
+#     test_cases = []
+#     flag_num = True
+#     test_number = ''
+#     flag_time = True
+#     test_time = ''
+#     
+#     try:
+#         lines = f.readlines()
+#         for line in lines:
+#             if ('test=' in line):
+#                 test_case = line.split(' ')[1].strip('\n')
+#             if ('class=' in line):
+#                 test_class = line.split(' ')[1].strip('\n')
+#                 test_cases.append('%s::%s' %(test_class, test_case)) 
+#                 continue
+#             if flag_num and ('numtests=' in line):
+#                 test_number = line.split(' ')[1].strip('\n')
+#                 flag_num = False
+#                 continue
+#             if flag_time and ('Time:' in line):
+#                 test_time = line.split(' ')[1].strip('\n')
+#                 flag_time = False
+#     finally:
+#         f.close()
+#     
+#     print test_number
+#     print test_time
+#     for case in set(test_cases):
+#         print case
+
+
 if __name__ == '__main__':
 
 #     myfunc()
 #     myfunc()
 
 #     test_main()
+
+#     verify_adb_connection()
+
+#     format_test_report()
 
     print("%s done!" %__file__)
     pass
