@@ -290,6 +290,43 @@
 #         print case
 
 
+# EXAMPLE 18
+#
+# lines = []
+# lines.append("str1\n")
+# lines.append("str2\n")
+# lines.append("str3\n")
+# 
+# f = open(r'd:\test.txt', 'a')
+# f.writelines(lines)
+# f.close()
+
+
+# EXAMPLE 19
+#
+# list = []
+# list.append('16-06-15 16:13:33,total,979M total,43M free,23M buffers,342M cached,3M shmem,17M slab')
+# list.append('16-06-15 16:13:33,process,532M,43M,20M,18M,tv.fun.filemanager')
+# list.append('16-06-15 16:13:33,service,490M,18M,2M,1M,tv.fun.filemanager:remote')
+# list.append('16-06-15 16:13:38,process,532M,43M,20M,18M,tv.fun.filemanager')
+# list.append('16-06-15 16:13:40,total,979M total,43M free,23M buffers,342M cached,3M shmem,17M slab')
+#  
+# print '************** before sort'
+# for item in list:
+#     print item
+#  
+# list.sort(key=lambda x:x.split(',')[1])
+#  
+# print '************** after sort'
+# for item in list:
+#     print item
+
+
+# EXAMPLE 20
+# str = '012345'
+# print str[0:6]
+
+
 if __name__ == '__main__':
 
 #     myfunc()
