@@ -25,7 +25,7 @@ g_category_total = 'sys_mem'
 
 # to be set
 g_flag_build_report = True
-g_flag_parse_report = False
+g_flag_parse_report = True
 
 # set which to be monitor
 g_flag_only_process = False
@@ -37,8 +37,8 @@ g_flag_print_report = True
 g_flag_print_log = False
 
 # execution parameters set
-g_run_num = '05'
-g_run_time = 5 * MonitorUtils.g_min
+g_run_num = '01'
+g_run_time = 10 * MonitorUtils.g_min
 g_time_out = 60 * MonitorUtils.g_min
 g_mointor_interval = MonitorUtils.g_short_interval  # seconds
 
@@ -169,7 +169,7 @@ def loop_for_subprocess(fn, f_report):
 
         during = int(time.clock()) - start
         if during >= g_run_time or during >= g_time_out:
-            print 'LOOP exit, and cost %d minutes %d seconds.' %((during / 60), (during % 60))
+            print 'LOOP exit, and cost %d minutes %d seconds.' %((during/60), (during%60))
             return
 
 
@@ -221,8 +221,7 @@ def create_report_header(f_report):
     content_rss = 'RSS - Resident Set Size'
     content_pss = 'PSS - Proportional Set Size'
     content_uss = 'USS - Unique Set Size'
-    two_tabs = '\t\t'
-    report_exlain_line = two_tabs.join((content_vss,content_rss,content_pss,content_uss))
+    report_exlain_line = MonitorUtils.g_tab.join((content_vss,content_rss,content_pss,content_uss))
 
     write_line_report(f_report,report_title_line,report_exlain_line,report_cols_line)
 

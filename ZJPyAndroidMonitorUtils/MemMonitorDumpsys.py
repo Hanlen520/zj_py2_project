@@ -23,15 +23,15 @@ g_suffix = '%s_%s.txt' %(MonitorUtils.g_date, g_run_num)
 g_report_dir_path = r'%s\dumpsys_mem_log_%s' %(MonitorUtils.g_root_path, MonitorUtils.g_date)
 g_report_file_path = '%s\dumpsys_mem_log_%s' %(g_report_dir_path, g_suffix)
 
-g_run_time = 2 * MonitorUtils.g_min   # to be set
-g_max_run_time = 30 * MonitorUtils.g_min
+g_run_time = 10 * MonitorUtils.g_min   # to be set
+g_max_run_time = 60 * MonitorUtils.g_min
 g_interval = MonitorUtils.g_long_interval   # seconds
 
 g_flag_print_log = False  # to be set
 g_flag_print_report = True
 
 g_write_lines = []
-g_write_lines_buffer = 10
+g_write_lines_buffer = 5
 
 
 # --------------------------------------------------------------
@@ -88,7 +88,7 @@ def parse_report_line(lines):
             app_views = parse_app_views(line)
         elif 'Activities:' in line:
             app_activities = parse_app_activities(line)
-   
+
     java_vm_heap_size = format_mem_size(java_vm_heap_size)
     java_vm_heap_alloc = format_mem_size(java_vm_heap_alloc)
     total_mem = format_mem_size(total_mem)
@@ -142,9 +142,9 @@ def prepare_report_file():
 def create_report_header(f_report):
     if g_flag_print_log:
         print 'log: create report header.'
- 
+
     header_title = '************** DUMPSYS MEMINFO REPORT: %s' %(g_package_name)
-     
+
     col0 = 'Time'
     col1 = 'MemTotal(Pss)'
     col2 = 'HeapSize'
@@ -155,7 +155,7 @@ def create_report_header(f_report):
 
     write_line_report(f_report, header_title)
     for line in get_app_vm_size_limit():
-        write_line_report(f_report, line.strip('\n'))
+        write_line_report(f_report, line.strip('\r\n'))
     write_line_report(f_report, header_col)
 
 def create_report_trailer(f_report):
@@ -199,7 +199,7 @@ def loop_process(fn, f_report):
  
         during = int(time.clock()) - start
         if during >= g_run_time or during >= g_max_run_time:
-            print 'LOOP exit, and cost %d minutes %d seconds.' %((during / 60), (during % 60))
+            print 'LOOP exit, and cost %d minutes %d seconds.' %((during/60), (during%60))
             break
 
 
@@ -221,5 +221,5 @@ def mem_monitor_dumpsys_main():
 if __name__ == '__main__':
     mem_monitor_dumpsys_main()
     print 'Memory monitor by dumpsys, DONE!'
-     
+
     pass
