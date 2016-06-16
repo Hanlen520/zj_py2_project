@@ -4,7 +4,7 @@ Created on 2016-1-26
 
 @author: zhengjin
 
-Parse the memory info by using procrank.
+Parse and build the memory info by using procrank.
 
 '''
 

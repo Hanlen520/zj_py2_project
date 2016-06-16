@@ -4,7 +4,7 @@ Created on 2016-6-14
 
 @author: zhengjin
 
-Parse the memory info by using dumpsys meminfo.
+Parse and build the memory info by using dumpsys meminfo.
 
 '''
 
