@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __builtin__ import str
 
 # EXAMPLE 1
 # import re
@@ -323,8 +324,43 @@
 
 
 # EXAMPLE 20
+#
 # str = '012345'
 # print str[0:6]
+
+
+# EXAMPLE 21
+#
+# def fun(str, *arg):
+#     print str
+#     
+#     for n in arg:
+#         print n
+# 
+# fun('test', 'zheng', 'jin')
+
+
+# EXAMPLE 22
+#
+# list = []
+# print len(list)
+# for item in list:
+#     print item
+
+
+# EXAMPLE 23
+#
+# import os
+# str = 'adb shell getprop | findstr heapgrowthlimit'
+# lines = os.popen(str).readlines()
+# 
+# for line in lines:
+#     print line
+# 
+# if len(lines) == 1:
+#     print lines[0]
+# else:
+#     print 'Error'
 
 
 if __name__ == '__main__':
