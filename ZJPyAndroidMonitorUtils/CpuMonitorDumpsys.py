@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 '''
-Created on 2016-6-16
+Created on 2016-6-17
 
 @author: zhengjin
-
-Parse and build CPU usage info by using top.
-
 '''
 
 import os
@@ -23,16 +20,18 @@ g_flag_print_log = False
 # --------------------------------------------------------------
 # Functions: run commands
 # --------------------------------------------------------------
-def run_top_three_command():
-    cmd = 'adb shell top -n 1 -m 3'
+def run_cmd_dumpsys_cpuinfo():
+    cmd = 'adb shell dumpsys cpuinfo'
     if g_flag_print_log:
         print cmd
 
     lines = os.popen(cmd).readlines()
     return lines
 
-def run_top_command_for_package():
-    cmd = 'adb shell top -n 1 | findstr tv.fun.filemanager'
+def run_cmd_dumpsys_cpuinfo_for_package_and_total():
+    cmd_dumpsys = 'adb shell dumpsys cpuinfo' 
+    cmd_findstr = 'findstr -r "filemanager TOTAL"'
+    cmd = '%s | %s' %(cmd_dumpsys, cmd_findstr)
     if g_flag_print_log:
         print cmd
 
@@ -52,19 +51,18 @@ def run_top_command_for_package():
 def print_output_lines(lines):
     for line in lines:
         print line.strip('\r\n')
-    
 
 
 # --------------------------------------------------------------
 # Main
 # --------------------------------------------------------------
 def main():
-    print_output_lines(run_top_three_command())
-#     print_output_lines(run_top_command_for_package())
-
+    print_output_lines(run_cmd_dumpsys_cpuinfo())
+#     print_output_lines(run_cmd_dumpsys_cpuinfo_for_package())
+    
 
 if __name__ == '__main__':
     main()
-    print 'CPU monitor by top, DONE!'
+    print 'CPU monitor by dumpsys, DONE!'
 
     pass
