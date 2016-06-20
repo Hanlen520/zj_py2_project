@@ -1,1 +1,4 @@
 *.pyc
+
+# report files
+ZJPyAndroidMonitorUtils/MonitorReports/

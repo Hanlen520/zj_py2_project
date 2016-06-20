@@ -30,7 +30,8 @@ g_date = time.strftime(g_date_format)
 g_short_interval = 3
 g_long_interval = 5
 
-g_root_path = r'd:\files_logs\profile_memory'
+g_root_dir = '%s' %(g_date)
+g_root_path = os.path.join(os.getcwd(), 'MonitorReports')
 
 
 # --------------------------------------------------------------
@@ -64,6 +65,9 @@ def g_open_report_with_read(file_path):
     
     f_report = open(file_path, 'r')
     return f_report
+
+def g_get_current_time():
+    return time.strftime(g_time_format)
 
 
 # --------------------------------------------------------------

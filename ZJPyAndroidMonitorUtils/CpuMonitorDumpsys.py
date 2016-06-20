@@ -59,7 +59,7 @@ def print_output_lines(lines):
 def main():
     print_output_lines(run_cmd_dumpsys_cpuinfo())
 #     print_output_lines(run_cmd_dumpsys_cpuinfo_for_package())
-    
+
 
 if __name__ == '__main__':
     main()

@@ -43,12 +43,12 @@ g_time_out = 60 * MonitorUtils.g_min
 g_mointor_interval = MonitorUtils.g_short_interval  # seconds
 
 g_suffix = '%s_%s.txt' %(MonitorUtils.g_date, g_run_num)
-g_report_dir_path = r'%s\procrank_log_%s' %(MonitorUtils.g_root_path, MonitorUtils.g_date)
-g_report_file_path = '%s\procrank_log_%s' %(g_report_dir_path, g_suffix)
-g_category_report_file_path = '%s\procrank_category_log_%s' %(g_report_dir_path, g_suffix)
-g_path_total = '%s\procrank_log_total_%s' %(g_report_dir_path, g_suffix)
-g_path_app_process = '%s\procrank_log_app_process_%s' %(g_report_dir_path, g_suffix)
-g_path_app_sevice = '%s\procrank_log_app_service_%s' %(g_report_dir_path, g_suffix)
+g_report_dir_path = r'%s\procrank_mem_log_%s' %(MonitorUtils.g_root_path, MonitorUtils.g_date)
+g_report_file_path = r'%s\procrank_mem_log_%s' %(g_report_dir_path, g_suffix)
+g_category_report_file_path = r'%s\procrank_category_log_%s' %(g_report_dir_path, g_suffix)
+g_path_total = r'%s\procrank_log_total_%s' %(g_report_dir_path, g_suffix)
+g_path_app_process = r'%s\procrank_log_app_process_%s' %(g_report_dir_path, g_suffix)
+g_path_app_sevice = r'%s\procrank_log_app_service_%s' %(g_report_dir_path, g_suffix)
 
 
 # --------------------------------------------------------------
