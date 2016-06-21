@@ -13,7 +13,7 @@ import time
 from ZJPyAndroidMonitorUtils import MonitorUtils
 
 # --------------------------------------------------------------
-# Vars
+# Env Vars
 # --------------------------------------------------------------
 g_package_name = ''
 g_keyword_ram = 'RAM'
@@ -28,14 +28,6 @@ g_run_time = 10 * MonitorUtils.g_min
 g_time_out = 60 * MonitorUtils.g_min
 g_mointor_interval = MonitorUtils.g_short_interval
 
-g_suffix = '%s_%s.txt' %(MonitorUtils.g_date, g_run_num)
-g_report_dir_path = r'%s\procrank_mem_log_%s' %(MonitorUtils.g_root_path, g_suffix)
-g_report_file_path = r'%s\procrank_mem_log_%s' %(g_report_dir_path, g_suffix)
-g_category_report_file_path = r'%s\procrank_category_log_%s' %(g_report_dir_path, g_suffix)
-g_path_total = r'%s\procrank_log_total_%s' %(g_report_dir_path, g_suffix)
-g_path_app_process = r'%s\procrank_log_app_process_%s' %(g_report_dir_path, g_suffix)
-g_path_app_sevice = r'%s\procrank_log_app_service_%s' %(g_report_dir_path, g_suffix)
-
 
 g_flag_build_report = False
 g_flag_parse_report = False
@@ -47,6 +39,33 @@ g_flag_all = False
 
 g_flag_print_report = True
 g_flag_print_log = False
+
+
+# --------------------------------------------------------------
+# Path Vars
+# --------------------------------------------------------------
+g_suffix = '%s_%s' %(MonitorUtils.g_date, g_run_num)
+g_report_dir_path = ''
+g_report_file_path = ''
+g_category_report_file_path = ''
+g_path_total = ''
+g_path_app_process = ''
+g_path_app_sevice = ''
+
+def init_path_vars():
+    global g_report_dir_path
+    global g_report_file_path
+    global g_category_report_file_path
+    global g_path_total
+    global g_path_app_process
+    global g_path_app_sevice
+    
+    g_report_dir_path = r'%s\procrank_mem_log_%s' %(MonitorUtils.g_root_path, g_suffix)
+    g_report_file_path = r'%s\procrank_mem_log_%s.txt' %(g_report_dir_path, g_suffix)
+    g_category_report_file_path = r'%s\procrank_category_log_%s.txt' %(g_report_dir_path, g_suffix)
+    g_path_total = r'%s\procrank_log_total_%s.txt' %(g_report_dir_path, g_suffix)
+    g_path_app_process = r'%s\procrank_log_app_process_%s.txt' %(g_report_dir_path, g_suffix)
+    g_path_app_sevice = r'%s\procrank_log_app_service_%s.txt' %(g_report_dir_path, g_suffix)
 
 
 # --------------------------------------------------------------
@@ -215,9 +234,9 @@ def create_report_header(f_report):
     report_title_line = '******* PROCRANK MEMORY REPORT: %s' %(g_package_name)
     report_cols_line = 'Time,Category,PID,Vss,Rss,Pss,Uss,cmdline'
 
-    content_vss = 'VSS - Virtual Set Size'
-    content_rss = 'RSS - Resident Set Size'
-    content_pss = 'PSS - Proportional Set Size'
+    content_vss = 'VSS - Virtual Set Size,'
+    content_rss = 'RSS - Resident Set Size,'
+    content_pss = 'PSS - Proportional Set Size,'
     content_uss = 'USS - Unique Set Size'
     report_exlain_line = MonitorUtils.g_tab.join((content_vss,content_rss,content_pss,content_uss))
 
@@ -343,6 +362,8 @@ def files_flush_and_close(*arg):
 # Main
 # --------------------------------------------------------------
 def mem_monitor_procrank_main():
+    init_path_vars()
+    
     if g_flag_build_report:
         MonitorUtils.g_create_report_dir(g_report_dir_path)
         f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_path)
@@ -374,8 +395,9 @@ if __name__ == '__main__':
     # before execution, there has device adb connected
     g_package_name = MonitorUtils.g_package_settings
     g_run_num = '01'
-    g_run_time = 10 * MonitorUtils.g_min
-
+    g_run_time = 5 * MonitorUtils.g_min
+    g_suffix = '%s_%s' %(MonitorUtils.g_date, g_run_num)  # do not change
+    
     g_flag_build_report = True
     g_flag_parse_report = True
 

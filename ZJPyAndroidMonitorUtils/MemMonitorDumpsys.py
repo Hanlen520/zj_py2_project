@@ -13,7 +13,7 @@ import time
 from ZJPyAndroidMonitorUtils import MonitorUtils
 
 # --------------------------------------------------------------
-# Vars
+# Env Vars
 # --------------------------------------------------------------
 g_package_name = ''
 
@@ -22,15 +22,29 @@ g_run_time = 10 * MonitorUtils.g_min
 g_max_run_time = 60 * MonitorUtils.g_min
 g_interval = MonitorUtils.g_long_interval
 
-g_suffix = '%s_%s.txt' %(MonitorUtils.g_date, g_run_num)
-g_report_dir_path = r'%s\dumpsys_mem_log_%s' %(MonitorUtils.g_root_path, g_suffix)
-g_report_file_path = r'%s\dumpsys_mem_log_%s' %(g_report_dir_path, g_suffix)
-
 g_flag_print_log = False
 g_flag_print_report = True
 
 g_write_lines = []
 g_write_lines_buffer = 10
+
+
+# --------------------------------------------------------------
+# Path Vars
+# --------------------------------------------------------------
+g_suffix = '%s_%s' %(MonitorUtils.g_date, g_run_num)
+g_report_dir_path = ''
+g_report_file_path = ''
+
+def init_path_vars():
+    global g_report_dir_path
+    global g_report_file_path
+    g_report_dir_path = r'%s\dumpsys_mem_log_%s' %(MonitorUtils.g_root_path, g_suffix)
+    g_report_file_path = r'%s\dumpsys_mem_log_%s.txt' %(g_report_dir_path, g_suffix)
+
+    if g_flag_print_log:
+        print g_report_dir_path
+        print g_report_file_path
 
 
 # --------------------------------------------------------------
@@ -206,8 +220,9 @@ def loop_process(fn, f_report):
 # Main
 # --------------------------------------------------------------
 def mem_monitor_dumpsys_main():
+    init_path_vars()
     f_report = prepare_report_file()
-     
+
     try:
         create_report_header(f_report)
         loop_process(dumpsys_meminfo_and_parse, f_report)
@@ -222,7 +237,8 @@ if __name__ == '__main__':
     g_package_name = MonitorUtils.g_package_settings
     g_run_num = '01'
     g_run_time = 10 * MonitorUtils.g_min
-
+    g_suffix = '%s_%s' %(MonitorUtils.g_date, g_run_num)  # do not change
+    
     mem_monitor_dumpsys_main()
 
     print 'Memory monitor by dumpsys, DONE!'

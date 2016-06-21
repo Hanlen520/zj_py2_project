@@ -13,7 +13,7 @@ import time
 from ZJPyAndroidMonitorUtils import MonitorUtils
 
 # --------------------------------------------------------------
-# Vars
+# Env Vars
 # --------------------------------------------------------------
 g_package_name = ''
 
@@ -23,13 +23,6 @@ g_run_time = 5 * MonitorUtils.g_min
 g_max_run_time = 60 * MonitorUtils.g_min
 g_interval = MonitorUtils.g_long_interval
 
-g_suffix = '%s_%s.txt' %(MonitorUtils.g_date, g_run_num)
-g_report_dir_path = r'%s\top_cpu_log_%s' %(MonitorUtils.g_root_path, g_suffix)
-g_report_file_path_top = r'%s\top_cpu_log_%s' %(g_report_dir_path, g_suffix)
-g_report_file_path_top_for_pkg = r'%s\top_for_package_cpu_log_%s' %(g_report_dir_path, g_suffix)
-g_report_file_path_total_category = r'%s\top_cpu_log_for_total_category_%s' %(g_report_dir_path, g_suffix)
-g_report_file_path_pkg_category = r'%s\top_cpu_log_for_pkg_category_%s' %(g_report_dir_path, g_suffix)
-
 g_flag_top = False
 g_flag_top_for_pkg = False
 g_flag_parse_report_for_pkg = False
@@ -37,6 +30,30 @@ g_flag_parse_report_for_pkg = False
 g_flag_print_log = False
 g_flag_print_report = True
 
+
+# --------------------------------------------------------------
+# Path Vars
+# --------------------------------------------------------------
+g_suffix = '%s_%s' %(MonitorUtils.g_date, g_run_num)
+g_report_dir_path = ''
+g_report_file_path_top = ''
+g_report_file_path_top_for_pkg = ''
+g_report_file_path_total_category = ''
+g_report_file_path_pkg_category = ''
+
+def init_path_vars():
+    global g_report_dir_path
+    global g_report_file_path_top
+    global g_report_file_path_top_for_pkg
+    global g_report_file_path_total_category
+    global g_report_file_path_pkg_category
+    
+    g_report_dir_path = r'%s\top_cpu_log_%s' %(MonitorUtils.g_root_path, g_suffix)
+    g_report_file_path_top = r'%s\top_cpu_log_%s.txt' %(g_report_dir_path, g_suffix)
+    g_report_file_path_top_for_pkg = r'%s\top_for_package_cpu_log_%s.txt' %(g_report_dir_path, g_suffix)
+    g_report_file_path_total_category = r'%s\top_cpu_log_for_total_category_%s.txt' %(g_report_dir_path, g_suffix)
+    g_report_file_path_pkg_category = r'%s\top_cpu_log_for_pkg_category_%s.txt' %(g_report_dir_path, g_suffix)
+    
 
 # --------------------------------------------------------------
 # Functions: run commands
@@ -219,13 +236,15 @@ def parse_top_for_pkg_report_main():
 
 
 def cpu_monitor_top_main():
+    
+    init_path_vars()
     MonitorUtils.g_create_report_dir(g_report_dir_path)
-
+  
     if g_flag_top:
         run_top_cmd_main()
     if g_flag_top_for_pkg:
         run_top_cmd_for_pkg_main()
-
+   
     if g_flag_parse_report_for_pkg:
         parse_top_for_pkg_report_main()
 
@@ -235,6 +254,7 @@ if __name__ == '__main__':
     g_package_name = MonitorUtils.g_package_settings
     g_run_num = '01'
     g_run_time = 5 * MonitorUtils.g_min
+    g_suffix = '%s_%s' %(MonitorUtils.g_date, g_run_num)  # do not change
 
     g_flag_top = False
     g_flag_top_for_pkg = True
