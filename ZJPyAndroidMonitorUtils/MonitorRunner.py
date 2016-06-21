@@ -12,15 +12,15 @@ import threading
 import time
 from ZJPyAndroidMonitorUtils import MemMonitorDumpsys
 from ZJPyAndroidMonitorUtils import MemMonitorProcrank
+from ZJPyAndroidMonitorUtils import CpuMonitorTop
 from ZJPyAndroidMonitorUtils import MonitorUtils
 
 
 # --------------------------------------------------------------
 # Setup before execution
 # --------------------------------------------------------------
-# to be set
-g_flag_print_report_all = False
-g_run_num_all = '01'
+g_pkg_name_all = ''
+g_run_num_all = '03'
 g_run_time_all = 5 * MonitorUtils.g_min
 
 g_threads = []
@@ -29,22 +29,37 @@ g_threads = []
 # --------------------------------------------------------------
 # Env vars setup
 # --------------------------------------------------------------
-def monitor_env_vars_setup():
-    set_flag_print_report()
-    set_run_numbers()
-    set_execution_time()
+def monitor_runner_env_vars_setup():
+    set_env_for_cpu_monitor_top()
+    set_env_for_mem_monitor_dumpsys()
+    set_env_for_mem_monitor_procrank()
 
-def set_flag_print_report():
-    MemMonitorDumpsys.g_flag_print_report = g_flag_print_report_all
-    MemMonitorProcrank.g_flag_print_report = g_flag_print_report_all
+def set_env_for_cpu_monitor_top():
+    CpuMonitorTop.g_package_name = g_pkg_name_all
+    CpuMonitorTop.g_run_num = g_run_num_all
+    CpuMonitorTop.g_run_time = g_run_time_all
 
-def set_run_numbers():
+    CpuMonitorTop.g_flag_top = False
+    CpuMonitorTop.g_flag_top_for_pkg = True
+    CpuMonitorTop.g_flag_parse_report_for_pkg = True
+
+def set_env_for_mem_monitor_dumpsys():
+    MemMonitorDumpsys.g_package_name = g_pkg_name_all
     MemMonitorDumpsys.g_run_num = g_run_num_all
-    MemMonitorProcrank.g_run_num = g_run_num_all
-
-def set_execution_time():
     MemMonitorDumpsys.g_run_time = g_run_time_all
+
+def set_env_for_mem_monitor_procrank():
+    MemMonitorProcrank.g_package_name = g_pkg_name_all
+    MemMonitorProcrank.g_run_num = g_run_num_all
     MemMonitorProcrank.g_run_time = g_run_time_all
+
+    MemMonitorProcrank.g_flag_build_report = True
+    MemMonitorProcrank.g_flag_parse_report = True
+
+    MemMonitorProcrank.g_flag_only_process = False
+    MemMonitorProcrank.g_flag_only_total = False
+    MemMonitorProcrank.g_flag_process_total = False
+    MemMonitorProcrank.g_flag_all = True
 
 
 # --------------------------------------------------------------
@@ -67,13 +82,18 @@ def build_daemon_thread():
     return t
 
 def build_thread_mem_monitor_dumpsys():
-    thread_name = 'monitor:dumpsys'
+    thread_name = 'mem:monitor:dumpsys'
     t = threading.Thread(name=thread_name,target=MemMonitorDumpsys.mem_monitor_dumpsys_main)
     return t
 
 def build_thread_mem_monitor_procrank():
-    thread_name = 'monitor:procrank'
+    thread_name = 'mem:monitor:procrank'
     t = threading.Thread(name=thread_name,target=MemMonitorProcrank.mem_monitor_procrank_main)
+    return t
+
+def build_thread_cpu_monitor_top():
+    thread_name = 'cpu:monitor:top'
+    t = threading.Thread(name=thread_name,target=CpuMonitorTop.cpu_monitor_top_main)
     return t
 
 def add_thread_to_pool(t):
@@ -99,13 +119,14 @@ def wait_all_threads_in_pool_exit():
 # Main
 # --------------------------------------------------------------
 def monitor_runner_prepare():
-    monitor_env_vars_setup()
+    monitor_runner_env_vars_setup()
     
     t_daemon = build_daemon_thread()
     start_daemon_thread(t_daemon)
     
     add_thread_to_pool(build_thread_mem_monitor_dumpsys())
     add_thread_to_pool(build_thread_mem_monitor_procrank())
+    add_thread_to_pool(build_thread_cpu_monitor_top())
 
 def monitor_runner_execution():
     if len(g_threads) == 0:
@@ -126,7 +147,11 @@ def monitor_runner_main():
 
 if __name__ == '__main__':
 
-    monitor_runner_main()
-    print 'Monitor runner DONE!'
+    g_pkg_name_all = MonitorUtils.g_package_settings
+    g_run_num_all = '01'
+    g_run_time_all = 10 * MonitorUtils.g_min
 
+    monitor_runner_main()
+    
+    print 'Monitor runner DONE!'
     pass

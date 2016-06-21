@@ -15,7 +15,7 @@ from ZJPyAndroidMonitorUtils import MonitorUtils
 # --------------------------------------------------------------
 # Vars
 # --------------------------------------------------------------
-g_package_name = MonitorUtils.g_package_filemanager   # to be set
+g_package_name = ''
 g_keyword_ram = 'RAM'
 g_keyword_sevice = 'remote'
 
@@ -23,32 +23,30 @@ g_category_process = 'app_process'
 g_category_sevice = 'app_service'
 g_category_total = 'sys_mem'
 
-# to be set
-g_flag_build_report = True
-g_flag_parse_report = True
-
-# set which to be monitor
-g_flag_only_process = False
-g_flag_only_total = False
-g_flag_process_total = False
-g_flag_all = True
-
-g_flag_print_report = True
-g_flag_print_log = False
-
-# execution parameters set
 g_run_num = '01'
 g_run_time = 10 * MonitorUtils.g_min
 g_time_out = 60 * MonitorUtils.g_min
-g_mointor_interval = MonitorUtils.g_short_interval  # seconds
+g_mointor_interval = MonitorUtils.g_short_interval
 
 g_suffix = '%s_%s.txt' %(MonitorUtils.g_date, g_run_num)
-g_report_dir_path = r'%s\procrank_mem_log_%s' %(MonitorUtils.g_root_path, MonitorUtils.g_date)
+g_report_dir_path = r'%s\procrank_mem_log_%s' %(MonitorUtils.g_root_path, g_suffix)
 g_report_file_path = r'%s\procrank_mem_log_%s' %(g_report_dir_path, g_suffix)
 g_category_report_file_path = r'%s\procrank_category_log_%s' %(g_report_dir_path, g_suffix)
 g_path_total = r'%s\procrank_log_total_%s' %(g_report_dir_path, g_suffix)
 g_path_app_process = r'%s\procrank_log_app_process_%s' %(g_report_dir_path, g_suffix)
 g_path_app_sevice = r'%s\procrank_log_app_service_%s' %(g_report_dir_path, g_suffix)
+
+
+g_flag_build_report = False
+g_flag_parse_report = False
+
+g_flag_only_process = False
+g_flag_only_total = False
+g_flag_process_total = False
+g_flag_all = False
+
+g_flag_print_report = True
+g_flag_print_log = False
 
 
 # --------------------------------------------------------------
@@ -223,16 +221,16 @@ def create_report_header(f_report):
     content_uss = 'USS - Unique Set Size'
     report_exlain_line = MonitorUtils.g_tab.join((content_vss,content_rss,content_pss,content_uss))
 
-    write_line_report(f_report,report_title_line,report_exlain_line,report_cols_line)
+    write_single_line_report(f_report,report_title_line,report_exlain_line,report_cols_line)
 
 def create_report_trailer(f_report):
     if g_flag_print_log:
         print 'log: create report trailer.'
 
     trailer_line = '************** PROCRANK MEMORY REPORT END'
-    write_line_report(f_report, trailer_line)
+    write_single_line_report(f_report, trailer_line)
 
-def write_line_report(f_report, *arg):
+def write_single_line_report(f_report, *arg):
     if g_flag_print_log:
         print 'log: write line to the report file.'
     
@@ -336,8 +334,9 @@ def write_lines_into_file(f_report, *arg):
 
 def files_flush_and_close(*arg):
     for f in arg:
-        f.flush()
-        f.close()
+        if f is not None:
+            f.flush()
+            f.close()
 
 
 # --------------------------------------------------------------
@@ -372,8 +371,20 @@ def mem_monitor_procrank_main():
 
 if __name__ == '__main__':
 
-    # before execution, there has device connected via adb
-    mem_monitor_procrank_main()
-    print 'Memory monitor by procrank, DONE!'
+    # before execution, there has device adb connected
+    g_package_name = MonitorUtils.g_package_settings
+    g_run_num = '01'
+    g_run_time = 10 * MonitorUtils.g_min
 
+    g_flag_build_report = True
+    g_flag_parse_report = True
+
+    g_flag_only_process = False
+    g_flag_only_total = False
+    g_flag_process_total = False
+    g_flag_all = True
+
+    mem_monitor_procrank_main()
+    
+    print 'Memory monitor by procrank, DONE!'
     pass

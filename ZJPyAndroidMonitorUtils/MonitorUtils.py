@@ -30,8 +30,7 @@ g_date = time.strftime(g_date_format)
 g_short_interval = 3
 g_long_interval = 5
 
-g_root_dir = '%s' %(g_date)
-g_root_path = os.path.join(os.getcwd(), 'MonitorReports')
+g_root_path = os.path.join(os.getcwd(), 'MonitorReports', g_date)
 
 
 # --------------------------------------------------------------
@@ -42,7 +41,7 @@ def g_create_report_dir(dir_path):
     if os.path.exists(dir_path):
         print 'Log, the report directory (%s) is exist.' %(dir_path)
     else:
-        os.mkdir(dir_path)
+        os.makedirs(dir_path)
         time.sleep(1)
 
 def g_create_and_open_report_with_append(file_path):
@@ -55,6 +54,9 @@ def g_create_and_open_report_with_append(file_path):
     return f_report
 
 def g_create_and_open_report_with_write(file_path):
+    if os.path.exists(file_path):
+        print 'Warn, the report file %s is exist.' %(file_path)
+
     f_report = open(file_path, 'w')   # if file not exist, create auto
     return f_report
 

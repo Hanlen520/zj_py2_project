@@ -12,7 +12,7 @@ from ZJPyAndroidMonitorUtils import MonitorUtils
 # --------------------------------------------------------------
 # Vars
 # --------------------------------------------------------------
-g_package_name = MonitorUtils.g_package_filemanager
+g_package_name = ''
 
 g_flag_print_log = False
 
@@ -62,7 +62,10 @@ def main():
 
 
 if __name__ == '__main__':
+    
+    g_package_name = MonitorUtils.g_package_filemanager
+    
     main()
-    print 'CPU monitor by dumpsys, DONE!'
 
+    print 'CPU monitor by dumpsys, DONE!'
     pass

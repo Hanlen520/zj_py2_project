@@ -226,6 +226,41 @@
 # f.close()
 
 
+# EXAMPLE 20
+# path = r'd:\test.txt'
+# f = open(path, 'r')
+# line = f.readline()
+# print line
+# print f.name
+# f.close()
+
+
+# EXAMPLE 21
+# line1 = 'User 22%, System 19%, IOW 0%, IRQ 0%'
+# line2 = 'User 22%, System 19%, IOW 0%, IRQ 0%'
+# line3 = 'User 22%, System 19%, IOW 0%, IRQ 0%'
+# lines = []
+# lines.append(line1)
+# lines.append(line2)
+# lines.append(line3)
+# 
+# output_line = []
+# output_lines = []
+# output_lines.append('User,System,IOW,IRQ')
+#     
+# for line in lines:
+#     cols = line.split(', ')
+#     for col in cols:
+#         temp_col = col.split(' ')[1]
+#         output_line.append(temp_col)
+#     temp_line = ','.join(output_line)
+#     output_lines.append(temp_line)
+#     del output_line[:]
+#     
+# for line in output_lines:
+#     print line
+
+
 if __name__ == '__main__':
 #     exec_android_actions_right()
 #     print test(0)

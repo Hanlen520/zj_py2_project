@@ -15,23 +15,22 @@ from ZJPyAndroidMonitorUtils import MonitorUtils
 # --------------------------------------------------------------
 # Vars
 # --------------------------------------------------------------
-g_package_name = MonitorUtils.g_package_filemanager
+g_package_name = ''
 
-g_run_num = '01'   # to be set
+g_run_num = '01'
+g_run_time = 10 * MonitorUtils.g_min
+g_max_run_time = 60 * MonitorUtils.g_min
+g_interval = MonitorUtils.g_long_interval
+
 g_suffix = '%s_%s.txt' %(MonitorUtils.g_date, g_run_num)
-
-g_report_dir_path = r'%s\dumpsys_mem_log_%s' %(MonitorUtils.g_root_path, MonitorUtils.g_date)
+g_report_dir_path = r'%s\dumpsys_mem_log_%s' %(MonitorUtils.g_root_path, g_suffix)
 g_report_file_path = r'%s\dumpsys_mem_log_%s' %(g_report_dir_path, g_suffix)
 
-g_run_time = 10 * MonitorUtils.g_min   # to be set
-g_max_run_time = 60 * MonitorUtils.g_min
-g_interval = MonitorUtils.g_long_interval   # seconds
-
-g_flag_print_log = False  # to be set
+g_flag_print_log = False
 g_flag_print_report = True
 
 g_write_lines = []
-g_write_lines_buffer = 5
+g_write_lines_buffer = 10
 
 
 # --------------------------------------------------------------
@@ -42,7 +41,7 @@ g_default_content = 'null'
 def dumpsys_meminfo_and_parse(f_report):
     output_lines = run_dumpsys_meminfo_command()
     parse_line = parse_report_line(output_lines)
-    write_line_report(f_report, parse_line)
+    write_single_line_report(f_report, parse_line)
   
 def run_getprop_cmd():
     cmd = 'adb shell getprop | findstr -r "heapstartsize heapgrowthlimit dalvik.vm.heapsize"'
@@ -153,19 +152,19 @@ def create_report_header(f_report):
     col5 = 'AppViews'
     header_col = MonitorUtils.g_report_limiter.join((col0,col1,col2,col3,col4,col5))
 
-    write_line_report(f_report, header_title)
+    write_single_line_report(f_report, header_title)
     for line in get_app_vm_size_limit():
-        write_line_report(f_report, line.strip('\r\n'))
-    write_line_report(f_report, header_col)
+        write_single_line_report(f_report, line.strip('\r\n'))
+    write_single_line_report(f_report, header_col)
 
 def create_report_trailer(f_report):
     if g_flag_print_log:
         print 'log: create report trailer.'
  
     trailer_line = '************** DUMPSYS MEMINFO REPORT END'
-    write_line_report(f_report, trailer_line)
+    write_single_line_report(f_report, trailer_line)
  
-def write_line_report(f_report, line):
+def write_single_line_report(f_report, line):
     if g_flag_print_report:
         print line
  
@@ -219,7 +218,12 @@ def mem_monitor_dumpsys_main():
 
 
 if __name__ == '__main__':
-    mem_monitor_dumpsys_main()
-    print 'Memory monitor by dumpsys, DONE!'
+    
+    g_package_name = MonitorUtils.g_package_settings
+    g_run_num = '01'
+    g_run_time = 10 * MonitorUtils.g_min
 
+    mem_monitor_dumpsys_main()
+
+    print 'Memory monitor by dumpsys, DONE!'
     pass

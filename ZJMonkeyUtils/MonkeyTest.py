@@ -11,20 +11,19 @@ import cmd
 import threading
 
 # --------------------------------------------------------------
-# Vars to be update
+# Env vars
 # --------------------------------------------------------------
-global_target_ip = '172.17.5.50'
-global_package_name = 'tv.fun.filemanager'
+global_target_ip = ''
+global_package_name = ''
 global_parse_keyword = 'tv.fun'
 
-# format
 global_date = time.strftime('%Y%m%d')
 global_num = '01'
 
 # set monkey parms
-global_times = '1000000'  # default 1000000
+global_monkey_times = '1000000'  # default 1000000
 global_flag_crash_ignore = True  # ignore crash or error for monkey
-global_flag_test_for_package = False  # false for use whitelist.xml instead
+global_flag_test_for_package = True  # false for use whitelist.xml instead
 global_flag_capture = False
 
 # set logcat level
@@ -35,14 +34,15 @@ global_hours = 0
 global_mins = 60
 global_secs = 0
 
-global_wait_time = 60  # secs, wait time in loop
-global_max_time = 3600 * 4  # secs, max execution time is 4 hours
+global_wait_time = 60  # seconds, wait time in loop
+global_max_time = 3600 * 4  # seconds, max execution time is 4 hours
 
 # --------------------------------------------------------------
-# Declare vars
+# Path vars
 # --------------------------------------------------------------
 # log directory path
-log_dir_for_win = r'D:\files_logs\%s_%s' %(global_date, global_num)
+log_root_path = os.path.join(os.getcwd(), 'MonkeyReprots')
+log_dir_for_win = r'%s\%s_%s' %(log_root_path, global_date, global_num)
 log_dir_for_shell = '/sdcard/testlogs'
 
 # screen captures path
@@ -94,7 +94,7 @@ def build_command_push_whitelist():
     return cmd
 
 def build_command_monkey_for_whitelist():
-    times = global_times
+    times = global_monkey_times
     flag_ignore = global_flag_crash_ignore
     
     monkey_cmd_for_list = r'adb shell monkey --throttle 500 --pkg-whitelist-file {0} '.format(whitelist_file_for_shell)
@@ -114,7 +114,7 @@ def build_command_monkey_for_whitelist():
     return cmd
     
 def build_command_monkey_for_package():
-    times = global_times
+    times = global_monkey_times
     flag_ignore = global_flag_crash_ignore
     
     monkey_cmd_for_package = 'adb shell monkey --throttle 500 -p {0} '.format(global_package_name)
@@ -249,7 +249,7 @@ def create_log_dir_for_win(path):
     if os.path.exists(path):
         return
     else:
-        os.mkdir(path)
+        os.makedirs(path)
         time.sleep(1)
 
 def create_log_dir_for_shell():
@@ -479,6 +479,13 @@ def cal_exec_time(fn):
 # Monkey test
 # --------------------------------------------------------------
 if __name__ == '__main__':
+
+    global_target_ip = '172.17.5.134'
+    global_package_name = 'tv.fun.filemanager'
+    global_num = '01'
+
+    global_flag_test_for_package = False
+    global_mins = 60
 
     cal_exec_time(main)
 #     parse_logcat_log(warn, global_parse_keyword)
