@@ -481,11 +481,11 @@ def cal_exec_time(fn):
 if __name__ == '__main__':
 
     global_target_ip = '172.17.5.134'
-    global_package_name = 'tv.fun.filemanager'
     global_num = '01'
+    global_mins = 60
 
     global_flag_test_for_package = False
-    global_mins = 60
+#     global_package_name = 'tv.fun.filemanager'
 
     cal_exec_time(main)
 #     parse_logcat_log(warn, global_parse_keyword)
