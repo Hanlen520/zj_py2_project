@@ -12,7 +12,7 @@ import MrBaseConstants
 # ----------------------------------------------------
 # adb utils
 # ----------------------------------------------------
-def restart_adb_with_root_auth(device_ip):
+def adb_connect_with_root(device_ip):
     cmd = 'adb root'
     print cmd
     output = os.popen(cmd)

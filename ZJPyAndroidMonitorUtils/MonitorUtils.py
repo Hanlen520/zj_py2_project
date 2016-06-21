@@ -25,12 +25,12 @@ g_tab = '\t'
 g_min = 60
 g_time_format = '%y-%m-%d %H:%M:%S'
 g_date_format = '%Y%m%d'
-g_date = time.strftime(g_date_format)
+g_cur_date = time.strftime(g_date_format)
 
 g_short_interval = 3
 g_long_interval = 5
 
-g_root_path = os.path.join(os.getcwd(), 'MonitorReports', g_date)
+g_root_path = os.path.join(os.getcwd(), 'MonitorReports', g_cur_date)
 
 
 # --------------------------------------------------------------

@@ -27,7 +27,7 @@ def get_all_tests_from_dir(dir_path):
         exit()
 
 # ----------------------------------------------------
-# main
+# monkey_test_main
 # ----------------------------------------------------
 def run_mr_command(bat_path, script_path):
     cmd = '{0} {1}'.format(bat_path, script_path)
@@ -37,7 +37,7 @@ def run_mr_command(bat_path, script_path):
 def set_env_var():
     os.environ['MR_PROJECT_PATH'] = r'E:\Eclipse_Workspace\ZJPyProject\ZJMonkeyUtils'
 
-def main():
+def monkey_test_main():
     test_scripts = []
     mr_bat_path = os.path.join(os.environ['ANDROID_SDK_HOME'], 'tools\monkeyrunner.bat');
     
@@ -71,6 +71,6 @@ def exec_time_main(fn):
 # ----------------------------------------------------
 if __name__ == '__main__':
 
-    exec_time_main(main)
+    exec_time_main(monkey_test_main)
     
     pass

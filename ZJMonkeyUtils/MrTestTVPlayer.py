@@ -64,9 +64,9 @@ def test_tvplayer_02(device):
     print 'TODO!'
 
 # ----------------------------------------------------
-# main
+# monkey_test_main
 # ----------------------------------------------------
-def main():
+def monkey_test_main():
     global_easy_device = MrBaseTcHelper.class_setup()
     test_tvplayer_01(global_easy_device)
     MrBaseTcHelper.class_clearup()
@@ -76,5 +76,5 @@ def main():
 # ----------------------------------------------------
 if __name__ == '__main__':
     
-    main()
+    monkey_test_main()
     pass

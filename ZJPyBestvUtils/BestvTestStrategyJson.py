@@ -3,7 +3,7 @@ import unittest
 import urllib2
 import json
 
-HOST="http://ott-api.fun.tv/market-api/tomato/main/v1"
+HOST="http://ott-api.fun.tv/market-api/tomato/monkey_test_main/v1"
 
 class Response():
     def __init__(self, test, js):
@@ -97,5 +97,5 @@ class TestChannel(unittest.TestCase):
             self.assertEqual(has_x_channel, real_x_channel)
                 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.monkey_test_main()
     pass

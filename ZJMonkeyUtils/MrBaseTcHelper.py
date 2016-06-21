@@ -14,7 +14,7 @@ global_easy_device = None
 # Setup
 # ----------------------------------------------------
 def class_setup():
-    MrBaseUtils.restart_adb_with_root_auth(MrBaseConstants.device_ip)
+    MrBaseUtils.adb_connect_with_root(MrBaseConstants.device_ip)
     global_device = MrBaseMrUtils.device_connect(MrBaseConstants.device_no)
     global_easy_device = MrBaseMrUtils.get_easy_device(global_device)
     

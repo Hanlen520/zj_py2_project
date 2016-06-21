@@ -34,7 +34,7 @@ g_flag_print_report = True
 # --------------------------------------------------------------
 # Path Vars
 # --------------------------------------------------------------
-g_suffix = '%s_%s' %(MonitorUtils.g_date, g_run_num)
+g_suffix = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num)
 g_report_dir_path = ''
 g_report_file_path_top = ''
 g_report_file_path_top_for_pkg = ''
@@ -254,7 +254,7 @@ if __name__ == '__main__':
     g_package_name = MonitorUtils.g_package_settings
     g_run_num = '01'
     g_run_time = 5 * MonitorUtils.g_min
-    g_suffix = '%s_%s' %(MonitorUtils.g_date, g_run_num)  # do not change
+    g_suffix = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num)  # do not change
 
     g_flag_top = False
     g_flag_top_for_pkg = True

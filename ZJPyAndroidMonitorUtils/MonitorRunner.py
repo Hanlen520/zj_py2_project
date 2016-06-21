@@ -15,14 +15,15 @@ from ZJPyAndroidMonitorUtils import MemMonitorProcrank
 from ZJPyAndroidMonitorUtils import CpuMonitorTop
 from ZJPyAndroidMonitorUtils import MonitorUtils
 
-
 # --------------------------------------------------------------
-# Setup before execution
+# Env vars, and default value
 # --------------------------------------------------------------
 g_pkg_name_all = ''
 g_run_num_all = '01'
 g_run_time_all = 5 * MonitorUtils.g_min
-g_suffix_all = '%s_%s' %(MonitorUtils.g_date, g_run_num_all)
+g_suffix_all = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num_all)
+
+g_threads = []   # holds all running threads
 
 
 # --------------------------------------------------------------
@@ -145,6 +146,7 @@ def monitor_runner_execution():
 
     start_all_threads_in_pool()
     wait_all_threads_in_pool_exit()
+    
 
 def monitor_runner_clearup():
     # todo
@@ -154,18 +156,17 @@ def monitor_runner_main():
 
     monitor_runner_prepare()
     monitor_runner_execution()
+    del g_threads[:]
 
 
 if __name__ == '__main__':
 
     g_pkg_name_all = MonitorUtils.g_package_settings
-    g_run_num_all = '03'
+    g_run_num_all = '01'
     g_run_time_all = 5 * MonitorUtils.g_min
-    g_suffix_all = '%s_%s' %(MonitorUtils.g_date, g_run_num_all)
+    g_suffix_all = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num_all)
     
-    g_threads = []   # holds all running threads
     monitor_runner_main()
-    del g_threads[:]
     
     print 'Monitor runner DONE!'
     pass

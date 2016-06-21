@@ -261,6 +261,14 @@
 #     print line
 
 
+# EXAMPLE 22
+# str1 = 'test'
+# str2 = 'zhengjin'
+# print str1,str2
+
+
+
+
 if __name__ == '__main__':
 #     exec_android_actions_right()
 #     print test(0)

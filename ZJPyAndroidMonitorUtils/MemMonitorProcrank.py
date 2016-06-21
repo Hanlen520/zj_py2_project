@@ -44,7 +44,7 @@ g_flag_print_log = False
 # --------------------------------------------------------------
 # Path Vars
 # --------------------------------------------------------------
-g_suffix = '%s_%s' %(MonitorUtils.g_date, g_run_num)
+g_suffix = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num)
 g_report_dir_path = ''
 g_report_file_path = ''
 g_category_report_file_path = ''
@@ -112,9 +112,18 @@ def run_cmd_procrank_with_findstr_all():
 # --------------------------------------------------------------
 # Functions: run commands and write files
 # --------------------------------------------------------------
-g_default_content_process = '%s null: the process (%s) is currently NOT running.' %(g_category_process, g_package_name)
-g_default_content_sevice = '%s null: the sevice (%s:remote) is currently NOT running.' %(g_category_sevice, g_package_name)
-g_default_content_total = '%s null: run procrank error, total line is NOT found.' %(g_category_total)
+g_default_content_process = ''
+g_default_content_sevice = ''
+g_default_content_total = ''
+
+def init_default_content():
+    global g_default_content_process
+    global g_default_content_sevice
+    global g_default_content_total
+    
+    g_default_content_process = '%s null: the process (%s) is currently NOT running.' %(g_category_process, g_package_name)
+    g_default_content_sevice = '%s null: the sevice (%s:remote) is currently NOT running.' %(g_category_sevice, g_package_name)
+    g_default_content_total = '%s null: run procrank error, total line is NOT found.' %(g_category_total)
 
 def subprocess_run_cmd_and_write_report_for_process(f_report):
     lines = run_cmd_procrank_with_findstr_keyword(g_package_name)
@@ -370,6 +379,7 @@ def mem_monitor_procrank_main():
 
         try:
             create_report_header(f_report)
+            init_default_content()
             if g_flag_only_process:
                 loop_for_subprocess(subprocess_run_cmd_and_write_report_for_process, f_report)
             elif g_flag_only_total:
@@ -396,7 +406,7 @@ if __name__ == '__main__':
     g_package_name = MonitorUtils.g_package_settings
     g_run_num = '01'
     g_run_time = 5 * MonitorUtils.g_min
-    g_suffix = '%s_%s' %(MonitorUtils.g_date, g_run_num)  # do not change
+    g_suffix = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num)  # do not change
     
     g_flag_build_report = True
     g_flag_parse_report = True
