@@ -56,7 +56,7 @@ def print_output_lines(lines):
 # --------------------------------------------------------------
 # Main
 # --------------------------------------------------------------
-def monkey_test_main():
+def main():
     print_output_lines(run_cmd_dumpsys_cpuinfo())
 #     print_output_lines(run_cmd_dumpsys_cpuinfo_for_package())
 
@@ -65,7 +65,7 @@ if __name__ == '__main__':
     
     g_package_name = MonitorUtils.g_package_filemanager
     
-    monkey_test_main()
+    main()
 
     print 'CPU monitor by dumpsys, DONE!'
     pass

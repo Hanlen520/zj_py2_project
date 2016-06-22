@@ -97,5 +97,5 @@ class TestChannel(unittest.TestCase):
             self.assertEqual(has_x_channel, real_x_channel)
                 
 if __name__ == '__main__':
-    unittest.monkey_test_main()
+    unittest.main()
     pass

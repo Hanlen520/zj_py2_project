@@ -267,6 +267,12 @@
 # print str1,str2
 
 
+# EXAMPLE 23
+# import os
+# str = r'E:\Eclipse_Workspace\ZJPyProject\ZJMonkeyUtils\MonkeyReprots\20160622_01\rom_props_20160622_01.log'
+# print os.path.basename(str)
+# print os.path.dirname(str)
+
 
 
 if __name__ == '__main__':

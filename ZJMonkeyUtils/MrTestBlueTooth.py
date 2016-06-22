@@ -30,9 +30,9 @@ def test_bluetooth_01(device):
     print '----------> end run test method test_bluetooth_01'
 
 # ----------------------------------------------------
-# monkey_test_main
+# main
 # ----------------------------------------------------
-def monkey_test_main():
+def main():
     global_easy_device = MrBaseTcHelper.class_setup()
     test_bluetooth_01(global_easy_device)
 #     BaseTcHelper.class_clearup()
@@ -42,5 +42,5 @@ def monkey_test_main():
 # ----------------------------------------------------
 if __name__ == '__main__':
     
-    monkey_test_main()
+    main()
     pass

@@ -19,7 +19,7 @@ def testDemo02():
     activity_name = r'tv.fun.master/tv.fun.master.ui.activity.MainActivity'
 
     # setup
-    MrBaseUtils.adb_connect_with_root(device_ip)
+    MrBaseUtils.restart_adb_with_root_auth(device_ip)
     device = MrBaseMrUtils.device_connect(device_ip)
     easy_device = MrBaseMrUtils.get_easy_device(device)
     MrBaseMrUtils.start_activity(device, activity_name)
