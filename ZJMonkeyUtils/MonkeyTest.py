@@ -4,7 +4,8 @@ Created on 2016-3-15
 
 @author: zhengjin
 
-Run monkey test by time, and generate monkey reports and system profile reports at the same time.
+Run monkey test by specified time, 
+and generate monkey reports and system profile reports at the same time.
 
 '''
 

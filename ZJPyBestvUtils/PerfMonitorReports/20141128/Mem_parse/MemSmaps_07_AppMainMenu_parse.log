@@ -1,0 +1,12 @@
+Total,97888
+anon,55080,0.5627
+/dev/pvrsrvkm,25077,0.2562
+/data/app-lib/tv.fun.launcher-2/libcocos2djs.so,7460,0.0762
+/data/app-lib/tv.fun.launcher-2/libfsp2p.so,3516,0.0359
+/data/dalvik-cache/data@app@tv.fun.launcher-2.apk@classes.dex,2180,0.0223
+/system/fonts/DroidSansFallback.ttf,1494,0.0153
+/data/dalvik-cache/system@framework@framework.jar@classes.dex,409,0.0042
+/data/dalvik-cache/data@app@tv.fun.launcher.test-2.apk@classes.dex,160,0.0016
+/data/dalvik-cache/system@framework@core.jar@classes.dex,158,0.0016
+/data/dalvik-cache/system@framework@android.test.runner.jar@classes.dex,148,0.0015
+/system/vendor/lib/egl/libGLESv2_POWERVR_SGX544_115.so,137,0.0014

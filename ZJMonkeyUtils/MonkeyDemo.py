@@ -9,9 +9,9 @@ series_no = r'0807'
 local_dir_path = r'd:\monkey_logs' + '\\' + series_no
 shell_dir_path = r'/data/local/tmp/monkey_logs' + '/' + series_no
 
-# -------------------------------
+# --------------------------------------------------------------
 # functions: logcat
-# -------------------------------
+# --------------------------------------------------------------
 def clearLogcat():
     cmd = 'adb logcat -c'
     os.system(cmd)
@@ -29,9 +29,9 @@ def stopLogcat():
     cmd = 'adb kill-server'
     os.system(cmd)
 
-# -------------------------------
+# --------------------------------------------------------------
 # functions: Anr tarces files
-# -------------------------------
+# --------------------------------------------------------------
 anr_path = r'/data/anr/traces.txt'
 
 def clearAnrTracesFile():
@@ -45,9 +45,9 @@ def moveAnrTracesFile():
     cmd = 'adb shell busybox mv ' + anr_path + ' ' + shell_dir_path
     os.system(cmd)
 
-# -------------------------------
+# --------------------------------------------------------------
 # functions: monkey
-# -------------------------------
+# --------------------------------------------------------------
 def pullTracesFile():
     cmd = 'adb pull ' + shell_dir_path + ' ' + local_dir_path
     os.system(cmd)
@@ -74,9 +74,9 @@ def runMonkeyCmd():
     print monkey_cmd
 #     os.system(monkey_cmd)
 
-# -------------------------------
+# --------------------------------------------------------------
 # Main
-# -------------------------------
+# --------------------------------------------------------------
 def Main():
 #     clearLogcat()
 #     clearAnrTracesFile()

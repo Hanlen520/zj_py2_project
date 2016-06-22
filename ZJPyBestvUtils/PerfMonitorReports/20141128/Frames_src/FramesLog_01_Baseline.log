@@ -1,0 +1,1054 @@
+--------- beginning of /dev/log/main
+11-28 15:15:38.297 I/DeviceInfoUtil(14128): isDevicePerformanceOK deviceModel: M8_SDK1.0, contains: false
+11-28 15:15:38.297 D/cocos2d-x debug info(14128): JS: 高配置盒子true
+11-28 15:15:38.297 W/System.err(14128): 	at libcore.io.Posix.fsync(Native Method)
+11-28 15:15:38.297 W/System.err(14128): 	at libcore.io.BlockGuardOs.fsync(BlockGuardOs.java:97)
+11-28 15:15:38.297 W/System.err(14128): 	at java.io.FileDescriptor.sync(FileDescriptor.java:74)
+11-28 15:15:38.297 W/System.err(14128): 	... 22 more
+11-28 15:15:38.297 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.297 D/cocos2d-x debug info(14128): JS: 看过和收藏模式false
+11-28 15:15:38.297 D/cocos2d-x debug info(14128): JS: LoadingLayer..loadingFinished
+11-28 15:15:38.297 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.297 D/cocos2d-x debug info(14128): JS: lifan....requestHomeJson.
+11-28 15:15:38.297 D/cocos2d-x debug info(14128): JS: easeActionConfig, this is release version, can not get Action tpye
+11-28 15:15:38.307 D/WebDataManager:(14128): getGlobalWriteFilePath()----writeFilePath--/data/data/tv.fun.launcher/files/fun_download/
+11-28 15:15:38.367 D/cocos2d-x debug info(14128): JS: loading--begin jumpToHomeMainScene
+11-28 15:15:38.367 D/cocos2d-x debug info(14128): JS: create HomeMainScene
+11-28 15:15:38.367 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.377 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.377 D/WebDataManager:(14128): getGlobalWriteFilePath()----writeFilePath--/data/data/tv.fun.launcher/files/fun_download/
+11-28 15:15:38.377 D/cocos2d-x debug info(14128): create rendererRecreatedListener for GLProgramState
+11-28 15:15:38.377 D/CCFileUtilsAndroid.cpp(14128): relative path = res/img/bestv.png
+11-28 15:15:38.387 D/cocos2d-x debug info(14128): JS: HomeDataSourceManager--53=[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+11-28 15:15:38.387 D/cocos2d-x debug info(14128): JS: HomeMainScene--this.dataSource==8
+11-28 15:15:38.387 D/cocos2d-x debug info(14128): JS: i--8
+11-28 15:15:38.387 D/cocos2d-x debug info(14128): JS: index--8
+11-28 15:15:38.387 D/cocos2d-x debug info(14128): JS: len----8
+11-28 15:15:38.387 D/cocos2d-x debug info(14128): JS: this.mItemTypeLength8
+11-28 15:15:38.387 D/cocos2d-x debug info(14128): JS: this.curSelectItemIndex=1this.mPicHeight562
+11-28 15:15:38.397 D/cocos2d-x debug info(14128): JS: i=1
+11-28 15:15:38.397 D/cocos2d-x debug info(14128): JS: FunTableView ctor
+11-28 15:15:38.397 D/cocos2d-x debug info(14128): JS: FunTableView init
+11-28 15:15:38.407 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:38.407 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.417 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:38.417 D/cocos2d-x debug info(14128): JS: 添加角标
+11-28 15:15:38.417 D/CCFileUtilsAndroid.cpp(14128): relative path = res/img/special.png
+11-28 15:15:38.427 D/cocos2d-x debug info(14128): JS: begin home url=http://img1.funshion.com/pictures/pocket/201411/aaef14ed2f0.png
+11-28 15:15:38.427 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.427 D/cocos2d-x debug info(14128): JS: end home url=http://img1.funshion.com/pictures/pocket/201411/aaef14ed2f0.png
+11-28 15:15:38.427 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_tv
+11-28 15:15:38.437 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.437 D/cocos2d-x debug info(14128): JS: updateStatus--（30集全）
+11-28 15:15:38.437 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/106/858/106858_360_504_ott_poster.jpg?1411059812
+11-28 15:15:38.437 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.437 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/106/858/106858_360_504_ott_poster.jpg?1411059812
+11-28 15:15:38.437 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_tv
+11-28 15:15:38.447 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.447 D/cocos2d-x debug info(14128): JS: updateStatus--（43集全）
+11-28 15:15:38.447 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/113/031/113031_360_504_ott_poster.jpg?1406796893
+11-28 15:15:38.447 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.447 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/113/031/113031_360_504_ott_poster.jpg?1406796893
+11-28 15:15:38.447 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:38.457 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.457 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:38.457 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/113/562/113562_360_504_ott_poster.jpg?1416798988
+11-28 15:15:38.457 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.457 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/113/562/113562_360_504_ott_poster.jpg?1416798988
+11-28 15:15:38.467 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_variety_h
+11-28 15:15:38.467 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.467 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:38.467 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:38.467 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord   16 Android-2.local. AAAA FE80:0000:0000:0000:026D:0EFF:FE03:A545
+11-28 15:15:38.467 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:38.467 D/cocos2d-x debug info(14128): JS: updateStatus--（20141123期）
+11-28 15:15:38.477 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/115/335/115335_360_504_ott_poster.jpg?1416895126
+11-28 15:15:38.477 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.477 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/115/335/115335_360_504_ott_poster.jpg?1416895126
+11-28 15:15:38.477 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:38.477 D/dalvikvm(14128): GC_CONCURRENT freed 1801K, 50% free 9430K/18528K, paused 2ms+3ms, total 28ms
+11-28 15:15:38.477 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.487 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:38.487 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/111/054/111054_360_504_ott_poster.jpg?1415953979
+11-28 15:15:38.487 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.487 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/111/054/111054_360_504_ott_poster.jpg?1415953979
+11-28 15:15:38.487 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_tv
+11-28 15:15:38.487 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.487 D/cocos2d-x debug info(14128): JS: updateStatus--（更新至28集）
+11-28 15:15:38.497 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/110/571/110571_360_504_ott_poster.jpg?1411029898
+11-28 15:15:38.497 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.497 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/110/571/110571_360_504_ott_poster.jpg?1411029898
+11-28 15:15:38.497 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_cartoon
+11-28 15:15:38.497 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.497 D/cocos2d-x debug info(14128): JS: updateStatus--（91集全）
+11-28 15:15:38.497 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/959/08/95908_360_504_ott_poster.jpg?1405569337
+11-28 15:15:38.497 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.507 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/959/08/95908_360_504_ott_poster.jpg?1405569337
+11-28 15:15:38.507 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_cartoon
+11-28 15:15:38.507 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.507 D/cocos2d-x debug info(14128): JS: updateStatus--（52集全）
+11-28 15:15:38.507 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/115/462/115462_360_504_ott_poster.jpg?1405065293
+11-28 15:15:38.517 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.517 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/115/462/115462_360_504_ott_poster.jpg?1405065293
+11-28 15:15:38.517 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:38.517 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.517 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:38.517 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/112/833/112833_360_504_ott_poster.jpg?1415986515
+11-28 15:15:38.527 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.527 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/112/833/112833_360_504_ott_poster.jpg?1415986515
+11-28 15:15:38.527 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_cartoon
+11-28 15:15:38.537 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.537 D/cocos2d-x debug info(14128): JS: updateStatus--（157集全）
+11-28 15:15:38.547 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/879/54/87954_360_504_ott_poster.jpg?1406705790
+11-28 15:15:38.547 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.547 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/879/54/87954_360_504_ott_poster.jpg?1406705790
+11-28 15:15:38.547 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_tv
+11-28 15:15:38.547 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.557 D/cocos2d-x debug info(14128): JS: updateStatus--（41集全）
+11-28 15:15:38.557 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/116/277/116277_360_504_ott_poster.jpg?1411899242
+11-28 15:15:38.557 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.557 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/116/277/116277_360_504_ott_poster.jpg?1411899242
+11-28 15:15:38.557 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_variety_h
+11-28 15:15:38.557 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.567 D/cocos2d-x debug info(14128): JS: updateStatus--（20141127期）
+11-28 15:15:38.567 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/115/270/115270_360_504_ott_poster.jpg?1417110652
+11-28 15:15:38.567 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.567 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/115/270/115270_360_504_ott_poster.jpg?1417110652
+11-28 15:15:38.567 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_tv
+11-28 15:15:38.567 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.577 D/cocos2d-x debug info(14128): JS: updateStatus--（36集全）
+11-28 15:15:38.577 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/115/982/115982_360_504_ott_poster.jpg?1409709778
+11-28 15:15:38.577 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.577 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/115/982/115982_360_504_ott_poster.jpg?1409709778
+11-28 15:15:38.577 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_tv
+11-28 15:15:38.577 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.577 D/cocos2d-x debug info(14128): JS: updateStatus--（46集全）
+11-28 15:15:38.577 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/111/738/111738_360_504_ott_poster.jpg?1411302290
+11-28 15:15:38.587 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.587 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/111/738/111738_360_504_ott_poster.jpg?1411302290
+11-28 15:15:38.587 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:38.587 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.597 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:38.597 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/106/940/106940_360_504_ott_poster.jpg?1413946029
+11-28 15:15:38.597 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.597 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/106/940/106940_360_504_ott_poster.jpg?1413946029
+11-28 15:15:38.607 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:38.607 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.607 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:38.607 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/115/456/115456_360_504_ott_poster.jpg?1411480058
+11-28 15:15:38.607 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.607 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/115/456/115456_360_504_ott_poster.jpg?1411480058
+11-28 15:15:38.607 D/cocos2d-x debug info(14128): JS: ImageLoader:cancelImageLoad url=http://img.funshion.com/pictures/media/list/115/456/115456_360_504_ott_poster.jpg?1411480058
+11-28 15:15:38.607 D/cocos2d-x debug info(14128): JS: ImageLoader:cancelImageLoad url=http://img.funshion.com/pictures/media/list/106/940/106940_360_504_ott_poster.jpg?1413946029
+11-28 15:15:38.607 D/cocos2d-x debug info(14128): JS: ImageLoader:cancelImageLoad url=http://img.funshion.com/pictures/media/list/111/738/111738_360_504_ott_poster.jpg?1411302290
+11-28 15:15:38.607 D/cocos2d-x debug info(14128): JS: ImageLoader:cancelImageLoad url=http://img.funshion.com/pictures/media/list/115/982/115982_360_504_ott_poster.jpg?1409709778
+11-28 15:15:38.607 D/cocos2d-x debug info(14128): JS: ImageLoader:cancelImageLoad url=http://img.funshion.com/pictures/media/list/115/270/115270_360_504_ott_poster.jpg?1417110652
+11-28 15:15:38.617 D/cocos2d-x debug info(14128): JS: ImageLoader:cancelImageLoad url=http://img.funshion.com/pictures/media/list/116/277/116277_360_504_ott_poster.jpg?1411899242
+11-28 15:15:38.617 D/CCFileUtilsAndroid.cpp(14128): relative path = res/img/Focus_card.png
+11-28 15:15:38.617 D/cocos2d-x debug info(14128): create rendererRecreatedListener for GLProgramState
+11-28 15:15:38.617 D/cocos2d-x debug info(14128): JS: zhangmd:FunTableView:setFocusImageSize, size is:(340,562)
+11-28 15:15:38.617 D/cocos2d-x debug info(14128): JS: zhangmd:FunTableView:setFocusImageSize, focussize is:(370,592)
+11-28 15:15:38.617 D/cocos2d-x debug info(14128): JS: HomeMovTVCarVarH--setSelectedItem--true
+11-28 15:15:38.617 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:38.627 D/cocos2d-x debug info(14128): JS: zhangmd:FunTableView:calculateFullVisibleIndex begain,startidx=0,endidx=0,startidx2=0,endidx2=0
+11-28 15:15:38.627 D/cocos2d-x debug info(14128): JS: calculateLastPageIndex 1
+11-28 15:15:38.627 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.627 D/cocos2d-x debug info(14128): JS: HomeMainScene--keyboard--lifan.......
+11-28 15:15:38.627 D/cocos2d-x debug info(14128): nativeTes2Callback  [290]home.onGetHomeJsonCallBack('{"retCode":"200","retMsg":"ok","rows":[{"row_code":"recommend_medias","row_name":"\u63a8\u8350","row_icon":"icon-recommend","row_style":"1","items":[{"mediaid":"","name_cn":"\u82f1\u8d85\u76f4\u64ad","adword":"\u82f1\u8d85\u7b2c13\u8f6e\u76f4\u64ad","karma":"","clarity":"","mtype":"special","action_type":"@special","item_style":"home_movie","countries":[],"tags":[],"update_status":"","action_data":"http:\/\/ott-api.fun.tv\/api\/v2\/special\/21045480","p_pic":"http:\/\/img1.funshion.com\/pictures\/pocket\/201411\/aaef14ed2f0.png","s_pic":"http:\/\/img1.funshion.com\/pictures\/pocket\/201411\/ce3569a650d.png","vip_tag":""},{"mediaid":"106858","name_cn":"\u5a5a\u59fb\u6599\u7406","adword":"\u7f8e\u53a8\u5a18\u95eb\u59ae\u60c5\u6311\u4e94\u5927\u53d4","karma":"8.2","clarity":"high-dvd","mtype":"tv","action_type":"@media_detail_page","action_data":"http:\/\/ott-api.fun.tv\/api\/v2\/subject\/106858","item_style":"home_tv","vip_tag":"","stp":"ott_cf_media","p_pic
+11-28 15:15:38.627 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/57/5bc8097fdb73842e44e0060e0a17dc.png
+11-28 15:15:38.637 D/cocos2d-x debug info(14128): nativeTes2Callback  [003]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/57/5bc8097fdb73842e44e0060e0a17dc.png', 0, 0)
+11-28 15:15:38.637 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/8c/cb080c35a2a18022a1abd56e467802.png
+11-28 15:15:38.637 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/8c/cb080c35a2a18022a1abd56e467802.png', 0, 1)
+11-28 15:15:38.637 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/a8/3ebf14e40a33d07ad4e019e5150357.png
+11-28 15:15:38.637 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/a8/3ebf14e40a33d07ad4e019e5150357.png', 0, 2)
+11-28 15:15:38.637 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/d9/74ba69abd71b0cb388ac8c877f5f96.png
+11-28 15:15:38.637 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/d9/74ba69abd71b0cb388ac8c877f5f96.png', 0, 3)
+11-28 15:15:38.637 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/cb/cac0ef74d5d451b3a1e7a655f9cbea.png
+11-28 15:15:38.637 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/cb/cac0ef74d5d451b3a1e7a655f9cbea.png', 0, 4)
+11-28 15:15:38.637 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/f2/957e4e2b89b4d3c1725ce11e309869.png
+11-28 15:15:38.637 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/f2/957e4e2b89b4d3c1725ce11e309869.png', 0, 5)
+11-28 15:15:38.637 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/2a/77d0779260ab9da7b3f99e6f45e176.png
+11-28 15:15:38.637 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:38.637 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:38.637 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord   16 Android-2.local. AAAA FE80:0000:0000:0000:026D:0EFF:FE03:A545
+11-28 15:15:38.637 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:38.637 D/mdns    ( 4397): SendQueries:   Put Question 006d0e03a545@MiniMax._raop._tcp.local. (SRV) probecount 2
+11-28 15:15:38.637 D/mdns    ( 4397): SendQueries:   Put Question MiniMax._airplay._tcp.local. (SRV) probecount 2
+11-28 15:15:38.637 D/mdns    ( 4397): SendQueries:   Put Question Android-2.local. (Addr) probecount 2
+11-28 15:15:38.637 D/mdns    ( 4397): SendQueries:   Put Question Android-2.local. (AAAA) probecount 2
+11-28 15:15:38.637 D/mdns    ( 4397): SendQueries:   Sending 4 Questions 0 Answers 4 Updates on 412B6F38
+11-28 15:15:38.637 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.147 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:38.637 D/mdns    ( 4397): Received Query from 172.16.13.147  :5353  to 224.0.0.251    :5353  on 0x412B6F38 with  4 Questions,  0 Answers,  4 Authorities,  0 Additionals 172 bytes
+11-28 15:15:38.637 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:026D:0EFF:FE03:A545 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:38.637 D/mdns    ( 4397): Received Query from FE80:0000:0000:0000:026D:0EFF:FE03:A545:5353  to FF02:0000:0000:0000:0000:0000:0000:00FB:5353  on 0x412B6F38 with  4 Questions,  0 Answers,  4 Authorities,  0 Additionals 172 bytes
+11-28 15:15:38.637 D/cocos2d-x debug info(14128): nativeTes2Callback  [003]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/2a/77d0779260ab9da7b3f99e6f45e176.png', 0, 6)
+11-28 15:15:38.647 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/a9/b9752ecf3eb9f66bab4d707650ee8a.png
+11-28 15:15:38.647 D/cocos2d-x debug info(14128): nativeTes2Callback  [002]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/a9/b9752ecf3eb9f66bab4d707650ee8a.png', 0, 7)
+11-28 15:15:38.647 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/fc/ec841cbfc9e1d252996afea68edca1.png
+11-28 15:15:38.647 D/cocos2d-x debug info(14128): nativeTes2Callback  [002]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/fc/ec841cbfc9e1d252996afea68edca1.png', 0, 8)
+11-28 15:15:38.647 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/b0/359a27fd3f9d17d9eef4556d7667fa.png
+11-28 15:15:38.647 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/b0/359a27fd3f9d17d9eef4556d7667fa.png', 0, 9)
+11-28 15:15:38.647 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/1a/5ad647dae91adaffa33d7ec0aa31cc.png
+11-28 15:15:38.657 D/cocos2d-x debug info(14128): nativeTes2Callback  [005]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/1a/5ad647dae91adaffa33d7ec0aa31cc.png', 0, 10)
+11-28 15:15:38.657 D/cocos2d-x debug info(14128): JS: hotSearchRecordCallBack json={"data":[{"action_data":"http://ott-api.fun.tv/api/v2/subject/116277","action_type":"@media_detail_page","cutpictime":1411899242,"from":0,"item_style":"hot_search","mediaid":"116277","mtype":"电视剧","name_cn":"我的特一营","p_pic":"http://img.funshion.com/pictures/media/list/116/277/116277_360_504_ott_poster.jpg?1411899242","releasedate":"2014","to":0,"type":"media"},{"action_data":"http://ott-api.fun.tv/api/v2/subject/114977","action_type":"@media_detail_page","cutpictime":1416555966,"from":0,"item_style":"hot_search","mediaid":"114977","mtype":"电影","name_cn":"老男孩之猛龙过江","p_pic":"http://img.funshion.com/pictures/media/list/114/977/114977_360_504_ott_poster.jpg?1416555966","releasedate":"2014","to":0,"type":"media"},{"action_data":"http://ott-api.fun.tv/api/v2/subject/115817","action_type":"@media_detail_page","cutpictime":1407307022,"from":0,"item_style":"hot_search","mediaid":"115817","mtype":"动漫","name_cn":"沪江网宝宝儿歌大全","p_pic
+11-28 15:15:38.657 D/cocos2d-x debug info(14128): nativeTes2Callback  [006]home.hotSearchRecordCallBack('{"data":[{"action_data":"http:\/\/ott-api.fun.tv\/api\/v2\/subject\/116277","action_type":"@media_detail_page","cutpictime":1411899242,"from":0,"item_style":"hot_search","mediaid":"116277","mtype":"\u7535\u89C6\u5267","name_cn":"\u6211\u7684\u7279\u4E00\u8425","p_pic":"http:\/\/img.funshion.com\/pictures\/media\/list\/116\/277\/116277_360_504_ott_poster.jpg?1411899242","releasedate":"2014","to":0,"type":"media"},{"action_data":"http:\/\/ott-api.fun.tv\/api\/v2\/subject\/114977","action_type":"@media_detail_page","cutpictime":1416555966,"from":0,"item_style":"hot_search","mediaid":"114977","mtype":"\u7535\u5F71","name_cn":"\u8001\u7537\u5B69\u4E4B\u731B\u9F99\u8FC7\u6C5F","p_pic":"http:\/\/img.funshion.com\/pictures\/media\/list\/114\/977\/114977_360_504_ott_poster.jpg?1416555966","releasedate":"2014","to":0,"type":"media"},{"action_data":"http:\/\/ott-api.fun.tv\/api\/v2\/subject\/115817","action_type":"@media_detail_page","cutpictime":1407307022,"from":
+11-28 15:15:38.657 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/90/c2a2ddfe2422257d39bd0c9f5d84fc.png
+11-28 15:15:38.657 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/90/c2a2ddfe2422257d39bd0c9f5d84fc.png', 0, 11)
+11-28 15:15:38.657 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/8f/43a9c097dfd231f46ed3870313a982.png
+11-28 15:15:38.657 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/8f/43a9c097dfd231f46ed3870313a982.png', 0, 12)
+11-28 15:15:38.667 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/f6/9a813427674cc4bdaeca5bc1acb4cd.png
+11-28 15:15:38.667 D/cocos2d-x debug info(14128): nativeTes2Callback  [002]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/f6/9a813427674cc4bdaeca5bc1acb4cd.png', 0, 13)
+11-28 15:15:38.667 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/d9/32582dc75e2e18a1a5091ace155775.png
+11-28 15:15:38.667 D/cocos2d-x debug info(14128): nativeTes2Callback  [002]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/d9/32582dc75e2e18a1a5091ace155775.png', 0, 14)
+11-28 15:15:38.667 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/ac/6f860752669c68bc0b7a15143f961d.png
+11-28 15:15:38.677 D/cocos2d-x debug info(14128): nativeTes2Callback  [003]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/ac/6f860752669c68bc0b7a15143f961d.png', 0, 15)
+11-28 15:15:38.677 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/f3/ecf40f25dfc0421e52a9eff4e354f1.png
+11-28 15:15:38.677 D/cocos2d-x debug info(14128): nativeTes2Callback  [002]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/f3/ecf40f25dfc0421e52a9eff4e354f1.png', 0, 16)
+11-28 15:15:38.677 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.677 D/cocos2d-x debug info(14128): JS: HomeMainScene--onEnter--lifan
+11-28 15:15:38.677 D/cocos2d-x debug info(14128): JS: 123456789
+11-28 15:15:38.707 E/system  (14128): message: Protocol not found: , cause: null
+11-28 15:15:38.717 E/system  (14128): message: Protocol not found: , cause: null
+11-28 15:15:38.717 E/system  (14128): message: Protocol not found: , cause: null
+11-28 15:15:38.717 D/cocos2d-x debug info(14128): trace_frame: 55.557785
+11-28 15:15:38.737 E/system  (14128): message: Protocol not found: , cause: null
+11-28 15:15:38.737 E/system  (14128): message: Protocol not found: , cause: null
+11-28 15:15:38.737 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:38.737 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:38.737 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord   16 Android-2.local. AAAA FE80:0000:0000:0000:026D:0EFF:FE03:A545
+11-28 15:15:38.737 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:38.757 E/system  (14128): message: Protocol not found: , cause: null
+11-28 15:15:38.767 E/system  (14128): message: Protocol not found: , cause: null
+11-28 15:15:38.767 E/system  (14128): message: Protocol not found: , cause: null
+11-28 15:15:38.787 E/system  (14128): message: Protocol not found: , cause: null
+11-28 15:15:38.787 E/system  (14128): message: Protocol not found: , cause: null
+11-28 15:15:38.787 E/system  (14128): message: Protocol not found: , cause: null
+11-28 15:15:38.787 E/system  (14128): message: Protocol not found: , cause: null
+11-28 15:15:38.787 E/system  (14128): message: Protocol not found: , cause: null
+11-28 15:15:38.827 D/dalvikvm(14128): GC_CONCURRENT freed 1725K, 50% free 9418K/18528K, paused 4ms+5ms, total 59ms
+11-28 15:15:38.837 D/cocos2d-x debug info(14128): trace_frame: 58.761311
+11-28 15:15:38.887 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:38.887 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:38.887 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord   16 Android-2.local. AAAA FE80:0000:0000:0000:026D:0EFF:FE03:A545
+11-28 15:15:38.887 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:38.887 D/mdns    ( 4397): SendQueries:   Put Question 006d0e03a545@MiniMax._raop._tcp.local. (SRV) probecount 1
+11-28 15:15:38.887 D/mdns    ( 4397): SendQueries:   Put Question MiniMax._airplay._tcp.local. (SRV) probecount 1
+11-28 15:15:38.887 D/mdns    ( 4397): SendQueries:   Put Question Android-2.local. (Addr) probecount 1
+11-28 15:15:38.887 D/mdns    ( 4397): SendQueries:   Put Question Android-2.local. (AAAA) probecount 1
+11-28 15:15:38.887 D/mdns    ( 4397): SendQueries:   Sending 4 Questions 0 Answers 4 Updates on 412B6F38
+11-28 15:15:38.897 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.147 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:38.897 D/mdns    ( 4397): Received Query from 172.16.13.147  :5353  to 224.0.0.251    :5353  on 0x412B6F38 with  4 Questions,  0 Answers,  4 Authorities,  0 Additionals 172 bytes
+11-28 15:15:38.897 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:026D:0EFF:FE03:A545 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:38.897 D/mdns    ( 4397): Received Query from FE80:0000:0000:0000:026D:0EFF:FE03:A545:5353  to FF02:0000:0000:0000:0000:0000:0000:00FB:5353  on 0x412B6F38 with  4 Questions,  0 Answers,  4 Authorities,  0 Additionals 172 bytes
+11-28 15:15:38.897 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.203 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:38.897 D/mdns    ( 4397): Received Response from 172.16.13.203   addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  0 Additionals 290 bytes LLQType 0
+11-28 15:15:38.937 D/cocos2d-x debug info(14128): trace_frame: 61.640884
+11-28 15:15:38.967 D/dalvikvm(22184): GC_CONCURRENT freed 686K, 19% free 6636K/8128K, paused 13ms+4ms, total 63ms
+11-28 15:15:38.987 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:38.987 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:38.987 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:38.987 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord   16 Android-2.local. AAAA FE80:0000:0000:0000:026D:0EFF:FE03:A545
+11-28 15:15:38.987 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:38.997 D/cocos2d-x debug info(14128): JS: getHomeSearchRecord={"items":[]}
+11-28 15:15:38.997 D/cocos2d-x debug info(14128): JS: getHomeSearchRecord jsonString=0
+11-28 15:15:38.997 D/cocos2d-x debug info(14128): JS: mergeHomeSearchData: items=4
+11-28 15:15:38.997 D/cocos2d-x debug info(14128): JS: FunTableView ctor
+11-28 15:15:38.997 D/cocos2d-x debug info(14128): JS: FunTableView init
+11-28 15:15:39.007 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--search_style
+11-28 15:15:39.007 D/cocos2d-x debug info(14128): JS: HomeMoreH--search
+11-28 15:15:39.007 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--hot_search
+11-28 15:15:39.007 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.017 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.017 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/116/277/116277_360_504_ott_poster.jpg?1411899242
+11-28 15:15:39.017 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.017 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/116/277/116277_360_504_ott_poster.jpg?1411899242
+11-28 15:15:39.017 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--hot_search
+11-28 15:15:39.027 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.027 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.027 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/114/977/114977_360_504_ott_poster.jpg?1416555966
+11-28 15:15:39.027 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.027 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/114/977/114977_360_504_ott_poster.jpg?1416555966
+11-28 15:15:39.027 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--hot_search
+11-28 15:15:39.037 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.037 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.037 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/115/817/115817_360_504_ott_poster.jpg?1407307022
+11-28 15:15:39.037 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.037 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/115/817/115817_360_504_ott_poster.jpg?1407307022
+11-28 15:15:39.037 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--hot_search
+11-28 15:15:39.047 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.047 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.047 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/115/335/115335_360_504_ott_poster.jpg?1416895126
+11-28 15:15:39.047 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.047 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/115/335/115335_360_504_ott_poster.jpg?1416895126
+11-28 15:15:39.057 D/cocos2d-x debug info(14128): JS: zhangmd:FunTableView:setFocusImageSize, size is:(340,562)
+11-28 15:15:39.057 D/cocos2d-x debug info(14128): JS: zhangmd:FunTableView:setFocusImageSize, focussize is:(370,592)
+11-28 15:15:39.057 D/cocos2d-x debug info(14128): JS: HomeMoreH--45true
+11-28 15:15:39.057 D/cocos2d-x debug info(14128): JS: zhangmd:FunTableView:calculateFullVisibleIndex begain,startidx=0,endidx=0,startidx2=0,endidx2=0
+11-28 15:15:39.057 D/cocos2d-x debug info(14128): JS: FunTableView ctor
+11-28 15:15:39.057 D/cocos2d-x debug info(14128): JS: FunTableView init
+11-28 15:15:39.057 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_more_h
+11-28 15:15:39.057 D/cocos2d-x debug info(14128): JS: HomeMoreH--hot_movie
+11-28 15:15:39.067 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.067 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.067 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.067 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/113/562/113562_360_504_ott_poster.jpg?1416798988
+11-28 15:15:39.067 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.067 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/113/562/113562_360_504_ott_poster.jpg?1416798988
+11-28 15:15:39.067 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.077 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.077 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.077 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/111/054/111054_360_504_ott_poster.jpg?1415953979
+11-28 15:15:39.077 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.077 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/111/054/111054_360_504_ott_poster.jpg?1415953979
+11-28 15:15:39.077 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.077 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.087 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.087 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/109/978/109978_360_504_ott_poster.jpg?1415990605
+11-28 15:15:39.087 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.087 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/109/978/109978_360_504_ott_poster.jpg?1415990605
+11-28 15:15:39.087 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.087 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.087 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.087 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/111/592/111592_360_504_ott_poster.jpg?1415934848
+11-28 15:15:39.087 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.097 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/111/592/111592_360_504_ott_poster.jpg?1415934848
+11-28 15:15:39.097 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.097 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.097 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.097 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/115/712/115712_360_504_ott_poster.jpg?1416374592
+11-28 15:15:39.097 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.097 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/115/712/115712_360_504_ott_poster.jpg?1416374592
+11-28 15:15:39.097 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.107 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.107 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.107 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/106/935/106935_360_504_ott_poster.jpg?1415934630
+11-28 15:15:39.107 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.107 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/106/935/106935_360_504_ott_poster.jpg?1415934630
+11-28 15:15:39.107 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.107 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.117 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.117 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/115/582/115582_360_504_ott_poster.jpg?1415954943
+11-28 15:15:39.117 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.117 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/115/582/115582_360_504_ott_poster.jpg?1415954943
+11-28 15:15:39.117 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.117 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.117 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.117 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/115/456/115456_360_504_ott_poster.jpg?1411480058
+11-28 15:15:39.117 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.127 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/115/456/115456_360_504_ott_poster.jpg?1411480058
+11-28 15:15:39.127 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.127 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.127 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.127 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/112/833/112833_360_504_ott_poster.jpg?1415986515
+11-28 15:15:39.127 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.127 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/112/833/112833_360_504_ott_poster.jpg?1415986515
+11-28 15:15:39.127 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.127 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.137 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.137 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/108/657/108657_360_504_ott_poster.jpg?1415929287
+11-28 15:15:39.137 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.137 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/108/657/108657_360_504_ott_poster.jpg?1415929287
+11-28 15:15:39.137 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.137 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.137 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:39.137 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:39.137 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord   16 Android-2.local. AAAA FE80:0000:0000:0000:026D:0EFF:FE03:A545
+11-28 15:15:39.137 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:39.137 D/mdns    ( 4397): mDNS_HostNameCallback: Android-2.local. (Addr) Name registered (0)
+11-28 15:15:39.137 D/mdns    ( 4397): mDNS_HostNameCallback: Android-2.local. (AAAA) Name registered (0)
+11-28 15:15:39.137 D/mdns    ( 4397): SendQueries:   Put Question 006d0e03a545@MiniMax._raop._tcp.local. (SRV) probecount 0
+11-28 15:15:39.137 D/mdns    ( 4397): SendQueries:   Put Question MiniMax._airplay._tcp.local. (SRV) probecount 0
+11-28 15:15:39.137 D/mdns    ( 4397): SendQueries:   Put Question Android-2.local. (Addr) probecount 0
+11-28 15:15:39.137 D/mdns    ( 4397): SendQueries:   Put Question Android-2.local. (AAAA) probecount 0
+11-28 15:15:39.137 D/mdns    ( 4397): SendQueries:   Sending 4 Questions 0 Answers 4 Updates on 412B6F38
+11-28 15:15:39.147 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.147 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:39.147 D/mdns    ( 4397): Received Query from 172.16.13.147  :5353  to 224.0.0.251    :5353  on 0x412B6F38 with  4 Questions,  0 Answers,  4 Authorities,  0 Additionals 172 bytes
+11-28 15:15:39.147 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:026D:0EFF:FE03:A545 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:39.147 D/mdns    ( 4397): Received Query from FE80:0000:0000:0000:026D:0EFF:FE03:A545:5353  to FF02:0000:0000:0000:0000:0000:0000:00FB:5353  on 0x412B6F38 with  4 Questions,  0 Answers,  4 Authorities,  0 Additionals 172 bytes
+11-28 15:15:39.157 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.157 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/114/040/114040_360_504_ott_poster.jpg?1415806782
+11-28 15:15:39.157 D/dalvikvm(21595): GC_CONCURRENT freed 387K, 17% free 5273K/6280K, paused 3ms+3ms, total 22ms
+11-28 15:15:39.157 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.157 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/114/040/114040_360_504_ott_poster.jpg?1415806782
+11-28 15:15:39.167 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.167 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.167 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.167 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/107/885/107885_360_504_ott_poster.jpg?1416678784
+11-28 15:15:39.167 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.167 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/107/885/107885_360_504_ott_poster.jpg?1416678784
+11-28 15:15:39.167 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.167 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.177 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.177 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/114/977/114977_360_504_ott_poster.jpg?1416555966
+11-28 15:15:39.177 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.177 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/114/977/114977_360_504_ott_poster.jpg?1416555966
+11-28 15:15:39.177 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.177 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.177 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.177 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/116/694/116694_360_504_ott_poster.jpg?1415849476
+11-28 15:15:39.187 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.187 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/116/694/116694_360_504_ott_poster.jpg?1415849476
+11-28 15:15:39.187 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.187 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.187 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.187 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/116/173/116173_360_504_ott_poster.jpg?1416730820
+11-28 15:15:39.187 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.187 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/116/173/116173_360_504_ott_poster.jpg?1416730820
+11-28 15:15:39.187 D/cocos2d-x debug info(14128): JS: HomeItemUI-- all--home_movie
+11-28 15:15:39.197 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.197 D/cocos2d-x debug info(14128): JS: updateStatus--
+11-28 15:15:39.197 D/cocos2d-x debug info(14128): JS: 添加角标
+11-28 15:15:39.197 D/CCFileUtilsAndroid.cpp(14128): relative path = res/img/Badge_VIP.png
+11-28 15:15:39.207 D/cocos2d-x debug info(14128): JS: begin home url=http://img.funshion.com/pictures/media/list/115/328/115328_360_504_ott_poster.jpg?1416365769
+11-28 15:15:39.207 D/JniHelper(14128): JniHelper::getJavaVM(), pthread_self() = 1529184920
+11-28 15:15:39.207 D/cocos2d-x debug info(14128): JS: end home url=http://img.funshion.com/pictures/media/list/115/328/115328_360_504_ott_poster.jpg?1416365769
+11-28 15:15:39.207 D/cocos2d-x debug info(14128): JS: ImageLoader:cancelImageLoad url=http://img.funshion.com/pictures/media/list/115/328/115328_360_504_ott_poster.jpg?1416365769
+11-28 15:15:39.207 D/cocos2d-x debug info(14128): JS: ImageLoader:cancelImageLoad url=http://img.funshion.com/pictures/media/list/116/173/116173_360_504_ott_poster.jpg?1416730820
+11-28 15:15:39.207 D/cocos2d-x debug info(14128): JS: ImageLoader:cancelImageLoad url=http://img.funshion.com/pictures/media/list/116/694/116694_360_504_ott_poster.jpg?1415849476
+11-28 15:15:39.207 D/cocos2d-x debug info(14128): JS: ImageLoader:cancelImageLoad url=http://img.funshion.com/pictures/media/list/114/977/114977_360_504_ott_poster.jpg?1416555966
+11-28 15:15:39.207 D/cocos2d-x debug info(14128): JS: ImageLoader:cancelImageLoad url=http://img.funshion.com/pictures/media/list/107/885/107885_360_504_ott_poster.jpg?1416678784
+11-28 15:15:39.207 D/cocos2d-x debug info(14128): JS: ImageLoader:cancelImageLoad url=http://img.funshion.com/pictures/media/list/114/040/114040_360_504_ott_poster.jpg?1415806782
+11-28 15:15:39.217 D/cocos2d-x debug info(14128): JS: zhangmd:FunTableView:setFocusImageSize, size is:(340,562)
+11-28 15:15:39.217 D/cocos2d-x debug info(14128): JS: zhangmd:FunTableView:setFocusImageSize, focussize is:(370,592)
+11-28 15:15:39.217 D/cocos2d-x debug info(14128): JS: HomeMoreH--45true
+11-28 15:15:39.217 D/cocos2d-x debug info(14128): JS: zhangmd:FunTableView:calculateFullVisibleIndex begain,startidx=0,endidx=0,startidx2=0,endidx2=0
+11-28 15:15:39.217 D/cocos2d-x debug info(14128): JS: calculateLastPageIndex 1
+11-28 15:15:39.227 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/90/c2a2ddfe2422257d39bd0c9f5d84fc.png
+11-28 15:15:39.227 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/90/c2a2ddfe2422257d39bd0c9f5d84fc.png', 0, 17)
+11-28 15:15:39.227 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/e0/4e3c9761e9227f6a5e1723c7c26e90.png
+11-28 15:15:39.237 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/e0/4e3c9761e9227f6a5e1723c7c26e90.png', 0, 18)
+11-28 15:15:39.237 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/e9/02f986a0fd93124c2491a0e164f345.png
+11-28 15:15:39.237 D/cocos2d-x debug info(14128): nativeTes2Callback  [002]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/e9/02f986a0fd93124c2491a0e164f345.png', 0, 19)
+11-28 15:15:39.237 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/cb/cac0ef74d5d451b3a1e7a655f9cbea.png
+11-28 15:15:39.237 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/cb/cac0ef74d5d451b3a1e7a655f9cbea.png', 0, 20)
+11-28 15:15:39.237 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/d9/74ba69abd71b0cb388ac8c877f5f96.png
+11-28 15:15:39.237 D/cocos2d-x debug info(14128): nativeTes2Callback  [002]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/d9/74ba69abd71b0cb388ac8c877f5f96.png', 0, 21)
+11-28 15:15:39.237 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:39.237 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:39.237 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord   16 Android-2.local. AAAA FE80:0000:0000:0000:026D:0EFF:FE03:A545
+11-28 15:15:39.237 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:39.247 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/f2/957e4e2b89b4d3c1725ce11e309869.png
+11-28 15:15:39.247 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/f2/957e4e2b89b4d3c1725ce11e309869.png', 0, 22)
+11-28 15:15:39.247 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/89/b81234e7e43dc287bca28642f04cee.png
+11-28 15:15:39.247 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/89/b81234e7e43dc287bca28642f04cee.png', 0, 23)
+11-28 15:15:39.247 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/a9/1895df03762f60a149ef998a2b5dd1.png
+11-28 15:15:39.247 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/a9/1895df03762f60a149ef998a2b5dd1.png', 0, 24)
+11-28 15:15:39.247 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/d0/556da1dd8f77b2a81556b495a9f932.png
+11-28 15:15:39.247 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/d0/556da1dd8f77b2a81556b495a9f932.png', 0, 25)
+11-28 15:15:39.247 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/68/68f0364c1cfcf280eefe57ad00192f.png
+11-28 15:15:39.257 D/cocos2d-x debug info(14128): nativeTes2Callback  [002]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/68/68f0364c1cfcf280eefe57ad00192f.png', 0, 26)
+11-28 15:15:39.257 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/65/ddb4f7f5aedc24be9cfff281747e0b.png
+11-28 15:15:39.257 D/cocos2d-x debug info(14128): nativeTes2Callback  [002]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/65/ddb4f7f5aedc24be9cfff281747e0b.png', 0, 27)
+11-28 15:15:39.257 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/f3/ecf40f25dfc0421e52a9eff4e354f1.png
+11-28 15:15:39.257 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/f3/ecf40f25dfc0421e52a9eff4e354f1.png', 0, 28)
+11-28 15:15:39.257 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/b0/359a27fd3f9d17d9eef4556d7667fa.png
+11-28 15:15:39.257 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/b0/359a27fd3f9d17d9eef4556d7667fa.png', 0, 29)
+11-28 15:15:39.257 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/a6/eae6dd14cc43ca4e9164b79c316a65.png
+11-28 15:15:39.257 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/a6/eae6dd14cc43ca4e9164b79c316a65.png', 0, 30)
+11-28 15:15:39.257 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/e6/5da6d05f5cbe19bca0e35fe0a5f184.png
+11-28 15:15:39.267 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/e6/5da6d05f5cbe19bca0e35fe0a5f184.png', 0, 31)
+11-28 15:15:39.267 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/be/e5b32df19a369e82bd7f58fac89d97.png
+11-28 15:15:39.267 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/be/e5b32df19a369e82bd7f58fac89d97.png', 0, 32)
+11-28 15:15:39.267 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/e0/4e3c9761e9227f6a5e1723c7c26e90.png
+11-28 15:15:39.267 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/e0/4e3c9761e9227f6a5e1723c7c26e90.png', 0, 33)
+11-28 15:15:39.267 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/74/1769913d67c31335f0454bf7b3ee7c.png
+11-28 15:15:39.267 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/74/1769913d67c31335f0454bf7b3ee7c.png', 0, 34)
+11-28 15:15:39.267 D/AppActivity(14128): hideSplash, changeFocus, surfaceView != null
+11-28 15:15:39.267 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/81/1e608519e72ad43f08e5bc955768ae.png
+11-28 15:15:39.267 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/81/1e608519e72ad43f08e5bc955768ae.png', 0, 35)
+11-28 15:15:39.277 D/cocos2d-x debug info(14128): JS: funtv.ImageLoader.sImagePath=/data/data/tv.fun.launcher/files/fun_download/bd/76bffbfd3ae06dce8d18aa85030e72.png
+11-28 15:15:39.277 D/cocos2d-x debug info(14128): nativeTes2Callback  [001]funtv.ImageLoader.imageCallback('/data/data/tv.fun.launcher/files/fun_download/bd/76bffbfd3ae06dce8d18aa85030e72.png', 0, 36)
+11-28 15:15:39.307 D/cocos2d-x debug info(14128): trace_frame: 69.215347
+11-28 15:15:39.347 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:39.347 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:39.347 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord   16 Android-2.local. AAAA FE80:0000:0000:0000:026D:0EFF:FE03:A545
+11-28 15:15:39.347 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:39.347 D/mdns    ( 4397): SendResponses: Next in 296 ticks
+11-28 15:15:39.357 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.367 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.377 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.377 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.387 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.387 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.387 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:39.387 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:39.387 D/mdns    ( 4397): mDNS_Execute: Skipping LocalAuthRecord   16 Android-2.local. AAAA FE80:0000:0000:0000:026D:0EFF:FE03:A545
+11-28 15:15:39.387 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:39.387 D/mdns    ( 4397): Announcing 006d0e03a545@MiniMax._raop._tcp.local. (TXT) 7
+11-28 15:15:39.387 D/mdns    ( 4397): Announcing _services._dns-sd._udp.local. (PTR) 7
+11-28 15:15:39.387 D/mdns    ( 4397): Announcing _raop._tcp.local. (PTR) 7
+11-28 15:15:39.387 D/mdns    ( 4397): Announcing MiniMax._airplay._tcp.local. (TXT) 7
+11-28 15:15:39.387 D/mdns    ( 4397): Announcing _services._dns-sd._udp.local. (PTR) 7
+11-28 15:15:39.387 D/mdns    ( 4397): Announcing _airplay._tcp.local. (PTR) 7
+11-28 15:15:39.387 D/mdns    ( 4397): Announcing 006d0e03a545@MiniMax._raop._tcp.local. (SRV) 7
+11-28 15:15:39.387 D/mdns    ( 4397): Announcing MiniMax._airplay._tcp.local. (SRV) 7
+11-28 15:15:39.387 D/mdns    ( 4397): Announcing 147.13.16.172.in-addr.arpa. (PTR) 7
+11-28 15:15:39.387 D/mdns    ( 4397): Announcing 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. (PTR) 7
+11-28 15:15:39.387 D/mdns    ( 4397): Announcing Android-2.local. (Addr) 7
+11-28 15:15:39.387 D/mdns    ( 4397): Announcing Android-2.local. (AAAA) 7
+11-28 15:15:39.387 D/mdns    ( 4397): SendResponses: Sending 0 Deregistrations, 12 Announcements, 0 Answers, 5 Additionals on 412B6F38
+11-28 15:15:39.387 D/mdns    ( 4397): SendResponses: Next in 1024 ticks
+11-28 15:15:39.387 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:39.387 D/mdns    ( 4397): mDNS_Execute: Delivering Add event with LocalAuthRecord    4 Android-2.local. Addr 172.16.13.147
+11-28 15:15:39.387 D/mdns    ( 4397): mDNS_Execute: Delivering Add event with LocalAuthRecord   16 Android-2.local. AAAA FE80:0000:0000:0000:026D:0EFF:FE03:A545
+11-28 15:15:39.387 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:39.387 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.147 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:39.387 D/mdns    ( 4397): Received Response from 172.16.13.147   addressed to 224.0.0.251     on 412B6F38 with  0 Questions, 12 Answers,  0 Authorities,  5 Additionals 661 bytes LLQType 0
+11-28 15:15:39.397 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:026D:0EFF:FE03:A545 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:39.397 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:026D:0EFF:FE03:A545 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions, 12 Answers,  0 Authorities,  5 Additionals 661 bytes LLQType 0
+11-28 15:15:39.397 D/mdns    ( 4397): Found record size   115 interface 412B6F38 already in cache:  115 006d0e03a545@MiniMax._raop._tcp.local. TXT ch=2¦cn=0,1¦da=true¦ek=1¦et=0,1¦md=0,1,2¦pw=false¦sm=false¦sr=44100¦ss=16¦sv=false¦tp=UDP¦txtvers=
+11-28 15:15:39.397 D/mdns    ( 4397): Found record size    75 interface 412B6F38 already in cache:   75 MiniMax._airplay._tcp.local. TXT deviceid=00:6d:0e:03:a5:45¦features=0x2077¦model=AppleTV2,1¦srcvers=101.28
+11-28 15:15:39.397 D/mdns    ( 4397): Found record size    78 interface 412B6F38 already in cache:   78 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. NSEC PTR 
+11-28 15:15:39.407 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.437 D/dalvikvm(14128): GC_CONCURRENT freed 5302K, 69% free 5876K/18528K, paused 3ms+3ms, total 28ms
+11-28 15:15:39.437 D/dalvikvm(14128): WAIT_FOR_CONCURRENT_GC blocked 20ms
+11-28 15:15:39.437 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.447 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.447 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.457 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.467 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.487 D/dalvikvm(14128): GC_CONCURRENT freed 632K, 70% free 5742K/18528K, paused 2ms+3ms, total 25ms
+11-28 15:15:39.487 D/dalvikvm(14128): WAIT_FOR_CONCURRENT_GC blocked 21ms
+11-28 15:15:39.487 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.487 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:39.487 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:39.497 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.507 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.527 D/dalvikvm(14128): GC_CONCURRENT freed 267K, 68% free 5983K/18528K, paused 2ms+3ms, total 26ms
+11-28 15:15:39.527 D/dalvikvm(14128): WAIT_FOR_CONCURRENT_GC blocked 18ms
+11-28 15:15:39.527 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.537 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.537 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.547 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.547 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.567 D/dalvikvm(14128): GC_CONCURRENT freed 643K, 69% free 5913K/18528K, paused 3ms+2ms, total 27ms
+11-28 15:15:39.567 D/dalvikvm(14128): WAIT_FOR_CONCURRENT_GC blocked 16ms
+11-28 15:15:39.567 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.577 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.587 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.607 D/dalvikvm(14128): GC_CONCURRENT freed 494K, 68% free 5994K/18528K, paused 3ms+2ms, total 25ms
+11-28 15:15:39.607 D/dalvikvm(14128): WAIT_FOR_CONCURRENT_GC blocked 17ms
+11-28 15:15:39.607 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.607 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.607 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.617 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.627 D/cocos2d-x debug info(14128): cocos2d: fullPathForFilename: No file found at Arial. Possible missing file.
+11-28 15:15:39.637 D/dalvikvm(14128): GC_CONCURRENT freed 714K, 69% free 5874K/18528K, paused 2ms+3ms, total 27ms
+11-28 15:15:39.637 D/dalvikvm(14128): WAIT_FOR_CONCURRENT_GC blocked 13ms
+11-28 15:15:39.727 D/cocos2d-x debug info(14128): trace_frame: 61.086468
+11-28 15:15:39.827 D/cocos2d-x debug info(14128): trace_frame: 59.503742
+11-28 15:15:39.857 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.164 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:39.857 D/mdns    ( 4397): Received Response from 172.16.13.164   addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  0 Additionals 333 bytes LLQType 0
+11-28 15:15:39.927 D/cocos2d-x debug info(14128): trace_frame: 59.702682
+11-28 15:15:39.947 D/dalvikvm(27391): GC_CONCURRENT freed 426K, 20% free 4339K/5404K, paused 3ms+2ms, total 20ms
+11-28 15:15:40.037 D/cocos2d-x debug info(14128): trace_frame: 60.332859
+11-28 15:15:40.157 D/cocos2d-x debug info(14128): trace_frame: 59.711170
+11-28 15:15:40.277 D/cocos2d-x debug info(14128): trace_frame: 60.572495
+11-28 15:15:40.377 D/cocos2d-x debug info(14128): trace_frame: 59.526760
+11-28 15:15:40.387 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:40.387 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:40.387 D/mdns    ( 4397): Announcing 006d0e03a545@MiniMax._raop._tcp.local. (TXT) 6
+11-28 15:15:40.387 D/mdns    ( 4397): Announcing _services._dns-sd._udp.local. (PTR) 6
+11-28 15:15:40.387 D/mdns    ( 4397): Announcing _raop._tcp.local. (PTR) 6
+11-28 15:15:40.387 D/mdns    ( 4397): Announcing MiniMax._airplay._tcp.local. (TXT) 6
+11-28 15:15:40.387 D/mdns    ( 4397): Announcing _services._dns-sd._udp.local. (PTR) 6
+11-28 15:15:40.387 D/mdns    ( 4397): Announcing _airplay._tcp.local. (PTR) 6
+11-28 15:15:40.387 D/mdns    ( 4397): Announcing 006d0e03a545@MiniMax._raop._tcp.local. (SRV) 6
+11-28 15:15:40.387 D/mdns    ( 4397): Announcing MiniMax._airplay._tcp.local. (SRV) 6
+11-28 15:15:40.387 D/mdns    ( 4397): Announcing 147.13.16.172.in-addr.arpa. (PTR) 6
+11-28 15:15:40.387 D/mdns    ( 4397): Announcing 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. (PTR) 6
+11-28 15:15:40.387 D/mdns    ( 4397): Announcing Android-2.local. (Addr) 6
+11-28 15:15:40.387 D/mdns    ( 4397): Announcing Android-2.local. (AAAA) 6
+11-28 15:15:40.387 D/mdns    ( 4397): SendResponses: Sending 0 Deregistrations, 12 Announcements, 0 Answers, 5 Additionals on 412B6F38
+11-28 15:15:40.397 D/mdns    ( 4397): SendResponses: Next in 2048 ticks
+11-28 15:15:40.397 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.147 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:40.397 D/mdns    ( 4397): Received Response from 172.16.13.147   addressed to 224.0.0.251     on 412B6F38 with  0 Questions, 12 Answers,  0 Authorities,  5 Additionals 661 bytes LLQType 0
+11-28 15:15:40.397 D/mdns    ( 4397): Found record size   115 interface 412B6F38 already in cache:  115 006d0e03a545@MiniMax._raop._tcp.local. TXT ch=2¦cn=0,1¦da=true¦ek=1¦et=0,1¦md=0,1,2¦pw=false¦sm=false¦sr=44100¦ss=16¦sv=false¦tp=UDP¦txtvers=
+11-28 15:15:40.397 D/mdns    ( 4397): Found record size    75 interface 412B6F38 already in cache:   75 MiniMax._airplay._tcp.local. TXT deviceid=00:6d:0e:03:a5:45¦features=0x2077¦model=AppleTV2,1¦srcvers=101.28
+11-28 15:15:40.397 D/mdns    ( 4397): Found record size    78 interface 412B6F38 already in cache:   78 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. NSEC PTR 
+11-28 15:15:40.397 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:026D:0EFF:FE03:A545 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:40.397 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:026D:0EFF:FE03:A545 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions, 12 Answers,  0 Authorities,  5 Additionals 661 bytes LLQType 0
+11-28 15:15:40.397 D/mdns    ( 4397): Found record size   115 interface 412B6F38 already in cache:  115 006d0e03a545@MiniMax._raop._tcp.local. TXT ch=2¦cn=0,1¦da=true¦ek=1¦et=0,1¦md=0,1,2¦pw=false¦sm=false¦sr=44100¦ss=16¦sv=false¦tp=UDP¦txtvers=
+11-28 15:15:40.397 D/mdns    ( 4397): Found record size    75 interface 412B6F38 already in cache:   75 MiniMax._airplay._tcp.local. TXT deviceid=00:6d:0e:03:a5:45¦features=0x2077¦model=AppleTV2,1¦srcvers=101.28
+11-28 15:15:40.397 D/mdns    ( 4397): Found record size    78 interface 412B6F38 already in cache:   78 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. NSEC PTR 
+11-28 15:15:40.487 D/cocos2d-x debug info(14128): trace_frame: 59.876656
+11-28 15:15:40.487 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:40.487 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:40.617 D/cocos2d-x debug info(14128): trace_frame: 60.104408
+11-28 15:15:40.717 D/cocos2d-x debug info(14128): trace_frame: 60.468899
+11-28 15:15:40.837 D/cocos2d-x debug info(14128): trace_frame: 60.111118
+11-28 15:15:40.877 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.187 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:40.877 D/mdns    ( 4397): Received Response from 172.16.13.187   addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  0 Additionals 232 bytes LLQType 0
+11-28 15:15:40.967 D/cocos2d-x debug info(14128): trace_frame: 60.076042
+11-28 15:15:41.037 D/dalvikvm(22184): GC_CONCURRENT freed 823K, 19% free 6658K/8128K, paused 2ms+4ms, total 54ms
+11-28 15:15:41.037 D/dalvikvm(22184): WAIT_FOR_CONCURRENT_GC blocked 26ms
+11-28 15:15:41.067 D/cocos2d-x debug info(14128): trace_frame: 54.768509
+11-28 15:15:41.167 D/cocos2d-x debug info(14128): trace_frame: 65.239479
+11-28 15:15:41.277 D/cocos2d-x debug info(14128): trace_frame: 59.524395
+11-28 15:15:41.387 D/cocos2d-x debug info(14128): trace_frame: 60.503910
+11-28 15:15:41.487 D/cocos2d-x debug info(14128): trace_frame: 59.955635
+11-28 15:15:41.607 D/cocos2d-x debug info(14128): trace_frame: 59.201126
+11-28 15:15:41.717 D/cocos2d-x debug info(14128): trace_frame: 60.871155
+11-28 15:15:41.827 D/cocos2d-x debug info(14128): trace_frame: 59.595936
+11-28 15:15:41.847 D/dalvikvm(22184): GC_FOR_ALLOC freed 321K, 19% free 6621K/8128K, paused 48ms, total 48ms
+11-28 15:15:41.897 D/dalvikvm(22184): GC_FOR_ALLOC freed 50K, 19% free 6619K/8128K, paused 40ms, total 40ms
+11-28 15:15:41.927 D/cocos2d-x debug info(14128): trace_frame: 59.158764
+11-28 15:15:41.937 D/dalvikvm(22184): GC_FOR_ALLOC freed 142K, 19% free 6594K/8128K, paused 39ms, total 39ms
+11-28 15:15:41.987 D/dalvikvm(22184): GC_FOR_ALLOC freed 118K, 19% free 6595K/8128K, paused 37ms, total 37ms
+11-28 15:15:42.037 D/cocos2d-x debug info(14128): trace_frame: 61.119373
+11-28 15:15:42.137 D/cocos2d-x debug info(14128): trace_frame: 59.700897
+11-28 15:15:42.257 D/cocos2d-x debug info(14128): trace_frame: 60.157616
+11-28 15:15:42.367 D/cocos2d-x debug info(14128): trace_frame: 60.104408
+11-28 15:15:42.387 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:42.397 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:42.397 D/mdns    ( 4397): Announcing 006d0e03a545@MiniMax._raop._tcp.local. (TXT) 5
+11-28 15:15:42.397 D/mdns    ( 4397): Announcing _services._dns-sd._udp.local. (PTR) 5
+11-28 15:15:42.397 D/mdns    ( 4397): Announcing _raop._tcp.local. (PTR) 5
+11-28 15:15:42.397 D/mdns    ( 4397): Announcing MiniMax._airplay._tcp.local. (TXT) 5
+11-28 15:15:42.397 D/mdns    ( 4397): Announcing _services._dns-sd._udp.local. (PTR) 5
+11-28 15:15:42.397 D/mdns    ( 4397): Announcing _airplay._tcp.local. (PTR) 5
+11-28 15:15:42.397 D/mdns    ( 4397): Announcing 006d0e03a545@MiniMax._raop._tcp.local. (SRV) 5
+11-28 15:15:42.397 D/mdns    ( 4397): Announcing MiniMax._airplay._tcp.local. (SRV) 5
+11-28 15:15:42.397 D/mdns    ( 4397): Announcing 147.13.16.172.in-addr.arpa. (PTR) 5
+11-28 15:15:42.397 D/mdns    ( 4397): Announcing 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. (PTR) 5
+11-28 15:15:42.397 D/mdns    ( 4397): Announcing Android-2.local. (Addr) 5
+11-28 15:15:42.397 D/mdns    ( 4397): Announcing Android-2.local. (AAAA) 5
+11-28 15:15:42.397 D/mdns    ( 4397): SendResponses: Sending 0 Deregistrations, 12 Announcements, 0 Answers, 5 Additionals on 412B6F38
+11-28 15:15:42.397 D/mdns    ( 4397): SendResponses: Next in 4096 ticks
+11-28 15:15:42.397 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.147 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:42.397 D/mdns    ( 4397): Received Response from 172.16.13.147   addressed to 224.0.0.251     on 412B6F38 with  0 Questions, 12 Answers,  0 Authorities,  5 Additionals 661 bytes LLQType 0
+11-28 15:15:42.397 D/mdns    ( 4397): Found record size   115 interface 412B6F38 already in cache:  115 006d0e03a545@MiniMax._raop._tcp.local. TXT ch=2¦cn=0,1¦da=true¦ek=1¦et=0,1¦md=0,1,2¦pw=false¦sm=false¦sr=44100¦ss=16¦sv=false¦tp=UDP¦txtvers=
+11-28 15:15:42.397 D/mdns    ( 4397): Found record size    75 interface 412B6F38 already in cache:   75 MiniMax._airplay._tcp.local. TXT deviceid=00:6d:0e:03:a5:45¦features=0x2077¦model=AppleTV2,1¦srcvers=101.28
+11-28 15:15:42.397 D/mdns    ( 4397): Found record size    78 interface 412B6F38 already in cache:   78 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. NSEC PTR 
+11-28 15:15:42.397 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:026D:0EFF:FE03:A545 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:42.397 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:026D:0EFF:FE03:A545 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions, 12 Answers,  0 Authorities,  5 Additionals 661 bytes LLQType 0
+11-28 15:15:42.397 D/mdns    ( 4397): Found record size   115 interface 412B6F38 already in cache:  115 006d0e03a545@MiniMax._raop._tcp.local. TXT ch=2¦cn=0,1¦da=true¦ek=1¦et=0,1¦md=0,1,2¦pw=false¦sm=false¦sr=44100¦ss=16¦sv=false¦tp=UDP¦txtvers=
+11-28 15:15:42.397 D/mdns    ( 4397): Found record size    75 interface 412B6F38 already in cache:   75 MiniMax._airplay._tcp.local. TXT deviceid=00:6d:0e:03:a5:45¦features=0x2077¦model=AppleTV2,1¦srcvers=101.28
+11-28 15:15:42.397 D/mdns    ( 4397): Found record size    78 interface 412B6F38 already in cache:   78 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. NSEC PTR 
+11-28 15:15:42.467 D/cocos2d-x debug info(14128): trace_frame: 59.961021
+11-28 15:15:42.497 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:42.497 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:42.567 D/cocos2d-x debug info(14128): trace_frame: 59.959824
+11-28 15:15:42.687 D/cocos2d-x debug info(14128): trace_frame: 60.025043
+11-28 15:15:42.727 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.164 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:42.727 D/mdns    ( 4397): Received Response from 172.16.13.164   addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  0 Additionals 202 bytes LLQType 0
+11-28 15:15:42.787 D/cocos2d-x debug info(14128): trace_frame: 59.882629
+11-28 15:15:42.907 D/cocos2d-x debug info(14128): trace_frame: 60.106476
+11-28 15:15:43.007 D/cocos2d-x debug info(14128): trace_frame: 59.098732
+11-28 15:15:43.077 D/dalvikvm(22184): GC_CONCURRENT freed 709K, 19% free 6597K/8128K, paused 2ms+4ms, total 43ms
+11-28 15:15:43.117 D/cocos2d-x debug info(14128): trace_frame: 60.820381
+11-28 15:15:43.217 D/cocos2d-x debug info(14128): trace_frame: 59.971817
+11-28 15:15:43.337 D/cocos2d-x debug info(14128): trace_frame: 60.003944
+11-28 15:15:43.457 D/cocos2d-x debug info(14128): trace_frame: 60.016293
+11-28 15:15:43.557 D/cocos2d-x debug info(14128): trace_frame: 59.995800
+11-28 15:15:43.657 D/cocos2d-x debug info(14128): trace_frame: 59.956230
+11-28 15:15:43.757 D/cocos2d-x debug info(14128): trace_frame: 59.430656
+11-28 15:15:43.867 D/cocos2d-x debug info(14128): trace_frame: 60.526402
+11-28 15:15:43.987 D/cocos2d-x debug info(14128): trace_frame: 60.008049
+11-28 15:15:44.107 D/cocos2d-x debug info(14128): trace_frame: 60.046150
+11-28 15:15:44.147 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.187 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:44.147 D/mdns    ( 4397): Received Response from 172.16.13.187   addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  0 Additionals 202 bytes LLQType 0
+11-28 15:15:44.207 D/cocos2d-x debug info(14128): trace_frame: 59.991001
+11-28 15:15:44.317 D/cocos2d-x debug info(14128): trace_frame: 60.022469
+11-28 15:15:44.417 D/cocos2d-x debug info(14128): trace_frame: 59.970619
+11-28 15:15:44.517 D/cocos2d-x debug info(14128): trace_frame: 59.995800
+11-28 15:15:44.617 D/cocos2d-x debug info(14128): trace_frame: 59.930481
+11-28 15:15:44.737 D/cocos2d-x debug info(14128): trace_frame: 60.030704
+11-28 15:15:44.837 D/cocos2d-x debug info(14128): trace_frame: 59.990402
+11-28 15:15:44.937 D/cocos2d-x debug info(14128): trace_frame: 59.998806
+11-28 15:15:45.057 D/cocos2d-x debug info(14128): trace_frame: 60.025043
+11-28 15:15:45.157 D/cocos2d-x debug info(14128): trace_frame: 59.985004
+11-28 15:15:45.257 D/cocos2d-x debug info(14128): trace_frame: 59.440075
+11-28 15:15:45.367 D/cocos2d-x debug info(14128): trace_frame: 60.528500
+11-28 15:15:45.377 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.164 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:45.377 D/mdns    ( 4397): Received Response from 172.16.13.164   addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  0 Additionals 290 bytes LLQType 0
+11-28 15:15:45.467 D/cocos2d-x debug info(14128): trace_frame: 59.935272
+11-28 15:15:45.587 D/cocos2d-x debug info(14128): trace_frame: 60.046665
+11-28 15:15:45.687 D/cocos2d-x debug info(14128): trace_frame: 59.093506
+11-28 15:15:45.807 D/cocos2d-x debug info(14128): trace_frame: 60.777073
+11-28 15:15:45.917 D/cocos2d-x debug info(14128): trace_frame: 59.972584
+11-28 15:15:45.987 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.203 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:45.997 D/mdns    ( 4397): Received Response from 172.16.13.203   addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  1 Answer,   0 Authorities,  0 Additionals 38 bytes LLQType 0
+11-28 15:15:46.027 D/cocos2d-x debug info(14128): trace_frame: 59.377708
+11-28 15:15:46.137 D/cocos2d-x debug info(14128): trace_frame: 60.573025
+11-28 15:15:46.257 D/cocos2d-x debug info(14128): trace_frame: 59.998802
+11-28 15:15:46.357 D/cocos2d-x debug info(14128): trace_frame: 59.986801
+11-28 15:15:46.397 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:46.397 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:46.397 D/mdns    ( 4397): Announcing 006d0e03a545@MiniMax._raop._tcp.local. (TXT) 4
+11-28 15:15:46.397 D/mdns    ( 4397): Announcing _services._dns-sd._udp.local. (PTR) 4
+11-28 15:15:46.397 D/mdns    ( 4397): Announcing _raop._tcp.local. (PTR) 4
+11-28 15:15:46.397 D/mdns    ( 4397): Announcing MiniMax._airplay._tcp.local. (TXT) 4
+11-28 15:15:46.397 D/mdns    ( 4397): Announcing _services._dns-sd._udp.local. (PTR) 4
+11-28 15:15:46.397 D/mdns    ( 4397): Announcing _airplay._tcp.local. (PTR) 4
+11-28 15:15:46.397 D/mdns    ( 4397): Announcing 006d0e03a545@MiniMax._raop._tcp.local. (SRV) 4
+11-28 15:15:46.397 D/mdns    ( 4397): Announcing MiniMax._airplay._tcp.local. (SRV) 4
+11-28 15:15:46.397 D/mdns    ( 4397): Announcing 147.13.16.172.in-addr.arpa. (PTR) 4
+11-28 15:15:46.397 D/mdns    ( 4397): Announcing 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. (PTR) 4
+11-28 15:15:46.397 D/mdns    ( 4397): Announcing Android-2.local. (Addr) 4
+11-28 15:15:46.397 D/mdns    ( 4397): Announcing Android-2.local. (AAAA) 4
+11-28 15:15:46.397 D/mdns    ( 4397): SendResponses: Sending 0 Deregistrations, 12 Announcements, 0 Answers, 5 Additionals on 412B6F38
+11-28 15:15:46.397 D/mdns    ( 4397): SendResponses: Next in 8192 ticks
+11-28 15:15:46.397 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.147 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:46.397 D/mdns    ( 4397): Received Response from 172.16.13.147   addressed to 224.0.0.251     on 412B6F38 with  0 Questions, 12 Answers,  0 Authorities,  5 Additionals 661 bytes LLQType 0
+11-28 15:15:46.397 D/mdns    ( 4397): Found record size   115 interface 412B6F38 already in cache:  115 006d0e03a545@MiniMax._raop._tcp.local. TXT ch=2¦cn=0,1¦da=true¦ek=1¦et=0,1¦md=0,1,2¦pw=false¦sm=false¦sr=44100¦ss=16¦sv=false¦tp=UDP¦txtvers=
+11-28 15:15:46.397 D/mdns    ( 4397): Found record size    75 interface 412B6F38 already in cache:   75 MiniMax._airplay._tcp.local. TXT deviceid=00:6d:0e:03:a5:45¦features=0x2077¦model=AppleTV2,1¦srcvers=101.28
+11-28 15:15:46.397 D/mdns    ( 4397): Found record size    78 interface 412B6F38 already in cache:   78 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. NSEC PTR 
+11-28 15:15:46.397 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:026D:0EFF:FE03:A545 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:46.397 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:026D:0EFF:FE03:A545 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions, 12 Answers,  0 Authorities,  5 Additionals 661 bytes LLQType 0
+11-28 15:15:46.397 D/mdns    ( 4397): Found record size   115 interface 412B6F38 already in cache:  115 006d0e03a545@MiniMax._raop._tcp.local. TXT ch=2¦cn=0,1¦da=true¦ek=1¦et=0,1¦md=0,1,2¦pw=false¦sm=false¦sr=44100¦ss=16¦sv=false¦tp=UDP¦txtvers=
+11-28 15:15:46.397 D/mdns    ( 4397): Found record size    75 interface 412B6F38 already in cache:   75 MiniMax._airplay._tcp.local. TXT deviceid=00:6d:0e:03:a5:45¦features=0x2077¦model=AppleTV2,1¦srcvers=101.28
+11-28 15:15:46.397 D/mdns    ( 4397): Found record size    78 interface 412B6F38 already in cache:   78 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. NSEC PTR 
+11-28 15:15:46.457 D/cocos2d-x debug info(14128): trace_frame: 59.974209
+11-28 15:15:46.497 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:46.497 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:46.557 D/cocos2d-x debug info(14128): trace_frame: 59.906540
+11-28 15:15:46.627 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.187 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:46.627 D/mdns    ( 4397): Received Response from 172.16.13.187   addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  0 Additionals 290 bytes LLQType 0
+11-28 15:15:46.667 D/cocos2d-x debug info(14128): trace_frame: 60.070885
+11-28 15:15:46.747 D/dalvikvm(22184): GC_CONCURRENT freed 708K, 19% free 6612K/8128K, paused 2ms+4ms, total 43ms
+11-28 15:15:46.767 D/cocos2d-x debug info(14128): trace_frame: 59.878452
+11-28 15:15:46.887 D/cocos2d-x debug info(14128): trace_frame: 60.132805
+11-28 15:15:47.007 D/cocos2d-x debug info(14128): trace_frame: 60.006527
+11-28 15:15:47.107 D/cocos2d-x debug info(14128): trace_frame: 59.991001
+11-28 15:15:47.207 D/cocos2d-x debug info(14128): trace_frame: 59.928684
+11-28 15:15:47.317 D/cocos2d-x debug info(14128): trace_frame: 60.056458
+11-28 15:15:47.437 D/cocos2d-x debug info(14128): trace_frame: 60.001373
+11-28 15:15:47.557 D/cocos2d-x debug info(14128): trace_frame: 59.944336
+11-28 15:15:47.667 D/cocos2d-x debug info(14128): trace_frame: 60.085320
+11-28 15:15:47.767 D/cocos2d-x debug info(14128): trace_frame: 59.974812
+11-28 15:15:47.887 D/cocos2d-x debug info(14128): trace_frame: 60.030190
+11-28 15:15:48.007 D/cocos2d-x debug info(14128): trace_frame: 60.016285
+11-28 15:15:48.107 D/cocos2d-x debug info(14128): trace_frame: 59.947845
+11-28 15:15:48.207 D/cocos2d-x debug info(14128): trace_frame: 59.978409
+11-28 15:15:48.247 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:48.247 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions,  1 Answer,   0 Authorities,  1 Additional  121 bytes LLQType 0
+11-28 15:15:48.317 D/cocos2d-x debug info(14128): trace_frame: 60.034306
+11-28 15:15:48.417 D/cocos2d-x debug info(14128): trace_frame: 59.991005
+11-28 15:15:48.457 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:48.457 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions, 11 Answers,  0 Authorities,  3 Additionals 414 bytes LLQType 0
+11-28 15:15:48.517 D/cocos2d-x debug info(14128): trace_frame: 59.968819
+11-28 15:15:48.637 D/cocos2d-x debug info(14128): trace_frame: 60.048210
+11-28 15:15:48.657 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:48.657 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  3 Additionals 209 bytes LLQType 0
+11-28 15:15:48.737 D/cocos2d-x debug info(14128): trace_frame: 59.919106
+11-28 15:15:48.857 D/cocos2d-x debug info(14128): trace_frame: 60.066246
+11-28 15:15:48.857 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.203 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:48.857 D/mdns    ( 4397): Received Response from 172.16.13.203   addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  0 Additionals 228 bytes LLQType 0
+11-28 15:15:48.957 D/cocos2d-x debug info(14128): trace_frame: 59.979008
+11-28 15:15:49.067 D/cocos2d-x debug info(14128): trace_frame: 60.007030
+11-28 15:15:49.167 D/cocos2d-x debug info(14128): trace_frame: 59.997604
+11-28 15:15:49.267 D/cocos2d-x debug info(14128): trace_frame: 59.946648
+11-28 15:15:49.387 D/cocos2d-x debug info(14128): trace_frame: 59.903809
+11-28 15:15:49.507 D/cocos2d-x debug info(14128): trace_frame: 60.136425
+11-28 15:15:49.617 D/cocos2d-x debug info(14128): trace_frame: 60.036362
+11-28 15:15:49.687 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:49.687 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions, 11 Answers,  0 Authorities,  3 Additionals 414 bytes LLQType 0
+11-28 15:15:49.687 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 _apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:49.687 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 3be004d4._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:49.687 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 4210051d._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:49.687 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 46ed053e._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:49.687 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 470e053c._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:49.687 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 4cac0582._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:49.687 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 41660509._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:49.697 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.187 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:49.697 D/mdns    ( 4397): Received Response from 172.16.13.187   addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  0 Additionals 261 bytes LLQType 0
+11-28 15:15:49.717 D/cocos2d-x debug info(14128): trace_frame: 59.861717
+11-28 15:15:49.837 D/cocos2d-x debug info(14128): trace_frame: 60.113182
+11-28 15:15:49.887 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:49.887 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  3 Additionals 209 bytes LLQType 0
+11-28 15:15:49.887 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.14 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:49.887 D/mdns    ( 4397): Received Response from 172.16.13.14    addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  1 Answer,   0 Authorities,  0 Additionals 38 bytes LLQType 0
+11-28 15:15:49.937 D/cocos2d-x debug info(14128): trace_frame: 59.996399
+11-28 15:15:50.037 D/cocos2d-x debug info(14128): trace_frame: 59.972404
+11-28 15:15:50.157 D/cocos2d-x debug info(14128): trace_frame: 59.991085
+11-28 15:15:50.257 D/cocos2d-x debug info(14128): trace_frame: 59.982605
+11-28 15:15:50.367 D/cocos2d-x debug info(14128): trace_frame: 59.955635
+11-28 15:15:50.487 D/cocos2d-x debug info(14128): trace_frame: 60.074493
+11-28 15:15:50.587 D/cocos2d-x debug info(14128): trace_frame: 59.955635
+11-28 15:15:50.707 D/cocos2d-x debug info(14128): trace_frame: 59.952549
+11-28 15:15:50.817 D/cocos2d-x debug info(14128): trace_frame: 60.089447
+11-28 15:15:50.917 D/cocos2d-x debug info(14128): trace_frame: 59.967621
+11-28 15:15:51.037 D/cocos2d-x debug info(14128): trace_frame: 60.007030
+11-28 15:15:51.137 D/cocos2d-x debug info(14128): trace_frame: 59.988598
+11-28 15:15:51.257 D/cocos2d-x debug info(14128): trace_frame: 60.047695
+11-28 15:15:51.357 D/cocos2d-x debug info(14128): trace_frame: 59.920902
+11-28 15:15:51.467 D/cocos2d-x debug info(14128): trace_frame: 60.022465
+11-28 15:15:51.567 D/cocos2d-x debug info(14128): trace_frame: 59.993397
+11-28 15:15:51.667 D/cocos2d-x debug info(14128): trace_frame: 59.970016
+11-28 15:15:51.777 D/cocos2d-x debug info(14128): trace_frame: 59.819939
+11-28 15:15:51.847 D/dalvikvm(22184): GC_FOR_ALLOC freed 589K, 19% free 6592K/8128K, paused 40ms, total 40ms
+11-28 15:15:51.887 D/cocos2d-x debug info(14128): trace_frame: 60.200558
+11-28 15:15:51.987 D/cocos2d-x debug info(14128): trace_frame: 59.937668
+11-28 15:15:52.107 D/cocos2d-x debug info(14128): trace_frame: 60.026066
+11-28 15:15:52.207 D/cocos2d-x debug info(14128): trace_frame: 59.991600
+11-28 15:15:52.317 D/cocos2d-x debug info(14128): trace_frame: 60.005997
+11-28 15:15:52.437 D/cocos2d-x debug info(14128): trace_frame: 60.063152
+11-28 15:15:52.537 D/cocos2d-x debug info(14128): trace_frame: 59.961620
+11-28 15:15:52.547 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:52.547 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions, 11 Answers,  0 Authorities,  3 Additionals 414 bytes LLQType 0
+11-28 15:15:52.547 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 _apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:52.547 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 3be004d4._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:52.547 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 4210051d._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:52.547 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 46ed053e._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:52.547 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 470e053c._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:52.547 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 4cac0582._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:52.547 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 41660509._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:52.657 D/cocos2d-x debug info(14128): trace_frame: 60.016289
+11-28 15:15:52.757 D/cocos2d-x debug info(14128): trace_frame: 59.953838
+11-28 15:15:52.787 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:52.787 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  3 Additionals 209 bytes LLQType 0
+11-28 15:15:52.827 D/dalvikvm(22184): GC_CONCURRENT freed 779K, 19% free 6621K/8128K, paused 2ms+4ms, total 48ms
+11-28 15:15:52.857 D/cocos2d-x debug info(14128): trace_frame: 59.970013
+11-28 15:15:52.977 D/cocos2d-x debug info(14128): trace_frame: 59.915089
+11-28 15:15:53.087 D/cocos2d-x debug info(14128): trace_frame: 60.153473
+11-28 15:15:53.187 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.14 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:53.187 D/mdns    ( 4397): Received Response from 172.16.13.14    addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  0 Additionals 232 bytes LLQType 0
+11-28 15:15:53.187 D/cocos2d-x debug info(14128): trace_frame: 59.712780
+11-28 15:15:53.307 D/cocos2d-x debug info(14128): trace_frame: 60.216606
+11-28 15:15:53.407 D/cocos2d-x debug info(14128): trace_frame: 59.955635
+11-28 15:15:53.517 D/cocos2d-x debug info(14128): trace_frame: 60.074493
+11-28 15:15:53.637 D/cocos2d-x debug info(14128): trace_frame: 59.964874
+11-28 15:15:53.757 D/cocos2d-x debug info(14128): trace_frame: 60.032761
+11-28 15:15:53.867 D/cocos2d-x debug info(14128): trace_frame: 60.029671
+11-28 15:15:53.967 D/cocos2d-x debug info(14128): trace_frame: 59.973614
+11-28 15:15:54.087 D/cocos2d-x debug info(14128): trace_frame: 60.011665
+11-28 15:15:54.187 D/cocos2d-x debug info(14128): trace_frame: 59.971210
+11-28 15:15:54.287 D/cocos2d-x debug info(14128): trace_frame: 59.942455
+11-28 15:15:54.387 D/cocos2d-x debug info(14128): trace_frame: 59.992798
+11-28 15:15:54.397 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:54.397 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:54.397 D/mdns    ( 4397): Announcing 006d0e03a545@MiniMax._raop._tcp.local. (TXT) 3
+11-28 15:15:54.397 D/mdns    ( 4397): Announcing _services._dns-sd._udp.local. (PTR) 3
+11-28 15:15:54.397 D/mdns    ( 4397): Announcing _raop._tcp.local. (PTR) 3
+11-28 15:15:54.397 D/mdns    ( 4397): Announcing MiniMax._airplay._tcp.local. (TXT) 3
+11-28 15:15:54.397 D/mdns    ( 4397): Announcing _services._dns-sd._udp.local. (PTR) 3
+11-28 15:15:54.397 D/mdns    ( 4397): Announcing _airplay._tcp.local. (PTR) 3
+11-28 15:15:54.397 D/mdns    ( 4397): Announcing 006d0e03a545@MiniMax._raop._tcp.local. (SRV) 3
+11-28 15:15:54.397 D/mdns    ( 4397): Announcing MiniMax._airplay._tcp.local. (SRV) 3
+11-28 15:15:54.397 D/mdns    ( 4397): Announcing 147.13.16.172.in-addr.arpa. (PTR) 3
+11-28 15:15:54.397 D/mdns    ( 4397): Announcing 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. (PTR) 3
+11-28 15:15:54.397 D/mdns    ( 4397): Announcing Android-2.local. (Addr) 3
+11-28 15:15:54.397 D/mdns    ( 4397): Announcing Android-2.local. (AAAA) 3
+11-28 15:15:54.397 D/mdns    ( 4397): SendResponses: Sending 0 Deregistrations, 12 Announcements, 0 Answers, 5 Additionals on 412B6F38
+11-28 15:15:54.397 D/mdns    ( 4397): SendResponses: Next in 16384 ticks
+11-28 15:15:54.397 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.147 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:54.397 D/mdns    ( 4397): Received Response from 172.16.13.147   addressed to 224.0.0.251     on 412B6F38 with  0 Questions, 12 Answers,  0 Authorities,  5 Additionals 661 bytes LLQType 0
+11-28 15:15:54.397 D/mdns    ( 4397): Found record size   115 interface 412B6F38 already in cache:  115 006d0e03a545@MiniMax._raop._tcp.local. TXT ch=2¦cn=0,1¦da=true¦ek=1¦et=0,1¦md=0,1,2¦pw=false¦sm=false¦sr=44100¦ss=16¦sv=false¦tp=UDP¦txtvers=
+11-28 15:15:54.397 D/mdns    ( 4397): Found record size    75 interface 412B6F38 already in cache:   75 MiniMax._airplay._tcp.local. TXT deviceid=00:6d:0e:03:a5:45¦features=0x2077¦model=AppleTV2,1¦srcvers=101.28
+11-28 15:15:54.397 D/mdns    ( 4397): Found record size    78 interface 412B6F38 already in cache:   78 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. NSEC PTR 
+11-28 15:15:54.397 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:026D:0EFF:FE03:A545 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:54.397 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:026D:0EFF:FE03:A545 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions, 12 Answers,  0 Authorities,  5 Additionals 661 bytes LLQType 0
+11-28 15:15:54.397 D/mdns    ( 4397): Found record size   115 interface 412B6F38 already in cache:  115 006d0e03a545@MiniMax._raop._tcp.local. TXT ch=2¦cn=0,1¦da=true¦ek=1¦et=0,1¦md=0,1,2¦pw=false¦sm=false¦sr=44100¦ss=16¦sv=false¦tp=UDP¦txtvers=
+11-28 15:15:54.397 D/mdns    ( 4397): Found record size    75 interface 412B6F38 already in cache:   75 MiniMax._airplay._tcp.local. TXT deviceid=00:6d:0e:03:a5:45¦features=0x2077¦model=AppleTV2,1¦srcvers=101.28
+11-28 15:15:54.397 D/mdns    ( 4397): Found record size    78 interface 412B6F38 already in cache:   78 5.4.5.A.3.0.E.F.F.F.E.0.D.6.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa. NSEC PTR 
+11-28 15:15:54.497 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:54.497 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:54.507 D/cocos2d-x debug info(14128): trace_frame: 60.015266
+11-28 15:15:54.617 D/cocos2d-x debug info(14128): trace_frame: 60.046665
+11-28 15:15:54.717 D/cocos2d-x debug info(14128): trace_frame: 59.985607
+11-28 15:15:54.797 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:54.797 D/mdns    ( 4397): Received Response from 172.16.13.59    addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  2 Answers,  0 Authorities,  3 Additionals 123 bytes LLQType 0
+11-28 15:15:54.797 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:54.797 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:54.797 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions,  2 Answers,  0 Authorities,  3 Additionals 123 bytes LLQType 0
+11-28 15:15:54.817 D/cocos2d-x debug info(14128): trace_frame: 59.972412
+11-28 15:15:54.937 D/cocos2d-x debug info(14128): trace_frame: 60.034309
+11-28 15:15:55.057 D/cocos2d-x debug info(14128): trace_frame: 60.022465
+11-28 15:15:55.157 D/cocos2d-x debug info(14128): trace_frame: 59.990402
+11-28 15:15:55.217 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:55.217 D/mdns    ( 4397): Received Query from 172.16.13.59   :5353  to 224.0.0.251    :5353  on 0x412B6F38 with  3 Questions,  0 Answers, 11 Authorities,  1 Additional  381 bytes
+11-28 15:15:55.217 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:55.217 D/mdns    ( 4397): Received Query from FE80:0000:0000:0000:1025:C7A8:2910:3D29:5353  to FF02:0000:0000:0000:0000:0000:0000:00FB:5353  on 0x412B6F38 with  3 Questions,  0 Answers, 11 Authorities,  1 Additional  381 bytes
+11-28 15:15:55.217 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:55.257 D/cocos2d-x debug info(14128): trace_frame: 59.992203
+11-28 15:15:55.297 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:55.297 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:55.367 D/cocos2d-x debug info(14128): trace_frame: 59.979267
+11-28 15:15:55.487 D/cocos2d-x debug info(14128): trace_frame: 60.012688
+11-28 15:15:55.587 D/cocos2d-x debug info(14128): trace_frame: 59.956829
+11-28 15:15:55.707 D/cocos2d-x debug info(14128): trace_frame: 60.015259
+11-28 15:15:55.817 D/cocos2d-x debug info(14128): trace_frame: 60.035847
+11-28 15:15:55.827 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:55.827 D/mdns    ( 4397): Received Response from 172.16.13.59    addressed to 224.0.0.251     on 412B6F38 with  0 Questions, 11 Answers,  0 Authorities,  1 Additional  370 bytes LLQType 0
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 _apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 3be004d4._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 4210051d._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 46ed053e._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 470e053c._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 4cac0582._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 41660509._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.827 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:55.827 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions, 11 Answers,  0 Authorities,  1 Additional  370 bytes LLQType 0
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 _apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 3be004d4._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 4210051d._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 46ed053e._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 470e053c._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 4cac0582._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.827 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 41660509._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:55.837 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:55.837 D/mdns    ( 4397): Received Query from 172.16.13.59   :5353  to 224.0.0.251    :5353  on 0x412B6F38 with  4 Questions,  0 Answers, 12 Authorities,  1 Additional  473 bytes
+11-28 15:15:55.837 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:55.837 D/mdns    ( 4397): Received Query from FE80:0000:0000:0000:1025:C7A8:2910:3D29:5353  to FF02:0000:0000:0000:0000:0000:0000:00FB:5353  on 0x412B6F38 with  4 Questions,  0 Answers, 12 Authorities,  1 Additional  473 bytes
+11-28 15:15:55.847 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:55.847 D/mdns    ( 4397): Received Response from 172.16.13.59    addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  1 Answer,   0 Authorities,  1 Additional  121 bytes LLQType 0
+11-28 15:15:55.847 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:55.847 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions,  1 Answer,   0 Authorities,  1 Additional  121 bytes LLQType 0
+11-28 15:15:55.847 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:55.847 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:55.847 D/mdns    ( 4397): Received Query from 172.16.13.59   :5353  to 224.0.0.251    :5353  on 0x412B6F38 with  4 Questions,  0 Answers, 12 Authorities,  1 Additional  473 bytes
+11-28 15:15:55.857 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:55.857 D/mdns    ( 4397): Received Query from FE80:0000:0000:0000:1025:C7A8:2910:3D29:5353  to FF02:0000:0000:0000:0000:0000:0000:00FB:5353  on 0x412B6F38 with  4 Questions,  0 Answers, 12 Authorities,  1 Additional  473 bytes
+11-28 15:15:55.857 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:55.857 D/mdns    ( 4397): Received Response from 172.16.13.59    addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  1 Answer,   0 Authorities,  1 Additional  51 bytes LLQType 0
+11-28 15:15:55.857 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:55.857 D/mdns    ( 4397): Received Response from 172.16.13.59    addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  1 Additional  176 bytes LLQType 0
+11-28 15:15:55.857 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:55.857 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions,  1 Answer,   0 Authorities,  1 Additional  51 bytes LLQType 0
+11-28 15:15:55.857 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:55.857 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  1 Additional  176 bytes LLQType 0
+11-28 15:15:55.867 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:55.887 D/dalvikvm(22184): GC_CONCURRENT freed 795K, 18% free 6666K/8128K, paused 2ms+5ms, total 54ms
+11-28 15:15:55.887 D/dalvikvm(22184): WAIT_FOR_CONCURRENT_GC blocked 12ms
+11-28 15:15:55.887 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:55.897 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:55.907 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:55.907 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:55.907 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:55.907 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:55.917 D/cocos2d-x debug info(14128): trace_frame: 59.809208
+11-28 15:15:56.027 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:56.027 D/mdns    ( 4397): Received Response from 172.16.13.59    addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  1 Answer,   0 Authorities,  1 Additional  51 bytes LLQType 0
+11-28 15:15:56.027 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:56.027 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:56.027 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions,  1 Answer,   0 Authorities,  1 Additional  51 bytes LLQType 0
+11-28 15:15:56.037 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:56.037 D/mdns    ( 4397): Received Query from 172.16.13.59   :5353  to 224.0.0.251    :5353  on 0x412B6F38 with  1 Question,   0 Answers,  1 Authority,    1 Additional  127 bytes
+11-28 15:15:56.037 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:56.037 D/mdns    ( 4397): Received Query from FE80:0000:0000:0000:1025:C7A8:2910:3D29:5353  to FF02:0000:0000:0000:0000:0000:0000:00FB:5353  on 0x412B6F38 with  1 Question,   0 Answers,  1 Authority,    1 Additional  127 bytes
+11-28 15:15:56.037 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:56.037 D/cocos2d-x debug info(14128): trace_frame: 58.951328
+11-28 15:15:56.107 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:56.107 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:56.157 D/cocos2d-x debug info(14128): trace_frame: 61.211823
+--------- beginning of /dev/log/system
+11-28 15:15:56.227 W/ThrottleService( 2370): unable to find stats for iface rmnet0
+11-28 15:15:56.257 D/cocos2d-x debug info(14128): trace_frame: 59.881435
+11-28 15:15:56.367 D/cocos2d-x debug info(14128): trace_frame: 60.078613
+11-28 15:15:56.487 D/cocos2d-x debug info(14128): trace_frame: 60.047180
+11-28 15:15:56.607 D/cocos2d-x debug info(14128): trace_frame: 60.017834
+11-28 15:15:56.647 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.14 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:56.647 D/mdns    ( 4397): Received Response from 172.16.13.14    addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  0 Additionals 202 bytes LLQType 0
+11-28 15:15:56.657 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:56.657 D/mdns    ( 4397): Received Query from 172.16.13.59   :5353  to 224.0.0.251    :5353  on 0x412B6F38 with  1 Question,   0 Answers,  1 Authority,    1 Additional  80 bytes
+11-28 15:15:56.657 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:56.717 D/cocos2d-x debug info(14128): trace_frame: 59.983887
+11-28 15:15:56.727 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:56.727 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:56.817 D/cocos2d-x debug info(14128): trace_frame: 59.927483
+11-28 15:15:56.867 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:56.867 D/mdns    ( 4397): Received Query from FE80:0000:0000:0000:1025:C7A8:2910:3D29:5353  to FF02:0000:0000:0000:0000:0000:0000:00FB:5353  on 0x412B6F38 with  1 Question,   0 Answers,  1 Authority,    1 Additional  80 bytes
+11-28 15:15:56.917 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:56.917 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:56.927 D/cocos2d-x debug info(14128): trace_frame: 59.940063
+11-28 15:15:57.037 D/cocos2d-x debug info(14128): trace_frame: 60.033287
+11-28 15:15:57.157 D/cocos2d-x debug info(14128): trace_frame: 60.089962
+11-28 15:15:57.267 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:57.267 D/mdns    ( 4397): Received Query from 172.16.13.59   :5353  to 224.0.0.251    :5353  on 0x412B6F38 with  3 Questions,  0 Answers, 10 Authorities,  1 Additional  376 bytes
+11-28 15:15:57.267 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:57.267 D/mdns    ( 4397): Received Query from FE80:0000:0000:0000:1025:C7A8:2910:3D29:5353  to FF02:0000:0000:0000:0000:0000:0000:00FB:5353  on 0x412B6F38 with  3 Questions,  0 Answers, 10 Authorities,  1 Additional  376 bytes
+11-28 15:15:57.277 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:57.277 D/cocos2d-x debug info(14128): trace_frame: 59.077713
+11-28 15:15:57.277 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:57.277 D/mdns    ( 4397): Received Response from 172.16.13.59    addressed to 224.0.0.251     on 412B6F38 with  0 Questions, 11 Answers,  0 Authorities,  1 Additional  370 bytes LLQType 0
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 _apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 3be004d4._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 4210051d._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 46ed053e._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 470e053c._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 4cac0582._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 41660509._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.277 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:57.277 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions, 11 Answers,  0 Authorities,  1 Additional  370 bytes LLQType 0
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 _apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 3be004d4._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 4210051d._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 46ed053e._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 470e053c._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 4cac0582._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.277 D/mdns    ( 4397): Found record size    71 interface 412B6F38 already in cache:   71 41660509._sub._apple-mobdev2._tcp.local. PTR 60:d9:c7:73:1f:8c@fe80::62d9:c7ff:fe73:1f8c._apple-mobdev2._tcp.local.
+11-28 15:15:57.287 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:57.377 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:57.377 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:57.387 D/cocos2d-x debug info(14128): trace_frame: 60.877502
+11-28 15:15:57.467 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:57.467 D/mdns    ( 4397): Received Query from 172.16.13.59   :5353  to 224.0.0.251    :5353  on 0x412B6F38 with  5 Questions,  0 Answers, 13 Authorities,  1 Additional  514 bytes
+11-28 15:15:57.477 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:57.477 D/mdns    ( 4397): Received Query from FE80:0000:0000:0000:1025:C7A8:2910:3D29:5353  to FF02:0000:0000:0000:0000:0000:0000:00FB:5353  on 0x412B6F38 with  5 Questions,  0 Answers, 13 Authorities,  1 Additional  514 bytes
+11-28 15:15:57.477 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:57.477 D/mdns    ( 4397): Received Response from 172.16.13.59    addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  1 Answer,   0 Authorities,  1 Additional  74 bytes LLQType 0
+11-28 15:15:57.477 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:57.477 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions,  1 Answer,   0 Authorities,  1 Additional  74 bytes LLQType 0
+11-28 15:15:57.477 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:57.487 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:57.487 D/cocos2d-x debug info(14128): trace_frame: 59.699116
+11-28 15:15:57.557 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:57.557 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:57.607 D/cocos2d-x debug info(14128): trace_frame: 60.345345
+11-28 15:15:57.677 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:57.677 D/mdns    ( 4397): Received Query from FE80:0000:0000:0000:1025:C7A8:2910:3D29:5353  to FF02:0000:0000:0000:0000:0000:0000:00FB:5353  on 0x412B6F38 with  5 Questions,  0 Answers, 13 Authorities,  1 Additional  514 bytes
+11-28 15:15:57.707 D/cocos2d-x debug info(14128): trace_frame: 59.922695
+11-28 15:15:57.717 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:57.717 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:57.807 D/cocos2d-x debug info(14128): trace_frame: 59.986801
+11-28 15:15:57.867 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.203 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:57.867 D/mdns    ( 4397): Received Response from 172.16.13.203   addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  3 Answers,  0 Authorities,  0 Additionals 329 bytes LLQType 0
+11-28 15:15:57.917 D/cocos2d-x debug info(14128): trace_frame: 60.064701
+11-28 15:15:58.017 D/cocos2d-x debug info(14128): trace_frame: 59.989784
+11-28 15:15:58.077 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:58.077 D/mdns    ( 4397): Received Query from 172.16.13.59   :5353  to 224.0.0.251    :5353  on 0x412B6F38 with  3 Questions,  0 Answers,  4 Authorities,  1 Additional  218 bytes
+11-28 15:15:58.087 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:58.087 D/mdns    ( 4397): Received Query from FE80:0000:0000:0000:1025:C7A8:2910:3D29:5353  to FF02:0000:0000:0000:0000:0000:0000:00FB:5353  on 0x412B6F38 with  3 Questions,  0 Answers,  4 Authorities,  1 Additional  218 bytes
+11-28 15:15:58.087 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:58.137 D/cocos2d-x debug info(14128): trace_frame: 59.879215
+11-28 15:15:58.157 D/mdns    ( 4397): mDNS_Execute
+11-28 15:15:58.157 D/mdns    ( 4397): mDNS_Execute: Setting NewLocalRecords to NULL
+11-28 15:15:58.257 D/cocos2d-x debug info(14128): trace_frame: 60.118870
+11-28 15:15:58.277 D/mdns    ( 4397): SocketDataReady got a packet from 172.16.13.59 to 224.0.0.251 on interface 172.16.13.147/wlan0/7/248
+11-28 15:15:58.277 D/mdns    ( 4397): Received Response from 172.16.13.59    addressed to 224.0.0.251     on 412B6F38 with  0 Questions,  2 Answers,  0 Authorities,  1 Additional  156 bytes LLQType 0
+11-28 15:15:58.277 D/mdns    ( 4397): SocketDataReady got a packet from FE80:0000:0000:0000:1025:C7A8:2910:3D29 to FF02:0000:0000:0000:0000:0000:0000:00FB on interface 172.16.13.147/wlan0/7/249
+11-28 15:15:58.277 D/mdns    ( 4397): Received Response from FE80:0000:0000:0000:1025:C7A8:2910:3D29 addressed to FF02:0000:0000:0000:0000:0000:0000:00FB on 412B6F38 with  0 Questions,  2 Answers,  0 Authorities,  1 Additional  156 bytes LLQType 0
+11-28 15:15:58.287 W/jmdns   (22184): There was an OPT answer. Not currently handled. Option code: 65002 data: 85CEBCE10CFCD139
+11-28 15:15:58.297 D/launcher_auto(14128): launcher_auto: stop logcat 
+11-28 15:15:58.297 D/launcher_auto(14128): launcher_auto: exec admin command -> cp /data/data/tv.fun.launcher/files/robotium/FramesLog_01_Baseline /data/data/tv.fun.launcher/files/robotium/FramesLog_01_Baseline.log
+11-28 15:15:58.337 W/System.err(14128): java.io.SyncFailedException: fsync failed: EINVAL (Invalid argument)
+11-28 15:15:58.337 W/System.err(14128): 	at java.io.FileDescriptor.sync(FileDescriptor.java:77)
+11-28 15:15:58.337 W/System.err(14128): 	at java.io.FileOutputStream.flush(FileOutputStream.java:194)
+11-28 15:15:58.337 W/System.err(14128): 	at java.io.OutputStreamWriter.flushBytes(OutputStreamWriter.java:171)
+11-28 15:15:58.337 W/System.err(14128): 	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:158)
+11-28 15:15:58.337 W/System.err(14128): 	at java.io.PrintWriter.flush(PrintWriter.java:253)
+11-28 15:15:58.337 W/System.err(14128): 	at tv.fun.launcher.testutils.TestUtils.execAdminCmd(TestUtils.java:37)
+11-28 15:15:58.347 W/System.err(14128): 	at tv.fun.launcher.testutils.TestUtils.stopLogcat(TestUtils.java:55)
+11-28 15:15:58.347 W/System.err(14128): 	at tv.fun.launcher.test.TestLauncherFrames.TestFramesBaseline(TestLauncherFrames.java:78)
+11-28 15:15:58.347 W/System.err(14128): 	at java.lang.reflect.Method.invokeNative(Native Method)
+11-28 15:15:58.347 W/System.err(14128): 	at java.lang.reflect.Method.invoke(Method.java:511)
+11-28 15:15:58.347 W/System.err(14128): 	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+11-28 15:15:58.347 W/System.err(14128): 	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+11-28 15:15:58.357 W/System.err(14128): 	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:192)
+11-28 15:15:58.357 W/System.err(14128): 	at junit.framework.TestCase.runBare(TestCase.java:134)
+11-28 15:15:58.357 W/System.err(14128): 	at junit.framework.TestResult$1.protect(TestResult.java:115)
+11-28 15:15:58.357 E/su-binary(15473): ----su-----
+11-28 15:15:58.357 W/System.err(14128): 	at junit.framework.TestResult.runProtected(TestResult.java:133)
+11-28 15:15:58.357 W/System.err(14128): 	at junit.framework.TestResult.run(TestResult.java:118)
+11-28 15:15:58.357 W/System.err(14128): 	at junit.framework.TestCase.run(TestCase.java:124)
+11-28 15:15:58.357 W/System.err(14128): 	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:190)
+11-28 15:15:58.367 W/System.err(14128): 	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:175)
+11-28 15:15:58.367 D/cocos2d-x debug info(14128): trace_frame: 55.059513
+11-28 15:15:58.367 W/System.err(14128): 	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:555)
+11-28 15:15:58.367 W/System.err(14128): 	at tv.fun.launcher.testrunner.LauncherTestSuiteBasic.onStart(LauncherTestSuiteBasic.java:54)
+11-28 15:15:58.367 W/System.err(14128): 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1661)
+11-28 15:15:58.367 W/System.err(14128): Caused by: libcore.io.ErrnoException: fsync failed: EINVAL (Invalid argument)
+11-28 15:15:58.367 W/System.err(14128): 	at libcore.io.Posix.fsync(Native Method)
+11-28 15:15:58.367 W/System.err(14128): 	at libcore.io.BlockGuardOs.fsync(BlockGuardOs.java:97)
+11-28 15:15:58.367 W/System.err(14128): 	at java.io.FileDescriptor.sync(FileDescriptor.java:74)
