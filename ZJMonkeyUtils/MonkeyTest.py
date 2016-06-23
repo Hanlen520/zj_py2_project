@@ -587,8 +587,8 @@ def cal_exec_time(fn):
 if __name__ == '__main__':
 
     g_target_ip = '172.17.5.134'
-    g_run_num = '02'
-    g_run_mins = 10
+    g_run_num = '01'
+    g_run_mins = 60
     g_package_name = g_pkg_filemanager
 
     g_flag_monkey_for_package = True

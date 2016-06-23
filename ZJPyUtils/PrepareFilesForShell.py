@@ -3,6 +3,9 @@
 Created on 2016-6-23
 
 @author: zhengjin
+
+Push files to the shell ENV to prepare data for filemanager test.
+
 '''
 
 import os

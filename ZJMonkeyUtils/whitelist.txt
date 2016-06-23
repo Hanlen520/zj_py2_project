@@ -1,4 +1,4 @@
 # whitelist for monkey
-tv.fun.filemanager
 tv.fun.settings
+tv.fun.filemanager
 com.funshion.mediaplayer
