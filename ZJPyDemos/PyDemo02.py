@@ -273,6 +273,9 @@
 # print os.path.basename(str)
 # print os.path.dirname(str)
 
+# import os
+# str = r'D:\files_test\Pics_200+'
+# print os.path.basename(str)
 
 
 if __name__ == '__main__':
