@@ -71,7 +71,7 @@ def prepare_files_main():
     path_root_shell = '/sdcard/testfiles'
     path_pics_shell = '%s/testpics' %(path_root_shell)
     path_apps_shell =  '%s/testapps' %(path_root_shell)
-    path_video_shell = '%s/testvedio' %(path_root_shell)
+    path_video_shell = '%s/testvideo' %(path_root_shell)
     path_music_shell = '%s/testmusic' %(path_root_shell)
     paths_shell = (path_root_shell,path_pics_shell,path_apps_shell,path_video_shell,path_music_shell)
     if g_flag_mk_dir:
@@ -98,7 +98,7 @@ def prepare_files_main():
 
 if __name__ == '__main__':
     
-    g_flag_adb_connect = True
+    g_flag_adb_connect = False
     g_flag_mk_dir = True
     prepare_files_main()
     
