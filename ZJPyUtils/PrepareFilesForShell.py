@@ -69,10 +69,10 @@ def prepare_files_main():
     
     # make directories
     path_root_shell = '/sdcard/testfiles'
-    path_pics_shell = '/sdcard/testfiles/testpics'
-    path_apps_shell =  '/sdcard/testfiles/testapps'
-    path_video_shell = '/sdcard/testfiles/testvedio'
-    path_music_shell = '/sdcard/testfiles/testmusic'
+    path_pics_shell = '%s/testpics' %(path_root_shell)
+    path_apps_shell =  '%s/testapps' %(path_root_shell)
+    path_video_shell = '%s/testvedio' %(path_root_shell)
+    path_music_shell = '%s/testmusic' %(path_root_shell)
     paths_shell = (path_root_shell,path_pics_shell,path_apps_shell,path_video_shell,path_music_shell)
     if g_flag_mk_dir:
         mk_multiple_dirs_on_shell(paths_shell)
