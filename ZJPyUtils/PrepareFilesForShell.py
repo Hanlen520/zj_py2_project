@@ -11,7 +11,6 @@ Push files to the shell ENV to prepare data for filemanager test.
 import os
 import time
 
-
 # ----------------------------------------------------
 # Functions
 # ----------------------------------------------------

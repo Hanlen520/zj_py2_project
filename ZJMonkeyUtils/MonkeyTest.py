@@ -592,7 +592,7 @@ if __name__ == '__main__':
     g_package_name = g_pkg_filemanager
 
     g_flag_monkey_for_package = False
-    g_flag_monkey_for_whitelist = False
+    g_flag_monkey_for_whitelist = True
     g_flag_profile_monitor = False
 
     cal_exec_time(monkey_test_main)
