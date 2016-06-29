@@ -97,7 +97,7 @@ def prepare_files_main():
 
 if __name__ == '__main__':
     
-    g_flag_adb_connect = False
+    g_flag_adb_connect = True
     g_flag_mk_dir = True
     prepare_files_main()
     

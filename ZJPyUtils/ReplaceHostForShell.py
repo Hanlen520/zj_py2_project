@@ -26,6 +26,7 @@ def adb_root():
 
 def adb_remount():
     cmd = 'adb remount'
+    print cmd
     lines = os.popen(cmd).readlines()
     for line in lines:
         if 'succeeded' in line:

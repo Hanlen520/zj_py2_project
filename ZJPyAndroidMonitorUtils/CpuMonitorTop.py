@@ -253,7 +253,7 @@ if __name__ == '__main__':
 
     g_package_name = MonitorUtils.g_package_settings
     g_run_num = '01'
-    g_run_time = 5 * MonitorUtils.g_min
+    g_run_time = 10 * MonitorUtils.g_min
     g_suffix = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num)  # do not change
 
     g_flag_top = False
