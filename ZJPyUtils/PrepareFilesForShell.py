@@ -78,21 +78,24 @@ def prepare_files_main():
 
     # push files to shell
     # pictures
-    create_sub_dir_and_push_files_to_shell(r'D:\files_test\Pics_200+',path_pics_shell)
-    create_sub_dir_and_push_files_to_shell(r'D:\files_test\Pics_20+',path_pics_shell)
-    create_sub_dir_and_push_files_to_shell(r'D:\files_test\Pics_4K',path_pics_shell)
+    pic_dir_path = r'D:\files_test\testfiles_pics'
+    create_sub_dir_and_push_files_to_shell(os.path.join(pic_dir_path,'Pics_200+'),path_pics_shell)
+    create_sub_dir_and_push_files_to_shell(os.path.join(pic_dir_path,'Pics_20+'),path_pics_shell)
+    create_sub_dir_and_push_files_to_shell(os.path.join(pic_dir_path,'Pics_4K'),path_pics_shell)
     
     # apps
     create_sub_dir_and_push_files_to_shell(r'D:\files_apps\Thrid_part_Apps', path_apps_shell)
-    create_sub_dir_and_push_files_to_shell(r'D:\files_test\Apps_ZJ_Test\Dir_SomeApps', path_apps_shell)
+    create_sub_dir_and_push_files_to_shell(r'D:\files_test\testfiles_apps\Dir_SomeApps', path_apps_shell)
     
     # video
-    push_files_to_shell(r'"D:\files_test\Videos_ZJ_Test\4K-HD.Club-2013-Taipei 101 Fireworks Trailer.mp4"', path_video_shell)
-    push_files_to_shell(r'"D:\files_test\Videos_ZJ_Test\Im Se Jun - Lie.mp4"', path_video_shell)  # include space in path
-    push_files_to_shell(r'D:\files_test\Videos_ZJ_Test\XinShu.mp4', path_video_shell)
+    video_dir_path = r'D:\files_test\testfiles_video'
+    push_files_to_shell('"%s"' %(os.path.join(video_dir_path,'4K-HD.Club-2013-Taipei 101 Fireworks Trailer.mp4')), path_video_shell)
+    push_files_to_shell('"%s"' %(os.path.join(video_dir_path, 'Im Se Jun - Lie.mp4')), path_video_shell)  # include space in path
+    push_files_to_shell(os.path.join(video_dir_path,'XinShu.mp4'), path_video_shell)
 
     # music
-    create_sub_dir_and_push_files_to_shell(r'D:\files_test\Music_ZJ_Test\ShortName', path_music_shell)
+    music_dir_path = r'D:\files_test\testfiles_music'
+    create_sub_dir_and_push_files_to_shell(os.path.join(music_dir_path,'ShortName'), path_music_shell)
 
 
 if __name__ == '__main__':
