@@ -197,6 +197,13 @@ Created on 2014/9/24
 # print 'time = %d' %(int(time.clock()) - int(start))
 
 
+# EXAMPLE 23
+# sub_str = 'tv.fun.settings/.general.GeneralSettingsActivity'
+# str = 'mFocusedActivity: ActivityRecord{421f76b8 u0 tv.fun.settings/.general.GeneralSettingsActivity t17}'
+# print str.index(sub_str)
+
+
+
 if __name__ == '__main__':
 
     print("Demo done!")
