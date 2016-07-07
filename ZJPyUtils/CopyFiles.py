@@ -12,7 +12,7 @@ import shutil
 # ----------------------------------------------------
 # Functions
 # ----------------------------------------------------
-def mk_numbers_of_dirs(target_path, num):
+def mk_numbers_of_dirs(target_path, g_run_num):
     dir_path = target_path
     sub_path = 'pic_test'
     
@@ -21,7 +21,7 @@ def mk_numbers_of_dirs(target_path, num):
         exit()
 
     sleep_interval = 0.5
-    for i in range(0, num):
+    for i in range(0, g_run_num):
         mk_dir_path = os.path.join(dir_path, sub_path + str(i))
         os.mkdir(mk_dir_path)
         time.sleep(sleep_interval)
@@ -117,10 +117,10 @@ def main_copy_numbers_of_file():
     copy_numbers_of_file(file_name, file_suffix, copied_num)
 
 def main_copy_files_per_dir():
-    num = 100
+    g_run_num = 100
     target_path = r'D:\files_test\Pics_2000+_4perdir'
     src_path = r'E:\Files_haier_test\disk_2\JPEG 2000+'
-    mk_numbers_of_dirs(target_path, num)
+    mk_numbers_of_dirs(target_path, g_run_num)
 
     pics_of_each_dir = 4
     copy_files_per_dir(src_path, target_path, pics_of_each_dir)

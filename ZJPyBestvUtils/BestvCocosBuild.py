@@ -5,7 +5,7 @@ import subprocess
 import shutil
 import urllib2
 import time
-from datetime import date
+from datetime import g_cur_date
 import xml.etree.ElementTree as ET
 import re
 
@@ -377,7 +377,7 @@ if __name__=='__main__':
     ClearOldSavedApkDir(saved_build_dir)
     CreateSavedApkDir(saved_build_dir)
        
-    log_file_path = os.path.join(saved_apk_dir, "build_log_%s" %date.today())
+    log_file_path = os.path.join(saved_apk_dir, "build_log_%s" %g_cur_date.today())
     CreateLogFile(log_file_path)
   
     UpdateVersionCodeAndVersionName()

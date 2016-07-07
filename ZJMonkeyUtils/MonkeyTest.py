@@ -472,7 +472,7 @@ g_warn = 3
 g_error = 4
 g_fatal = 5
 
-def parse_logcat_log(log_level, keyword):
+def parse_logcat_log(g_logcate_log_level, keyword):
     parse_lines = []
     
     f_log = open(g_logcat_log_for_win, 'r')
@@ -487,7 +487,7 @@ def parse_logcat_log(log_level, keyword):
                 continue
             if keyword not in line:
                 continue
-            if transform_log_level(line[31]) >= log_level:
+            if transform_log_level(line[31]) >= g_logcate_log_level:
                 parse_lines.append(line)
     finally:
         f_log.close()

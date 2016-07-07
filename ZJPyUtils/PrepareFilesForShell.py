@@ -18,8 +18,8 @@ def run_system_cmd(cmd):
     print cmd
     os.system(cmd)
 
-def adb_connect_devices(device_ip):
-    cmd = 'adb connect %s' %(device_ip)
+def adb_connect_devices(g_device_ip):
+    cmd = 'adb connect %s' %(g_device_ip)
     run_system_cmd(cmd)
 
 def verify_device_connected():
@@ -61,8 +61,8 @@ def prepare_files_main():
     
     # adb connect
     if g_flag_adb_connect:
-        device_ip = '172.17.5.134'
-        adb_connect_devices(device_ip)
+        g_device_ip = '172.17.5.134'
+        adb_connect_devices(g_device_ip)
         time.sleep(3)
         verify_device_connected()
     

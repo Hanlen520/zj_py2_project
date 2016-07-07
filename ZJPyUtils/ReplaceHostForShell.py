@@ -16,8 +16,8 @@ def run_system_cmd(cmd):
     print cmd
     os.system(cmd)
 
-def adb_connect_devices(device_ip):
-    cmd = 'adb connect %s' %(device_ip)
+def adb_connect_devices(g_device_ip):
+    cmd = 'adb connect %s' %(g_device_ip)
     run_system_cmd(cmd)
 
 def adb_root():
@@ -47,11 +47,11 @@ def verify_device_connected():
             return False
     return True
 
-def try_to_connect_to_devices(device_ip):
+def try_to_connect_to_devices(g_device_ip):
     try_times = 3
     for i in range(0,try_times):
         print 'Try to connect to device %d times.' %(i)
-        adb_connect_devices(device_ip)
+        adb_connect_devices(g_device_ip)
         if verify_device_connected():
             return
     
@@ -63,10 +63,10 @@ def try_to_connect_to_devices(device_ip):
 # Main
 # ----------------------------------------------------
 def replace_hosts_main():
-    device_ip = '172.17.5.134'
-    try_to_connect_to_devices(device_ip)
+    g_device_ip = '172.17.5.134'
+    try_to_connect_to_devices(g_device_ip)
     adb_root()
-    try_to_connect_to_devices(device_ip)
+    try_to_connect_to_devices(g_device_ip)
     adb_remount()
     
     s_path = r'E:\Project_TV\hosts'

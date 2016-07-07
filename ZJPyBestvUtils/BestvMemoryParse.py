@@ -91,7 +91,7 @@ class DoParseMem():
 def ParseMem(logPath, newLogPath):
     fin = open(logPath, 'r')
     lines = fin.readlines()
-    num = len(lines)
+    g_run_num = len(lines)
     
     if os.path.exists(newLogPath):
         os.remove(newLogPath)
@@ -99,7 +99,7 @@ def ParseMem(logPath, newLogPath):
 
     i = 0
     mems = []
-    while i < num:
+    while i < g_run_num:
         mems.append(Mem(lines[i:(i + 15)]))
         i += 15
 

@@ -1,15 +1,6 @@
 eclipse.preferences.version=1
 encoding//ZJMonkeyUtils/MonkeyDemo.py=utf-8
 encoding//ZJMonkeyUtils/MonkeyTest.py=utf-8
-encoding//ZJMonkeyUtils/MrBaseConstants.py=utf-8
-encoding//ZJMonkeyUtils/MrBaseMrUtils.py=utf-8
-encoding//ZJMonkeyUtils/MrBaseTcHelper.py=utf-8
-encoding//ZJMonkeyUtils/MrBaseTestRunner.py=utf-8
-encoding//ZJMonkeyUtils/MrBaseUtils.py=utf-8
-encoding//ZJMonkeyUtils/MrDemo01.py=utf-8
-encoding//ZJMonkeyUtils/MrDemo02.py=utf-8
-encoding//ZJMonkeyUtils/MrTestBlueTooth.py=utf-8
-encoding//ZJMonkeyUtils/MrTestTVPlayer.py=utf-8
 encoding//ZJPyAndroidMonitorUtils/CpuMonitorDumpsys.py=utf-8
 encoding//ZJPyAndroidMonitorUtils/CpuMonitorTop.py=utf-8
 encoding//ZJPyAndroidMonitorUtils/MemMonitorDumpsys.py=utf-8
