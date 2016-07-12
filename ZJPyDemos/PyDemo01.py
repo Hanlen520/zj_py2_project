@@ -203,6 +203,22 @@ Created on 2014/9/24
 # print str.index(sub_str)
 
 
+# EXAMPLE 24
+# class test(object):
+# 
+#     def __init__(self):
+#         self.x = 'None'
+#     
+#     def set_x(self,x):
+#         self.x = x
+#         
+#     def get_x(self):
+#         return self.x
+# 
+# t = test()
+# t.set_x('this is a test')
+# print t.get_x()
+
 
 if __name__ == '__main__':
 
