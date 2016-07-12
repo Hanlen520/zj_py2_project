@@ -6,7 +6,7 @@ Created on 2016-7-12
 @author: zhengjin
 '''
 
-import os
+# import os
 import unittest
 import logging
 
@@ -30,7 +30,8 @@ def init_log():
 #     logging.getLogger('').addHandler(console)
 
     # set the file handler
-    log_file = logging.FileHandler(filename=os.path.join(os.getcwd(),'zjunittest.log'),mode='w',encoding='utf-8')
+#     log_file = logging.FileHandler(filename=os.path.join(os.getcwd(),'zjunittest.log'),mode='w',encoding='utf-8')
+    log_file = logging.FileHandler(filename='zjunittest.log',mode='w')
     log_file.setLevel(logging.WARN)
     log_file.setFormatter(logging.Formatter(fmt=long_format, datefmt=long_date_format))
     logging.getLogger('').addHandler(log_file)
@@ -62,7 +63,7 @@ class test_multiply(unittest.TestCase):
 
     def test_a_x_3(self):
         logging.debug('Verify multiply 3 and a.')
-        logging.warn('This test will be failed.')
+        logging.warn('This test will be failed(失败).')
         self.assertEquals(PyDemo03.multiply(3,'a'), 'aa')
 
 if __name__ == '__main__':
