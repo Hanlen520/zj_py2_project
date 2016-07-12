@@ -362,6 +362,11 @@
 #     print 'Error'
 
 
+# for unit test demo
+def multiply(x, y):
+    return x * y
+
+
 if __name__ == '__main__':
 
 #     myfunc()
