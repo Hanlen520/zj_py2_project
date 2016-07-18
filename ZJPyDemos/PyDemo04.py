@@ -26,6 +26,48 @@ import os
 # print time.strftime('%Y-%m-%d-%H-%M-%S',time.localtime(time.time()))
 
 
+# EXAMPLE 04
+# import json
+# 
+# json_data = '{"total":239,"row":[{"code":"001","name":"\u4e2d\u56fd","addr":"Address 11","col4":"col4 data"},{"code":"002","name":"Name 2","addr":"Address 12","col4":"col4 data"}]}'
+# json_arr = json.loads(json_data,encoding='utf-8')
+# print json_arr['total']
+# print json_arr['row'][0]['code']
+# 
+# for key in json_arr.keys():
+#     print type(key)
+
+
+# EXAMPLE 05
+# str = u'test'
+# print type(str)
+# print type(str.encode('utf-8'))
+
+
+# EXAMPLE 06
+# import urllib2
+# 
+# url = 'http://apis.baidu.com/apistore/weatherservice/citylist?cityname=%E6%9C%9D%E9%98%B3'
+# 
+# req = urllib2.Request(url)
+# req.add_header("apikey", "11c756e31e9bed863a743ccff784ddeb")
+# 
+# resp = urllib2.urlopen(req)
+# content = resp.read()
+# if(content):
+#     print(content)
+# else:
+#     print 'Error.'
+
+
+# EXAMPLE 07
+# import re
+#  
+# str = '-28C'
+# print re.findall(r'\d+', str)
+# print re.findall(r'-(\d+)C', str)
+
+
 if __name__ == '__main__':
 
     print("%s done!" %os.path.basename(__file__))
