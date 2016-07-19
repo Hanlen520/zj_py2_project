@@ -19,7 +19,7 @@ from ZJPyUtils import HttpJsonUtils
 # ----------------------------------------------------
 # Global variables
 # ----------------------------------------------------
-g_city_list_file_name = 'Weather_city_list_test.txt'
+g_city_list_file_name = 'Weather_city_list.txt'
 g_sleep_time_between_requests = 0.5
 
 
@@ -152,8 +152,9 @@ def verify_response_temperature(json_arr):
 # Help functions
 # ------------------------------------------------
 def get_int_from_temp(data):
-    first = 0
-    return re.findall(r'\d+', data)[first]
+    first_element = 0
+    temp = re.findall(r'\d+', data)[first_element]
+    return int(temp)
 
 def get_json_ret_num(data):
     return data['errNum']
@@ -218,7 +219,7 @@ def test_main():
         try:
             test_weather_data_is_valid({'cityid':str(city_id)})
         except Exception, e:
-            logging.error('Error when verify city: %s' %city_id)
+            logging.error('Exception when verify city: %s (%s)' %(city_id,city_name))
             logging.error('Exception: %s' %e)
         logging.info('---> END: verify weather data for city id: %s, city name: %s\n' %(city_id,city_name))
         
