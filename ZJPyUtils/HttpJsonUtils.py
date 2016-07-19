@@ -37,7 +37,7 @@ def send_get_request_and_return(url, data):
         return ''
 
 def send_post_request_and_return(url, data):
-    print 'TODO'
+    print 'TODO:'
 
 def send_get_request_to_baidu_weather_service_and_return(data):
     parms = urllib.urlencode(data)
