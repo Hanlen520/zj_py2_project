@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//TestWeatherService/TestBaiduWeatherApi.py=utf-8
+encoding//TestWeatherService/TestFunWeatherApi.py=utf-8
 encoding//ZJMonkeyUtils/MonkeyDemo.py=utf-8
 encoding//ZJMonkeyUtils/MonkeyTest.py=utf-8
 encoding//ZJPyAndroidMonitorUtils/CpuMonitorDumpsys.py=utf-8
@@ -30,5 +32,4 @@ encoding//ZJPyUtils/Record2Diff.py=utf-8
 encoding//ZJPyUtils/RecordsCount.py=utf-8
 encoding//ZJPyUtils/ReplaceHostForShell.py=utf-8
 encoding//ZJPyUtils/RunMultipleCmds.py=utf-8
-encoding//ZJPyUtils/TestBaiduWeatherService.py=utf-8
 encoding/<project>=UTF-8

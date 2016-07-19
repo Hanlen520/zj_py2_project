@@ -33,7 +33,7 @@ def send_get_request_and_return(url, data):
     if (content):
         return content
     else:
-        logging.warn('The response data is null.')
+        logging.warn('The response data is null!')
         return ''
 
 def send_post_request_and_return(url, data):
@@ -49,8 +49,9 @@ def send_get_request_to_baidu_weather_service_and_return(data):
     if (content):
         return content
     else:
-        logging.warn('The response data is null.')
+        logging.warn('The response data from baidu service is null!')
         return ''
+
 
 # ----------------------------------------------------
 # JSON functions

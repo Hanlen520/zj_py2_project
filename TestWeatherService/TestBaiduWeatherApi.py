@@ -4,6 +4,8 @@
 Created on 2016-7-18
 
 @author: Vieira
+
+Verify data from Baidu weather API for each city.
 '''
 
 import os
