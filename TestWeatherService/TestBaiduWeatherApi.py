@@ -194,8 +194,8 @@ def daemon_thread_main():
     #LOOP
     sleep_time = 15
     while True:
-        logging.debug('***** Current, verify %d city of total %d.' %(g_cur_num_of_city, g_total_num_of_city))
         time.sleep(sleep_time)
+        logging.debug('***** Current, verify %d city of total %d.' %(g_cur_num_of_city, g_total_num_of_city))
 
 def build_daemon_thread():
     thread_name = 'baiduservicetest:daemon'
