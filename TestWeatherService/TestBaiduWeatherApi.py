@@ -19,8 +19,9 @@ from ZJPyUtils import HttpJsonUtils
 # ----------------------------------------------------
 # Global variables
 # ----------------------------------------------------
-g_city_list_file_name = 'Weather_city_list.txt'
+g_city_list_file_name = 'Weather_city_list_test.txt'
 g_sleep_time_between_requests = 0.5
+g_request_try_time = 3
 
 
 # ----------------------------------------------------
@@ -64,13 +65,24 @@ def logging_failed(text, reason):
 # Test case
 # ------------------------------------------------
 def test_weather_data_is_valid(req_parms):
-    resp = HttpJsonUtils.send_get_request_to_baidu_weather_service_and_return(req_parms)
-    if not verify_json_response_data(resp):
-        test_failed_handler()
-        return
+    resp = None
+    json_arr = None
     
-    json_arr = HttpJsonUtils.json_parse(resp)
-    if not verify_response_return_code(json_arr):
+    flag_data_valid = False
+    for i in range(1,(g_request_try_time + 1)):
+        if i > 1:
+            logging.info('Try to send request to Baidu weather API %d times.' %i)
+
+        resp = HttpJsonUtils.send_get_request_to_baidu_weather_service_and_return(req_parms)
+        json_arr = HttpJsonUtils.json_parse(resp)
+        if verify_json_response_data(resp) and verify_response_return_code(json_arr):
+            flag_data_valid = True
+            break
+        
+        time.sleep(g_sleep_time_between_requests)
+    # end for
+    
+    if not flag_data_valid:
         test_failed_handler()
         return
 
@@ -234,7 +246,7 @@ def main(fn):
 
     logging.info('SUMMARY')
     logging.info('The total number of cities is: %d' %g_total_num_of_city)
-    logging.info('The failed number of cities is %d' %g_total_failed)
+    logging.info('The failed number of cities is： %d' %g_total_failed)
     logging.info('Verify baidu city weather data DONE, %s cost %d minutes %d seconds.' 
                  %(os.path.basename(__file__), (during/60), (during%60)))
 # end main
