@@ -5,7 +5,7 @@ Created on 2016-7-18
 
 @author: Vieira
 
-Include the utils for http post and get request, and parse json response data.
+Include the utils for http post and get requests, and parse json response data.
 
 '''
 
@@ -73,13 +73,20 @@ def test_get_api():
     json_arr = json_parse(resp)
     print json_arr['data']['today']['curTemp']
 
-def test_baidu_weather_api():
+def test_baidu_weather_api_without_key():
+    url = 'http://apis.baidu.com/apistore/weatherservice/recentweathers'
+    req_parms = {'cityId':'101010100'}
+
+    resp = send_get_request_and_return(url, req_parms)
+    print resp
+
+def test_baidu_weather_api_with_key():
     url = 'http://apis.baidu.com/apistore/weatherservice/recentweathers'
     header_parms = {'apikey':'7705cca8df9fb3dbe696ce2310979a62'}
     req_parms = {'cityid':'101010100'}
     
     resp = send_get_request_with_header_and_return(url,header_parms,req_parms)
-    logging.debug(resp)
+    print resp
     json_arr = json_parse(resp)
     print json_arr['retData']['today']['date']
 
@@ -87,5 +94,7 @@ def test_baidu_weather_api():
 if __name__ == '__main__':
 
 #     test_get_api()
-    test_baidu_weather_api()
+#     test_baidu_weather_api_without_key()
+    test_baidu_weather_api_with_key()
+    
     pass
