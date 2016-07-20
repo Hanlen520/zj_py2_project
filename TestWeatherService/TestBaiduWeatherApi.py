@@ -19,7 +19,7 @@ from ZJPyUtils import HttpJsonUtils
 # ----------------------------------------------------
 # Global variables
 # ----------------------------------------------------
-g_city_list_file_name = 'Weather_city_list_test.txt'
+g_city_list_file_name = 'Weather_city_list.txt'
 g_sleep_time_between_requests = 0.5
 g_request_try_time = 3
 g_flag_log_failed_connect_tcs = True
@@ -76,7 +76,6 @@ def test_weather_data_is_valid(city_id, city_name):
     global g_num_of_city_retry_two_times_connect
     global g_num_of_city_retry_three_times_connect
     global g_total_num_of_failed_connect
-    global g_total_num_of_failed_verification_for_cur_temp
     global g_failed_connect_testcases
 
     resp = None
@@ -109,20 +108,26 @@ def test_weather_data_is_valid(city_id, city_name):
         if g_flag_log_failed_connect_tcs:
             g_failed_connect_testcases[str(city_id)] = city_name
         return
-
-    if not verify_response_return_message(json_arr):
-        test_failed_handler()
-        return
     
-    if not verify_response_date(json_arr):
-        test_failed_handler()
-        return
+    verify_response_data(json_arr)
+# end
 
-    # cur_temperature failed is not added into total failed    
-    if not verify_response_temperature(json_arr):
-#         test_failed_handler()
-        g_total_num_of_failed_verification_for_cur_temp = g_total_num_of_failed_verification_for_cur_temp + 1
-# end test_weather_data_is_valid()
+def verify_response_data(json_arr):
+    global g_total_num_of_failed_verification_for_cur_temp
+
+    try:
+        if not verify_response_return_message(json_arr):
+            test_failed_handler()
+            return
+        if not verify_response_cur_date(json_arr):
+            test_failed_handler()
+            return
+        if not verify_response_temperature(json_arr):
+            # cur_temperature failed is not added into total failed
+            g_total_num_of_failed_verification_for_cur_temp = g_total_num_of_failed_verification_for_cur_temp + 1
+    except Exception, e:
+        logging.error('Exception: %s' %e)
+        test_failed_handler()
 
 def test_failed_handler():
     global g_total_num_of_failed_verification
@@ -157,7 +162,7 @@ def verify_response_return_message(json_arr):
         logging_failed(msg, ('Return message is %s' %get_json_ret_msg(json_arr)))
         return False
 
-def verify_response_date(json_arr):
+def verify_response_cur_date(json_arr):
     msg = 'verify the current date from response.'
     
     today_weather = get_json_today_weather_data(json_arr)
