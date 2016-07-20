@@ -13,15 +13,13 @@ import time
 import logging
 import re
 import threading
-import urllib
-import urllib2
 
 from ZJPyUtils import HttpJsonUtils
 
 # ----------------------------------------------------
 # Global variables
 # ----------------------------------------------------
-g_city_list_file_name = 'Weather_city_list.txt'
+g_city_list_file_name = 'Weather_city_list_test.txt'
 g_sleep_time_between_requests = 0.5
 g_request_try_time = 3
 g_flag_log_failed_connect_tcs = True
@@ -90,7 +88,7 @@ def test_weather_data_is_valid(city_id, city_name):
         logging.debug('Try to send request to Baidu weather API for %d times.' %i)
         try:
             resp = HttpJsonUtils.send_get_request_with_header_and_return(
-                g_baidu_weather_service_url,g_baidu_service_request_header_parms,{'cityid':str(city_id)})
+                g_baidu_weather_service_url, g_baidu_service_request_header_parms, {'cityid':str(city_id)})
             json_arr = HttpJsonUtils.json_parse(resp)
         except Exception, e:
             logging.error('Exception: %s' %e)
@@ -260,6 +258,8 @@ def setup_main():
     file_name = 'weather_service_test_%s.log' %(time.strftime('%y-%m-%d_%H-%M-%S'))
     file_path = os.path.join(os.getcwd(), 'logs', file_name)
     init_log_config(logging.DEBUG, logging.INFO, file_path)
+    
+    build_daemon_thread().start()
 
 def test_main():
     global g_cur_num_of_city
@@ -286,6 +286,9 @@ def main(fn):
     logging.info('Verify baidu city weather data DONE, %s cost %d minutes %d seconds.\n' 
                  %(os.path.basename(__file__), (during/60), (during%60)))
 
+    if (len(g_failed_connect_testcases) > 0):
+        log_failed_connect_cities()
+
 def logging_summary():
     logging.info('SUMMARY')
     logging.info('The total number of cities is: %d' %g_total_num_of_city)
@@ -298,12 +301,9 @@ def logging_summary():
     
     logging.info('The number of failed connect is： %d' %g_total_num_of_failed_connect)
     logging.info('The number of failed verification is： %d' %g_total_num_of_failed_verification)
-    logging.info('The number of failed verification for current temperature is： %d' 
+    logging.info('The number of failed verification for current temperature is： %d\n' 
                  %g_total_num_of_failed_verification_for_cur_temp)
     
-    if (len(g_failed_connect_testcases) > 0):
-        log_failed_connect_cities()
-
 def log_failed_connect_cities():
     logging.info('Failed connect cities: id,name')
     for k,v in g_failed_connect_testcases.items():
@@ -313,7 +313,6 @@ def log_failed_connect_cities():
 if __name__ == '__main__':
 
     setup_main()
-    build_daemon_thread().start()
     main(test_main)
 
     logging.debug('Verify baidu weather service DONE.')
