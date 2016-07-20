@@ -13,6 +13,8 @@ import time
 import logging
 import re
 import threading
+import urllib
+import urllib2
 
 from ZJPyUtils import HttpJsonUtils
 
@@ -28,6 +30,9 @@ g_flag_log_failed_connect_tcs = True
 # ----------------------------------------------------
 # Global constant variables
 # ----------------------------------------------------
+g_baidu_weather_service_url = 'http://apis.baidu.com/apistore/weatherservice/recentweathers'
+g_baidu_service_request_header_parms = {'apikey':'7705cca8df9fb3dbe696ce2310979a62'}
+
 g_total_num_of_city = 0
 g_total_num_of_failed_connect = 0
 g_total_num_of_failed_verification = 0
@@ -84,7 +89,8 @@ def test_weather_data_is_valid(city_id, city_name):
     for i in range(1,(g_request_try_time + 1)):
         logging.debug('Try to send request to Baidu weather API for %d times.' %i)
         try:
-            resp = HttpJsonUtils.send_get_request_to_baidu_weather_service_and_return({'cityid':str(city_id)})
+            resp = HttpJsonUtils.send_get_request_with_header_and_return(
+                g_baidu_weather_service_url,g_baidu_service_request_header_parms,{'cityid':str(city_id)})
             json_arr = HttpJsonUtils.json_parse(resp)
         except Exception, e:
             logging.error('Exception: %s' %e)

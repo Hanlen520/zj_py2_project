@@ -16,13 +16,6 @@ import json
 import logging
 
 # ----------------------------------------------------
-# Global variables
-# ----------------------------------------------------
-g_baidu_weather_service_url = 'http://apis.baidu.com/apistore/weatherservice/recentweathers'
-g_baidu_weather_service_api_key = '7705cca8df9fb3dbe696ce2310979a62'
-
-
-# ----------------------------------------------------
 # HTTP functions
 # ----------------------------------------------------
 def send_get_request_and_return(url, data):
@@ -36,21 +29,22 @@ def send_get_request_and_return(url, data):
         logging.warn('The response data is null!')
         return ''
 
-def send_post_request_and_return(url, data):
-    print 'TODO:'
-
-def send_get_request_to_baidu_weather_service_and_return(data):
-    parms = urllib.urlencode(data)
-    req = urllib2.Request('%s?%s' %(g_baidu_weather_service_url, parms))
-    req.add_header('apikey', g_baidu_weather_service_api_key)
+def send_get_request_with_header_and_return(url, header_parms, request_parms):
+    parms = urllib.urlencode(request_parms)
+    req = urllib2.Request('%s?%s' %(url, parms))
+    for key,value in header_parms.items():
+        req.add_header(key, value)
 
     resp = urllib2.urlopen(req)
     content = resp.read()
     if (content):
         return content
     else:
-        logging.warn('The response data from baidu service is null!')
+        logging.warn('The response request_parms from baidu service is null!')
         return ''
+
+def send_post_request_and_return(url, data):
+    print 'TODO:'
 
 
 # ----------------------------------------------------
@@ -80,8 +74,11 @@ def test_get_api():
     print json_arr['data']['today']['curTemp']
 
 def test_baidu_weather_api():
+    url = 'http://apis.baidu.com/apistore/weatherservice/recentweathers'
+    header_parms = {'apikey':'7705cca8df9fb3dbe696ce2310979a62'}
     req_parms = {'cityid':'101010100'}
-    resp = send_get_request_to_baidu_weather_service_and_return(req_parms)
+    
+    resp = send_get_request_with_header_and_return(url,header_parms,req_parms)
     logging.debug(resp)
     json_arr = json_parse(resp)
     print json_arr['retData']['today']['date']
