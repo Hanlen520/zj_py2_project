@@ -22,20 +22,29 @@ from ZJPyUtils import HttpJsonUtils
 g_city_list_file_name = 'Weather_city_list_test.txt'
 g_sleep_time_between_requests = 0.5
 g_request_try_time = 3
+g_flag_log_failed_connect_tcs = True
 
 
 # ----------------------------------------------------
 # Global constant variables
 # ----------------------------------------------------
 g_total_num_of_city = 0
+g_total_num_of_failed_connect = 0
+g_total_num_of_failed_verification = 0
+g_total_num_of_failed_verification_for_cur_temp = 0
 g_cur_num_of_city = 0
-g_total_failed = 0
+
+g_num_of_city_retry_one_times_connect = 0
+g_num_of_city_retry_two_times_connect = 0
+g_num_of_city_retry_three_times_connect = 0
+
+g_failed_connect_testcases = {}
 
 
 # ------------------------------------------------
 # Log functions
 # ------------------------------------------------
-def init_log_config():
+def init_log_config(main_log_level, file_log_level, file_path):
     long_format = '%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s: %(message)s'
     short_format = '%(filename)s: [%(levelname)s] >>> %(message)s'
     
@@ -43,13 +52,11 @@ def init_log_config():
     short_date_format = '%d %b %H:%M:%S'
 
     # log main handler
-    logging.basicConfig(level=logging.DEBUG,format=short_format,datefmt=short_date_format)
+    logging.basicConfig(level=main_log_level,format=short_format,datefmt=short_date_format)
 
     # set the file handler
-    file_name = 'weather_service_test_%s.log' %(time.strftime('%y-%m-%d_%H-%M-%S'))
-    file_path = os.path.join(os.getcwd(), 'logs', file_name)
-    log_file = logging.FileHandler(filename=file_path,mode='w')
-    log_file.setLevel(logging.INFO)
+    log_file = logging.FileHandler(filename=file_path, mode='w')
+    log_file.setLevel(file_log_level)
     log_file.setFormatter(logging.Formatter(fmt=long_format,datefmt=long_date_format))
     logging.getLogger('').addHandler(log_file)
 
@@ -64,26 +71,43 @@ def logging_failed(text, reason):
 # ------------------------------------------------
 # Test case
 # ------------------------------------------------
-def test_weather_data_is_valid(req_parms):
+def test_weather_data_is_valid(city_id, city_name):
+    global g_num_of_city_retry_one_times_connect
+    global g_num_of_city_retry_two_times_connect
+    global g_num_of_city_retry_three_times_connect
+    global g_total_num_of_failed_connect
+    global g_total_num_of_failed_verification_for_cur_temp
+    global g_failed_connect_testcases
+
     resp = None
     json_arr = None
-    
-    flag_data_valid = False
+    flag_connect_validate = False
     for i in range(1,(g_request_try_time + 1)):
-        if i > 1:
-            logging.info('Try to send request to Baidu weather API %d times.' %i)
+        logging.debug('Try to send request to Baidu weather API for %d times.' %i)
+        try:
+            resp = HttpJsonUtils.send_get_request_to_baidu_weather_service_and_return({'cityid':str(city_id)})
+            json_arr = HttpJsonUtils.json_parse(resp)
+        except Exception, e:
+            logging.error('Exception: %s' %e)
 
-        resp = HttpJsonUtils.send_get_request_to_baidu_weather_service_and_return(req_parms)
-        json_arr = HttpJsonUtils.json_parse(resp)
-        if verify_json_response_data(resp) and verify_response_return_code(json_arr):
-            flag_data_valid = True
+        if verify_response_content_type_json(resp) and verify_response_return_code(json_arr):
+            flag_connect_validate = True
+            if i == 1:
+                g_num_of_city_retry_one_times_connect = g_num_of_city_retry_one_times_connect + 1
+            elif i == 2:
+                g_num_of_city_retry_two_times_connect = g_num_of_city_retry_two_times_connect + 1
+            elif i == 3:
+                g_num_of_city_retry_three_times_connect = g_num_of_city_retry_three_times_connect + 1
+            else:
+                logging.fatal('Unexpected connect retry times.')
             break
-        
         time.sleep(g_sleep_time_between_requests)
     # end for
     
-    if not flag_data_valid:
-        test_failed_handler()
+    if not flag_connect_validate:
+        g_total_num_of_failed_connect = g_total_num_of_failed_connect + 1
+        if g_flag_log_failed_connect_tcs:
+            g_failed_connect_testcases[str(city_id)] = city_name
         return
 
     if not verify_response_return_message(json_arr):
@@ -93,21 +117,23 @@ def test_weather_data_is_valid(req_parms):
     if not verify_response_date(json_arr):
         test_failed_handler()
         return
-    
+
+    # cur_temperature failed is not added into total failed    
     if not verify_response_temperature(json_arr):
-        test_failed_handler()
+#         test_failed_handler()
+        g_total_num_of_failed_verification_for_cur_temp = g_total_num_of_failed_verification_for_cur_temp + 1
+# end test_weather_data_is_valid()
 
 def test_failed_handler():
-    global g_total_failed
-    g_total_failed = g_total_failed + 1
+    global g_total_num_of_failed_verification
+    g_total_num_of_failed_verification = g_total_num_of_failed_verification + 1
 
-def verify_json_response_data(resp):
+def verify_response_content_type_json(resp):
     if resp == '': 
         logging.error('The json response data is null!')
         return False
-    
     if not resp.startswith('{'):
-        logging.error('The response data content type is NOT json!')
+        logging.error('The content type of response is not JSON!')
         return False
     
     logging.info(resp)
@@ -219,6 +245,11 @@ def build_daemon_thread():
 # ------------------------------------------------
 # Test main
 # ------------------------------------------------
+def setup_main():
+    file_name = 'weather_service_test_%s.log' %(time.strftime('%y-%m-%d_%H-%M-%S'))
+    file_path = os.path.join(os.getcwd(), 'logs', file_name)
+    init_log_config(logging.DEBUG, logging.INFO, file_path)
+
 def test_main():
     global g_cur_num_of_city
 
@@ -228,11 +259,7 @@ def test_main():
         city_name = tmp_list[1]
 
         logging.info('---> START: verify weather data for city id: %s, city name: %s' %(city_id,city_name))
-        try:
-            test_weather_data_is_valid({'cityid':str(city_id)})
-        except Exception, e:
-            logging.error('Exception when verify city: %s (%s)' %(city_id,city_name))
-            logging.error('Exception: %s' %e)
+        test_weather_data_is_valid(city_id, city_name)
         logging.info('---> END: verify weather data for city id: %s, city name: %s\n' %(city_id,city_name))
         
         g_cur_num_of_city = g_cur_num_of_city + 1
@@ -243,18 +270,38 @@ def main(fn):
     start = int(time.clock())
     fn()
     during = int(time.clock()) - start
+    
+    logging_summary()
+    logging.info('Verify baidu city weather data DONE, %s cost %d minutes %d seconds.\n' 
+                 %(os.path.basename(__file__), (during/60), (during%60)))
 
+def logging_summary():
     logging.info('SUMMARY')
     logging.info('The total number of cities is: %d' %g_total_num_of_city)
-    logging.info('The failed number of cities is： %d' %g_total_failed)
-    logging.info('Verify baidu city weather data DONE, %s cost %d minutes %d seconds.' 
-                 %(os.path.basename(__file__), (during/60), (during%60)))
-# end main
+    
+    logging.info('The total number of pass is: %d' 
+                 %(g_total_num_of_city - g_total_num_of_failed_connect - g_total_num_of_failed_verification))
+    logging.info('The number of cities retry 1 times connect is: %d' %g_num_of_city_retry_one_times_connect)
+    logging.info('The number of cities retry 2 times connect is: %d' %g_num_of_city_retry_two_times_connect)
+    logging.info('The number of cities retry 3 times connect is: %d' %g_num_of_city_retry_three_times_connect)
+    
+    logging.info('The number of failed connect is： %d' %g_total_num_of_failed_connect)
+    logging.info('The number of failed verification is： %d' %g_total_num_of_failed_verification)
+    logging.info('The number of failed verification for current temperature is： %d' 
+                 %g_total_num_of_failed_verification_for_cur_temp)
+    
+    if (len(g_failed_connect_testcases) > 0):
+        log_failed_connect_cities()
+
+def log_failed_connect_cities():
+    logging.info('Failed connect cities: id,name')
+    for k,v in g_failed_connect_testcases.items():
+        logging.info('%s,%s' %(str(k), v))
 
 
 if __name__ == '__main__':
 
-    init_log_config()
+    setup_main()
     build_daemon_thread().start()
     main(test_main)
 

@@ -68,6 +68,22 @@ import os
 # print re.findall(r'-(\d+)C', str)
 
 
+# EXAMPLE 08
+# city_id1 = 1
+# city_name1 = 'city1'
+# city_id2 = 2
+# city_name2 = 'city2'
+#  
+# city_list = {}
+# city_list[city_id1] = city_name1
+# city_list[city_id2] = city_name2
+#  
+# for k,v in city_list.items():
+#     print 'key: %s' %k
+#     print 'value: %s' %v
+
+
+
 if __name__ == '__main__':
 
     print("%s done!" %os.path.basename(__file__))
