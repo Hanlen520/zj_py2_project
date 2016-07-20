@@ -10,10 +10,10 @@ Runner to run multiple monitor scripts concurrently.
 
 import threading
 import time
-from ZJPyAndroidMonitorUtils import MemMonitorDumpsys
-from ZJPyAndroidMonitorUtils import MemMonitorProcrank
-from ZJPyAndroidMonitorUtils import CpuMonitorTop
-from ZJPyAndroidMonitorUtils import MonitorUtils
+from ZJAndroidMonitor import MemMonitorDumpsys
+from ZJAndroidMonitor import MemMonitorProcrank
+from ZJAndroidMonitor import CpuMonitorTop
+from ZJAndroidMonitor import MonitorUtils
 
 # --------------------------------------------------------------
 # Env vars, and default value

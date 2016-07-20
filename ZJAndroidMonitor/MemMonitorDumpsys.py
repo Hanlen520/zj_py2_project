@@ -10,7 +10,7 @@ Parse and build the memory info by using dumpsys meminfo.
 
 import os
 import time
-from ZJPyAndroidMonitorUtils import MonitorUtils
+from ZJAndroidMonitor import MonitorUtils
 
 # --------------------------------------------------------------
 # Env Vars

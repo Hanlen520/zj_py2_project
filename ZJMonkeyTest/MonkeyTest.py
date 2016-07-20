@@ -14,8 +14,8 @@ import os
 import time
 import re
 import threading
-from ZJPyAndroidMonitorUtils import MonitorRunner
-from ZJPyAndroidMonitorUtils import MonitorUtils
+from ZJAndroidMonitor import MonitorRunner
+from ZJAndroidMonitor import MonitorUtils
 
 # --------------------------------------------------------------
 # Env vars

@@ -269,7 +269,7 @@
 
 # EXAMPLE 23
 # import os
-# str = r'E:\Eclipse_Workspace\ZJPyProject\ZJMonkeyUtils\MonkeyReprots\20160622_01\rom_props_20160622_01.log'
+# str = r'E:\Eclipse_Workspace\ZJPyProject\ZJMonkeyTest\MonkeyReprots\20160622_01\rom_props_20160622_01.log'
 # print os.path.basename(str)
 # print os.path.dirname(str)
 

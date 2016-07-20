@@ -10,7 +10,7 @@ Parse and build CPU usage info by using top.
 
 import os
 import time
-from ZJPyAndroidMonitorUtils import MonitorUtils
+from ZJAndroidMonitor import MonitorUtils
 
 # --------------------------------------------------------------
 # Env Vars

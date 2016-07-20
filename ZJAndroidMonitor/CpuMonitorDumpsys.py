@@ -6,7 +6,7 @@ Created on 2016-6-17
 '''
 
 import os
-from ZJPyAndroidMonitorUtils import MonitorUtils
+from ZJAndroidMonitor import MonitorUtils
 
 
 # --------------------------------------------------------------
