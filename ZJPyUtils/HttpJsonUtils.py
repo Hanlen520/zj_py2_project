@@ -18,8 +18,13 @@ import logging
 # ----------------------------------------------------
 # HTTP functions
 # ----------------------------------------------------
-def send_get_request_and_return(url, data):
-    parms = urllib.urlencode(data)
+def send_get_request_and_return(url, data, flag_urlencode=True):
+    parms = None
+    if flag_urlencode:
+        parms = urllib.urlencode(data)
+    else:
+        parms = data
+
     resp = urllib.urlopen('%s?%s' %(url, parms))
     content = resp.read()
     

@@ -153,18 +153,18 @@ def verify_response_content_type_json(resp):
 
 def verify_response_return_code_and_msg(json_arr):
     msg = 'verify the response return code and message.'
-    if (get_json_ret_num(json_arr)) == 0:
+    if (get_response_ret_num(json_arr)) == 0:
         logging_pass(msg)
         return True
     else:
-        logging_failed(msg, ('Response return code is %d' %get_json_ret_num(json_arr)))
+        logging_failed(msg, ('Response return code is %d' %get_response_ret_num(json_arr)))
         return False
     
-    if get_json_ret_msg(json_arr) == 'success':
+    if get_response_ret_msg(json_arr) == 'success':
         logging_pass(msg)
         return True
     else:
-        logging_failed(msg, ('Response return message is %s' %get_json_ret_msg(json_arr)))
+        logging_failed(msg, ('Response return message is %s' %get_response_ret_msg(json_arr)))
         return False
 
 def verify_response_cur_date(json_arr):
@@ -204,10 +204,10 @@ def get_int_from_temp(data):
     temp = re.findall(r'\d+', data)[first_element]
     return int(temp)
 
-def get_json_ret_num(data):
+def get_response_ret_num(data):
     return data['errNum']
 
-def get_json_ret_msg(data):
+def get_response_ret_msg(data):
     return data['errMsg']
 
 def get_json_ret_data(data):
