@@ -212,12 +212,12 @@ def get_json_today_weather_data(data):
     return get_json_ret_data(data)['today']
 
 def get_city_list():
-    input_city_list_file_path = os.path.join(os.getcwd(), 'data', g_city_list_file_name)
-    if not os.path.exists(input_city_list_file_path):
-        logging.error('The city list file (%s) is NOT found!' %input_city_list_file_path)
+    city_list_file_path = os.path.join(os.getcwd(), 'data', g_city_list_file_name)
+    if not os.path.exists(city_list_file_path):
+        logging.error('The city list file (%s) is NOT found!' %city_list_file_path)
         exit(1)
     
-    f = open(input_city_list_file_path, 'r')
+    f = open(city_list_file_path, 'r')
     city_list = f.readlines()
     if len(city_list) == 0:
         logging.error('Read 0 city item in the city list file!')

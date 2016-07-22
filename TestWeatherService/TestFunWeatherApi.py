@@ -56,12 +56,12 @@ def init_log_config(main_log_level, file_log_level, file_path):
     logging.getLogger('').addHandler(log_file)
 
 def get_city_list():
-    input_city_list_file_path = os.path.join(os.getcwd(), 'data', g_city_list_file_name)
-    if not os.path.exists(input_city_list_file_path):
-        logging.error('The city list file (%s) is NOT found!' %input_city_list_file_path)
+    city_list_file_path = os.path.join(os.getcwd(), 'data', g_city_list_file_name)
+    if not os.path.exists(city_list_file_path):
+        logging.error('The city list file (%s) is NOT found!' %city_list_file_path)
         exit(1)
     
-    f = open(input_city_list_file_path, 'r')
+    f = open(city_list_file_path, 'r')
     city_list = f.readlines()
     if len(city_list) == 0:
         logging.error('Read 0 city item in the city list file!')
