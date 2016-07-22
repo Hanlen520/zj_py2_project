@@ -24,7 +24,7 @@ g_fun_weather_service_url = 'http://card.tv.funshion.com/weather/city'
 g_fun_weather_service_parms = '&mac=28:76:CD:01:96:F6&random=1468389831575632' + \
                             '&sign=a3e7422bef887d61a518ac64e3e234fa&cityId=%s'
 
-g_city_list_file_name = 'Weather_city_list_compare.txt'
+g_city_list_file_name = 'Weather_city_list_compare_test.txt'
 
 g_request_try_time = 3
 g_sleep_time_between_requests = 0.5
@@ -61,8 +61,17 @@ def get_city_list():
         logging.error('The city list file (%s) is NOT found!' %city_list_file_path)
         exit(1)
     
+    city_list = []
     f = open(city_list_file_path, 'r')
-    city_list = f.readlines()
+    try:
+        city_list = f.readlines()
+    except Exception, e:
+        logging.error('Exception: %s' %e)
+        logging.error('Exception when read lines from city list file.')
+        exit(1)
+    finally:
+        f.close()
+
     if len(city_list) == 0:
         logging.error('Read 0 city item in the city list file!')
         exit(1)
@@ -145,6 +154,10 @@ def verify_resp_ret_code_and_msg_for_fun(json_arr):
 def verify_main():
     for city_item in get_city_list():
         fields = city_item.strip().rstrip('\n').split(',')
+        if len(fields) != 2:
+            logging.error('Invalid city item: %s\n' %city_item)
+            continue
+            
         city_id = fields[0]
         city_name = fields[1]
 

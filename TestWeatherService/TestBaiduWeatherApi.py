@@ -217,8 +217,17 @@ def get_city_list():
         logging.error('The city list file (%s) is NOT found!' %city_list_file_path)
         exit(1)
     
+    city_list = []
     f = open(city_list_file_path, 'r')
-    city_list = f.readlines()
+    try:
+        city_list = f.readlines()
+    except Exception, e:
+        logging.error('Exception: %s' %e)
+        logging.error('Exception when read lines from city list file.')
+        exit(1)
+    finally:
+        f.close()
+    
     if len(city_list) == 0:
         logging.error('Read 0 city item in the city list file!')
         exit(1)
