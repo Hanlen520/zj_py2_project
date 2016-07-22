@@ -19,18 +19,16 @@ from ZJPyUtils import HttpJsonUtils
 # ----------------------------------------------------
 # Global variables
 # ----------------------------------------------------
+g_baidu_weather_service_url = 'http://apis.baidu.com/apistore/weatherservice/recentweathers'
+g_baidu_service_request_header_parms = {'apikey':'7705cca8df9fb3dbe696ce2310979a62'}
+
 g_city_list_file_name = 'Weather_city_list.txt'
+
 g_sleep_time_between_requests = 0.5
 g_request_try_time = 3
 g_flag_log_failed_tcs = True
 
-
-# ----------------------------------------------------
-# Global constant variables
-# ----------------------------------------------------
-g_baidu_weather_service_url = 'http://apis.baidu.com/apistore/weatherservice/recentweathers'
-g_baidu_service_request_header_parms = {'apikey':'7705cca8df9fb3dbe696ce2310979a62'}
-
+# summary fields
 g_total_num_of_city = 0
 g_total_num_of_failed_connect = 0
 g_total_num_of_failed_verification = 0
@@ -153,18 +151,15 @@ def verify_response_content_type_json(resp):
 
 def verify_response_return_code_and_msg(json_arr):
     msg = 'verify the response return code and message.'
-    if (get_response_ret_num(json_arr)) == 0:
-        logging_pass(msg)
-        return True
+    if get_response_ret_num(json_arr) == 0:
+        if get_response_ret_msg(json_arr) == 'success':
+            logging_pass(msg)
+            return True
+        else:
+            logging_failed(msg, ('Response return message is %s' %get_response_ret_msg(json_arr)))
+            return False
     else:
         logging_failed(msg, ('Response return code is %d' %get_response_ret_num(json_arr)))
-        return False
-    
-    if get_response_ret_msg(json_arr) == 'success':
-        logging_pass(msg)
-        return True
-    else:
-        logging_failed(msg, ('Response return message is %s' %get_response_ret_msg(json_arr)))
         return False
 
 def verify_response_cur_date(json_arr):
