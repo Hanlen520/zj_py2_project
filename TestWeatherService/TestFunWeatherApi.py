@@ -56,12 +56,12 @@ def init_log_config(main_log_level, file_log_level, file_path):
     logging.getLogger('').addHandler(log_file)
 
 def get_city_list():
-    city_list_file_path = os.path.join(os.getcwd(), 'data', g_city_list_file_name)
-    if not os.path.exists(city_list_file_path):
-        logging.error('The city list file (%s) is NOT found!' %city_list_file_path)
+    input_city_list_file_path = os.path.join(os.getcwd(), 'data', g_city_list_file_name)
+    if not os.path.exists(input_city_list_file_path):
+        logging.error('The city list file (%s) is NOT found!' %input_city_list_file_path)
         exit(1)
     
-    f = open(city_list_file_path, 'r')
+    f = open(input_city_list_file_path, 'r')
     city_list = f.readlines()
     if len(city_list) == 0:
         logging.error('Read 0 city item in the city list file!')
@@ -144,7 +144,7 @@ def verify_resp_ret_code_and_msg_for_fun(json_arr):
 # ----------------------------------------------------
 def verify_main():
     for city_item in get_city_list():
-        fields = city_item.strip().split(',')
+        fields = city_item.strip().rstrip('\n').split(',')
         city_id = fields[0]
         city_name = fields[1]
 
@@ -161,24 +161,9 @@ def verify_main():
             verify_failed_handler(city_id, city_name)
             continue
 
-        flag_failed = False
-        logging.info('TODAY: weather data verification')
-        if verify_resp_today_weather_data(
-                get_today_weather_data_for_baidu(resp_json_baidu),get_today_weather_data_for_fun(resp_json_fun)):
-            logging.info('TODAY: the weather data is equal for Baidu and Fun.')
-        else:
-            logging.error('TODAY: the weather data is NOT equal for Baidu and Fun.')
-            flag_failed = True
-
-        logging.info('FORECAST: weather data verification')
-        if verify_resp_forecast_weather_data(
-                get_forecast_weather_data_for_baidu(resp_json_baidu),get_forecast_weather_data_for_fun(resp_json_fun)):
-            logging.info('FORECAST: the weather data is equal for Baidu and Fun.')
-        else:
-            logging.error('FORECAST: the weather data is NOT equal for Baidu and Fun.')
-            flag_failed = True
-            
-        if flag_failed:
+        verify_today = verify_today_weather_data(resp_json_baidu, resp_json_fun)
+        verify_forecast = verify_forecast_weather_data(resp_json_baidu, resp_json_fun)
+        if (not verify_today) or (not verify_forecast):
             verify_failed_handler(city_id, city_name)
         logging.info('---> END: compare weather data for city id: %s, city name: %s\n' %(city_id,city_name))
     #end for
@@ -189,6 +174,36 @@ def verify_failed_handler(city_id, city_name):
     
     g_total_failed_num_of_cities = g_total_failed_num_of_cities + 1
     g_failed_cities[city_id] = city_name
+
+def verify_today_weather_data(resp_json_baidu, resp_json_fun):
+    logging.info('TODAY: weather data verification')
+    try:
+        if verify_resp_today_weather_data(
+                get_today_weather_data_for_baidu(resp_json_baidu),get_today_weather_data_for_fun(resp_json_fun)):
+            logging.info('TODAY: the weather data is equal for Baidu and Fun.')
+            return True
+        else:
+            logging.error('TODAY: the weather data is NOT equal for Baidu and Fun.')
+            return False
+    except Exception, e:
+        logging.error('Exception: %s' %e)
+        logging.error('TODAY: exception when verify weather data for Baidu and Fun.')
+        return False
+
+def verify_forecast_weather_data(resp_json_baidu, resp_json_fun):
+    logging.info('FORECAST: weather data verification')
+    try:
+        if verify_resp_forecast_weather_data(
+                get_forecast_weather_data_for_baidu(resp_json_baidu),get_forecast_weather_data_for_fun(resp_json_fun)):
+            logging.info('FORECAST: the weather data is equal for Baidu and Fun.')
+            return True
+        else:
+            logging.error('FORECAST: the weather data is NOT equal for Baidu and Fun.')
+            return False
+    except Exception, e:
+        logging.error('Exception: %s' %e)
+        logging.error('FORECAST: exception when verify weather data for Baidu and Fun.')
+        return False
 
 def verify_resp_today_weather_data(json_baidu, json_fun):
     ret = True
@@ -215,6 +230,7 @@ def verify_resp_forecast_weather_data(json_baidu, json_fun):
 
 def verify_day_weather_data_in_forecast(json_baidu, json_fun):
     logging.info('Verify forecast weather data at %s.' %json_baidu['date'])
+    
     ret = True
     for key in json_baidu.keys():
         if not json_baidu[key] == json_fun[key]:
@@ -268,7 +284,7 @@ def log_verification_summary():
 def log_failed_cities():
     if len(g_failed_cities) > 0:
         logging.info('Failed verification cities: id,name')
-        for k,v in g_failed_cities.items():
+        for k,v in sorted(g_failed_cities.items(), key=lambda f:f[0]):  # sorted by key
             logging.info('%s,%s' %(str(k), v))
     logging.info('')
 

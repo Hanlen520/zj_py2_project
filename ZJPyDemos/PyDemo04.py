@@ -83,6 +83,18 @@ import os
 #     print 'value: %s' %v
 
 
+# EXAMPLE 09
+# dic = {'1':'a','3':'c','2':'b'}
+# items = dic.items()
+# items.sort()
+# print items
+# for k,v in items:
+#     print k
+#     print v
+# 
+# for k,v in sorted(dic.items(),key=lambda d:d[0]):
+#     print k
+
 
 if __name__ == '__main__':
 

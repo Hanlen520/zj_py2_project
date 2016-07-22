@@ -22,7 +22,7 @@ from ZJPyUtils import HttpJsonUtils
 g_baidu_weather_service_url = 'http://apis.baidu.com/apistore/weatherservice/recentweathers'
 g_baidu_service_request_header_parms = {'apikey':'7705cca8df9fb3dbe696ce2310979a62'}
 
-g_city_list_file_name = 'Weather_city_list.txt'
+g_city_list_file_name = 'Weather_city_list_test.txt'
 
 g_sleep_time_between_requests = 0.5
 g_request_try_time = 3
@@ -212,12 +212,12 @@ def get_json_today_weather_data(data):
     return get_json_ret_data(data)['today']
 
 def get_city_list():
-    city_list_file_path = os.path.join(os.getcwd(), 'data', g_city_list_file_name)
-    if not os.path.exists(city_list_file_path):
-        logging.error('The city list file (%s) is NOT found!' %city_list_file_path)
+    input_city_list_file_path = os.path.join(os.getcwd(), 'data', g_city_list_file_name)
+    if not os.path.exists(input_city_list_file_path):
+        logging.error('The city list file (%s) is NOT found!' %input_city_list_file_path)
         exit(1)
     
-    f = open(city_list_file_path, 'r')
+    f = open(input_city_list_file_path, 'r')
     city_list = f.readlines()
     if len(city_list) == 0:
         logging.error('Read 0 city item in the city list file!')
@@ -260,7 +260,7 @@ def test_main():
     global g_cur_num_of_city
 
     for city_item in get_city_list():
-        tmp_list = city_item.strip().split(',')
+        tmp_list = city_item.strip().rstrip('\n').split(',')
         city_id = tmp_list[0]
         city_name = tmp_list[1]
 

@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//TestWeatherService/GetCompareCityList.py=utf-8
 encoding//TestWeatherService/TestBaiduWeatherApi.py=utf-8
 encoding//TestWeatherService/TestFunWeatherApi.py=utf-8
 encoding//ZJAndroidMonitor/CpuMonitorDumpsys.py=utf-8
