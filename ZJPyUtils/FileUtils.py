@@ -7,6 +7,7 @@ Created on 2016-7-20
 '''
 
 import os
+import time
 import logging
 
 # ----------------------------------------------------
@@ -93,6 +94,17 @@ def append_content_to_file(file_path, content):
     
     with open(file_path, 'a') as f:
         f.write(content)
+
+
+# ----------------------------------------------------
+# Path functions
+# ----------------------------------------------------
+def create_dir(dir_path):
+    if os.path.exists(dir_path):
+        return
+    
+    os.makedirs(dir_path)
+    time.sleep(0.5)
 
 
 # ----------------------------------------------------
