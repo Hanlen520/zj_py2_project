@@ -111,6 +111,14 @@ import os
 # print str_f
 
 
+# EXAMPLE 12
+# import os
+# content = ''
+# with open(os.path.join(os.getcwd(), 'zjunittest.log')) as f:
+#     content = f.read()
+# print content
+
+
 if __name__ == '__main__':
 
     print("%s done!" %os.path.basename(__file__))
