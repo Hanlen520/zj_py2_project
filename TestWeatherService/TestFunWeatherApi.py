@@ -29,6 +29,9 @@ g_city_list_file_name = 'Weather_city_list_compare.txt'
 g_request_try_time = 3
 g_sleep_time_between_requests = 0.5
 
+g_tag_baidu = 'Baidu'
+g_tag_funshion = 'Funshion'
+
 # summary fields
 g_total_num_of_cities = 0
 g_total_failed_num_of_cities = 0
@@ -91,7 +94,7 @@ def get_city_weather_data_from_baidu_service(city_id):
         resp = HttpJsonUtils.send_get_request_with_header_and_return(
             g_baidu_weather_service_url, g_baidu_service_request_header_parms, {'cityid':str(city_id)})
 
-        if verify_response_content_type_json('Baidu', resp):
+        if verify_response_content_type_json(g_tag_baidu, resp):
             json_arr = HttpJsonUtils.json_parse(resp)
             if verify_resp_ret_code_and_msg_for_baidu(json_arr):
                 return json_arr
@@ -105,7 +108,7 @@ def get_city_weather_data_from_fun_service(city_id):
         resp = HttpJsonUtils.send_get_request_and_return(
                 g_fun_weather_service_url, (g_fun_weather_service_parms %city_id), flag_urlencode=False)         
 
-        if verify_response_content_type_json('Fun', resp):
+        if verify_response_content_type_json(g_tag_funshion, resp):
             json_arr = HttpJsonUtils.json_parse(resp)
             if verify_resp_ret_code_and_msg_for_fun(json_arr):
                 return json_arr
@@ -120,7 +123,10 @@ def verify_response_content_type_json(tag, resp):
     if not resp.startswith('{'):
         logging.warn('The content type of response is not JSON!')
         return False
-    
+
+    if tag == g_tag_baidu:
+        resp = resp.decode('unicode_escape')  # convert unicode '\u5317\u4eac' to Chinese word
+
     logging.info('%s: %s' %(tag, resp))
     return True
 

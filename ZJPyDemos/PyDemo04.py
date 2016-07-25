@@ -102,6 +102,15 @@ import os
 # print i
 
 
+# EXAMPLE 11
+# str = '\u5317\u4eac'
+# print type(str)
+# str_f = str.decode('utf-8').encode('gbk')
+# print type(str_f)
+# str_f = str.decode('unicode_escape')
+# print str_f
+
+
 if __name__ == '__main__':
 
     print("%s done!" %os.path.basename(__file__))
