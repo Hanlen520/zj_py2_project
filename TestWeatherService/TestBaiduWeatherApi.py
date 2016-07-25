@@ -99,11 +99,11 @@ def test_weather_data(city_id, city_name):
         if verify_response_content_type_json(resp) and verify_response_return_code_and_msg(json_arr):
             flag_connect_validate = True
             if i == 1:
-                g_num_of_city_retry_one_times_connect = g_num_of_city_retry_one_times_connect + 1
+                g_num_of_city_retry_one_times_connect += 1
             elif i == 2:
-                g_num_of_city_retry_two_times_connect = g_num_of_city_retry_two_times_connect + 1
+                g_num_of_city_retry_two_times_connect += 1
             elif i == 3:
-                g_num_of_city_retry_three_times_connect = g_num_of_city_retry_three_times_connect + 1
+                g_num_of_city_retry_three_times_connect += 1
             else:
                 logging.fatal('Unexpected connect retry times.')
             break
@@ -111,13 +111,13 @@ def test_weather_data(city_id, city_name):
     # end for
     
     if not flag_connect_validate:
-        g_total_num_of_failed_connect = g_total_num_of_failed_connect + 1
+        g_total_num_of_failed_connect += 1
         if g_flag_log_failed_tcs:
             g_failed_connect_cities[str(city_id)] = city_name
         return
     
     if not verify_response_fields(json_arr):
-        g_total_num_of_failed_verification = g_total_num_of_failed_verification + 1
+        g_total_num_of_failed_verification += 1
         if g_flag_log_failed_tcs:
             g_failed_verification_cities[str(city_id)] = city_name
 # end
@@ -277,7 +277,7 @@ def test_main():
         test_weather_data(city_id, city_name)
         logging.info('---> END: verify weather data for city id: %s, city name: %s\n' %(city_id,city_name))
         
-        g_cur_num_of_city = g_cur_num_of_city + 1
+        g_cur_num_of_city += 1
         time.sleep(g_sleep_time_between_requests)
     # end for
 

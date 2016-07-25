@@ -96,6 +96,12 @@ import os
 #     print k
 
 
+# EXAMPLE 10
+# i = 1
+# i += 2
+# print i
+
+
 if __name__ == '__main__':
 
     print("%s done!" %os.path.basename(__file__))

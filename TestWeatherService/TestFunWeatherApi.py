@@ -24,7 +24,7 @@ g_fun_weather_service_url = 'http://card.tv.funshion.com/weather/city'
 g_fun_weather_service_parms = '&mac=28:76:CD:01:96:F6&random=1468389831575632' + \
                             '&sign=a3e7422bef887d61a518ac64e3e234fa&cityId=%s'
 
-g_city_list_file_name = 'Weather_city_list_compare_test.txt'
+g_city_list_file_name = 'Weather_city_list_compare.txt'
 
 g_request_try_time = 3
 g_sleep_time_between_requests = 0.5
@@ -152,10 +152,14 @@ def verify_resp_ret_code_and_msg_for_fun(json_arr):
 # Verification
 # ----------------------------------------------------
 def verify_main():
+    global g_total_num_of_cities
+    
     for city_item in get_city_list():
         fields = city_item.strip().rstrip('\n').split(',')
         if len(fields) != 2:
             logging.error('Invalid city item: %s\n' %city_item)
+            if g_total_num_of_cities > 1:
+                g_total_num_of_cities -= 1
             continue
             
         city_id = fields[0]
@@ -185,7 +189,7 @@ def verify_failed_handler(city_id, city_name):
     global g_total_failed_num_of_cities
     global g_failed_cities
     
-    g_total_failed_num_of_cities = g_total_failed_num_of_cities + 1
+    g_total_failed_num_of_cities += 1
     g_failed_cities[city_id] = city_name
 
 def verify_today_weather_data(resp_json_baidu, resp_json_fun):
