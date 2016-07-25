@@ -155,9 +155,10 @@ def verify_main():
     global g_total_num_of_cities
     
     for city_item in get_city_list():
-        fields = city_item.strip().rstrip('\n').split(',')
+        city_item = city_item.strip().rstrip('\n')
+        fields = city_item.split(',')
         if len(fields) != 2:
-            logging.error('Invalid city item: %s\n' %city_item)
+            logging.warn('Invalid city item: %s\n' %city_item)
             if g_total_num_of_cities > 1:
                 g_total_num_of_cities -= 1
             continue
