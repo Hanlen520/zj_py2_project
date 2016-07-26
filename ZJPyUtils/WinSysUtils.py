@@ -4,6 +4,9 @@
 Created on 2016-7-20
 
 @author: Vieira
+
+Include the utils on Windows env.
+
 '''
 
 import os
@@ -71,6 +74,9 @@ def run_sys_cmd_in_subprocess(cmd):
         return False,''
 
 
+# --------------------------------------------------------------
+# Main
+# --------------------------------------------------------------
 if __name__ == '__main__':
 
     pass

@@ -5,7 +5,7 @@ Created on 2016-7-19
 
 @author: Vieira
 
-Verify the weather data of cities is consistent for Funshion and Baidu API.
+Verify the city weather data from Funshion is consistent with Baidu service.
 '''
 
 import os
@@ -91,8 +91,14 @@ def get_city_list():
 def get_city_weather_data_from_baidu_service(city_id):
     for i in range(1,(g_request_try_time + 1)):
         logging.debug('Try to send request to Baidu weather API for %d times.' %i)
-        resp = HttpJsonUtils.send_get_request_with_header_and_return(
-            g_baidu_weather_service_url, g_baidu_service_request_header_parms, {'cityid':str(city_id)})
+        
+        resp = ''
+        try:
+            resp = HttpJsonUtils.send_get_request_with_header_and_return(
+                g_baidu_weather_service_url, g_baidu_service_request_header_parms, {'cityid':str(city_id)})
+        except Exception, e:
+            logging.error('Exception when send request to Baidu weather service.')
+            logging.error('Exception: %s' %e)
 
         if verify_response_content_type_json(g_tag_baidu, resp):
             json_arr = HttpJsonUtils.json_parse(resp)
@@ -100,13 +106,20 @@ def get_city_weather_data_from_baidu_service(city_id):
                 return json_arr
         time.sleep(g_sleep_time_between_requests)
     # end for
+    
     return ''
 
 def get_city_weather_data_from_fun_service(city_id):
     for i in range(1,(g_request_try_time + 1)):
         logging.debug('Try to send request to fun weather API for %d times.' %i)
-        resp = HttpJsonUtils.send_get_request_and_return(
-                g_fun_weather_service_url, (g_fun_weather_service_parms %city_id), flag_urlencode=False)         
+
+        resp = ''        
+        try:
+            resp = HttpJsonUtils.send_get_request_and_return(
+                    g_fun_weather_service_url, (g_fun_weather_service_parms %city_id), flag_urlencode=False)
+        except Exception, e:
+            logging.error('Exception when send request to Funshion weather service.')
+            logging.error('Exception: %s' %e)
 
         if verify_response_content_type_json(g_tag_funshion, resp):
             json_arr = HttpJsonUtils.json_parse(resp)
@@ -114,6 +127,7 @@ def get_city_weather_data_from_fun_service(city_id):
                 return json_arr
         time.sleep(g_sleep_time_between_requests)
     #end for
+
     return ''
 
 def verify_response_content_type_json(tag, resp):

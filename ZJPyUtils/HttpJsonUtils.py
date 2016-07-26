@@ -5,7 +5,7 @@ Created on 2016-7-18
 
 @author: Vieira
 
-Include the utils for http post and get requests, and parse json response data.
+Include the utils for send HTTP get and post requests, and parse JSON response.
 
 '''
 

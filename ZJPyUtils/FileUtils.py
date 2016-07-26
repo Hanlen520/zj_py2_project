@@ -4,6 +4,9 @@
 Created on 2016-7-20
 
 @author: Vieira
+
+Include the functions for file IO.
+
 '''
 
 import os
@@ -97,7 +100,7 @@ def append_content_to_file(file_path, content):
 
 
 # ----------------------------------------------------
-# Path functions
+# Directory functions
 # ----------------------------------------------------
 def create_dir(dir_path):
     if os.path.exists(dir_path):
@@ -110,7 +113,20 @@ def create_dir(dir_path):
 # ----------------------------------------------------
 # Main
 # ----------------------------------------------------
+def main_test():
+    input_lines = read_file_and_ret_lines(r'C:\Users\zhengjin\Desktop\weather_web_src.txt')
+    output_lines = []
+
+    for line in input_lines:
+        if not line == '\n':
+            output_lines.append(line)
+        
+    write_lines_to_file('C:\Users\zhengjin\Desktop\weather_web.txt', output_lines)
+
+
 if __name__ == '__main__':
+
+    main_test()
 
     print '%s DONE!' %(os.path.basename(__file__))
     pass

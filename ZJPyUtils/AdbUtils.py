@@ -4,6 +4,9 @@
 Created on 2016-7-20
 
 @author: Vieira
+
+Include the utils for adb and Shell env.
+
 '''
 
 import time
@@ -11,9 +14,8 @@ import logging
 
 from ZJPyUtils import WinSysUtils
 
-
 # --------------------------------------------------------------
-# Adb shell functions
+# Functions
 # --------------------------------------------------------------
 def verify_adb_devices_connect():
     logging.debug('Verify there are adb devices connected.')
@@ -75,6 +77,9 @@ def adb_root():
     return False
 
 
+# --------------------------------------------------------------
+# Main
+# --------------------------------------------------------------
 if __name__ == '__main__':
 
     pass
