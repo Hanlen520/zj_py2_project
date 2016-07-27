@@ -146,7 +146,7 @@ def verify_response_content_type_json(resp):
         logging.error('The content type of response is not JSON!')
         return False
     
-    logging.info(resp)
+    logging.info(resp.decode('unicode_escape'))
     return True
 
 def verify_response_return_code_and_msg(json_arr):
@@ -259,7 +259,7 @@ def build_daemon_thread():
 # Test main
 # ------------------------------------------------
 def setup_main():
-    file_name = 'weather_service_test_%s.log' %(time.strftime('%y-%m-%d_%H-%M-%S'))
+    file_name = 'baidu_city_weather_data_verification_%s.log' %(time.strftime('%y-%m-%d_%H-%M-%S'))
     file_path = os.path.join(os.getcwd(), 'logs', file_name)
     init_log_config(logging.DEBUG, logging.INFO, file_path)
     
