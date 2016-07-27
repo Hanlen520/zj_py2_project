@@ -1,0 +1,5 @@
+# whitelist for monkey
+#tv.fun.settings
+#tv.fun.filemanager
+com.bestv.ott
+com.funshion.mediaplayer

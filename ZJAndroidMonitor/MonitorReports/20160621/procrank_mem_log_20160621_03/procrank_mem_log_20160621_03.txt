@@ -1,0 +1,132 @@
+******* PROCRANK MEMORY REPORT: tv.fun.settings
+VSS - Virtual Set Size	RSS - Resident Set Size	PSS - Proportional Set Size	USS - Unique Set Size
+Time,Category,PID,Vss,Rss,Pss,Uss,cmdline
+16-06-21 15:14:10,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:14:10,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:14:14,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:14:14,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:14:19,app_process,602M,108M,84M,81M,tv.fun.settings
+16-06-21 15:14:19,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:14:24,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:14:24,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:14:28,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:14:28,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:14:33,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:14:33,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:14:37,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:14:37,sys_mem,979M total,34M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:14:42,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:14:42,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:14:47,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:14:47,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:14:51,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:14:51,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:14:56,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:14:56,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:15:01,app_process,602M,108M,84M,81M,tv.fun.settings
+16-06-21 15:15:01,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:15:05,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:15:05,sys_mem,979M total,34M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:15:10,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:15:10,sys_mem,979M total,34M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:15:14,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:15:14,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:15:19,app_process,602M,108M,84M,81M,tv.fun.settings
+16-06-21 15:15:19,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:15:24,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:15:24,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:15:29,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:15:29,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:15:34,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:15:34,sys_mem,979M total,34M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:15:39,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:15:39,sys_mem,979M total,34M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:15:44,app_process,602M,108M,84M,81M,tv.fun.settings
+16-06-21 15:15:44,sys_mem,979M total,34M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:15:48,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:15:48,sys_mem,979M total,34M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:15:53,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:15:53,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:15:58,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:15:58,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:16:02,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:16:02,sys_mem,979M total,34M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:16:07,app_process,602M,108M,84M,81M,tv.fun.settings
+16-06-21 15:16:07,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:16:12,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:16:12,sys_mem,979M total,34M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:16:17,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:16:17,sys_mem,979M total,34M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:16:21,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:16:21,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:16:26,app_process,602M,108M,84M,81M,tv.fun.settings
+16-06-21 15:16:26,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:16:31,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:16:31,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:16:36,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:16:36,sys_mem,979M total,34M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:16:40,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:16:40,sys_mem,979M total,34M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:16:45,app_process,594M,100M,76M,73M,tv.fun.settings
+16-06-21 15:16:45,sys_mem,979M total,40M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:16:50,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:16:50,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:16:55,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:16:55,sys_mem,979M total,32M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:16:59,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:16:59,sys_mem,979M total,32M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:17:04,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:17:04,sys_mem,979M total,32M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:17:09,app_process,602M,108M,84M,81M,tv.fun.settings
+16-06-21 15:17:09,sys_mem,979M total,32M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:17:14,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:17:14,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:17:18,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:17:18,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:17:23,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:17:23,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:17:28,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:17:28,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:17:32,app_process,602M,108M,84M,81M,tv.fun.settings
+16-06-21 15:17:32,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:17:37,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:17:37,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:17:42,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:17:42,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:17:47,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:17:47,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:17:51,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:17:51,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:17:56,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:17:56,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:18:00,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:18:00,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:18:05,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:18:05,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:18:10,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:18:10,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:18:15,app_process,602M,108M,84M,81M,tv.fun.settings
+16-06-21 15:18:15,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:18:19,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:18:19,sys_mem,979M total,32M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:18:24,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:18:24,sys_mem,979M total,32M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:18:29,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:18:29,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:18:34,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:18:34,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:18:39,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:18:39,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:18:44,app_process,594M,108M,83M,80M,tv.fun.settings
+16-06-21 15:18:44,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:18:48,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:18:48,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:18:53,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:18:53,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:18:58,app_process,602M,108M,84M,81M,tv.fun.settings
+16-06-21 15:18:58,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:19:02,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:19:02,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+16-06-21 15:19:07,app_process,594M,108M,84M,81M,tv.fun.settings
+16-06-21 15:19:07,sys_mem,979M total,33M free,28M buffers,299M cached,3M shmem,17M slab
+************** PROCRANK MEMORY REPORT END

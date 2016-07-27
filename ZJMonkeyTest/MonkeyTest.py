@@ -22,6 +22,7 @@ from ZJAndroidMonitor import MonitorUtils
 # --------------------------------------------------------------
 g_pkg_settings = 'tv.fun.settings'
 g_pkg_filemanager = 'tv.fun.filemanager'
+g_pkg_weather = 'tv.fun.weather'
 
 g_target_ip = ''
 g_package_name = ''
@@ -586,13 +587,13 @@ def cal_exec_time(fn):
 # --------------------------------------------------------------
 if __name__ == '__main__':
 
-    g_target_ip = '172.17.5.134'
+    g_target_ip = '172.17.5.106'
     g_run_num = '01'
     g_run_mins = 60
-    g_package_name = g_pkg_filemanager
+    g_package_name = g_pkg_weather
 
-    g_flag_monkey_for_package = False
-    g_flag_monkey_for_whitelist = True
+    g_flag_monkey_for_package = True
+    g_flag_monkey_for_whitelist = False
     g_flag_profile_monitor = False
 
     cal_exec_time(monkey_test_main)

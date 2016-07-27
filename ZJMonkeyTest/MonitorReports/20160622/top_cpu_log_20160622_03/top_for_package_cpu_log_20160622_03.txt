@@ -1,0 +1,290 @@
+************** TOP CPU REPORT FOR PACKAGE: tv.fun.settings
+16-06-22 12:11:37 -----------------------------------
+User 46%, System 39%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  10% R    28 580460K 133640K  fg system   tv.fun.settings
+16-06-22 12:11:45 -----------------------------------
+User 41%, System 38%, IOW 0%, IRQ 1%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  20% R    28 579684K 134056K  fg system   tv.fun.settings
+16-06-22 12:11:54 -----------------------------------
+User 44%, System 28%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  25% S    28 586848K 133304K  fg system   tv.fun.settings
+16-06-22 12:12:02 -----------------------------------
+User 48%, System 43%, IOW 0%, IRQ 1%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  18% R    28 586520K 124756K  fg system   tv.fun.settings
+16-06-22 12:12:11 -----------------------------------
+User 48%, System 36%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  23% R    28 586520K 124744K  fg system   tv.fun.settings
+16-06-22 12:12:19 -----------------------------------
+User 41%, System 30%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  22% R    28 580004K 124668K  fg system   tv.fun.settings
+16-06-22 12:12:27 -----------------------------------
+User 57%, System 34%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  21% R    28 586680K 124860K  fg system   tv.fun.settings
+16-06-22 12:12:36 -----------------------------------
+User 49%, System 41%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  14% R    28 579912K 124684K  fg system   tv.fun.settings
+16-06-22 12:12:44 -----------------------------------
+User 46%, System 37%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  21% R    28 586520K 124788K  fg system   tv.fun.settings
+16-06-22 12:12:52 -----------------------------------
+User 43%, System 27%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  23% R    28 586680K 124960K  fg system   tv.fun.settings
+16-06-22 12:13:01 -----------------------------------
+User 46%, System 47%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  13% R    28 595848K 133324K  fg system   tv.fun.settings
+16-06-22 12:13:09 -----------------------------------
+User 44%, System 37%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0   6% R    28 587788K 132764K  fg system   tv.fun.settings
+16-06-22 12:13:17 -----------------------------------
+User 44%, System 31%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  11% R    28 563484K 118284K  fg system   tv.fun.settings
+16-06-22 12:13:26 -----------------------------------
+User 44%, System 29%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0   9% R    28 579684K 124840K  fg system   tv.fun.settings
+16-06-22 12:13:35 -----------------------------------
+User 46%, System 42%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  18% D    28 586392K 124632K  fg system   tv.fun.settings
+16-06-22 12:13:43 -----------------------------------
+User 42%, System 42%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  19% R    28 580164K 124836K  fg system   tv.fun.settings
+16-06-22 12:13:51 -----------------------------------
+User 50%, System 31%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0   9% R    28 596088K 141092K  fg system   tv.fun.settings
+16-06-22 12:14:00 -----------------------------------
+User 40%, System 41%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0   5% R    28 571780K 132812K  fg system   tv.fun.settings
+16-06-22 12:14:08 -----------------------------------
+User 41%, System 43%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  14% R    28 580200K 139556K  fg system   tv.fun.settings
+16-06-22 12:14:16 -----------------------------------
+User 39%, System 49%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  18% R    28 580360K 139744K  fg system   tv.fun.settings
+16-06-22 12:14:25 -----------------------------------
+User 40%, System 33%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  23% R    28 580360K 139788K  fg system   tv.fun.settings
+16-06-22 12:14:33 -----------------------------------
+User 38%, System 26%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  22% R    28 580360K 139832K  fg system   tv.fun.settings
+16-06-22 12:14:42 -----------------------------------
+User 41%, System 33%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  19% R    28 580360K 139860K  fg system   tv.fun.settings
+16-06-22 12:14:50 -----------------------------------
+User 46%, System 44%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1   5% S    28 571780K 126152K  fg system   tv.fun.settings
+16-06-22 12:14:59 -----------------------------------
+User 44%, System 39%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  11% S    28 579880K 132680K  fg system   tv.fun.settings
+16-06-22 12:15:07 -----------------------------------
+User 46%, System 23%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  19% R    28 580108K 132884K  fg system   tv.fun.settings
+16-06-22 12:15:15 -----------------------------------
+User 47%, System 42%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1   7% R    28 596532K 133604K  fg system   tv.fun.settings
+16-06-22 12:15:24 -----------------------------------
+User 44%, System 44%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  11% S    28 586716K 133192K  fg system   tv.fun.settings
+16-06-22 12:15:32 -----------------------------------
+User 47%, System 28%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  23% R    28 586556K 132980K  fg system   tv.fun.settings
+16-06-22 12:15:40 -----------------------------------
+User 39%, System 31%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  18% R    28 586716K 133100K  fg system   tv.fun.settings
+16-06-22 12:15:49 -----------------------------------
+User 50%, System 46%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1   5% S    28 579880K 133140K  fg system   tv.fun.settings
+16-06-22 12:15:57 -----------------------------------
+User 44%, System 36%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  13% R    28 580364K 125708K  fg system   tv.fun.settings
+16-06-22 12:16:05 -----------------------------------
+User 47%, System 27%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  11% R    28 579880K 132792K  fg system   tv.fun.settings
+16-06-22 12:16:14 -----------------------------------
+User 40%, System 48%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  20% R    28 580976K 134276K  fg system   tv.fun.settings
+16-06-22 12:16:22 -----------------------------------
+User 18%, System 31%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0   3% S    28 579880K 124736K  fg system   tv.fun.settings
+16-06-22 12:16:30 -----------------------------------
+User 27%, System 28%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  11% R    28 580568K 125300K  fg system   tv.fun.settings
+16-06-22 12:16:39 -----------------------------------
+User 45%, System 31%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0   8% R    28 571780K 133284K  fg system   tv.fun.settings
+16-06-22 12:16:47 -----------------------------------
+User 35%, System 44%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  18% R    28 586716K 133716K  fg system   tv.fun.settings
+16-06-22 12:16:56 -----------------------------------
+User 42%, System 37%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  21% R    28 586716K 133080K  fg system   tv.fun.settings
+16-06-22 12:17:04 -----------------------------------
+User 40%, System 25%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  21% R    28 586716K 133096K  fg system   tv.fun.settings
+16-06-22 12:17:12 -----------------------------------
+User 47%, System 34%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  13% R    28 572196K 125156K  fg system   tv.fun.settings
+16-06-22 12:17:20 -----------------------------------
+User 41%, System 46%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1   9% R    28 579880K 126768K  fg system   tv.fun.settings
+16-06-22 12:17:29 -----------------------------------
+User 43%, System 38%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  11% R    28 580236K 133508K  fg system   tv.fun.settings
+16-06-22 12:17:37 -----------------------------------
+User 37%, System 23%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  20% R    28 562448K 133336K  fg system   tv.fun.settings
+16-06-22 12:17:45 -----------------------------------
+User 41%, System 41%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0   9% R    28 580060K 133228K  fg system   tv.fun.settings
+16-06-22 12:17:54 -----------------------------------
+User 42%, System 43%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  14% R    28 581004K 134116K  fg system   tv.fun.settings
+16-06-22 12:18:02 -----------------------------------
+User 47%, System 29%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0   7% R    28 579844K 132780K  fg system   tv.fun.settings
+16-06-22 12:18:11 -----------------------------------
+User 46%, System 37%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  12% R    28 579844K 133188K  fg system   tv.fun.settings
+16-06-22 12:18:19 -----------------------------------
+User 47%, System 46%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  11% R    28 579844K 132980K  fg system   tv.fun.settings
+16-06-22 12:18:27 -----------------------------------
+User 42%, System 26%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  20% R    28 580164K 139776K  fg system   tv.fun.settings
+16-06-22 12:18:36 -----------------------------------
+User 50%, System 36%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  18% R    28 580164K 139816K  fg system   tv.fun.settings
+16-06-22 12:18:44 -----------------------------------
+User 36%, System 43%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  19% R    28 580164K 139848K  fg system   tv.fun.settings
+16-06-22 12:18:52 -----------------------------------
+User 50%, System 37%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  14% R    28 580004K 139892K  fg system   tv.fun.settings
+16-06-22 12:19:01 -----------------------------------
+User 51%, System 34%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  18% S    28 596916K 140952K  fg system   tv.fun.settings
+16-06-22 12:19:09 -----------------------------------
+User 45%, System 41%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0   6% R    28 579876K 140100K  fg system   tv.fun.settings
+16-06-22 12:19:17 -----------------------------------
+User 46%, System 41%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0   4% R    28 571744K 125372K  fg system   tv.fun.settings
+16-06-22 12:19:26 -----------------------------------
+User 41%, System 28%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  16% R    28 580164K 139504K  fg system   tv.fun.settings
+16-06-22 12:19:34 -----------------------------------
+User 44%, System 39%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  16% R    28 580164K 139552K  fg system   tv.fun.settings
+16-06-22 12:19:42 -----------------------------------
+User 39%, System 41%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  20% R    28 580164K 139588K  fg system   tv.fun.settings
+16-06-22 12:19:51 -----------------------------------
+User 46%, System 31%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  19% R    28 580164K 139640K  fg system   tv.fun.settings
+16-06-22 12:19:59 -----------------------------------
+User 39%, System 33%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  19% S    28 580324K 139876K  fg system   tv.fun.settings
+16-06-22 12:20:08 -----------------------------------
+User 43%, System 45%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0   5% R    28 579876K 140112K  fg system   tv.fun.settings
+16-06-22 12:20:16 -----------------------------------
+User 49%, System 34%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  15% S    28 580324K 140768K  fg system   tv.fun.settings
+16-06-22 12:20:24 -----------------------------------
+User 45%, System 32%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  15% S    28 580164K 140608K  fg system   tv.fun.settings
+16-06-22 12:20:33 -----------------------------------
+User 40%, System 43%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  15% R    28 580324K 140768K  fg system   tv.fun.settings
+16-06-22 12:20:41 -----------------------------------
+User 40%, System 43%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  15% R    28 580324K 140768K  fg system   tv.fun.settings
+16-06-22 12:20:49 -----------------------------------
+User 41%, System 25%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  21% R    28 580324K 140768K  fg system   tv.fun.settings
+16-06-22 12:20:58 -----------------------------------
+User 47%, System 44%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  14% S    28 580164K 140608K  fg system   tv.fun.settings
+16-06-22 12:21:06 -----------------------------------
+User 40%, System 47%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  22% R    28 580324K 140784K  fg system   tv.fun.settings
+16-06-22 12:21:15 -----------------------------------
+User 44%, System 30%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  17% R    28 580324K 140852K  fg system   tv.fun.settings
+16-06-22 12:21:23 -----------------------------------
+User 37%, System 35%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  1  20% R    28 580324K 140944K  fg system   tv.fun.settings
+16-06-22 12:21:31 -----------------------------------
+User 41%, System 47%, IOW 0%, IRQ 0%
+  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
+ 2606  0  14% S    28 580324K 141236K  fg system   tv.fun.settings
+************** TOP CPU REPORT FOR PACKAGE: END
