@@ -21,7 +21,7 @@ g_baidu_weather_service_url = 'http://apis.baidu.com/apistore/weatherservice/rec
 g_baidu_service_request_header_parms = {'apikey':'7705cca8df9fb3dbe696ce2310979a62'}
 
 g_fun_weather_service_url = 'http://card.tv.funshion.com/weather/city'
-g_fun_weather_service_parms = '&mac=28:76:CD:01:96:F6&random=1468389831575632' + \
+g_fun_weather_service_parms = 'mac=28:76:CD:01:96:F6&random=1468389831575632' + \
                             '&sign=a3e7422bef887d61a518ac64e3e234fa&cityId=%s'
 
 g_city_list_file_name = 'Weather_city_list_compare.txt'
