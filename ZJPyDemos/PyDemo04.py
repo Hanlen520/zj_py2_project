@@ -119,6 +119,17 @@ import os
 # print content
 
 
+# EXAMPLE 13
+# def my_print():
+#     print 'it is a test.'
+#     
+# def main(fn):
+#     print 'run function: %s' %fn.__name__
+#     fn()
+#
+#    main(my_print)
+
+
 if __name__ == '__main__':
 
     print("%s done!" %os.path.basename(__file__))
