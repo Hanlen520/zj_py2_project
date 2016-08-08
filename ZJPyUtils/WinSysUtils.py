@@ -18,7 +18,7 @@ import logging
 # Time functions
 # --------------------------------------------------------------
 def get_current_date_and_time():
-    return time.strftime('%y-%m-%d %H_%M_%S')
+    return time.strftime('%y-%m-%d_%H%M%S')
 
 def get_current_date():
     return time.strftime('%Y%m%d')

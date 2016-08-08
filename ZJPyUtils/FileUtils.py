@@ -12,6 +12,14 @@ Include the functions for file IO.
 import os
 import time
 import logging
+import codecs
+
+# ----------------------------------------------------
+# Constants
+# ----------------------------------------------------
+CHARSET_UTF8 = 'utf-8'
+CHARSET_GBK = 'gbk'
+
 
 # ----------------------------------------------------
 # Read functions
@@ -46,7 +54,7 @@ def read_file_and_ret_content(file_path):
 # ----------------------------------------------------
 # Write functions
 # ----------------------------------------------------
-def write_lines_to_file(file_path, lines, flag_override=True):
+def write_lines_to_file(file_path, lines, flag_override=True, charset=''):
     if len(lines) == 0:
         logging.error('The length of input lines is 0!')
         return
@@ -58,10 +66,14 @@ def write_lines_to_file(file_path, lines, flag_override=True):
             logging.error('The file(%s) is exist!' %file_path)
             return
 
-    with open(file_path, 'w') as f:
-        f.writelines(lines)
+    if charset == '':
+        with open(file_path, 'w') as f:
+            f.writelines(lines)
+    else:
+        with codecs.open(file_path, 'w', charset) as f:
+            f.writelines(lines)
 
-def write_content_to_file(file_path, content, flag_override=True):
+def write_content_to_file(file_path, content, flag_override=True, charset=''):
     if len(content) == 0:
         logging.error('The input content is empty!')
         return
@@ -72,11 +84,15 @@ def write_content_to_file(file_path, content, flag_override=True):
         else:
             logging.error('The file(%s) is exist!' %file_path)
             return
+        
+    if charset == '':
+        with open(file_path, 'w') as f:
+            f.write(content)
+    else:
+        with codecs.open(file_path, 'w', charset) as f:
+            f.write(content)
 
-    with open(file_path, 'w') as f:
-        f.write(content)
-
-def append_lines_to_file(file_path, lines):
+def append_lines_to_file(file_path, lines, charset=''):
     if len(lines) == 0:
         logging.error('The length of input lines is 0!')
         return
@@ -84,10 +100,14 @@ def append_lines_to_file(file_path, lines):
     if not os.path.exists(file_path):
         logging.info('The file(%s) is not exist!' %file_path)
     
-    with open(file_path, 'a') as f:
-        f.writelines(lines)
+    if charset == '':
+        with open(file_path, 'a') as f:
+            f.writelines(lines)
+    else:
+        with codecs.open(file_path, 'a', charset) as f:
+            f.writelines(lines)
 
-def append_content_to_file(file_path, content):
+def append_content_to_file(file_path, content, charset=''):
     if len(content) == 0:
         logging.error('The input content is empty!')
         return
@@ -95,8 +115,12 @@ def append_content_to_file(file_path, content):
     if not os.path.exists(file_path):
         logging.info('The file(%s) is NOT exist!' %file_path)
     
-    with open(file_path, 'a') as f:
-        f.write(content)
+    if charset == '':
+        with open(file_path, 'a') as f:
+            f.write(content)
+    else:
+        with codecs.open(file_path, 'a', charset) as f:
+            f.write(content)
 
 
 # ----------------------------------------------------

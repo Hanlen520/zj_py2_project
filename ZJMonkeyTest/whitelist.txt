@@ -1,6 +1,6 @@
 # whitelist for monkey
 #tv.fun.settings
 #tv.fun.filemanager
-#tv.fun.weather
-com.bestv.ott
-com.funshion.mediaplayer
+tv.fun.weather
+#com.bestv.ott
+#com.funshion.mediaplayer
