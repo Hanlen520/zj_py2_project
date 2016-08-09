@@ -50,7 +50,7 @@ def verify_device_connected():
 def try_to_connect_to_devices(g_device_ip):
     try_times = 3
     for i in range(0,try_times):
-        print 'Try to connect to device %d times.' %(i)
+        print 'Try to connect to device %d times.' %(i+1)
         adb_connect_devices(g_device_ip)
         if verify_device_connected():
             return

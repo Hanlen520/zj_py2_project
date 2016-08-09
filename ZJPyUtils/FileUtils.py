@@ -69,9 +69,11 @@ def write_lines_to_file(file_path, lines, flag_override=True, charset=''):
     if charset == '':
         with open(file_path, 'w') as f:
             f.writelines(lines)
+            f.flush()
     else:
         with codecs.open(file_path, 'w', charset) as f:
             f.writelines(lines)
+            f.flush()
 
 def write_content_to_file(file_path, content, flag_override=True, charset=''):
     if len(content) == 0:
@@ -88,9 +90,11 @@ def write_content_to_file(file_path, content, flag_override=True, charset=''):
     if charset == '':
         with open(file_path, 'w') as f:
             f.write(content)
+            f.flush()
     else:
         with codecs.open(file_path, 'w', charset) as f:
             f.write(content)
+            f.flush()
 
 def append_lines_to_file(file_path, lines, charset=''):
     if len(lines) == 0:
@@ -103,9 +107,11 @@ def append_lines_to_file(file_path, lines, charset=''):
     if charset == '':
         with open(file_path, 'a') as f:
             f.writelines(lines)
+            f.flush()
     else:
         with codecs.open(file_path, 'a', charset) as f:
             f.writelines(lines)
+            f.flush()
 
 def append_content_to_file(file_path, content, charset=''):
     if len(content) == 0:
@@ -118,9 +124,11 @@ def append_content_to_file(file_path, content, charset=''):
     if charset == '':
         with open(file_path, 'a') as f:
             f.write(content)
+            f.flush()
     else:
         with codecs.open(file_path, 'a', charset) as f:
             f.write(content)
+            f.flush()
 
 
 # ----------------------------------------------------
