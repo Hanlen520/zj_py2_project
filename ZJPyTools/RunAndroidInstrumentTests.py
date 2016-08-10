@@ -7,7 +7,7 @@ Created on 2016-8-10
 import os
 import time
 
-from ZJPyUtils import WinSysUtils
+from ZJPyUtils import WinSysUtils,AdbUtils
 
 
 # ----------------------------------------------------
@@ -77,6 +77,10 @@ def run_test_for_during(during):
     
     while (int(time.clock() - start_time) <= during):
         print 'run test %d times.' %i
+        if not AdbUtils.verify_adb_devices_serialno():
+            print 'Error, adb devices disconnect.'
+            exit(1)
+        
         run_instrument_tests(cmd)
         i += 1
     # END LOOP
