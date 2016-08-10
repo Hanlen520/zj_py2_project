@@ -31,6 +31,7 @@ encoding//ZJPyTools/CopyFilesPerDir.py=utf-8
 encoding//ZJPyTools/DiffAndGetSameRecCount.py=utf-8
 encoding//ZJPyTools/DiffCityList.py=utf-8
 encoding//ZJPyTools/DiffFileRecords.py=utf-8
+encoding//ZJPyTools/RunAndroidInstrumentTests.py=utf-8
 encoding//ZJPyTools/RunMultipleCmds.py=utf-8
 encoding//ZJPyTools/ShellPrepareFiles.py=utf-8
 encoding//ZJPyTools/ShellReplaceHost.py=utf-8
