@@ -16,19 +16,19 @@ import logging
 # Log functions
 # ----------------------------------------------------
 def init_log_config(main_log_level, file_log_level, file_path):
-    long_format = '%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s: %(message)s'
-    short_format = '%(filename)s: [%(levelname)s] >>> %(message)s'
+    log_format_long = '%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s: %(message)s'
+    log_format_short = '%(filename)s: [%(levelname)s] >>> %(message)s'
     
-    long_date_format = '%a, %d %b %Y %H:%M:%S'
-    short_date_format = '%d %b %H:%M:%S'
+    date_format_long = '%a, %d %b %Y %H:%M:%S'
+    date_format_short = '%d %b %H:%M:%S'
 
     # log main handler
-    logging.basicConfig(level=main_log_level,format=short_format,datefmt=short_date_format)
+    logging.basicConfig(level=main_log_level,format=log_format_short,datefmt=date_format_short)
 
-    # set the file handler
+    # set file handler
     log_file = logging.FileHandler(filename=file_path, mode='w')
     log_file.setLevel(file_log_level)
-    log_file.setFormatter(logging.Formatter(fmt=long_format,datefmt=long_date_format))
+    log_file.setFormatter(logging.Formatter(fmt=log_format_long,datefmt=date_format_long))
     logging.getLogger('').addHandler(log_file)
 
 
@@ -36,6 +36,10 @@ def init_log_config(main_log_level, file_log_level, file_path):
 # Main
 # ----------------------------------------------------
 if __name__ == '__main__':
+
+    init_log_config(logging.DEBUG, logging.INFO, r'd:\test_log.txt')
+    logging.debug('debug message')
+    logging.info('info message')
 
     print '%s DONE!' %(os.path.basename(__file__))
     pass

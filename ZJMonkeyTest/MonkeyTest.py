@@ -270,7 +270,7 @@ def verify_adb_devices_serialno():
     else:
         return True
 
-def try_to_adb_connect_to_device():
+def adb_connect_to_device():
     try_adb_connect_times = 3
     wait_time = 3
     for i in range(0,try_adb_connect_times):
@@ -283,7 +283,7 @@ def try_to_adb_connect_to_device():
     return False
 
 def adb_connect_with_root():
-    if not try_to_adb_connect_to_device():  # adb connect
+    if not adb_connect_to_device():  # adb connect
         print 'Error, when adb connect to the device!'
         exit(1)
         
@@ -291,7 +291,7 @@ def adb_connect_with_root():
         print 'Error, when run adb as root!'
         exit(1)
 
-    if not try_to_adb_connect_to_device():   # adb connect as root
+    if not adb_connect_to_device():   # adb connect as root
         print 'Error, when adb connect to the device with root!'
         exit(1)
 

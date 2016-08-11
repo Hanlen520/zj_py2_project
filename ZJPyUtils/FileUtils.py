@@ -27,27 +27,27 @@ CHARSET_GBK = 'gbk'
 def read_file_and_ret_lines(file_path):
     if not os.path.exists(file_path):
         logging.error('The file(%s) to be read is NOT exist!' %file_path)
-        return
+        raise IOError('File not exist.')
     
     lines = []
     with open(file_path, 'r') as f:
         lines = f.readlines()
+
     if len(lines) == 0:
         logging.warn('The file(%s) content is empty.' %file_path)
-
     return lines
 
 def read_file_and_ret_content(file_path):
     if not os.path.exists(file_path):
         logging.error('The file(%s) to be read is NOT exist!' %file_path)
-        return
+        raise IOError('File not exist.')
     
     content = ''
     with open(file_path, 'r') as f:
         content = f.read()
+
     if len(content) == 0:
         logging.warn('The file(%s) content is empty.' %file_path)
-
     return content
 
 
@@ -102,7 +102,7 @@ def append_lines_to_file(file_path, lines, charset=''):
         return
     
     if not os.path.exists(file_path):
-        logging.info('The file(%s) is not exist!' %file_path)
+        logging.info('The file(%s) is not exist, and created.' %file_path)
     
     if charset == '':
         with open(file_path, 'a') as f:
@@ -119,7 +119,7 @@ def append_content_to_file(file_path, content, charset=''):
         return
     
     if not os.path.exists(file_path):
-        logging.info('The file(%s) is NOT exist!' %file_path)
+        logging.info('The file(%s) is NOT exist, and created.' %file_path)
     
     if charset == '':
         with open(file_path, 'a') as f:

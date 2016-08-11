@@ -6,19 +6,23 @@ Created on 2016-8-10
 '''
 import os
 import time
+import logging
 
-from ZJPyUtils import WinSysUtils,AdbUtils
+from ZJPyUtils import WinSysUtils,AdbUtils,LogUtils
 
 
 # ----------------------------------------------------
 # Variables
 # ----------------------------------------------------
-g_test_class = 'com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm'
-g_pkg = 'com.example.zhengjin.funsettingsuitest.test'
+g_device_ip = '172.17.5.106'
+
+g_test_class = 'tv.fun.appsautotest.testCases.TestFunTvFilm#testPlayFilm'
+g_pkg = 'tv.fun.appsautotest.test'
 g_test_runner = 'android.support.test.runner.AndroidJUnitRunner'
 
 g_report_dir_path = ''
 g_report_file_path = ''
+g_log_file_path = ''
 
 
 # ----------------------------------------------------
@@ -36,6 +40,11 @@ def init_report_paths():
     report_file_path = os.path.join(report_dir_path, report_name)
     global g_report_file_path
     g_report_file_path = report_file_path
+    
+    log_name = 'InstrumentRunnerLog.log'
+    log_file_path = os.path.join(report_dir_path, log_name)
+    global g_log_file_path
+    g_log_file_path = log_file_path
 
 def remove_old_captures():
     cmd = 'adb shell rm /data/local/tmp/captures/*.png'
@@ -60,10 +69,10 @@ def move_and_pull_captures():
     WinSysUtils.run_sys_cmd(cmd)
 
 def build_instrument_cmd():
-    return 'adb shell am instrument -w -r -e debug false -e class %s %s/%s >> %s' %(g_test_class, g_pkg, g_test_runner, g_report_file_path)
+    return 'adb shell am instrument -w -r -e debug false -e class %s %s/%s >> %s' \
+        %(g_test_class,g_pkg,g_test_runner,g_report_file_path)
 
 def run_instrument_tests(cmd):
-    print cmd
     WinSysUtils.run_sys_cmd(cmd)
 
     
@@ -72,29 +81,39 @@ def run_instrument_tests(cmd):
 # ----------------------------------------------------
 def run_test_for_during(during):
     cmd = build_instrument_cmd()
+
     start_time = int(time.clock())
     i = 1
-    
-    while (int(time.clock() - start_time) <= during):
-        print 'run test %d times.' %i
+    while (True):
+        logging.info('run test %d times.' %i)
         if not AdbUtils.verify_adb_devices_serialno():
-            print 'Error, adb devices disconnect.'
-            exit(1)
-        
+            if not AdbUtils.adb_connect_to_device(g_device_ip):
+                logging.error('Error, adb devices disconnect.')
+                exit(1)
         run_instrument_tests(cmd)
         i += 1
+        time.sleep(3)
+        
+        cur_run_time = int(time.clock()) - start_time
+        logging.info('current run time: %d minutes' %(cur_run_time/60))
+        if (cur_run_time - start_time > during):
+            break
     # END LOOP
 
 def run_test_setup(during):
-    test_case = g_test_class[(g_test_class.rindex('.') + 1) : ]
-    print '----- START run test %s for %s minutes' %(test_case, during/60)
-
     init_report_paths()
+    LogUtils.init_log_config(logging.DEBUG, logging.INFO, g_log_file_path)
+
+    if not AdbUtils.adb_connect_with_root(g_device_ip):
+        exit(1)
     remove_old_captures()
+
+    test_case = g_test_class[(g_test_class.rindex('.') + 1) : ]
+    logging.info('----- START run test %s for %s minutes' %(test_case, during/60))
 
 def run_test_clearup():
     move_and_pull_captures()
-    print '----- END run test'
+    logging.info('----- END run test')
 
 def main(during):
     run_test_setup(during)
@@ -104,8 +123,8 @@ def main(during):
 
 if __name__ == '__main__':
 
-    during = 12 * 60 * 60   # seconds
+    during = 30 * 60   # seconds
     main(during)
 
-    print '%s done!' %(os.path.basename(__file__))
+    logging.debug('%s done!' %(os.path.basename(__file__)))
     pass
