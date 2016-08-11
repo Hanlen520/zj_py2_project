@@ -130,6 +130,14 @@ import os
 #    main(my_print)
 
 
+# EXAMPLE 14
+# import re
+# str1 = '嫁个老公过日子（更新至24集）'
+# str2 = '幸福满屋（全30集）'
+# res = re.search('[至全](\d+)集',str2)
+# print res.group(1)
+
+
 if __name__ == '__main__':
 
     print("%s done!" %os.path.basename(__file__))
