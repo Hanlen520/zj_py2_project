@@ -15,8 +15,8 @@ from ZJPyUtils import WinSysUtils,AdbUtils,LogUtils
 # ----------------------------------------------------
 g_device_ip = '172.17.5.106'
 
-g_test_class = 'tv.fun.appsautotest.testCases.TestFunTvFilm#testPlayFilm'
-g_pkg = 'tv.fun.appsautotest.test'
+g_test_class = 'com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm#testOpenAndExitFilmPlayer'
+g_component = 'com.example.zhengjin.funsettingsuitest.test'
 g_test_runner = 'android.support.test.runner.AndroidJUnitRunner'
 
 
@@ -70,7 +70,7 @@ def copy_and_pull_captures():
 
 def build_instrument_cmd():
     return 'adb shell am instrument -w -r -e debug false -e class %s %s/%s >> %s' \
-        %(g_test_class,g_pkg,g_test_runner,g_report_file_path)
+        %(g_test_class,g_component,g_test_runner,g_report_file_path)
 
 def run_instrument_tests(cmd):
     WinSysUtils.run_sys_cmd(cmd)
@@ -123,7 +123,7 @@ def main(during):
 
 if __name__ == '__main__':
 
-    run_during = 60 * 60   # seconds
+    run_during = 12 * 60 * 60   # seconds
     main(run_during)
 
     print '%s done!' %(os.path.basename(__file__))
