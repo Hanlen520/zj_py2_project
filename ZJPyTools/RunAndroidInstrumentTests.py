@@ -10,7 +10,6 @@ import logging
 
 from ZJPyUtils import WinSysUtils,AdbUtils,LogUtils
 
-
 # ----------------------------------------------------
 # Variables
 # ----------------------------------------------------
@@ -20,14 +19,11 @@ g_test_class = 'tv.fun.appsautotest.testCases.TestFunTvFilm#testPlayFilm'
 g_pkg = 'tv.fun.appsautotest.test'
 g_test_runner = 'android.support.test.runner.AndroidJUnitRunner'
 
+
 g_report_dir_path = ''
 g_report_file_path = ''
 g_log_file_path = ''
 
-
-# ----------------------------------------------------
-# Helper functions
-# ----------------------------------------------------
 def init_report_paths():
     report_dir_name = 'logs_%s' %WinSysUtils.get_current_date_and_time()
     report_dir_path = os.path.join(os.getcwd(), 'logs', report_dir_name)
@@ -46,11 +42,15 @@ def init_report_paths():
     global g_log_file_path
     g_log_file_path = log_file_path
 
+
+# ----------------------------------------------------
+# Helper functions
+# ----------------------------------------------------
 def remove_old_captures():
     cmd = 'adb shell rm /data/local/tmp/captures/*.png'
     WinSysUtils.run_sys_cmd(cmd)
 
-def move_and_pull_captures():
+def copy_and_pull_captures():
     shell_tmp_captures_dir_path = '/data/local/tmp/captures'
     shell_captures_dir_path = '/sdcard/auto_test_captures/captures_%s' %WinSysUtils.get_current_date_and_time()
 
@@ -75,11 +75,11 @@ def build_instrument_cmd():
 def run_instrument_tests(cmd):
     WinSysUtils.run_sys_cmd(cmd)
 
-    
+
 # ----------------------------------------------------
 # Main
 # ----------------------------------------------------
-def run_test_for_during(during):
+def loop_run_test(during):
     cmd = build_instrument_cmd()
 
     start_time = int(time.clock())
@@ -88,15 +88,15 @@ def run_test_for_during(during):
         logging.info('run test %d times.' %i)
         if not AdbUtils.verify_adb_devices_serialno():
             if not AdbUtils.adb_connect_to_device(g_device_ip):
-                logging.error('Error, adb devices disconnect.')
                 exit(1)
+        
         run_instrument_tests(cmd)
         i += 1
         time.sleep(3)
         
         cur_run_time = int(time.clock()) - start_time
         logging.info('current run time: %d minutes' %(cur_run_time/60))
-        if (cur_run_time - start_time > during):
+        if ((cur_run_time - start_time) > during):
             break
     # END LOOP
 
@@ -112,19 +112,19 @@ def run_test_setup(during):
     logging.info('----- START run test %s for %s minutes' %(test_case, during/60))
 
 def run_test_clearup():
-    move_and_pull_captures()
+    copy_and_pull_captures()
     logging.info('----- END run test')
 
 def main(during):
     run_test_setup(during)
-    run_test_for_during(during)
+    loop_run_test(during)
     run_test_clearup()
 
 
 if __name__ == '__main__':
 
-    during = 30 * 60   # seconds
-    main(during)
+    run_during = 60 * 60   # seconds
+    main(run_during)
 
-    logging.debug('%s done!' %(os.path.basename(__file__)))
+    print '%s done!' %(os.path.basename(__file__))
     pass
