@@ -1,0 +1,53 @@
+Fri, 12 Aug 2016 15:09:21 TestBaiduDataUpdateFreq.py[line:60] INFO: ----- START: test baidu weather data update frequency
+Fri, 12 Aug 2016 15:09:21 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 1 times.
+Fri, 12 Aug 2016 15:09:22 FileUtils.py[line:105] INFO: The file(E:\Eclipse_Workspace\ZJPyProject\TestWeatherService\logs\baidu_weather_data_update_freq\baidu_weather_data_update_freq_20160812.log) is not exist, and created.
+Fri, 12 Aug 2016 15:09:22 TestBaiduDataUpdateFreq.py[line:57] INFO: Current run time: 0 seconds
+Fri, 12 Aug 2016 15:14:22 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 2 times.
+Fri, 12 Aug 2016 15:14:32 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 5 minutes, 10 seconds
+Fri, 12 Aug 2016 15:19:32 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 3 times.
+Fri, 12 Aug 2016 15:19:37 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 10 minutes, 15 seconds
+Fri, 12 Aug 2016 15:24:37 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 4 times.
+Fri, 12 Aug 2016 15:24:43 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 15 minutes, 20 seconds
+Fri, 12 Aug 2016 15:29:43 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 5 times.
+Fri, 12 Aug 2016 15:29:47 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 20 minutes, 24 seconds
+Fri, 12 Aug 2016 15:34:47 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 6 times.
+Fri, 12 Aug 2016 15:34:48 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 25 minutes, 26 seconds
+Fri, 12 Aug 2016 15:39:48 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 7 times.
+Fri, 12 Aug 2016 15:39:49 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 30 minutes, 27 seconds
+Fri, 12 Aug 2016 15:44:49 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 8 times.
+Fri, 12 Aug 2016 15:44:50 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 35 minutes, 28 seconds
+Fri, 12 Aug 2016 15:49:50 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 9 times.
+Fri, 12 Aug 2016 15:49:51 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 40 minutes, 29 seconds
+Fri, 12 Aug 2016 15:54:51 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 10 times.
+Fri, 12 Aug 2016 15:54:55 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 45 minutes, 32 seconds
+Fri, 12 Aug 2016 15:59:55 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 11 times.
+Fri, 12 Aug 2016 15:59:56 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 50 minutes, 33 seconds
+Fri, 12 Aug 2016 16:04:56 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 12 times.
+Fri, 12 Aug 2016 16:04:58 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 55 minutes, 35 seconds
+Fri, 12 Aug 2016 16:09:58 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 13 times.
+Fri, 12 Aug 2016 16:10:01 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 60 minutes, 39 seconds
+Fri, 12 Aug 2016 16:15:01 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 14 times.
+Fri, 12 Aug 2016 16:15:02 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 65 minutes, 40 seconds
+Fri, 12 Aug 2016 16:20:02 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 15 times.
+Fri, 12 Aug 2016 16:20:03 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 70 minutes, 41 seconds
+Fri, 12 Aug 2016 16:25:03 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 16 times.
+Fri, 12 Aug 2016 16:25:05 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 75 minutes, 43 seconds
+Fri, 12 Aug 2016 16:30:05 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 17 times.
+Fri, 12 Aug 2016 16:30:07 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 80 minutes, 44 seconds
+Fri, 12 Aug 2016 16:35:06 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 18 times.
+Fri, 12 Aug 2016 16:35:10 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 85 minutes, 48 seconds
+Fri, 12 Aug 2016 16:40:10 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 19 times.
+Fri, 12 Aug 2016 16:40:13 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 90 minutes, 51 seconds
+Fri, 12 Aug 2016 16:45:13 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 20 times.
+Fri, 12 Aug 2016 16:45:14 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 95 minutes, 52 seconds
+Fri, 12 Aug 2016 16:50:14 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 21 times.
+Fri, 12 Aug 2016 16:50:15 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 100 minutes, 53 seconds
+Fri, 12 Aug 2016 16:55:15 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 22 times.
+Fri, 12 Aug 2016 16:55:17 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 105 minutes, 54 seconds
+Fri, 12 Aug 2016 17:00:17 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 23 times.
+Fri, 12 Aug 2016 17:00:21 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 110 minutes, 58 seconds
+Fri, 12 Aug 2016 17:05:21 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 24 times.
+Fri, 12 Aug 2016 17:05:22 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 116 minutes, 0 seconds
+Fri, 12 Aug 2016 17:10:22 TestBaiduDataUpdateFreq.py[line:65] INFO: Send request 25 times.
+Fri, 12 Aug 2016 17:10:23 TestBaiduDataUpdateFreq.py[line:55] INFO: Current run time: 121 minutes, 1 seconds
+Fri, 12 Aug 2016 17:10:23 TestBaiduDataUpdateFreq.py[line:76] INFO: ----- END: test baidu weather data update frequency

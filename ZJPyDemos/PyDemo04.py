@@ -138,6 +138,18 @@ import os
 # print res.group(1)
 
 
+# EXAMPLE 15
+# str = 'test'
+# print str[-1]  # print last word
+
+
+# EXAMPLE 16
+# cmd1 = 'ping 172.17.5.106'
+# p = os.popen(cmd1)
+# print type(p)
+# print len(p.readlines())
+
+
 if __name__ == '__main__':
 
     print("%s done!" %os.path.basename(__file__))
