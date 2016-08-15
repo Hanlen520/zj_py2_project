@@ -17,6 +17,7 @@ import codecs
 # ----------------------------------------------------
 # Constants
 # ----------------------------------------------------
+CHARSET_ASCII = 'ascii'
 CHARSET_UTF8 = 'utf-8'
 CHARSET_GBK = 'gbk'
 
@@ -32,9 +33,9 @@ def read_file_and_ret_lines(file_path):
     lines = []
     with open(file_path, 'r') as f:
         lines = f.readlines()
-
     if len(lines) == 0:
         logging.warn('The file(%s) content is empty.' %file_path)
+
     return lines
 
 def read_file_and_ret_content(file_path):
@@ -45,9 +46,9 @@ def read_file_and_ret_content(file_path):
     content = ''
     with open(file_path, 'r') as f:
         content = f.read()
-
     if len(content) == 0:
         logging.warn('The file(%s) content is empty.' %file_path)
+    
     return content
 
 
@@ -72,7 +73,7 @@ def write_lines_to_file(file_path, lines, flag_override=True, charset=''):
             f.flush()
     else:
         with codecs.open(file_path, 'w', charset) as f:
-            f.writelines(lines)
+            f.writelines(lines)  # input lines should be unicode
             f.flush()
 
 def write_content_to_file(file_path, content, flag_override=True, charset=''):
