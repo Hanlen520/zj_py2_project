@@ -55,7 +55,7 @@ def send_reuqest_and_write_response():
 
     FileUtils.append_lines_to_file(file_path, output_lines, FileUtils.CHARSET_UTF8)
 
-def print_cur_run_time(run_time):
+def log_cur_run_time(run_time):
     if run_time > 60:
         logging.info('Current run time: %d minutes, %d seconds' %(run_time/60, run_time%60))
     else:
@@ -73,7 +73,7 @@ def run_loop(during, interval):
         i += 1
         
         run_time = int(time.clock()) - start_time
-        print_cur_run_time(run_time)
+        log_cur_run_time(run_time)
         if run_time > during:
             break
         
