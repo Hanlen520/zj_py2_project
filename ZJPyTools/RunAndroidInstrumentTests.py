@@ -86,6 +86,11 @@ def run_instrument_tests_v2(cmd):
         return
     FileUtils.append_content_to_file(g_report_file_path, output_content)
 
+    '''
+    force close the testing process by Java code System.exit(0), 
+    then check the keyword "Process crashed" in the testing runner, 
+    if yes, stop the testing runner at once.
+    '''
     if 'Process crashed' in output_content:
         logging.error('Found issue(Buffer Refresh Failed), and testing runner process is force closed.')
         sys.exit(1)
