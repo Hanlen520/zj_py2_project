@@ -213,7 +213,7 @@ def main_parse_weather_data(file_path):
 
 if __name__ == '__main__':
 
-    during = 24 * 60 * 60   # 12 hours
+    during = 24 * 60 * 60   # 24 hours
     interval = 5 * 60   # 5 minutes
     main_collect_weather_data(during, interval)
     

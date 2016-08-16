@@ -5,17 +5,18 @@ Created on 2016-8-10
 @author: zhengjin
 '''
 import os
+import sys
 import time
 import logging
 
-from ZJPyUtils import WinSysUtils,AdbUtils,LogUtils
+from ZJPyUtils import WinSysUtils,AdbUtils,LogUtils,FileUtils
 
 # ----------------------------------------------------
 # Variables
 # ----------------------------------------------------
 g_device_ip = '172.17.5.106'
 
-g_test_class = 'com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm#testOpenAndExitFilmPlayer'
+g_test_class = 'com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm#testDemo'
 g_component = 'com.example.zhengjin.funsettingsuitest.test'
 g_test_runner = 'android.support.test.runner.AndroidJUnitRunner'
 
@@ -68,29 +69,43 @@ def copy_and_pull_captures():
     cmd = 'adb pull %s %s' %(shell_captures_dir_path, win_captures_dir_path)
     WinSysUtils.run_sys_cmd(cmd)
 
-def build_instrument_cmd():
+def build_instrument_cmd_v1():
     return 'adb shell am instrument -w -r -e debug false -e class %s %s/%s >> %s' \
         %(g_test_class,g_component,g_test_runner,g_report_file_path)
 
-def run_instrument_tests(cmd):
+def build_instrument_cmd_v2():
+    return 'adb shell am instrument -w -r -e debug false -e class %s %s/%s' \
+        %(g_test_class,g_component,g_test_runner)
+
+def run_instrument_tests_v1(cmd):
     WinSysUtils.run_sys_cmd(cmd)
+
+def run_instrument_tests_v2(cmd):
+    output_content = WinSysUtils.run_sys_cmd_and_ret_content(cmd)
+    if output_content is None:
+        return
+    FileUtils.append_content_to_file(g_report_file_path, output_content)
+
+    if 'Process crashed' in output_content:
+        logging.error('Found issue(Buffer Refresh Failed), and testing runner process is force closed.')
+        sys.exit(1)
 
 
 # ----------------------------------------------------
 # Main
 # ----------------------------------------------------
 def loop_run_test(during):
-    cmd = build_instrument_cmd()
+    cmd = build_instrument_cmd_v2()
 
     start_time = int(time.clock())
     i = 1
-    while (True):
+    while 1:
         logging.info('run test %d times.' %i)
         if not AdbUtils.verify_adb_devices_serialno():
             if not AdbUtils.adb_connect_to_device(g_device_ip):
                 exit(1)
         
-        run_instrument_tests(cmd)
+        run_instrument_tests_v2(cmd)
         i += 1
         time.sleep(3)
         
@@ -126,5 +141,6 @@ if __name__ == '__main__':
     run_during = 12 * 60 * 60   # seconds
     main(run_during)
 
+    
     print '%s done!' %(os.path.basename(__file__))
     pass
