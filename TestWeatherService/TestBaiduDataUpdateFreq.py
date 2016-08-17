@@ -43,11 +43,14 @@ def send_reuqest_and_write_response():
 
     output_lines = []
     for id in city_ids:
-        req_parms = {'cityid':id}
-        resp = HttpJsonUtils.send_get_request_with_header_and_return(url,header_parms,req_parms)
-        if resp is None:
-            resp = 'null'
+        resp = None
+        try:
+            resp = HttpJsonUtils.send_get_request_with_header_and_return(url,header_parms,{'cityid':id})
+        except Exception, e:
+            logging.error('Exception: %s' %e)
 
+        if resp is None:
+            return
         line = '%s: %s\n' %(WinSysUtils.get_current_date_and_time(),resp.decode('unicode_escape'))
         output_lines.append(line) 
     # end for
