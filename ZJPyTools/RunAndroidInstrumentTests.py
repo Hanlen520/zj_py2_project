@@ -16,7 +16,7 @@ from ZJPyUtils import WinSysUtils,AdbUtils,LogUtils,FileUtils
 # ----------------------------------------------------
 g_device_ip = '172.17.5.106'
 
-g_test_class = 'com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm#testDemo'
+g_test_class = 'com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm#testOpenAndExitFilmPlayer'
 g_component = 'com.example.zhengjin.funsettingsuitest.test'
 g_test_runner = 'android.support.test.runner.AndroidJUnitRunner'
 
@@ -89,16 +89,13 @@ def run_instrument_tests_v2(cmd):
         return
     FileUtils.append_content_to_file(g_report_file_path, output_content)
     
-    if not check_test_case_failed(output_content):
-        check_test_case_force_closed(output_content)
-
+    check_test_case_force_closed(output_content)
+    check_test_case_failed(output_content)
+    
 def check_test_case_failed(content):
     global g_total_failed
-    
     if 'AssertionFailedError' in content:
         g_total_failed += 1
-        return True
-    return False
 
 def check_test_case_force_closed(content):
     '''
