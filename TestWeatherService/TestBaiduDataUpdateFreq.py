@@ -216,12 +216,12 @@ def main_parse_weather_data(file_path):
 
 if __name__ == '__main__':
 
-    during = 24 * 60 * 60   # 24 hours
-    interval = 5 * 60   # 5 minutes
-    main_collect_weather_data(during, interval)
+#     during = 24 * 60 * 60   # 24 hours
+#     interval = 5 * 60   # 5 minutes
+#     main_collect_weather_data(during, interval)
     
-#     file_path = os.path.join(g_log_dir, 'baidu_weather_data_update_freq_src_20160815.log')
-#     main_parse_weather_data(file_path)
+    file_path = os.path.join(g_log_dir, 'baidu_weather_data_update_freq_src_20160817.log')
+    main_parse_weather_data(file_path)
 
     print '%s Done!' %(os.path.basename(__file__))
     pass

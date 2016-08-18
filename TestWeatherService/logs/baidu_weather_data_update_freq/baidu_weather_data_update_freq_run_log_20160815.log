@@ -1,0 +1,579 @@
+Mon, 15 Aug 2016 16:03:48 TestBaiduDataUpdateFreq.py[line:65] INFO: ----- START: test baidu weather data update frequency
+Mon, 15 Aug 2016 16:03:48 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 1 times.
+Mon, 15 Aug 2016 16:03:49 FileUtils.py[line:106] INFO: The file(E:\Eclipse_Workspace\ZJPyProject\TestWeatherService\logs\baidu_weather_data_update_freq\baidu_weather_data_update_freq_src_20160815.log) is not exist, and created.
+Mon, 15 Aug 2016 16:03:49 TestBaiduDataUpdateFreq.py[line:62] INFO: Current run time: 0 seconds
+Mon, 15 Aug 2016 16:08:49 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 2 times.
+Mon, 15 Aug 2016 16:08:50 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 5 minutes, 1 seconds
+Mon, 15 Aug 2016 16:13:50 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 3 times.
+Mon, 15 Aug 2016 16:13:51 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 10 minutes, 2 seconds
+Mon, 15 Aug 2016 16:18:51 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 4 times.
+Mon, 15 Aug 2016 16:18:52 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 15 minutes, 3 seconds
+Mon, 15 Aug 2016 16:23:52 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 5 times.
+Mon, 15 Aug 2016 16:23:53 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 20 minutes, 4 seconds
+Mon, 15 Aug 2016 16:28:53 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 6 times.
+Mon, 15 Aug 2016 16:28:58 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 25 minutes, 9 seconds
+Mon, 15 Aug 2016 16:33:58 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 7 times.
+Mon, 15 Aug 2016 16:33:59 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 30 minutes, 10 seconds
+Mon, 15 Aug 2016 16:38:59 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 8 times.
+Mon, 15 Aug 2016 16:39:00 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 35 minutes, 11 seconds
+Mon, 15 Aug 2016 16:44:00 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 9 times.
+Mon, 15 Aug 2016 16:44:01 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 40 minutes, 12 seconds
+Mon, 15 Aug 2016 16:49:01 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 10 times.
+Mon, 15 Aug 2016 16:49:02 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 45 minutes, 13 seconds
+Mon, 15 Aug 2016 16:54:02 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 11 times.
+Mon, 15 Aug 2016 16:54:03 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 50 minutes, 14 seconds
+Mon, 15 Aug 2016 16:59:03 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 12 times.
+Mon, 15 Aug 2016 16:59:04 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 55 minutes, 15 seconds
+Mon, 15 Aug 2016 17:04:04 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 13 times.
+Mon, 15 Aug 2016 17:04:06 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 60 minutes, 17 seconds
+Mon, 15 Aug 2016 17:09:06 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 14 times.
+Mon, 15 Aug 2016 17:09:07 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 65 minutes, 18 seconds
+Mon, 15 Aug 2016 17:14:07 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 15 times.
+Mon, 15 Aug 2016 17:14:08 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 70 minutes, 19 seconds
+Mon, 15 Aug 2016 17:19:08 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 16 times.
+Mon, 15 Aug 2016 17:19:09 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 75 minutes, 20 seconds
+Mon, 15 Aug 2016 17:24:09 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 17 times.
+Mon, 15 Aug 2016 17:24:11 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 80 minutes, 22 seconds
+Mon, 15 Aug 2016 17:29:11 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 18 times.
+Mon, 15 Aug 2016 17:29:12 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 85 minutes, 23 seconds
+Mon, 15 Aug 2016 17:34:12 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 19 times.
+Mon, 15 Aug 2016 17:34:16 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 90 minutes, 27 seconds
+Mon, 15 Aug 2016 17:39:16 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 20 times.
+Mon, 15 Aug 2016 17:39:17 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 95 minutes, 28 seconds
+Mon, 15 Aug 2016 17:44:17 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 21 times.
+Mon, 15 Aug 2016 17:44:18 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 100 minutes, 29 seconds
+Mon, 15 Aug 2016 17:49:18 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 22 times.
+Mon, 15 Aug 2016 17:49:19 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 105 minutes, 30 seconds
+Mon, 15 Aug 2016 17:54:19 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 23 times.
+Mon, 15 Aug 2016 17:54:20 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 110 minutes, 31 seconds
+Mon, 15 Aug 2016 17:59:20 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 24 times.
+Mon, 15 Aug 2016 17:59:22 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 115 minutes, 33 seconds
+Mon, 15 Aug 2016 18:04:22 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 25 times.
+Mon, 15 Aug 2016 18:04:23 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 120 minutes, 34 seconds
+Mon, 15 Aug 2016 18:09:23 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 26 times.
+Mon, 15 Aug 2016 18:09:24 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 125 minutes, 35 seconds
+Mon, 15 Aug 2016 18:14:24 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 27 times.
+Mon, 15 Aug 2016 18:14:26 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 130 minutes, 37 seconds
+Mon, 15 Aug 2016 18:19:26 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 28 times.
+Mon, 15 Aug 2016 18:19:27 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 135 minutes, 38 seconds
+Mon, 15 Aug 2016 18:24:27 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 29 times.
+Mon, 15 Aug 2016 18:24:28 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 140 minutes, 39 seconds
+Mon, 15 Aug 2016 18:29:28 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 30 times.
+Mon, 15 Aug 2016 18:29:29 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 145 minutes, 40 seconds
+Mon, 15 Aug 2016 18:34:29 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 31 times.
+Mon, 15 Aug 2016 18:34:30 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 150 minutes, 41 seconds
+Mon, 15 Aug 2016 18:39:30 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 32 times.
+Mon, 15 Aug 2016 18:39:31 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 155 minutes, 42 seconds
+Mon, 15 Aug 2016 18:44:31 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 33 times.
+Mon, 15 Aug 2016 18:44:33 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 160 minutes, 43 seconds
+Mon, 15 Aug 2016 18:49:33 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 34 times.
+Mon, 15 Aug 2016 18:49:34 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 165 minutes, 45 seconds
+Mon, 15 Aug 2016 18:54:34 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 35 times.
+Mon, 15 Aug 2016 18:54:35 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 170 minutes, 46 seconds
+Mon, 15 Aug 2016 18:59:35 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 36 times.
+Mon, 15 Aug 2016 18:59:36 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 175 minutes, 47 seconds
+Mon, 15 Aug 2016 19:04:36 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 37 times.
+Mon, 15 Aug 2016 19:04:37 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 180 minutes, 48 seconds
+Mon, 15 Aug 2016 19:09:37 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 38 times.
+Mon, 15 Aug 2016 19:09:38 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 185 minutes, 49 seconds
+Mon, 15 Aug 2016 19:14:38 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 39 times.
+Mon, 15 Aug 2016 19:14:40 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 190 minutes, 51 seconds
+Mon, 15 Aug 2016 19:19:40 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 40 times.
+Mon, 15 Aug 2016 19:19:41 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 195 minutes, 52 seconds
+Mon, 15 Aug 2016 19:24:41 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 41 times.
+Mon, 15 Aug 2016 19:24:43 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 200 minutes, 53 seconds
+Mon, 15 Aug 2016 19:29:43 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 42 times.
+Mon, 15 Aug 2016 19:29:44 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 205 minutes, 55 seconds
+Mon, 15 Aug 2016 19:34:44 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 43 times.
+Mon, 15 Aug 2016 19:34:45 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 210 minutes, 56 seconds
+Mon, 15 Aug 2016 19:39:45 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 44 times.
+Mon, 15 Aug 2016 19:39:46 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 215 minutes, 57 seconds
+Mon, 15 Aug 2016 19:44:46 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 45 times.
+Mon, 15 Aug 2016 19:44:47 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 220 minutes, 58 seconds
+Mon, 15 Aug 2016 19:49:47 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 46 times.
+Mon, 15 Aug 2016 19:49:48 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 225 minutes, 59 seconds
+Mon, 15 Aug 2016 19:54:48 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 47 times.
+Mon, 15 Aug 2016 19:54:49 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 231 minutes, 0 seconds
+Mon, 15 Aug 2016 19:59:49 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 48 times.
+Mon, 15 Aug 2016 19:59:51 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 236 minutes, 1 seconds
+Mon, 15 Aug 2016 20:04:50 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 49 times.
+Mon, 15 Aug 2016 20:04:52 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 241 minutes, 3 seconds
+Mon, 15 Aug 2016 20:09:52 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 50 times.
+Mon, 15 Aug 2016 20:09:53 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 246 minutes, 4 seconds
+Mon, 15 Aug 2016 20:14:53 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 51 times.
+Mon, 15 Aug 2016 20:14:54 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 251 minutes, 5 seconds
+Mon, 15 Aug 2016 20:19:54 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 52 times.
+Mon, 15 Aug 2016 20:19:55 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 256 minutes, 6 seconds
+Mon, 15 Aug 2016 20:24:55 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 53 times.
+Mon, 15 Aug 2016 20:24:56 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 261 minutes, 7 seconds
+Mon, 15 Aug 2016 20:29:56 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 54 times.
+Mon, 15 Aug 2016 20:30:00 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 266 minutes, 11 seconds
+Mon, 15 Aug 2016 20:35:00 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 55 times.
+Mon, 15 Aug 2016 20:35:02 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 271 minutes, 12 seconds
+Mon, 15 Aug 2016 20:40:02 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 56 times.
+Mon, 15 Aug 2016 20:40:03 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 276 minutes, 14 seconds
+Mon, 15 Aug 2016 20:45:03 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 57 times.
+Mon, 15 Aug 2016 20:45:04 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 281 minutes, 15 seconds
+Mon, 15 Aug 2016 20:50:04 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 58 times.
+Mon, 15 Aug 2016 20:50:06 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 286 minutes, 17 seconds
+Mon, 15 Aug 2016 20:55:06 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 59 times.
+Mon, 15 Aug 2016 20:55:07 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 291 minutes, 18 seconds
+Mon, 15 Aug 2016 21:00:07 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 60 times.
+Mon, 15 Aug 2016 21:00:11 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 296 minutes, 22 seconds
+Mon, 15 Aug 2016 21:05:11 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 61 times.
+Mon, 15 Aug 2016 21:05:13 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 301 minutes, 23 seconds
+Mon, 15 Aug 2016 21:10:13 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 62 times.
+Mon, 15 Aug 2016 21:10:18 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 306 minutes, 29 seconds
+Mon, 15 Aug 2016 21:15:18 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 63 times.
+Mon, 15 Aug 2016 21:15:19 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 311 minutes, 30 seconds
+Mon, 15 Aug 2016 21:20:19 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 64 times.
+Mon, 15 Aug 2016 21:20:20 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 316 minutes, 31 seconds
+Mon, 15 Aug 2016 21:25:20 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 65 times.
+Mon, 15 Aug 2016 21:25:22 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 321 minutes, 33 seconds
+Mon, 15 Aug 2016 21:30:22 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 66 times.
+Mon, 15 Aug 2016 21:30:23 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 326 minutes, 34 seconds
+Mon, 15 Aug 2016 21:35:23 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 67 times.
+Mon, 15 Aug 2016 21:35:26 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 331 minutes, 37 seconds
+Mon, 15 Aug 2016 21:40:26 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 68 times.
+Mon, 15 Aug 2016 21:40:27 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 336 minutes, 38 seconds
+Mon, 15 Aug 2016 21:45:27 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 69 times.
+Mon, 15 Aug 2016 21:45:29 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 341 minutes, 41 seconds
+Mon, 15 Aug 2016 21:50:29 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 70 times.
+Mon, 15 Aug 2016 21:50:31 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 346 minutes, 42 seconds
+Mon, 15 Aug 2016 21:55:32 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 71 times.
+Mon, 15 Aug 2016 21:55:33 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 351 minutes, 44 seconds
+Mon, 15 Aug 2016 22:00:33 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 72 times.
+Mon, 15 Aug 2016 22:00:37 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 356 minutes, 48 seconds
+Mon, 15 Aug 2016 22:05:37 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 73 times.
+Mon, 15 Aug 2016 22:05:38 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 361 minutes, 49 seconds
+Mon, 15 Aug 2016 22:10:38 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 74 times.
+Mon, 15 Aug 2016 22:10:39 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 366 minutes, 50 seconds
+Mon, 15 Aug 2016 22:15:39 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 75 times.
+Mon, 15 Aug 2016 22:15:40 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 371 minutes, 51 seconds
+Mon, 15 Aug 2016 22:20:40 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 76 times.
+Mon, 15 Aug 2016 22:20:41 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 376 minutes, 52 seconds
+Mon, 15 Aug 2016 22:25:41 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 77 times.
+Mon, 15 Aug 2016 22:25:42 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 381 minutes, 53 seconds
+Mon, 15 Aug 2016 22:30:42 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 78 times.
+Mon, 15 Aug 2016 22:30:43 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 386 minutes, 54 seconds
+Mon, 15 Aug 2016 22:35:43 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 79 times.
+Mon, 15 Aug 2016 22:35:45 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 391 minutes, 55 seconds
+Mon, 15 Aug 2016 22:40:45 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 80 times.
+Mon, 15 Aug 2016 22:40:46 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 396 minutes, 57 seconds
+Mon, 15 Aug 2016 22:45:46 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 81 times.
+Mon, 15 Aug 2016 22:45:47 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 401 minutes, 58 seconds
+Mon, 15 Aug 2016 22:50:47 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 82 times.
+Mon, 15 Aug 2016 22:50:48 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 406 minutes, 59 seconds
+Mon, 15 Aug 2016 22:55:48 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 83 times.
+Mon, 15 Aug 2016 22:55:49 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 412 minutes, 0 seconds
+Mon, 15 Aug 2016 23:00:49 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 84 times.
+Mon, 15 Aug 2016 23:00:50 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 417 minutes, 1 seconds
+Mon, 15 Aug 2016 23:05:50 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 85 times.
+Mon, 15 Aug 2016 23:05:51 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 422 minutes, 2 seconds
+Mon, 15 Aug 2016 23:10:51 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 86 times.
+Mon, 15 Aug 2016 23:10:53 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 427 minutes, 3 seconds
+Mon, 15 Aug 2016 23:15:53 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 87 times.
+Mon, 15 Aug 2016 23:15:54 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 432 minutes, 4 seconds
+Mon, 15 Aug 2016 23:20:54 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 88 times.
+Mon, 15 Aug 2016 23:20:55 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 437 minutes, 6 seconds
+Mon, 15 Aug 2016 23:25:55 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 89 times.
+Mon, 15 Aug 2016 23:25:56 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 442 minutes, 7 seconds
+Mon, 15 Aug 2016 23:30:56 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 90 times.
+Mon, 15 Aug 2016 23:30:57 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 447 minutes, 8 seconds
+Mon, 15 Aug 2016 23:35:57 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 91 times.
+Mon, 15 Aug 2016 23:35:58 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 452 minutes, 9 seconds
+Mon, 15 Aug 2016 23:40:58 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 92 times.
+Mon, 15 Aug 2016 23:40:59 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 457 minutes, 10 seconds
+Mon, 15 Aug 2016 23:45:59 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 93 times.
+Mon, 15 Aug 2016 23:46:00 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 462 minutes, 11 seconds
+Mon, 15 Aug 2016 23:51:00 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 94 times.
+Mon, 15 Aug 2016 23:51:01 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 467 minutes, 12 seconds
+Mon, 15 Aug 2016 23:56:01 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 95 times.
+Mon, 15 Aug 2016 23:56:03 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 472 minutes, 13 seconds
+Tue, 16 Aug 2016 00:01:03 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 96 times.
+Tue, 16 Aug 2016 00:01:04 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 477 minutes, 15 seconds
+Tue, 16 Aug 2016 00:06:04 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 97 times.
+Tue, 16 Aug 2016 00:06:06 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 482 minutes, 16 seconds
+Tue, 16 Aug 2016 00:11:06 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 98 times.
+Tue, 16 Aug 2016 00:11:07 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 487 minutes, 18 seconds
+Tue, 16 Aug 2016 00:16:07 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 99 times.
+Tue, 16 Aug 2016 00:16:08 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 492 minutes, 19 seconds
+Tue, 16 Aug 2016 00:21:08 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 100 times.
+Tue, 16 Aug 2016 00:21:10 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 497 minutes, 20 seconds
+Tue, 16 Aug 2016 00:26:10 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 101 times.
+Tue, 16 Aug 2016 00:26:11 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 502 minutes, 22 seconds
+Tue, 16 Aug 2016 00:31:11 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 102 times.
+Tue, 16 Aug 2016 00:31:12 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 507 minutes, 23 seconds
+Tue, 16 Aug 2016 00:36:12 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 103 times.
+Tue, 16 Aug 2016 00:36:14 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 512 minutes, 24 seconds
+Tue, 16 Aug 2016 00:41:14 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 104 times.
+Tue, 16 Aug 2016 00:41:15 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 517 minutes, 26 seconds
+Tue, 16 Aug 2016 00:46:15 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 105 times.
+Tue, 16 Aug 2016 00:46:16 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 522 minutes, 27 seconds
+Tue, 16 Aug 2016 00:51:16 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 106 times.
+Tue, 16 Aug 2016 00:51:18 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 527 minutes, 28 seconds
+Tue, 16 Aug 2016 00:56:18 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 107 times.
+Tue, 16 Aug 2016 00:56:19 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 532 minutes, 30 seconds
+Tue, 16 Aug 2016 01:01:19 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 108 times.
+Tue, 16 Aug 2016 01:01:20 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 537 minutes, 31 seconds
+Tue, 16 Aug 2016 01:06:20 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 109 times.
+Tue, 16 Aug 2016 01:06:22 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 542 minutes, 33 seconds
+Tue, 16 Aug 2016 01:11:22 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 110 times.
+Tue, 16 Aug 2016 01:11:23 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 547 minutes, 34 seconds
+Tue, 16 Aug 2016 01:16:23 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 111 times.
+Tue, 16 Aug 2016 01:16:24 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 552 minutes, 35 seconds
+Tue, 16 Aug 2016 01:21:24 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 112 times.
+Tue, 16 Aug 2016 01:21:26 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 557 minutes, 37 seconds
+Tue, 16 Aug 2016 01:26:26 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 113 times.
+Tue, 16 Aug 2016 01:26:27 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 562 minutes, 38 seconds
+Tue, 16 Aug 2016 01:31:27 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 114 times.
+Tue, 16 Aug 2016 01:31:29 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 567 minutes, 39 seconds
+Tue, 16 Aug 2016 01:36:29 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 115 times.
+Tue, 16 Aug 2016 01:36:30 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 572 minutes, 41 seconds
+Tue, 16 Aug 2016 01:41:30 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 116 times.
+Tue, 16 Aug 2016 01:41:31 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 577 minutes, 42 seconds
+Tue, 16 Aug 2016 01:46:31 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 117 times.
+Tue, 16 Aug 2016 01:46:33 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 582 minutes, 43 seconds
+Tue, 16 Aug 2016 01:51:33 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 118 times.
+Tue, 16 Aug 2016 01:51:34 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 587 minutes, 45 seconds
+Tue, 16 Aug 2016 01:56:34 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 119 times.
+Tue, 16 Aug 2016 01:56:35 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 592 minutes, 46 seconds
+Tue, 16 Aug 2016 02:01:35 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 120 times.
+Tue, 16 Aug 2016 02:01:37 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 597 minutes, 48 seconds
+Tue, 16 Aug 2016 02:06:37 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 121 times.
+Tue, 16 Aug 2016 02:06:41 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 602 minutes, 51 seconds
+Tue, 16 Aug 2016 02:11:40 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 122 times.
+Tue, 16 Aug 2016 02:11:42 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 607 minutes, 53 seconds
+Tue, 16 Aug 2016 02:16:42 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 123 times.
+Tue, 16 Aug 2016 02:16:43 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 612 minutes, 54 seconds
+Tue, 16 Aug 2016 02:21:43 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 124 times.
+Tue, 16 Aug 2016 02:21:44 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 617 minutes, 55 seconds
+Tue, 16 Aug 2016 02:26:45 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 125 times.
+Tue, 16 Aug 2016 02:26:46 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 622 minutes, 57 seconds
+Tue, 16 Aug 2016 02:31:46 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 126 times.
+Tue, 16 Aug 2016 02:31:47 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 627 minutes, 58 seconds
+Tue, 16 Aug 2016 02:36:47 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 127 times.
+Tue, 16 Aug 2016 02:36:48 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 632 minutes, 59 seconds
+Tue, 16 Aug 2016 02:41:48 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 128 times.
+Tue, 16 Aug 2016 02:41:50 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 638 minutes, 1 seconds
+Tue, 16 Aug 2016 02:46:50 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 129 times.
+Tue, 16 Aug 2016 02:46:51 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 643 minutes, 2 seconds
+Tue, 16 Aug 2016 02:51:51 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 130 times.
+Tue, 16 Aug 2016 02:51:52 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 648 minutes, 3 seconds
+Tue, 16 Aug 2016 02:56:52 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 131 times.
+Tue, 16 Aug 2016 02:56:54 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 653 minutes, 5 seconds
+Tue, 16 Aug 2016 03:01:54 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 132 times.
+Tue, 16 Aug 2016 03:01:55 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 658 minutes, 6 seconds
+Tue, 16 Aug 2016 03:06:55 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 133 times.
+Tue, 16 Aug 2016 03:06:56 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 663 minutes, 7 seconds
+Tue, 16 Aug 2016 03:11:56 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 134 times.
+Tue, 16 Aug 2016 03:11:58 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 668 minutes, 9 seconds
+Tue, 16 Aug 2016 03:16:58 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 135 times.
+Tue, 16 Aug 2016 03:16:59 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 673 minutes, 10 seconds
+Tue, 16 Aug 2016 03:21:59 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 136 times.
+Tue, 16 Aug 2016 03:22:00 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 678 minutes, 11 seconds
+Tue, 16 Aug 2016 03:27:01 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 137 times.
+Tue, 16 Aug 2016 03:27:02 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 683 minutes, 13 seconds
+Tue, 16 Aug 2016 03:32:02 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 138 times.
+Tue, 16 Aug 2016 03:32:03 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 688 minutes, 14 seconds
+Tue, 16 Aug 2016 03:37:03 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 139 times.
+Tue, 16 Aug 2016 03:37:05 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 693 minutes, 15 seconds
+Tue, 16 Aug 2016 03:42:05 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 140 times.
+Tue, 16 Aug 2016 03:42:06 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 698 minutes, 16 seconds
+Tue, 16 Aug 2016 03:47:06 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 141 times.
+Tue, 16 Aug 2016 03:47:07 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 703 minutes, 18 seconds
+Tue, 16 Aug 2016 03:52:07 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 142 times.
+Tue, 16 Aug 2016 03:52:08 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 708 minutes, 19 seconds
+Tue, 16 Aug 2016 03:57:08 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 143 times.
+Tue, 16 Aug 2016 03:57:10 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 713 minutes, 20 seconds
+Tue, 16 Aug 2016 04:02:10 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 144 times.
+Tue, 16 Aug 2016 04:02:11 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 718 minutes, 22 seconds
+Tue, 16 Aug 2016 04:07:11 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 145 times.
+Tue, 16 Aug 2016 04:07:12 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 723 minutes, 23 seconds
+Tue, 16 Aug 2016 04:12:12 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 146 times.
+Tue, 16 Aug 2016 04:12:14 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 728 minutes, 24 seconds
+Tue, 16 Aug 2016 04:17:14 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 147 times.
+Tue, 16 Aug 2016 04:17:15 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 733 minutes, 26 seconds
+Tue, 16 Aug 2016 04:22:15 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 148 times.
+Tue, 16 Aug 2016 04:22:16 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 738 minutes, 27 seconds
+Tue, 16 Aug 2016 04:27:16 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 149 times.
+Tue, 16 Aug 2016 04:27:17 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 743 minutes, 28 seconds
+Tue, 16 Aug 2016 04:32:17 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 150 times.
+Tue, 16 Aug 2016 04:32:19 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 748 minutes, 29 seconds
+Tue, 16 Aug 2016 04:37:19 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 151 times.
+Tue, 16 Aug 2016 04:37:20 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 753 minutes, 31 seconds
+Tue, 16 Aug 2016 04:42:20 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 152 times.
+Tue, 16 Aug 2016 04:42:21 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 758 minutes, 32 seconds
+Tue, 16 Aug 2016 04:47:21 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 153 times.
+Tue, 16 Aug 2016 04:47:22 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 763 minutes, 33 seconds
+Tue, 16 Aug 2016 04:52:22 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 154 times.
+Tue, 16 Aug 2016 04:52:23 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 768 minutes, 34 seconds
+Tue, 16 Aug 2016 04:57:23 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 155 times.
+Tue, 16 Aug 2016 04:57:25 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 773 minutes, 35 seconds
+Tue, 16 Aug 2016 05:02:25 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 156 times.
+Tue, 16 Aug 2016 05:02:26 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 778 minutes, 37 seconds
+Tue, 16 Aug 2016 05:07:26 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 157 times.
+Tue, 16 Aug 2016 05:07:27 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 783 minutes, 38 seconds
+Tue, 16 Aug 2016 05:12:27 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 158 times.
+Tue, 16 Aug 2016 05:12:28 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 788 minutes, 39 seconds
+Tue, 16 Aug 2016 05:17:28 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 159 times.
+Tue, 16 Aug 2016 05:17:29 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 793 minutes, 40 seconds
+Tue, 16 Aug 2016 05:22:29 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 160 times.
+Tue, 16 Aug 2016 05:22:31 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 798 minutes, 41 seconds
+Tue, 16 Aug 2016 05:27:30 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 161 times.
+Tue, 16 Aug 2016 05:27:32 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 803 minutes, 42 seconds
+Tue, 16 Aug 2016 05:32:32 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 162 times.
+Tue, 16 Aug 2016 05:32:33 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 808 minutes, 43 seconds
+Tue, 16 Aug 2016 05:37:33 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 163 times.
+Tue, 16 Aug 2016 05:37:34 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 813 minutes, 44 seconds
+Tue, 16 Aug 2016 05:42:34 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 164 times.
+Tue, 16 Aug 2016 05:42:35 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 818 minutes, 46 seconds
+Tue, 16 Aug 2016 05:47:35 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 165 times.
+Tue, 16 Aug 2016 05:47:36 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 823 minutes, 47 seconds
+Tue, 16 Aug 2016 05:52:36 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 166 times.
+Tue, 16 Aug 2016 05:52:37 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 828 minutes, 48 seconds
+Tue, 16 Aug 2016 05:57:37 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 167 times.
+Tue, 16 Aug 2016 05:57:38 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 833 minutes, 49 seconds
+Tue, 16 Aug 2016 06:02:38 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 168 times.
+Tue, 16 Aug 2016 06:02:39 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 838 minutes, 50 seconds
+Tue, 16 Aug 2016 06:07:39 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 169 times.
+Tue, 16 Aug 2016 06:07:41 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 843 minutes, 51 seconds
+Tue, 16 Aug 2016 06:12:40 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 170 times.
+Tue, 16 Aug 2016 06:12:42 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 848 minutes, 52 seconds
+Tue, 16 Aug 2016 06:17:42 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 171 times.
+Tue, 16 Aug 2016 06:17:43 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 853 minutes, 54 seconds
+Tue, 16 Aug 2016 06:22:43 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 172 times.
+Tue, 16 Aug 2016 06:22:44 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 858 minutes, 55 seconds
+Tue, 16 Aug 2016 06:27:44 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 173 times.
+Tue, 16 Aug 2016 06:27:45 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 863 minutes, 56 seconds
+Tue, 16 Aug 2016 06:32:45 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 174 times.
+Tue, 16 Aug 2016 06:32:46 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 868 minutes, 57 seconds
+Tue, 16 Aug 2016 06:37:46 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 175 times.
+Tue, 16 Aug 2016 06:37:47 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 873 minutes, 58 seconds
+Tue, 16 Aug 2016 06:42:47 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 176 times.
+Tue, 16 Aug 2016 06:42:49 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 878 minutes, 59 seconds
+Tue, 16 Aug 2016 06:47:49 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 177 times.
+Tue, 16 Aug 2016 06:47:50 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 884 minutes, 0 seconds
+Tue, 16 Aug 2016 06:52:50 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 178 times.
+Tue, 16 Aug 2016 06:52:51 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 889 minutes, 1 seconds
+Tue, 16 Aug 2016 06:57:51 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 179 times.
+Tue, 16 Aug 2016 06:57:52 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 894 minutes, 2 seconds
+Tue, 16 Aug 2016 07:02:52 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 180 times.
+Tue, 16 Aug 2016 07:02:53 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 899 minutes, 4 seconds
+Tue, 16 Aug 2016 07:07:53 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 181 times.
+Tue, 16 Aug 2016 07:07:54 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 904 minutes, 5 seconds
+Tue, 16 Aug 2016 07:12:54 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 182 times.
+Tue, 16 Aug 2016 07:12:55 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 909 minutes, 6 seconds
+Tue, 16 Aug 2016 07:17:55 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 183 times.
+Tue, 16 Aug 2016 07:17:56 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 914 minutes, 7 seconds
+Tue, 16 Aug 2016 07:22:56 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 184 times.
+Tue, 16 Aug 2016 07:22:57 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 919 minutes, 8 seconds
+Tue, 16 Aug 2016 07:27:57 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 185 times.
+Tue, 16 Aug 2016 07:27:58 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 924 minutes, 9 seconds
+Tue, 16 Aug 2016 07:32:58 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 186 times.
+Tue, 16 Aug 2016 07:33:00 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 929 minutes, 10 seconds
+Tue, 16 Aug 2016 07:38:00 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 187 times.
+Tue, 16 Aug 2016 07:38:01 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 934 minutes, 11 seconds
+Tue, 16 Aug 2016 07:43:01 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 188 times.
+Tue, 16 Aug 2016 07:43:02 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 939 minutes, 13 seconds
+Tue, 16 Aug 2016 07:48:02 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 189 times.
+Tue, 16 Aug 2016 07:48:03 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 944 minutes, 14 seconds
+Tue, 16 Aug 2016 07:53:03 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 190 times.
+Tue, 16 Aug 2016 07:53:04 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 949 minutes, 15 seconds
+Tue, 16 Aug 2016 07:58:04 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 191 times.
+Tue, 16 Aug 2016 07:58:05 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 954 minutes, 16 seconds
+Tue, 16 Aug 2016 08:03:05 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 192 times.
+Tue, 16 Aug 2016 08:03:06 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 959 minutes, 17 seconds
+Tue, 16 Aug 2016 08:08:06 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 193 times.
+Tue, 16 Aug 2016 08:08:07 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 964 minutes, 18 seconds
+Tue, 16 Aug 2016 08:13:07 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 194 times.
+Tue, 16 Aug 2016 08:13:09 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 969 minutes, 19 seconds
+Tue, 16 Aug 2016 08:18:09 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 195 times.
+Tue, 16 Aug 2016 08:18:10 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 974 minutes, 20 seconds
+Tue, 16 Aug 2016 08:23:10 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 196 times.
+Tue, 16 Aug 2016 08:23:11 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 979 minutes, 22 seconds
+Tue, 16 Aug 2016 08:28:11 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 197 times.
+Tue, 16 Aug 2016 08:28:13 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 984 minutes, 23 seconds
+Tue, 16 Aug 2016 08:33:13 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 198 times.
+Tue, 16 Aug 2016 08:33:16 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 989 minutes, 26 seconds
+Tue, 16 Aug 2016 08:38:16 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 199 times.
+Tue, 16 Aug 2016 08:38:17 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 994 minutes, 27 seconds
+Tue, 16 Aug 2016 08:43:17 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 200 times.
+Tue, 16 Aug 2016 08:43:18 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 999 minutes, 29 seconds
+Tue, 16 Aug 2016 08:48:18 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 201 times.
+Tue, 16 Aug 2016 08:48:19 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1004 minutes, 30 seconds
+Tue, 16 Aug 2016 08:53:19 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 202 times.
+Tue, 16 Aug 2016 08:53:20 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1009 minutes, 31 seconds
+Tue, 16 Aug 2016 08:58:20 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 203 times.
+Tue, 16 Aug 2016 08:58:21 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1014 minutes, 32 seconds
+Tue, 16 Aug 2016 09:03:21 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 204 times.
+Tue, 16 Aug 2016 09:03:22 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1019 minutes, 33 seconds
+Tue, 16 Aug 2016 09:08:22 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 205 times.
+Tue, 16 Aug 2016 09:08:24 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1024 minutes, 35 seconds
+Tue, 16 Aug 2016 09:13:24 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 206 times.
+Tue, 16 Aug 2016 09:13:26 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1029 minutes, 37 seconds
+Tue, 16 Aug 2016 09:18:26 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 207 times.
+Tue, 16 Aug 2016 09:18:27 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1034 minutes, 38 seconds
+Tue, 16 Aug 2016 09:23:27 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 208 times.
+Tue, 16 Aug 2016 09:23:30 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1039 minutes, 41 seconds
+Tue, 16 Aug 2016 09:28:30 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 209 times.
+Tue, 16 Aug 2016 09:28:31 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1044 minutes, 42 seconds
+Tue, 16 Aug 2016 09:33:31 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 210 times.
+Tue, 16 Aug 2016 09:33:32 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1049 minutes, 43 seconds
+Tue, 16 Aug 2016 09:38:32 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 211 times.
+Tue, 16 Aug 2016 09:38:34 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1054 minutes, 45 seconds
+Tue, 16 Aug 2016 09:43:34 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 212 times.
+Tue, 16 Aug 2016 09:43:37 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1059 minutes, 48 seconds
+Tue, 16 Aug 2016 09:48:37 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 213 times.
+Tue, 16 Aug 2016 09:48:39 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1064 minutes, 49 seconds
+Tue, 16 Aug 2016 09:53:38 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 214 times.
+Tue, 16 Aug 2016 09:53:40 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1069 minutes, 50 seconds
+Tue, 16 Aug 2016 09:58:40 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 215 times.
+Tue, 16 Aug 2016 09:58:41 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1074 minutes, 52 seconds
+Tue, 16 Aug 2016 10:03:41 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 216 times.
+Tue, 16 Aug 2016 10:03:45 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1079 minutes, 56 seconds
+Tue, 16 Aug 2016 10:08:45 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 217 times.
+Tue, 16 Aug 2016 10:08:46 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1084 minutes, 57 seconds
+Tue, 16 Aug 2016 10:13:46 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 218 times.
+Tue, 16 Aug 2016 10:13:47 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1089 minutes, 58 seconds
+Tue, 16 Aug 2016 10:18:47 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 219 times.
+Tue, 16 Aug 2016 10:18:55 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1095 minutes, 5 seconds
+Tue, 16 Aug 2016 10:23:55 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 220 times.
+Tue, 16 Aug 2016 10:23:59 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1100 minutes, 10 seconds
+Tue, 16 Aug 2016 10:28:59 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 221 times.
+Tue, 16 Aug 2016 10:29:06 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1105 minutes, 16 seconds
+Tue, 16 Aug 2016 10:34:06 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 222 times.
+Tue, 16 Aug 2016 10:34:17 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1110 minutes, 28 seconds
+Tue, 16 Aug 2016 10:39:17 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 223 times.
+Tue, 16 Aug 2016 10:39:21 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1115 minutes, 32 seconds
+Tue, 16 Aug 2016 10:44:21 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 224 times.
+Tue, 16 Aug 2016 10:44:26 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1120 minutes, 36 seconds
+Tue, 16 Aug 2016 10:49:26 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 225 times.
+Tue, 16 Aug 2016 10:49:27 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1125 minutes, 37 seconds
+Tue, 16 Aug 2016 10:54:27 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 226 times.
+Tue, 16 Aug 2016 10:54:31 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1130 minutes, 41 seconds
+Tue, 16 Aug 2016 10:59:31 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 227 times.
+Tue, 16 Aug 2016 10:59:32 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1135 minutes, 43 seconds
+Tue, 16 Aug 2016 11:04:32 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 228 times.
+Tue, 16 Aug 2016 11:04:33 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1140 minutes, 44 seconds
+Tue, 16 Aug 2016 11:09:33 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 229 times.
+Tue, 16 Aug 2016 11:09:34 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1145 minutes, 45 seconds
+Tue, 16 Aug 2016 11:14:34 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 230 times.
+Tue, 16 Aug 2016 11:14:47 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1150 minutes, 58 seconds
+Tue, 16 Aug 2016 11:19:47 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 231 times.
+Tue, 16 Aug 2016 11:19:56 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1156 minutes, 7 seconds
+Tue, 16 Aug 2016 11:24:56 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 232 times.
+Tue, 16 Aug 2016 11:25:03 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1161 minutes, 14 seconds
+Tue, 16 Aug 2016 11:30:03 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 233 times.
+Tue, 16 Aug 2016 11:30:07 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1166 minutes, 18 seconds
+Tue, 16 Aug 2016 11:35:07 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 234 times.
+Tue, 16 Aug 2016 11:35:14 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1171 minutes, 24 seconds
+Tue, 16 Aug 2016 11:40:14 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 235 times.
+Tue, 16 Aug 2016 11:40:15 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1176 minutes, 25 seconds
+Tue, 16 Aug 2016 11:45:15 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 236 times.
+Tue, 16 Aug 2016 11:45:19 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1181 minutes, 29 seconds
+Tue, 16 Aug 2016 11:50:19 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 237 times.
+Tue, 16 Aug 2016 11:50:20 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1186 minutes, 31 seconds
+Tue, 16 Aug 2016 11:55:20 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 238 times.
+Tue, 16 Aug 2016 11:55:24 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1191 minutes, 35 seconds
+Tue, 16 Aug 2016 12:00:24 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 239 times.
+Tue, 16 Aug 2016 12:00:27 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1196 minutes, 38 seconds
+Tue, 16 Aug 2016 12:05:27 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 240 times.
+Tue, 16 Aug 2016 12:05:28 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1201 minutes, 39 seconds
+Tue, 16 Aug 2016 12:10:28 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 241 times.
+Tue, 16 Aug 2016 12:10:30 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1206 minutes, 41 seconds
+Tue, 16 Aug 2016 12:15:30 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 242 times.
+Tue, 16 Aug 2016 12:15:32 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1211 minutes, 43 seconds
+Tue, 16 Aug 2016 12:20:32 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 243 times.
+Tue, 16 Aug 2016 12:20:33 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1216 minutes, 44 seconds
+Tue, 16 Aug 2016 12:25:33 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 244 times.
+Tue, 16 Aug 2016 12:25:35 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1221 minutes, 45 seconds
+Tue, 16 Aug 2016 12:30:35 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 245 times.
+Tue, 16 Aug 2016 12:30:36 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1226 minutes, 47 seconds
+Tue, 16 Aug 2016 12:35:36 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 246 times.
+Tue, 16 Aug 2016 12:35:37 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1231 minutes, 48 seconds
+Tue, 16 Aug 2016 12:40:37 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 247 times.
+Tue, 16 Aug 2016 12:40:39 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1236 minutes, 49 seconds
+Tue, 16 Aug 2016 12:45:39 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 248 times.
+Tue, 16 Aug 2016 12:45:41 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1241 minutes, 51 seconds
+Tue, 16 Aug 2016 12:50:41 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 249 times.
+Tue, 16 Aug 2016 12:50:42 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1246 minutes, 52 seconds
+Tue, 16 Aug 2016 12:55:42 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 250 times.
+Tue, 16 Aug 2016 12:55:43 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1251 minutes, 53 seconds
+Tue, 16 Aug 2016 13:00:43 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 251 times.
+Tue, 16 Aug 2016 13:00:44 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1256 minutes, 54 seconds
+Tue, 16 Aug 2016 13:05:44 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 252 times.
+Tue, 16 Aug 2016 13:05:45 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1261 minutes, 56 seconds
+Tue, 16 Aug 2016 13:10:45 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 253 times.
+Tue, 16 Aug 2016 13:10:54 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1267 minutes, 4 seconds
+Tue, 16 Aug 2016 13:15:54 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 254 times.
+Tue, 16 Aug 2016 13:15:55 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1272 minutes, 6 seconds
+Tue, 16 Aug 2016 13:20:55 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 255 times.
+Tue, 16 Aug 2016 13:20:58 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1277 minutes, 9 seconds
+Tue, 16 Aug 2016 13:25:58 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 256 times.
+Tue, 16 Aug 2016 13:26:02 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1282 minutes, 13 seconds
+Tue, 16 Aug 2016 13:31:02 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 257 times.
+Tue, 16 Aug 2016 13:31:12 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1287 minutes, 23 seconds
+Tue, 16 Aug 2016 13:36:12 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 258 times.
+Tue, 16 Aug 2016 13:36:14 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1292 minutes, 24 seconds
+Tue, 16 Aug 2016 13:41:13 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 259 times.
+Tue, 16 Aug 2016 13:41:15 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1297 minutes, 25 seconds
+Tue, 16 Aug 2016 13:46:15 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 260 times.
+Tue, 16 Aug 2016 13:46:16 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1302 minutes, 27 seconds
+Tue, 16 Aug 2016 13:51:16 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 261 times.
+Tue, 16 Aug 2016 13:51:18 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1307 minutes, 29 seconds
+Tue, 16 Aug 2016 13:56:18 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 262 times.
+Tue, 16 Aug 2016 13:56:20 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1312 minutes, 31 seconds
+Tue, 16 Aug 2016 14:01:20 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 263 times.
+Tue, 16 Aug 2016 14:01:21 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1317 minutes, 32 seconds
+Tue, 16 Aug 2016 14:06:21 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 264 times.
+Tue, 16 Aug 2016 14:06:23 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1322 minutes, 34 seconds
+Tue, 16 Aug 2016 14:11:23 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 265 times.
+Tue, 16 Aug 2016 14:11:28 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1327 minutes, 38 seconds
+Tue, 16 Aug 2016 14:16:28 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 266 times.
+Tue, 16 Aug 2016 14:16:29 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1332 minutes, 40 seconds
+Tue, 16 Aug 2016 14:21:29 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 267 times.
+Tue, 16 Aug 2016 14:21:30 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1337 minutes, 41 seconds
+Tue, 16 Aug 2016 14:26:30 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 268 times.
+Tue, 16 Aug 2016 14:26:31 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1342 minutes, 42 seconds
+Tue, 16 Aug 2016 14:31:31 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 269 times.
+Tue, 16 Aug 2016 14:31:33 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1347 minutes, 43 seconds
+Tue, 16 Aug 2016 14:36:33 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 270 times.
+Tue, 16 Aug 2016 14:36:34 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1352 minutes, 44 seconds
+Tue, 16 Aug 2016 14:41:34 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 271 times.
+Tue, 16 Aug 2016 14:41:38 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1357 minutes, 48 seconds
+Tue, 16 Aug 2016 14:46:38 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 272 times.
+Tue, 16 Aug 2016 14:46:45 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1362 minutes, 56 seconds
+Tue, 16 Aug 2016 14:51:45 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 273 times.
+Tue, 16 Aug 2016 14:52:04 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1368 minutes, 14 seconds
+Tue, 16 Aug 2016 14:57:03 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 274 times.
+Tue, 16 Aug 2016 14:57:05 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1373 minutes, 15 seconds
+Tue, 16 Aug 2016 15:02:05 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 275 times.
+Tue, 16 Aug 2016 15:02:06 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1378 minutes, 16 seconds
+Tue, 16 Aug 2016 15:07:06 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 276 times.
+Tue, 16 Aug 2016 15:07:10 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1383 minutes, 20 seconds
+Tue, 16 Aug 2016 15:12:10 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 277 times.
+Tue, 16 Aug 2016 15:12:14 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1388 minutes, 25 seconds
+Tue, 16 Aug 2016 15:17:14 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 278 times.
+Tue, 16 Aug 2016 15:17:19 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1393 minutes, 30 seconds
+Tue, 16 Aug 2016 15:22:19 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 279 times.
+Tue, 16 Aug 2016 15:22:20 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1398 minutes, 31 seconds
+Tue, 16 Aug 2016 15:27:20 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 280 times.
+Tue, 16 Aug 2016 15:27:22 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1403 minutes, 32 seconds
+Tue, 16 Aug 2016 15:32:22 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 281 times.
+Tue, 16 Aug 2016 15:32:23 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1408 minutes, 34 seconds
+Tue, 16 Aug 2016 15:37:23 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 282 times.
+Tue, 16 Aug 2016 15:37:24 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1413 minutes, 35 seconds
+Tue, 16 Aug 2016 15:42:24 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 283 times.
+Tue, 16 Aug 2016 15:42:25 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1418 minutes, 36 seconds
+Tue, 16 Aug 2016 15:47:25 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 284 times.
+Tue, 16 Aug 2016 15:47:27 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1423 minutes, 37 seconds
+Tue, 16 Aug 2016 15:52:27 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 285 times.
+Tue, 16 Aug 2016 15:52:28 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1428 minutes, 38 seconds
+Tue, 16 Aug 2016 15:57:28 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 286 times.
+Tue, 16 Aug 2016 15:57:29 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1433 minutes, 39 seconds
+Tue, 16 Aug 2016 16:02:29 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 287 times.
+Tue, 16 Aug 2016 16:02:30 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1438 minutes, 41 seconds
+Tue, 16 Aug 2016 16:07:30 TestBaiduDataUpdateFreq.py[line:71] INFO: Send request 288 times.
+Tue, 16 Aug 2016 16:07:31 TestBaiduDataUpdateFreq.py[line:60] INFO: Current run time: 1443 minutes, 42 seconds
+Tue, 16 Aug 2016 16:07:31 TestBaiduDataUpdateFreq.py[line:82] INFO: ----- END: test baidu weather data update frequency
