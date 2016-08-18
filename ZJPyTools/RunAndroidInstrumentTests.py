@@ -20,6 +20,9 @@ g_test_class = 'com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
 g_component = 'com.example.zhengjin.funsettingsuitest.test'
 g_test_runner = 'android.support.test.runner.AndroidJUnitRunner'
 
+g_total_run_times = 0
+g_total_failed = 0
+
 
 g_report_dir_path = ''
 g_report_file_path = ''
@@ -85,25 +88,45 @@ def run_instrument_tests_v2(cmd):
     if output_content is None:
         return
     FileUtils.append_content_to_file(g_report_file_path, output_content)
+    
+    if not check_test_case_failed(output_content):
+        check_test_case_force_closed(output_content)
 
+def check_test_case_failed(content):
+    global g_total_failed
+    
+    if 'AssertionFailedError' in content:
+        g_total_failed += 1
+        return True
+    return False
+
+def check_test_case_force_closed(content):
     '''
     force close the testing process by Java code System.exit(0), 
     then check the keyword "Process crashed" in the testing runner, 
     if yes, stop the testing runner at once.
     '''
-    if 'Process crashed' in output_content:
+    if 'Process crashed' in content:
         logging.error('Found issue(Buffer Refresh Failed), and testing runner process is force closed.')
         sys.exit(1)
+
+def create_report_summary():
+    logging.info('----- Testing report summary: ')
+    logging.info('Total run times: %d' %g_total_run_times)
+    logging.info('Total passed: %d' %(g_total_run_times - g_total_failed))
+    logging.info('Total failed: %d' %g_total_failed)
 
 
 # ----------------------------------------------------
 # Main
 # ----------------------------------------------------
 def loop_run_test(during):
+    global g_total_run_times
+
+    i = 1
     cmd = build_instrument_cmd_v2()
 
     start_time = int(time.clock())
-    i = 1
     while 1:
         logging.info('run test %d times.' %i)
         if not AdbUtils.verify_adb_devices_serialno():
@@ -119,6 +142,7 @@ def loop_run_test(during):
         if ((cur_run_time - start_time) > during):
             break
     # END LOOP
+    g_total_run_times = i
 
 def run_test_setup(during):
     init_report_paths()
@@ -133,6 +157,7 @@ def run_test_setup(during):
 
 def run_test_clearup():
     copy_and_pull_captures()
+    create_report_summary()
     logging.info('----- END run test')
 
 def main(during):
