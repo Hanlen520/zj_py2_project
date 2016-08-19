@@ -52,7 +52,7 @@ def init_report_paths():
 # ----------------------------------------------------
 # Helper functions
 # ----------------------------------------------------
-def remove_old_captures_on_shell():
+def rm_old_captures_on_shell():
     cmd = 'adb shell ls %s' %g_tmp_dir_path
     output_lines = WinSysUtils.run_sys_cmd_and_ret_lines(cmd)
     flag_found = False
@@ -159,15 +159,15 @@ def run_test_setup(during):
 
     if not AdbUtils.adb_connect_with_root(g_device_ip):
         exit(1)
-    remove_old_captures_on_shell()
+    rm_old_captures_on_shell()
 
     test_case = g_test_class[(g_test_class.rindex('.') + 1) : ]
     logging.info('----- START run test %s for %s minutes' %(test_case, during/60))
 
 def run_test_clearup():
-    copy_and_pull_captures()
     create_report_summary()
     logging.info('----- END run test')
+    copy_and_pull_captures()
 
 def main(during):
     run_test_setup(during)
