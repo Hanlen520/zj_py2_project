@@ -23,6 +23,8 @@ g_test_runner = 'android.support.test.runner.AndroidJUnitRunner'
 g_total_run_times = 0
 g_total_failed = 0
 
+g_tmp_dir_path = '/data/local/tmp'
+g_tmp_captures_dir_path = '%s/captures' %g_tmp_dir_path
 
 g_report_dir_path = ''
 g_report_file_path = ''
@@ -50,26 +52,36 @@ def init_report_paths():
 # ----------------------------------------------------
 # Helper functions
 # ----------------------------------------------------
-def remove_old_captures():
-    cmd = 'adb shell rm /data/local/tmp/captures/*.png'
-    WinSysUtils.run_sys_cmd(cmd)
+def remove_old_captures_on_shell():
+    cmd = 'adb shell ls %s' %g_tmp_dir_path
+    output_lines = WinSysUtils.run_sys_cmd_and_ret_lines(cmd)
+    flag_found = False
+    for line in output_lines:
+        if 'captures' in line:
+            flag_found = True
+    
+    if flag_found:  # if dir exist, rm old files
+        cmd = 'adb shell rm %s/*.png' %g_tmp_captures_dir_path
+        WinSysUtils.run_sys_cmd(cmd)
+    else:  # if not, create dir
+        cmd = 'adb shell mkdir -p %s' %g_tmp_captures_dir_path
+        WinSysUtils.run_sys_cmd(cmd)
 
 def copy_and_pull_captures():
-    shell_tmp_captures_dir_path = '/data/local/tmp/captures'
-    shell_captures_dir_path = '/sdcard/auto_test_captures/captures_%s' %WinSysUtils.get_current_date_and_time()
+    captures_dir_path = '/sdcard/auto_test_captures/captures_%s' %WinSysUtils.get_current_date_and_time()
 
-    cmd = 'adb shell mkdir -p %s' %shell_captures_dir_path  # make dir for multiple levels
+    cmd = 'adb shell mkdir -p %s' %captures_dir_path  # make dir for multiple levels
     WinSysUtils.run_sys_cmd(cmd)
     time.sleep(1)
     
-    cmd = 'adb shell busybox cp %s/*.png %s' %(shell_tmp_captures_dir_path, shell_captures_dir_path)
+    cmd = 'adb shell busybox cp %s/*.png %s' %(g_tmp_captures_dir_path, captures_dir_path)
     WinSysUtils.run_sys_cmd(cmd)
     time.sleep(1)
 
     win_captures_dir_path = '%s/captures' %g_report_dir_path
     if not os.path.exists(win_captures_dir_path):
         os.mkdir(win_captures_dir_path)
-    cmd = 'adb pull %s %s' %(shell_captures_dir_path, win_captures_dir_path)
+    cmd = 'adb pull %s %s' %(captures_dir_path, win_captures_dir_path)
     WinSysUtils.run_sys_cmd(cmd)
 
 def build_instrument_cmd_v1():
@@ -147,7 +159,7 @@ def run_test_setup(during):
 
     if not AdbUtils.adb_connect_with_root(g_device_ip):
         exit(1)
-    remove_old_captures()
+    remove_old_captures_on_shell()
 
     test_case = g_test_class[(g_test_class.rindex('.') + 1) : ]
     logging.info('----- START run test %s for %s minutes' %(test_case, during/60))

@@ -1,0 +1,213 @@
+Thu, 18 Aug 2016 21:05:47 RunAndroidInstrumentTests.py[line:153] INFO: ----- START run test TestPlayingFilm#testOpenAndExitFilmPlayer for 720 minutes
+Thu, 18 Aug 2016 21:05:47 RunAndroidInstrumentTests.py[line:128] INFO: run test 1 times.
+Thu, 18 Aug 2016 21:12:29 FileUtils.py[line:123] INFO: The file(E:\Eclipse_Workspace\ZJPyProject\ZJPyTools\logs\logs_16-08-18_210546\InstrutmentTestReport.log) is NOT exist, and created.
+Thu, 18 Aug 2016 21:12:32 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 6 minutes
+Thu, 18 Aug 2016 21:12:32 RunAndroidInstrumentTests.py[line:128] INFO: run test 2 times.
+Thu, 18 Aug 2016 21:19:51 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 14 minutes
+Thu, 18 Aug 2016 21:19:51 RunAndroidInstrumentTests.py[line:128] INFO: run test 3 times.
+Thu, 18 Aug 2016 21:26:50 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 21 minutes
+Thu, 18 Aug 2016 21:26:50 RunAndroidInstrumentTests.py[line:128] INFO: run test 4 times.
+Thu, 18 Aug 2016 21:33:33 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 27 minutes
+Thu, 18 Aug 2016 21:33:33 RunAndroidInstrumentTests.py[line:128] INFO: run test 5 times.
+Thu, 18 Aug 2016 21:40:24 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 34 minutes
+Thu, 18 Aug 2016 21:40:24 RunAndroidInstrumentTests.py[line:128] INFO: run test 6 times.
+Thu, 18 Aug 2016 21:47:25 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 41 minutes
+Thu, 18 Aug 2016 21:47:25 RunAndroidInstrumentTests.py[line:128] INFO: run test 7 times.
+Thu, 18 Aug 2016 21:54:12 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 48 minutes
+Thu, 18 Aug 2016 21:54:12 RunAndroidInstrumentTests.py[line:128] INFO: run test 8 times.
+Thu, 18 Aug 2016 22:01:15 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 55 minutes
+Thu, 18 Aug 2016 22:01:15 RunAndroidInstrumentTests.py[line:128] INFO: run test 9 times.
+Thu, 18 Aug 2016 22:08:28 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 62 minutes
+Thu, 18 Aug 2016 22:08:28 RunAndroidInstrumentTests.py[line:128] INFO: run test 10 times.
+Thu, 18 Aug 2016 22:15:25 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 69 minutes
+Thu, 18 Aug 2016 22:15:25 RunAndroidInstrumentTests.py[line:128] INFO: run test 11 times.
+Thu, 18 Aug 2016 22:22:22 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 76 minutes
+Thu, 18 Aug 2016 22:22:22 RunAndroidInstrumentTests.py[line:128] INFO: run test 12 times.
+Thu, 18 Aug 2016 22:29:28 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 83 minutes
+Thu, 18 Aug 2016 22:29:28 RunAndroidInstrumentTests.py[line:128] INFO: run test 13 times.
+Thu, 18 Aug 2016 22:36:12 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 90 minutes
+Thu, 18 Aug 2016 22:36:12 RunAndroidInstrumentTests.py[line:128] INFO: run test 14 times.
+Thu, 18 Aug 2016 22:43:02 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 97 minutes
+Thu, 18 Aug 2016 22:43:02 RunAndroidInstrumentTests.py[line:128] INFO: run test 15 times.
+Thu, 18 Aug 2016 22:49:52 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 104 minutes
+Thu, 18 Aug 2016 22:49:52 RunAndroidInstrumentTests.py[line:128] INFO: run test 16 times.
+Thu, 18 Aug 2016 22:56:36 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 110 minutes
+Thu, 18 Aug 2016 22:56:36 RunAndroidInstrumentTests.py[line:128] INFO: run test 17 times.
+Thu, 18 Aug 2016 23:03:22 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 117 minutes
+Thu, 18 Aug 2016 23:03:22 RunAndroidInstrumentTests.py[line:128] INFO: run test 18 times.
+Thu, 18 Aug 2016 23:10:08 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 124 minutes
+Thu, 18 Aug 2016 23:10:08 RunAndroidInstrumentTests.py[line:128] INFO: run test 19 times.
+Thu, 18 Aug 2016 23:17:01 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 131 minutes
+Thu, 18 Aug 2016 23:17:01 RunAndroidInstrumentTests.py[line:128] INFO: run test 20 times.
+Thu, 18 Aug 2016 23:24:03 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 138 minutes
+Thu, 18 Aug 2016 23:24:03 RunAndroidInstrumentTests.py[line:128] INFO: run test 21 times.
+Thu, 18 Aug 2016 23:31:24 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 145 minutes
+Thu, 18 Aug 2016 23:31:24 RunAndroidInstrumentTests.py[line:128] INFO: run test 22 times.
+Thu, 18 Aug 2016 23:38:23 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 152 minutes
+Thu, 18 Aug 2016 23:38:23 RunAndroidInstrumentTests.py[line:128] INFO: run test 23 times.
+Thu, 18 Aug 2016 23:45:25 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 159 minutes
+Thu, 18 Aug 2016 23:45:25 RunAndroidInstrumentTests.py[line:128] INFO: run test 24 times.
+Thu, 18 Aug 2016 23:52:30 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 166 minutes
+Thu, 18 Aug 2016 23:52:30 RunAndroidInstrumentTests.py[line:128] INFO: run test 25 times.
+Thu, 18 Aug 2016 23:59:44 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 173 minutes
+Thu, 18 Aug 2016 23:59:44 RunAndroidInstrumentTests.py[line:128] INFO: run test 26 times.
+Fri, 19 Aug 2016 00:06:45 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 180 minutes
+Fri, 19 Aug 2016 00:06:45 RunAndroidInstrumentTests.py[line:128] INFO: run test 27 times.
+Fri, 19 Aug 2016 00:13:42 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 187 minutes
+Fri, 19 Aug 2016 00:13:42 RunAndroidInstrumentTests.py[line:128] INFO: run test 28 times.
+Fri, 19 Aug 2016 00:20:25 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 194 minutes
+Fri, 19 Aug 2016 00:20:25 RunAndroidInstrumentTests.py[line:128] INFO: run test 29 times.
+Fri, 19 Aug 2016 00:27:16 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 201 minutes
+Fri, 19 Aug 2016 00:27:16 RunAndroidInstrumentTests.py[line:128] INFO: run test 30 times.
+Fri, 19 Aug 2016 00:34:09 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 208 minutes
+Fri, 19 Aug 2016 00:34:09 RunAndroidInstrumentTests.py[line:128] INFO: run test 31 times.
+Fri, 19 Aug 2016 00:40:55 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 215 minutes
+Fri, 19 Aug 2016 00:40:55 RunAndroidInstrumentTests.py[line:128] INFO: run test 32 times.
+Fri, 19 Aug 2016 00:47:58 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 222 minutes
+Fri, 19 Aug 2016 00:47:58 RunAndroidInstrumentTests.py[line:128] INFO: run test 33 times.
+Fri, 19 Aug 2016 00:55:05 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 229 minutes
+Fri, 19 Aug 2016 00:55:05 RunAndroidInstrumentTests.py[line:128] INFO: run test 34 times.
+Fri, 19 Aug 2016 01:02:17 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 236 minutes
+Fri, 19 Aug 2016 01:02:17 RunAndroidInstrumentTests.py[line:128] INFO: run test 35 times.
+Fri, 19 Aug 2016 01:09:21 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 243 minutes
+Fri, 19 Aug 2016 01:09:21 RunAndroidInstrumentTests.py[line:128] INFO: run test 36 times.
+Fri, 19 Aug 2016 01:16:32 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 250 minutes
+Fri, 19 Aug 2016 01:16:32 RunAndroidInstrumentTests.py[line:128] INFO: run test 37 times.
+Fri, 19 Aug 2016 01:23:50 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 258 minutes
+Fri, 19 Aug 2016 01:23:50 RunAndroidInstrumentTests.py[line:128] INFO: run test 38 times.
+Fri, 19 Aug 2016 01:30:40 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 264 minutes
+Fri, 19 Aug 2016 01:30:40 RunAndroidInstrumentTests.py[line:128] INFO: run test 39 times.
+Fri, 19 Aug 2016 01:37:46 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 271 minutes
+Fri, 19 Aug 2016 01:37:46 RunAndroidInstrumentTests.py[line:128] INFO: run test 40 times.
+Fri, 19 Aug 2016 01:44:56 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 279 minutes
+Fri, 19 Aug 2016 01:44:56 RunAndroidInstrumentTests.py[line:128] INFO: run test 41 times.
+Fri, 19 Aug 2016 01:51:51 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 286 minutes
+Fri, 19 Aug 2016 01:51:51 RunAndroidInstrumentTests.py[line:128] INFO: run test 42 times.
+Fri, 19 Aug 2016 01:58:44 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 292 minutes
+Fri, 19 Aug 2016 01:58:44 RunAndroidInstrumentTests.py[line:128] INFO: run test 43 times.
+Fri, 19 Aug 2016 02:05:31 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 299 minutes
+Fri, 19 Aug 2016 02:05:31 RunAndroidInstrumentTests.py[line:128] INFO: run test 44 times.
+Fri, 19 Aug 2016 02:12:44 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 306 minutes
+Fri, 19 Aug 2016 02:12:44 RunAndroidInstrumentTests.py[line:128] INFO: run test 45 times.
+Fri, 19 Aug 2016 02:19:34 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 313 minutes
+Fri, 19 Aug 2016 02:19:34 RunAndroidInstrumentTests.py[line:128] INFO: run test 46 times.
+Fri, 19 Aug 2016 02:26:22 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 320 minutes
+Fri, 19 Aug 2016 02:26:22 RunAndroidInstrumentTests.py[line:128] INFO: run test 47 times.
+Fri, 19 Aug 2016 02:33:15 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 327 minutes
+Fri, 19 Aug 2016 02:33:15 RunAndroidInstrumentTests.py[line:128] INFO: run test 48 times.
+Fri, 19 Aug 2016 02:40:19 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 334 minutes
+Fri, 19 Aug 2016 02:40:19 RunAndroidInstrumentTests.py[line:128] INFO: run test 49 times.
+Fri, 19 Aug 2016 02:47:19 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 341 minutes
+Fri, 19 Aug 2016 02:47:19 RunAndroidInstrumentTests.py[line:128] INFO: run test 50 times.
+Fri, 19 Aug 2016 02:54:22 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 348 minutes
+Fri, 19 Aug 2016 02:54:22 RunAndroidInstrumentTests.py[line:128] INFO: run test 51 times.
+Fri, 19 Aug 2016 03:01:12 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 355 minutes
+Fri, 19 Aug 2016 03:01:12 RunAndroidInstrumentTests.py[line:128] INFO: run test 52 times.
+Fri, 19 Aug 2016 03:08:28 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 362 minutes
+Fri, 19 Aug 2016 03:08:28 RunAndroidInstrumentTests.py[line:128] INFO: run test 53 times.
+Fri, 19 Aug 2016 03:15:46 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 369 minutes
+Fri, 19 Aug 2016 03:15:46 RunAndroidInstrumentTests.py[line:128] INFO: run test 54 times.
+Fri, 19 Aug 2016 03:22:51 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 377 minutes
+Fri, 19 Aug 2016 03:22:51 RunAndroidInstrumentTests.py[line:128] INFO: run test 55 times.
+Fri, 19 Aug 2016 03:30:07 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 384 minutes
+Fri, 19 Aug 2016 03:30:07 RunAndroidInstrumentTests.py[line:128] INFO: run test 56 times.
+Fri, 19 Aug 2016 03:36:55 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 391 minutes
+Fri, 19 Aug 2016 03:36:55 RunAndroidInstrumentTests.py[line:128] INFO: run test 57 times.
+Fri, 19 Aug 2016 03:43:51 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 398 minutes
+Fri, 19 Aug 2016 03:43:51 RunAndroidInstrumentTests.py[line:128] INFO: run test 58 times.
+Fri, 19 Aug 2016 03:50:50 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 405 minutes
+Fri, 19 Aug 2016 03:50:50 RunAndroidInstrumentTests.py[line:128] INFO: run test 59 times.
+Fri, 19 Aug 2016 03:57:35 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 411 minutes
+Fri, 19 Aug 2016 03:57:35 RunAndroidInstrumentTests.py[line:128] INFO: run test 60 times.
+Fri, 19 Aug 2016 04:04:49 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 419 minutes
+Fri, 19 Aug 2016 04:04:49 RunAndroidInstrumentTests.py[line:128] INFO: run test 61 times.
+Fri, 19 Aug 2016 04:12:09 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 426 minutes
+Fri, 19 Aug 2016 04:12:09 RunAndroidInstrumentTests.py[line:128] INFO: run test 62 times.
+Fri, 19 Aug 2016 04:19:08 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 433 minutes
+Fri, 19 Aug 2016 04:19:08 RunAndroidInstrumentTests.py[line:128] INFO: run test 63 times.
+Fri, 19 Aug 2016 04:26:05 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 440 minutes
+Fri, 19 Aug 2016 04:26:05 RunAndroidInstrumentTests.py[line:128] INFO: run test 64 times.
+Fri, 19 Aug 2016 04:33:24 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 447 minutes
+Fri, 19 Aug 2016 04:33:24 RunAndroidInstrumentTests.py[line:128] INFO: run test 65 times.
+Fri, 19 Aug 2016 04:40:40 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 454 minutes
+Fri, 19 Aug 2016 04:40:40 RunAndroidInstrumentTests.py[line:128] INFO: run test 66 times.
+Fri, 19 Aug 2016 04:47:45 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 461 minutes
+Fri, 19 Aug 2016 04:47:45 RunAndroidInstrumentTests.py[line:128] INFO: run test 67 times.
+Fri, 19 Aug 2016 04:54:35 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 468 minutes
+Fri, 19 Aug 2016 04:54:35 RunAndroidInstrumentTests.py[line:128] INFO: run test 68 times.
+Fri, 19 Aug 2016 05:01:38 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 475 minutes
+Fri, 19 Aug 2016 05:01:38 RunAndroidInstrumentTests.py[line:128] INFO: run test 69 times.
+Fri, 19 Aug 2016 05:08:48 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 483 minutes
+Fri, 19 Aug 2016 05:08:48 RunAndroidInstrumentTests.py[line:128] INFO: run test 70 times.
+Fri, 19 Aug 2016 05:15:46 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 489 minutes
+Fri, 19 Aug 2016 05:15:46 RunAndroidInstrumentTests.py[line:128] INFO: run test 71 times.
+Fri, 19 Aug 2016 05:22:58 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 497 minutes
+Fri, 19 Aug 2016 05:22:58 RunAndroidInstrumentTests.py[line:128] INFO: run test 72 times.
+Fri, 19 Aug 2016 05:30:10 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 504 minutes
+Fri, 19 Aug 2016 05:30:10 RunAndroidInstrumentTests.py[line:128] INFO: run test 73 times.
+Fri, 19 Aug 2016 05:37:23 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 511 minutes
+Fri, 19 Aug 2016 05:37:23 RunAndroidInstrumentTests.py[line:128] INFO: run test 74 times.
+Fri, 19 Aug 2016 05:44:11 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 518 minutes
+Fri, 19 Aug 2016 05:44:11 RunAndroidInstrumentTests.py[line:128] INFO: run test 75 times.
+Fri, 19 Aug 2016 05:51:08 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 525 minutes
+Fri, 19 Aug 2016 05:51:08 RunAndroidInstrumentTests.py[line:128] INFO: run test 76 times.
+Fri, 19 Aug 2016 05:57:55 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 532 minutes
+Fri, 19 Aug 2016 05:57:55 RunAndroidInstrumentTests.py[line:128] INFO: run test 77 times.
+Fri, 19 Aug 2016 06:04:50 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 539 minutes
+Fri, 19 Aug 2016 06:04:50 RunAndroidInstrumentTests.py[line:128] INFO: run test 78 times.
+Fri, 19 Aug 2016 06:12:08 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 546 minutes
+Fri, 19 Aug 2016 06:12:08 RunAndroidInstrumentTests.py[line:128] INFO: run test 79 times.
+Fri, 19 Aug 2016 06:19:11 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 553 minutes
+Fri, 19 Aug 2016 06:19:11 RunAndroidInstrumentTests.py[line:128] INFO: run test 80 times.
+Fri, 19 Aug 2016 06:26:22 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 560 minutes
+Fri, 19 Aug 2016 06:26:22 RunAndroidInstrumentTests.py[line:128] INFO: run test 81 times.
+Fri, 19 Aug 2016 06:33:10 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 567 minutes
+Fri, 19 Aug 2016 06:33:10 RunAndroidInstrumentTests.py[line:128] INFO: run test 82 times.
+Fri, 19 Aug 2016 06:40:19 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 574 minutes
+Fri, 19 Aug 2016 06:40:19 RunAndroidInstrumentTests.py[line:128] INFO: run test 83 times.
+Fri, 19 Aug 2016 06:47:13 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 581 minutes
+Fri, 19 Aug 2016 06:47:13 RunAndroidInstrumentTests.py[line:128] INFO: run test 84 times.
+Fri, 19 Aug 2016 06:54:11 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 588 minutes
+Fri, 19 Aug 2016 06:54:11 RunAndroidInstrumentTests.py[line:128] INFO: run test 85 times.
+Fri, 19 Aug 2016 07:01:20 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 595 minutes
+Fri, 19 Aug 2016 07:01:20 RunAndroidInstrumentTests.py[line:128] INFO: run test 86 times.
+Fri, 19 Aug 2016 07:08:14 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 602 minutes
+Fri, 19 Aug 2016 07:08:14 RunAndroidInstrumentTests.py[line:128] INFO: run test 87 times.
+Fri, 19 Aug 2016 07:15:21 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 609 minutes
+Fri, 19 Aug 2016 07:15:21 RunAndroidInstrumentTests.py[line:128] INFO: run test 88 times.
+Fri, 19 Aug 2016 07:22:19 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 616 minutes
+Fri, 19 Aug 2016 07:22:19 RunAndroidInstrumentTests.py[line:128] INFO: run test 89 times.
+Fri, 19 Aug 2016 07:29:29 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 623 minutes
+Fri, 19 Aug 2016 07:29:29 RunAndroidInstrumentTests.py[line:128] INFO: run test 90 times.
+Fri, 19 Aug 2016 07:36:26 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 630 minutes
+Fri, 19 Aug 2016 07:36:26 RunAndroidInstrumentTests.py[line:128] INFO: run test 91 times.
+Fri, 19 Aug 2016 07:43:38 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 637 minutes
+Fri, 19 Aug 2016 07:43:38 RunAndroidInstrumentTests.py[line:128] INFO: run test 92 times.
+Fri, 19 Aug 2016 07:50:25 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 644 minutes
+Fri, 19 Aug 2016 07:50:25 RunAndroidInstrumentTests.py[line:128] INFO: run test 93 times.
+Fri, 19 Aug 2016 07:57:34 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 651 minutes
+Fri, 19 Aug 2016 07:57:34 RunAndroidInstrumentTests.py[line:128] INFO: run test 94 times.
+Fri, 19 Aug 2016 08:04:40 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 658 minutes
+Fri, 19 Aug 2016 08:04:40 RunAndroidInstrumentTests.py[line:128] INFO: run test 95 times.
+Fri, 19 Aug 2016 08:11:44 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 665 minutes
+Fri, 19 Aug 2016 08:11:44 RunAndroidInstrumentTests.py[line:128] INFO: run test 96 times.
+Fri, 19 Aug 2016 08:18:34 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 672 minutes
+Fri, 19 Aug 2016 08:18:34 RunAndroidInstrumentTests.py[line:128] INFO: run test 97 times.
+Fri, 19 Aug 2016 08:25:34 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 679 minutes
+Fri, 19 Aug 2016 08:25:34 RunAndroidInstrumentTests.py[line:128] INFO: run test 98 times.
+Fri, 19 Aug 2016 08:32:42 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 686 minutes
+Fri, 19 Aug 2016 08:32:42 RunAndroidInstrumentTests.py[line:128] INFO: run test 99 times.
+Fri, 19 Aug 2016 08:39:48 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 694 minutes
+Fri, 19 Aug 2016 08:39:48 RunAndroidInstrumentTests.py[line:128] INFO: run test 100 times.
+Fri, 19 Aug 2016 08:46:49 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 701 minutes
+Fri, 19 Aug 2016 08:46:49 RunAndroidInstrumentTests.py[line:128] INFO: run test 101 times.
+Fri, 19 Aug 2016 08:53:57 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 708 minutes
+Fri, 19 Aug 2016 08:53:57 RunAndroidInstrumentTests.py[line:128] INFO: run test 102 times.
+Fri, 19 Aug 2016 09:01:02 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 715 minutes
+Fri, 19 Aug 2016 09:01:02 RunAndroidInstrumentTests.py[line:128] INFO: run test 103 times.
+Fri, 19 Aug 2016 09:07:52 RunAndroidInstrumentTests.py[line:138] INFO: current run time: 722 minutes
+Fri, 19 Aug 2016 09:07:55 RunAndroidInstrumentTests.py[line:111] INFO: ----- Testing report summary: 
+Fri, 19 Aug 2016 09:07:55 RunAndroidInstrumentTests.py[line:112] INFO: Total run times: 104
+Fri, 19 Aug 2016 09:07:55 RunAndroidInstrumentTests.py[line:113] INFO: Total passed: 104
+Fri, 19 Aug 2016 09:07:55 RunAndroidInstrumentTests.py[line:114] INFO: Total failed: 0
+Fri, 19 Aug 2016 09:07:55 RunAndroidInstrumentTests.py[line:158] INFO: ----- END run test

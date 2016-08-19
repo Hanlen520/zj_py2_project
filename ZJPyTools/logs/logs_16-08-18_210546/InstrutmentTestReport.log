@@ -1,0 +1,2369 @@
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 400.049
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 434.673
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 414.037
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 398.709
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 406.142
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 416.65
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 401.655
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 418.694
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 427.954
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 412.752
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 412.441
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 421.391
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 398.526
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 405.278
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 405.555
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 399.422
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 400.795
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 401.707
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 408.468
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 416.842
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 436.512
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 414.063
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 417.827
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 419.948
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 429.363
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 416.183
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 411.906
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 398.331
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 406.403
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 409.048
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 400.661
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 418.058
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 422.764
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 427.571
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 418.782
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 426.087
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 433.46
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 405.402
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 421.591
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 424.869
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 410.63
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 408.005
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 402.048
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 428.76
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 405.084
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 403.95
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 407.891
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 419.3
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 415.321
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 418.606
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 404.499
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 431.405
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 433.088
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 420.327
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 432.057
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 402.764
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 411.17
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 414.146
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 401.306
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 428.987
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 435.298
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 414.224
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 412.309
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 434.023
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 432.094
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 420.344
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 405.275
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 418.058
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 425.616
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 412.667
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 427.337
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 427.208
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 429.092
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 402.789
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 412.275
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 402.402
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 410.979
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 432.604
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 418.552
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 426.658
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 402.956
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 424.34
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 409.22
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 413.861
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 423.914
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 409.093
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 422.049
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 413.012
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 425.487
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 412.83
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 427.164
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 402.723
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 423.736
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 421.529
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 418.89
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 405.414
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 415.807
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 423.571
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 420.593
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 416.261
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 424.186
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 420.257
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=testOpenAndExitFilmPlayer
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 405.223
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
