@@ -16,7 +16,7 @@ from ZJPyUtils import WinSysUtils,AdbUtils,LogUtils,FileUtils
 # ----------------------------------------------------
 g_device_ip = '172.17.5.106'
 
-g_test_class = 'com.example.zhengjin.funsettingsuitest.testcases.TestPlayingFilm#testOpenAndExitFilmPlayer'
+g_test_class = 'com.example.zhengjin.funsettingsuitest.testsuites.Launcher24x7TestsSuite'
 g_component = 'com.example.zhengjin.funsettingsuitest.test'
 g_test_runner = 'android.support.test.runner.AndroidJUnitRunner'
 
@@ -177,7 +177,7 @@ def main(during):
 
 if __name__ == '__main__':
 
-    run_during = 12 * 60 * 60   # seconds
+    run_during = 13 * 60 * 60   # seconds
     main(run_during)
 
     
