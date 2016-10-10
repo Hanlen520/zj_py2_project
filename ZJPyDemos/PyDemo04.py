@@ -149,8 +149,18 @@ import os
 # print type(p)
 # print len(p.readlines())
 
+# EXAMPLE 17
+g_var = 'init'
+def print_var():
+    print 'Output:', g_var
+
+print_var()
+
 
 if __name__ == '__main__':
-
+    # EXAMPLE 17
+    g_var = 'update'
+    print_var()
+    
     print("%s done!" %os.path.basename(__file__))
     pass

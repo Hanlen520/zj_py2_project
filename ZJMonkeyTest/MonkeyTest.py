@@ -33,7 +33,7 @@ g_package_name = ''
 g_monkey_run_times = '1000000'  # default 1000000
 g_flag_monkey_crash_ignore = True  # ignore crash or error for monkey
 
-g_flag_monkey_for_package = True
+g_flag_monkey_for_package = False
 g_flag_monkey_for_whitelist = False
 
 g_max_run_time = 3600 * 4  # seconds, max execution time is 4 hours
@@ -45,7 +45,7 @@ g_flag_print_log = False
 g_flag_parse_report = False
 
 g_cur_date = time.strftime('%Y%m%d')
-g_run_num = '01'
+g_run_num = ''
 
 # default monkey execution time
 g_run_hours = 0
@@ -592,10 +592,13 @@ if __name__ == '__main__':
     g_target_ip = '172.17.5.189'
     g_run_num = '01'
     g_run_mins = 60
-    g_package_name = g_pkg_tv_guide
 
-    g_flag_monkey_for_package = True
-    g_flag_monkey_for_whitelist = True
+    g_flag_monkey_for_package = False
+    if g_flag_monkey_for_package:
+        g_package_name = g_pkg_tv_guide
+    else:
+        g_flag_monkey_for_whitelist = True
+
     g_flag_profile_monitor = False
 
     cal_exec_time(monkey_test_main)
