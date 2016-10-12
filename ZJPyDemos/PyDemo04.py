@@ -149,18 +149,55 @@ import os
 # print type(p)
 # print len(p.readlines())
 
-# EXAMPLE 17
-g_var = 'init'
-def print_var():
-    print 'Output:', g_var
 
-print_var()
+# EXAMPLE 17
+# g_var = 'init'
+# def print_var():
+#     print 'Output:', g_var
+# 
+# print_var()
+
+
+# EXAMPLE 18
+# class A(object):
+#     def __init__(self):
+#         self.__private()
+#         self.public()
+#     def __private(self):
+#         print 'A.__private()'
+#     def public(self):
+#         print 'A.public()'
+# 
+# class B(A):
+# #     def __init__(self):
+# #         self.__private()
+# #         self.public()
+#     def __private(self):
+#         print 'B.__private()'
+#     def public(self):
+#         print 'B.public()'
+# 
+# # print '\n'.join(dir(A)), '\n'
+# # print '\n'.join(dir(B)), '\n'
+# b = B()
+
+
+# EXAMPLE 19
+# import subprocess
+# print subprocess.call(["cmd"])
+
+# p = subprocess.Popen('cmd',stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+# p.communicate()
+# print p.stdout.read()
+# print p.communicate(input='adb devices')
+# print p.communicate(input='java -version')[0], '/n'
+# print 'Output:',p.returncode
 
 
 if __name__ == '__main__':
     # EXAMPLE 17
-    g_var = 'update'
-    print_var()
+#     g_var = 'update'
+#     print_var()
     
     print("%s done!" %os.path.basename(__file__))
     pass
