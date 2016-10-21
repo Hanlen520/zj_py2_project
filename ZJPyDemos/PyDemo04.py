@@ -194,6 +194,23 @@ import os
 # print 'Output:',p.returncode
 
 
+# EXAMPLE 20
+# print Python module search path
+# import sys
+# print sys.path
+
+
+# EXAMPLE 21
+# var_global = 'test1'
+# def my_print():
+#     var_local = 'test2'
+#     print var_local
+#     print globals()  # print global vars can be access
+#     print locals()  # print local vars can be access
+#     
+# my_print()
+
+
 if __name__ == '__main__':
     # EXAMPLE 17
 #     g_var = 'update'
