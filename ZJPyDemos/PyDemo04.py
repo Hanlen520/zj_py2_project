@@ -211,6 +211,105 @@ import os
 # my_print()
 
 
+# EXAMPLE 22
+# from sys import stdout 
+# str1 = 'hello, zheng jin '
+# str2 = 'it test.\n'
+# stdout.write(str1)
+# stdout.write(str2)
+
+
+# EXAMPLE 23-1
+# def sortby(somelist, n):
+#     nlist = [(x[n], x) for x in somelist]
+#     nlist.sort()
+#     return [val for (key, val) in nlist]
+# 
+# def sortby_inplace(somelist, n):
+#     somelist[:] = [(x[n], x) for x in somelist]
+#     somelist.sort()
+#     somelist[:] = [val for (key, val) in somelist]
+#     return
+# 
+# somelist = [(1, 2, 'def'), (2, -4, 'ghi'), (3, 6, 'abc')]
+# somelist.sort()
+# print somelist
+# print sortby(somelist, 2)
+
+# EXAMPLE 23-2
+# import operator
+# 
+# somelist = [(1, 2, 'def'), (2, -4, 'ghi'), (3, 6, 'abc')]
+# somelist.sort(key=operator.itemgetter(1))
+# print somelist
+
+
+# EXAMPLE 24
+# oldlist = ['test1', 'test2']
+# newlist = []
+
+# for word in oldlist:
+#     newlist.append(word.upper())
+# print newlist
+
+# newlist = [val.upper() for val in oldlist]
+# print newlist
+
+# newlist = map(str.upper, oldlist)
+# print newlist
+
+
+# EXAMPLE 25
+# def generate_ints(n):
+#     for i in xrange(n):
+#         yield i
+# 
+# gen = generate_ints(3)
+# print gen.next()
+# print gen.next()
+# print next(gen)
+
+
+# EXAMPLE 26
+# def my_upper(s):
+#     return s.upper()
+#     
+# li = map(my_upper, ['hello', 'zhengjin'])
+# print li
+# 
+# print [my_upper(val) for val in ['hello', 'zhengjin']]
+
+
+# EXAMPLE 27
+# def is_even(x):
+#     return (x % 2) == 0
+# 
+# li = filter(is_even, range(10))
+# print li
+# 
+# print [val for val in range(10) if is_even(val)]
+
+
+# EXAMPLE 28
+# import functools
+# items = ['11', '13', '15']
+# def my_combine(a, b):
+#     return 0, int(a[1]) + int(b[1])
+
+# total = functools.reduce(my_combine, items)[1]
+# print total
+
+# total = 0
+# for a, b in items:
+#     print 'a =', a
+#     print 'b =', b
+#     total += int(b)
+# print total
+
+# total = sum(int(b) for a,b in items)
+# print total
+
+
 if __name__ == '__main__':
     # EXAMPLE 17
 #     g_var = 'update'
