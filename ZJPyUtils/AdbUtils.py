@@ -62,6 +62,9 @@ def adb_connect_with_root(device_ip):
 
 def adb_root():
     output_lines = WinSysUtils.run_sys_cmd_in_subprocess('adb root')
+    if (output_lines == ''):
+        return True
+    
     for line in output_lines:
         if 'already' in line:
             logging.debug('adbd is already running as root.')
@@ -73,6 +76,14 @@ def adb_root():
     logging.error('Adb root failed!')
     for line in output_lines:
         logging.error(line)
+    return False
+
+def adb_remount():
+    cmd = 'adb remount'
+    output = WinSysUtils.run_sys_cmd_and_ret_content(cmd)
+    if ('succeeded' in output):
+        return True
+    
     return False
 
 
