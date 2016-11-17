@@ -6,7 +6,6 @@ Created on 2016-7-13
 '''
 
 import os
-from sys import argv
 
 # EXAMPLE 01
 # import platform
