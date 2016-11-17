@@ -6,6 +6,7 @@ Created on 2016-7-13
 '''
 
 import os
+from sys import argv
 
 # EXAMPLE 01
 # import platform
@@ -308,6 +309,25 @@ import os
 
 # total = sum(int(b) for a,b in items)
 # print total
+
+
+# EXAMPLE 29
+# def parms_test(*argv):
+#     print 'Parms length:', len(argv)
+#     print 'Parms:', argv
+#     print 'Parms %s' % str(argv)
+#     
+#     for parm in argv:
+#         print 'Parm:', parm
+#     
+#     print 'Parms join:', ','.join(argv)
+#         
+# parms_test('parm1', 'parm2', '中文')
+
+
+# EXAMPLE 30
+# total_time = 45;
+# print '%d h, %d mins' % (int(total_time / 60), int(total_time % 60))
 
 
 if __name__ == '__main__':
