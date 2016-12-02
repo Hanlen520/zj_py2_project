@@ -162,7 +162,11 @@ def loop_run_test(during):
         if ((cur_run_time - start_time) > during):
             break
     # END LOOP
-    p.kill()  # stop logcat
+    
+    # stop logcat
+    AdbUtils.adb_stop()
+    if p is not None:
+        p.kill()
 
     global g_total_run_times
     g_total_run_times = i

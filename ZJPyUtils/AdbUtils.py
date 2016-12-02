@@ -87,6 +87,10 @@ def adb_remount():
     
     return False
 
+def adb_stop():
+    cmd = 'adb kill-server'
+    WinSysUtils.run_sys_cmd(cmd)
+
 def adb_logcat_by_tag_and_ret_process(tag, file_path):
     cmd = 'adb logcat -c && adb logcat -s %s -v time > %s' % (tag, file_path)
     p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
