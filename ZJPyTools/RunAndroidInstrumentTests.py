@@ -14,7 +14,7 @@ from ZJPyUtils import WinSysUtils, AdbUtils, LogUtils, FileUtils
 # ----------------------------------------------------
 # Global vars
 # ----------------------------------------------------
-g_device_ip = '172.17.5.133'
+g_device_ip = '172.17.5.95'
 
 g_test_class = 'com.example.zhengjin.funsettingsuitest.testsuites.Launcher24x7TestsSuite'
 g_component = 'com.example.zhengjin.funsettingsuitest.test'
@@ -27,13 +27,16 @@ g_remote_tmp_dir_path = '/data/local/tmp'
 g_remote_tmp_captures_dir_name = 'AutoTestCaptures'
 g_remote_tmp_captures_dir_path = '%s/%s' % (g_remote_tmp_dir_path, g_remote_tmp_captures_dir_name)
 
+g_inst_runner_logcat_tag = 'TestRunner'
+
 
 # ----------------------------------------------------
 # Init local path
 # ----------------------------------------------------
 g_local_report_dir_path = ''
-g_local_run_log_file_path = ''
-g_local_logging_file_path = ''
+g_local_inst_run_log_file_path = ''
+g_local_test_logging_file_path = ''
+g_local_logcat_log_file_path = ''
 
 def init_local_report_paths():
     report_dir_name = 'logs_%s' % WinSysUtils.get_current_date_and_time()
@@ -44,13 +47,17 @@ def init_local_report_paths():
     if not os.path.exists(report_dir_path):
         os.makedirs(report_dir_path)
 
-    global g_local_run_log_file_path
-    run_log_file_name = 'InstrutmentRunLog.log'
-    g_local_run_log_file_path = os.path.join(report_dir_path, run_log_file_name)
+    global g_local_inst_run_log_file_path
+    inst_run_log_file_name = 'InstrutmentRunLog.log'
+    g_local_inst_run_log_file_path = os.path.join(report_dir_path, inst_run_log_file_name)
     
-    global g_local_logging_file_path
-    logging_name = 'InstrutmentLoggingReport.log'
-    g_local_logging_file_path = os.path.join(report_dir_path, logging_name)
+    global g_local_test_logging_file_path
+    logging_name = 'TestLoggingReport.log'
+    g_local_test_logging_file_path = os.path.join(report_dir_path, logging_name)
+    
+    global g_local_logcat_log_file_path
+    logcat_log_file_name = 'LogcatLogByTag.log'
+    g_local_logcat_log_file_path = os.path.join(report_dir_path, logcat_log_file_name)
 
 
 # ----------------------------------------------------
@@ -82,7 +89,7 @@ def pull_remote_captures_to_local():
 
 def build_instrument_cmd_v1():
     return 'adb shell am instrument -w -r -e debug false -e class %s %s/%s >> %s' \
-        % (g_test_class, g_component, g_test_runner, g_local_run_log_file_path)
+        % (g_test_class, g_component, g_test_runner, g_local_inst_run_log_file_path)
 
 def build_instrument_cmd_v2():
     return 'adb shell am instrument -w -r -e debug false -e class %s %s/%s' \
@@ -99,7 +106,7 @@ def run_instrument_tests_v2(cmd):
     output_lines = []
     for line in input_lines:
         output_lines.append(line.rstrip('\r\n')  + '\n')
-    FileUtils.append_lines_to_file(g_local_run_log_file_path, (output_lines))
+    FileUtils.append_lines_to_file(g_local_inst_run_log_file_path, (output_lines))
     
     check_test_case_force_closed(output_lines)
     check_test_case_failed(output_lines)
@@ -109,6 +116,7 @@ def check_test_case_failed(lines):
     for line in lines:
         if 'AssertionFailedError' in line:
             g_total_failed += 1
+            return
 
 def check_test_case_force_closed(lines):
     '''
@@ -134,8 +142,9 @@ def create_report_summary():
 def loop_run_test(during):
     i = 0
     cmd = build_instrument_cmd_v2()
-    start_time = int(time.clock())
     
+    start_time = int(time.clock())
+    p = AdbUtils.adb_logcat_by_tag_and_ret_process(g_inst_runner_logcat_tag, g_local_logcat_log_file_path)
     while 1:
         if not AdbUtils.verify_adb_devices_serialno():
             if not AdbUtils.adb_connect_to_device(g_device_ip):
@@ -153,13 +162,14 @@ def loop_run_test(during):
         if ((cur_run_time - start_time) > during):
             break
     # END LOOP
+    p.kill()  # stop logcat
 
     global g_total_run_times
     g_total_run_times = i
 
 def run_test_setup(during):
     init_local_report_paths()
-    LogUtils.init_log_config(logging.DEBUG, logging.INFO, g_local_logging_file_path)
+    LogUtils.init_log_config(logging.DEBUG, logging.INFO, g_local_test_logging_file_path)
 
     if not AdbUtils.adb_connect_with_root(g_device_ip):
         logging.error('adb is NOT run with root!')

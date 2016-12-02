@@ -9,6 +9,7 @@ Include the utils for adb and Shell env.
 '''
 
 import time
+import subprocess
 import logging
 
 from ZJPyUtils import WinSysUtils
@@ -85,6 +86,11 @@ def adb_remount():
         return True
     
     return False
+
+def adb_logcat_by_tag_and_ret_process(tag, file_path):
+    cmd = 'adb logcat -c && adb logcat -s %s -v time > %s' % (tag, file_path)
+    p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    return p
 
 
 # --------------------------------------------------------------
