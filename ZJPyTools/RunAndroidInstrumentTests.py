@@ -14,7 +14,7 @@ from ZJPyUtils import WinSysUtils, AdbUtils, LogUtils, FileUtils
 # ----------------------------------------------------
 # Global vars
 # ----------------------------------------------------
-g_device_ip = '172.17.5.95'
+g_device_ip = '172.17.5.133'
 
 g_test_class = 'com.example.zhengjin.funsettingsuitest.testsuites.Launcher24x7TestsSuite'
 g_component = 'com.example.zhengjin.funsettingsuitest.test'
@@ -135,6 +135,15 @@ def create_report_summary():
     logging.info('Total passed: %d' % (g_total_run_times - g_total_failed))
     logging.info('Total failed: %d' % g_total_failed)
 
+def start_logcat_log():
+    p = AdbUtils.adb_logcat_by_tag_and_ret_process(g_inst_runner_logcat_tag, g_local_logcat_log_file_path)
+    return p
+
+def stop_logcat_log(p):
+    AdbUtils.adb_stop()
+    if p is not None:
+        p.kill()
+
 
 # ----------------------------------------------------
 # Main
@@ -144,7 +153,6 @@ def loop_run_test(during):
     cmd = build_instrument_cmd_v2()
     
     start_time = int(time.clock())
-    p = AdbUtils.adb_logcat_by_tag_and_ret_process(g_inst_runner_logcat_tag, g_local_logcat_log_file_path)
     while 1:
         if not AdbUtils.verify_adb_devices_serialno():
             if not AdbUtils.adb_connect_to_device(g_device_ip):
@@ -163,11 +171,6 @@ def loop_run_test(during):
             break
     # END LOOP
     
-    # stop logcat
-    AdbUtils.adb_stop()
-    if p is not None:
-        p.kill()
-
     global g_total_run_times
     g_total_run_times = i
 
@@ -189,14 +192,18 @@ def run_test_clearup():
     pull_remote_captures_to_local()
 
 def main(during):
-    run_test_setup(during)
-    loop_run_test(during)
-    run_test_clearup()
+    p = start_logcat_log()
+    try:
+        run_test_setup(during)
+        loop_run_test(during)
+        run_test_clearup()
+    finally:
+        stop_logcat_log(p)
 
 
 if __name__ == '__main__':
 
-    run_time = 5 * 60  # seconds
+    run_time = 30 * 60  # seconds
     main(run_time)
 
     print '%s done!' % (os.path.basename(__file__))
