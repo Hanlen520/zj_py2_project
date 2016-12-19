@@ -226,7 +226,11 @@ def run_cmd_adb_root_from_subprocess():
         print 'Error, adb root failed!'
         return False
 
-    for line in p.stdout.readlines():
+    lines_output = p.stdout.readlines()
+    if len(lines_output) == 0:
+        print 'No output from adb root.'
+        return True
+    for line in lines_output:
         if 'already' in line:
             print 'adbd is already running as root.'
             return True
@@ -589,7 +593,7 @@ def cal_exec_time(fn):
 # --------------------------------------------------------------
 if __name__ == '__main__':
 
-    g_target_ip = '172.17.5.189'
+    g_target_ip = '172.17.5.83'
     g_run_num = '01'
     g_run_mins = 60
 

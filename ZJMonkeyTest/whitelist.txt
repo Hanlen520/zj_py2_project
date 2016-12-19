@@ -3,4 +3,4 @@ com.bestv.ott
 tv.fun.settings
 tv.fun.filemanager
 com.funshion.mediaplayer
-#tv.fun.weather
+tv.fun.weather

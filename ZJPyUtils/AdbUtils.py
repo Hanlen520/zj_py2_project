@@ -63,7 +63,7 @@ def adb_connect_with_root(device_ip):
 
 def adb_root():
     output_lines = WinSysUtils.run_sys_cmd_in_subprocess('adb root')
-    if (output_lines == ''):
+    if (len(output_lines) == 0 or output_lines == ''):
         return True
     
     for line in output_lines:

@@ -69,7 +69,7 @@ def replace_hosts_main():
     try_to_connect_to_devices(g_device_ip)
     adb_remount()
     
-    s_path = r'E:\Project_TV\hosts'
+    s_path = r'E:\Project_TV\device_hosts\host_upgrade\hosts'
     t_path = 'system/etc/hosts'
     adb_push_file(s_path, t_path)
 
