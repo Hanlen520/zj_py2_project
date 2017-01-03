@@ -111,7 +111,7 @@ if __name__ == '__main__':
 
     g_target_device_ip = '172.17.5.133'
     g_target_app_path = r'C:\Users\zhengjin\Desktop'
-    g_target_app_name = 'app-debug.apk'
+    g_target_app_name = 'TVWeather.apk'
 
     main_push_app()
     
