@@ -13,7 +13,6 @@ import logging
 # Functions
 # ------------------------------------------------
 def init_log_config():
-
     long_format = '%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s'
     short_format = '%(filename)s: [%(levelname)s] >>> %(message)s'
     
@@ -37,7 +36,6 @@ def init_log_config():
     logging.getLogger('').addHandler(log_file)
 
 def discover():
-
     loader = unittest.TestLoader()
     suite1 = loader.discover(start_dir=os.getcwd(),pattern='Unittest*.py')
     all_test = unittest.TestSuite(suite1)

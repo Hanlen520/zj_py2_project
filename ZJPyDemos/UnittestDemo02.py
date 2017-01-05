@@ -34,7 +34,7 @@ class test_multiply_2(unittest.TestCase):
 
     def test_0_x_1(self):
         logging.warn('Verify multiply 0 and 1.')
-        self.assertEquals(PyDemo03.multiply(0,1), 0)
+        self.assertEquals(PyDemo03.my_multiply(0,1), 0)
 
 
 # ------------------------------------------------

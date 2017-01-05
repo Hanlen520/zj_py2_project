@@ -38,12 +38,12 @@ class test_multiply(unittest.TestCase):
 
     def test_3_x_4(self):
         logging.info('Verify multiply 3 and 4.')
-        self.assertEquals(PyDemo03.multiply(3,4), 12)
+        self.assertEquals(PyDemo03.my_multiply(3,4), 12)
 
     def test_a_x_3(self):
         logging.info('Verify multiply 3 and a.')
         logging.warn('This test will be failed(失败).')
-        self.assertEquals(PyDemo03.multiply(3,'a'), 'aa')
+        self.assertEquals(PyDemo03.my_multiply(3,'a'), 'aa')
 
 
 # ------------------------------------------------

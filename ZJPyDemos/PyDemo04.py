@@ -5,8 +5,6 @@ Created on 2016-7-13
 @author: zhengjin
 '''
 
-import os
-
 # EXAMPLE 01
 # import platform
 # system = platform.system()
@@ -334,5 +332,6 @@ if __name__ == '__main__':
 #     g_var = 'update'
 #     print_var()
     
+    import os
     print("%s done!" %os.path.basename(__file__))
     pass
