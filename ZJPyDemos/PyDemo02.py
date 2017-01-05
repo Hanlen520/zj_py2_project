@@ -1,35 +1,42 @@
 # -*- coding: utf-8 -*-
 
-# EXAMPLE 1
+# EXAMPLE 01, compare
 # num = 3
-# 
 # if 2 < num < 4:
-#     print("Chained comparison operators work! \n" * 3)
+#     print "Chained comparison operators work! \n" * 3
 
 
-
-# EXAMPLE 2
+# EXAMPLE 02, enumerate
 # my_phrase = ["No", "one", "expects", "the", "Spanish", "Inquisition"]
 # my_dict = {key : value for key, value in enumerate(my_phrase)}
 # print my_dict
 
 
-# EXAMPLE 3
+# EXAMPLE 03, subprocess, try catch block, help
 # import subprocess
+# from subprocess import CalledProcessError
+# 
+# try: 
+#     output = subprocess.check_output('dir', shell=True)
+#     print output
+# except CalledProcessError, e:
+#     print 'Return code', e.returncode
+#     if len(e.output):
+#         print 'Error message', e.output
+# except Exception, e:
+#     print e.message
 
-# output = subprocess.check_output('dir', shell=True)
-# print(output)
 # subprocess.Popen('dir', shell=True)
+
 # help(subprocess)
 
 
-# EXAMPLE 4
-# items = ['b', 'a']
-# print(sorted(items, cmp=lambda x,y : cmp(x, y)))
+# EXAMPLE 04, sort, lambda
+# items = [5, 3, 4, 1]
+# print sorted(items, cmp=lambda x,y : cmp(x, y))
 
 
-# EXAMPLE 5
-# parse list for master scan
+# EXAMPLE 05, parse list for master scan
 # lines = []
 # try:
 #     f = open(r'C:\Users\zhengjin\Desktop\app_file_observer_log')
@@ -48,8 +55,7 @@
 # end parse
 
 
-# EXAMPLE 6
-# build item
+# EXAMPLE 06, build item
 # lines = []
 # try:
 #     f = open(r'C:\Users\zhengjin\Desktop\app_file_observer_log_format', 'r')
@@ -60,7 +66,7 @@
 # record = ''
 # for line in lines:
 #     record += line.strip('\n') + ';'
-# print('Output: ' + record)
+# print 'Output: ' + record
 # 
 # try:
 #     f = open(r'C:\Users\zhengjin\Desktop\app_file_observer_log_new', 'w')
@@ -70,13 +76,13 @@
 # end build
 
 
-# EXAMPLE 7
-# print type("hi")
+# EXAMPLE 07, type, format
+# print type('test')
 
 # print '{0}.{1}'.format('demo', 'png')
- 
 
-# EXAMPLE 8
+
+# EXAMPLE 08, subprocess
 # import subprocess
 #  
 # cmd = 'adb connect 172.16.13.158'
@@ -92,7 +98,7 @@
 #         print 'False'
 
 
-# EXAMPLE 9
+# EXAMPLE 09, subprocess, logcat
 # import subprocess
 # import time
 # 
@@ -109,8 +115,7 @@
 # print 'adb process is killed'
 
 
-# EXAMPLE 10
-# multiple lines of str
+# EXAMPLE 10, multiple lines of str
 # cmd = 'monkey ' + \
 #     '--pkg-whitelist-file /WhitePackageList.xml ' + \
 #     '--throttle 500 ' + \
@@ -119,40 +124,32 @@
 #     '-v -v -v ' + \
 #     '1000000'
 # 
-# print 'Output ' + cmd
+# print 'Output: ' + cmd
 
 
-# EXAMPLE 11
-# exec multiple commands from subprocess
+# EXAMPLE 11, exec pipe commands
 # import subprocess
-# 
+#  
 # p1 = subprocess.Popen('netstat -nao', stdout=subprocess.PIPE)
 # p2 = subprocess.Popen('findstr 5037', stdin=p1.stdout, stdout=subprocess.PIPE)
-# out = p2.communicate()
 # 
+# # output 1
+# # for line in p2.stdout.readlines():
+# #     print line.rstrip();  # default: '\n','\r', '\t', ' '
+# 
+# # output 2
+# out = p2.communicate()
 # print out[0]
 
 
-# EXAMPLE 12
-# import subprocess
+# EXAMPLE 12, system()
 # import os
-# 
-# os.system('netstat -nao | findstr 5037')
-#
-# p = subprocess.Popen('', stdin = subprocess.PIPE, stdout = subprocess.PIPE, stderr = subprocess.PIPE, shell = False)
-# p.stdin.write('')
-# print p.stdout.read()
-
-# os.system('adb shell')
-# os.system('ls -l')
-
-# p = subprocess.Popen(r'ipconfig', shell = False)
-# out = p.communicate(r'/all')
-# 
-# print out
+# ret_code = os.system('netstat -nao | findstr 5037')
+# if ret_code == 0:
+#     print 'pass'
 
 
-# EXAMPLE 13
+# EXAMPLE 13, file path format
 # import os
 # import time
 # 
@@ -164,22 +161,20 @@
 # print 'snapshot save %s' %(file_path)
 
 
-# EXAMPLE 14
+# EXAMPLE 14, get current dir
 # import sys
 # print sys.path[0]
-
+# 
 # import os
 # print os.getcwd()
 
 
-# EXAMPLE 15
+# EXAMPLE 15, list files
 # import os
-# def read_tests_from_dir():
-#     path = r'E:\Eclipse_Workspace\Python_Demo\Local_Package_01'
-#     files = os.listdir(path)
-#     for f in files:
-#         if 'Demo' in f:
-#             print os.path.join(path, f)
+# files = os.listdir(os.getcwd())
+# for f in files:
+#     if 'Demo' in f:
+#         print f
 
 
 # EXAMPLE 16
@@ -198,27 +193,31 @@
 #         os.system('adb shell input keyevent KEYCODE_DPAD_RIGHT')
 #         print 'press right %d and wait 1 seconds.' %(i)
 #         time.sleep(1)
+# 
+# exec_android_actions_right()
 
 
-# EXAMPLE 17
-# str = '1002540K total'
-# index = str.find('K')
-# print str[0:index]
-# print str[(index):]
+# EXAMPLE 17, index
+# tmp_str = '1002540K total'
+# print 'find position:', tmp_str.find('K')
+# print 'index position:', tmp_str.index('K')
 
 
-# EXAMPLE 18
+# EXAMPLE 18, global
 # val = 9
-# def test(flag):  
+# def test_global(flag):
 #     global val
-#     if flag:  
+#     if flag:  # 0 = false
 #         val = 1  
 #     else:  
-#         print 'test'  
+#         val = -1
 #     return val
+#  
+# print test_global(0)
+# print val
 
 
-# EXAMPLE 19
+# EXAMPLE 19, file append
 # path = r'd:\procrank_log.txt'
 # f = open(path, 'a')
 # f.write('testa' + '\n')
@@ -226,16 +225,20 @@
 # f.close()
 
 
-# EXAMPLE 20
+# EXAMPLE 20, file name
 # path = r'd:\test.txt'
-# f = open(path, 'r')
-# line = f.readline()
-# print line
-# print f.name
-# f.close()
+# f = None
+# try:
+#     f = open(path, 'r')
+#     line = f.readline()
+#     print line.strip()
+#     print f.name
+# finally:
+#     if f is not None:
+#         f.close()
 
 
-# EXAMPLE 21
+# EXAMPLE 21, line format
 # line1 = 'User 22%, System 19%, IOW 0%, IRQ 0%'
 # line2 = 'User 22%, System 19%, IOW 0%, IRQ 0%'
 # line3 = 'User 22%, System 19%, IOW 0%, IRQ 0%'
@@ -261,7 +264,7 @@
 #     print line
 
 
-# EXAMPLE 22
+# EXAMPLE 22, print
 # str1 = 'test'
 # str2 = 'zhengjin'
 # print str1,str2
@@ -269,18 +272,14 @@
 
 # EXAMPLE 23
 # import os
-# str = r'E:\Eclipse_Workspace\ZJPyProject\ZJMonkeyTest\MonkeyReprots\20160622_01\rom_props_20160622_01.log'
-# print os.path.basename(str)
-# print os.path.dirname(str)
-
-# import os
-# str = r'D:\files_test\Pics_200+'
-# print os.path.basename(str)
+# tmp_str = os.getcwd()
+# print 'current dir path:', tmp_str
+# print 'current dir name:', os.path.basename(tmp_str)
+# print 'parent dir path:', os.path.dirname(tmp_str)
 
 
 if __name__ == '__main__':
-#     exec_android_actions_right()
-#     print test(0)
     
-    print("Demo done!")
+    import os
+    print os.path.basename(__file__), 'DONE!'
     pass
