@@ -42,7 +42,7 @@ def run_cmd_dumpsys_cpuinfo_for_package_and_total():
 # --------------------------------------------------------------
 # Functions: parse command output lines
 # --------------------------------------------------------------
-
+# TODO: 2016-6-17
 
 
 # --------------------------------------------------------------
@@ -58,7 +58,7 @@ def print_output_lines(lines):
 # --------------------------------------------------------------
 def main():
     print_output_lines(run_cmd_dumpsys_cpuinfo())
-#     print_output_lines(run_cmd_dumpsys_cpuinfo_for_package())
+#     print_output_lines(run_cmd_dumpsys_cpuinfo_for_package_and_total())
 
 
 if __name__ == '__main__':

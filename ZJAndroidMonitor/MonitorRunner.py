@@ -149,11 +149,10 @@ def monitor_runner_execution():
     
 
 def monitor_runner_clearup():
-    # todo
+    # TODO: 2016-6-15
     return
 
 def monitor_runner_main():
-
     monitor_runner_prepare()
     monitor_runner_execution()
     del g_threads[:]

@@ -61,7 +61,7 @@ def prepare_files_main():
     
     # adb connect
     if g_flag_adb_connect:
-        g_device_ip = '172.17.5.189'
+        g_device_ip = '172.17.5.106'
         adb_connect_devices(g_device_ip)
         time.sleep(3)
         verify_device_connected()
