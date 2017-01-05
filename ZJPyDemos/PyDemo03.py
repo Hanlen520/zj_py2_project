@@ -302,5 +302,5 @@ def my_multiply(x, y):
 if __name__ == '__main__':
 
     import os
-    print("%s done!" %os.path.basename(__file__))
+    print '%s done!' %os.path.basename(__file__)
     pass

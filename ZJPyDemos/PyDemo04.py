@@ -333,5 +333,5 @@ if __name__ == '__main__':
 #     print_var()
     
     import os
-    print("%s done!" %os.path.basename(__file__))
+    print '%s done!' %os.path.basename(__file__)
     pass
