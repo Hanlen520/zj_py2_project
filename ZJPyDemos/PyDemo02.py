@@ -270,12 +270,23 @@
 # print str1,str2
 
 
-# EXAMPLE 23
+# EXAMPLE 23, os.path
 # import os
 # tmp_str = os.getcwd()
 # print 'current dir path:', tmp_str
 # print 'current dir name:', os.path.basename(tmp_str)
 # print 'parent dir path:', os.path.dirname(tmp_str)
+
+
+# EXAMPLE 24, dict as json
+# json_obj = {'data': {'name': 'zhengjin', 'age': 30, 'title': 'tester', 'skills': ['Java','C++','Script']}, 
+#             'retCode': 200}
+# print json_obj['retCode']
+# print json_obj['data']['name']
+# for v in json_obj['data']['skills']:
+#     print v
+# 
+# print str(json_obj)
 
 
 if __name__ == '__main__':
