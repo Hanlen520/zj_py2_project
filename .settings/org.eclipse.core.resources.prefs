@@ -1,9 +1,9 @@
 eclipse.preferences.version=1
-encoding//TestWeatherService/CreateCompareCityList.py=utf-8
-encoding//TestWeatherService/TestBaiduDataUpdateFreq.py=utf-8
-encoding//TestWeatherService/TestBaiduWeatherApi.py=utf-8
-encoding//TestWeatherService/TestFunWeatherApi.py=utf-8
-encoding//TestWeatherService/TestFunWeatherApiV2.py=utf-8
+encoding//TestWeatherApi/CreateCompareCityList.py=utf-8
+encoding//TestWeatherApi/TestBaiduDataUpdateFreq.py=utf-8
+encoding//TestWeatherApi/TestBaiduWeatherApi.py=utf-8
+encoding//TestWeatherApi/TestFunWeatherApi.py=utf-8
+encoding//TestWeatherApi/TestFunWeatherApiV2.py=utf-8
 encoding//ZJAndroidMonitor/CpuMonitorDumpsys.py=utf-8
 encoding//ZJAndroidMonitor/CpuMonitorTop.py=utf-8
 encoding//ZJAndroidMonitor/MemMonitorDumpsys.py=utf-8
