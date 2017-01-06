@@ -8,13 +8,13 @@ Created on 2014/9/24
 
 # from __future__ import division
 
-# EXAMPLE 1, struct
+# EXAMPLE 01, struct
 # import struct
 # 
 # print(struct.calcsize("P"))
 
 
-# EXAMPLE 2, collection
+# EXAMPLE 02, collection
 # tmp_tup = ('t')
 # print tmp_tup
 # 
@@ -26,7 +26,7 @@ Created on 2014/9/24
 # print tests['heigh']
 
 
-# EXAMPLE 3, file append
+# EXAMPLE 03, file append
 # f = open(r'd:\test.log', 'a')
 # name1 = 'henry'
 # name2 = 'vieira'
@@ -36,18 +36,18 @@ Created on 2014/9/24
 # f.close()
 
 
-# EXAMPLE 4, print float
+# EXAMPLE 04, print float
 # import math
 # print '%.3f' %math.pi
 # print '%.3f' %(5.0 / 4.0)
 
 
-# EXAMPLE 5, split
+# EXAMPLE 05, split
 # path = 'FramesLog_01_Baseline.log'
 # print path.split('.')[0]
 
 
-# EXAMPLE 6, join
+# EXAMPLE 06, join
 # mylist = ['1','2','3','4','5']
 # mysublist = []
 # sublen = int(round(len(mylist) * 0.5))
@@ -57,19 +57,19 @@ Created on 2014/9/24
 # print' : '.join(mylist)
 
 
-# EXAMPLE 7, subprocess
+# EXAMPLE 07, subprocess
 # import subprocess
 # p = subprocess.Popen("java -version", shell=True)
 
 
-# EXAMPLE 8, os.path
+# EXAMPLE 08, os.path
 # import os
 # file_path = "e:\log.txt"
 # if not os.path.exists(file_path):
 #     print "The file (%s) is not found" %file_path
 
 
-# EXAMPLE 9, if
+# EXAMPLE 09, if
 # if (1==1) and (2==2):
 #     print "success"
 
@@ -234,6 +234,45 @@ Created on 2014/9/24
 # print round(1.4);
 # print round(1.5);
 # print round(1.55);
+
+
+# EXAMPLE 26, iterator
+# tmp_arr = [('key1', 'value1', 'ex1'), ('key2', 'value2', 'ex2'), ('key3', 'value3', 'ex3')]
+# key_arr = [k for (k,v,ex) in tmp_arr]
+# print key_arr
+#  
+# val_arr = [v for (k,v,ex) in tmp_arr]
+# print val_arr
+# 
+# ex_arr = [ex for (k,v,ex) in tmp_arr]
+# print ex_arr
+
+
+# EXAMPLE 27, dict iterator
+# tmp_dict = {'key1':'value1', 'key2':'value2', 'key3':'value3'};
+# for k in tmp_dict.keys():
+#     print 'Key:', k
+# 
+# for v in tmp_dict.values():
+#     print 'Value:', v
+# 
+# print tmp_dict.items()
+# for (k, v) in tmp_dict.items():
+#     print 'Key:', k
+#     print 'Value:', v
+
+
+# EXAMPLE 28, sub str
+# tmp_str1 = '11'
+# tmp_str2 = '12'
+# print int(tmp_str1[1]) + int (tmp_str2[1])
+
+
+# EXAMPLE 29, return multiple values
+# def my_fn(x, y):
+#     return 0, x + y
+# 
+# print my_fn(1, 3)
 
 
 if __name__ == '__main__':

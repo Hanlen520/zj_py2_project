@@ -31,7 +31,6 @@
 # myfunc()
 
 
-
 # EXAMPLE 03, encoded
 # when read and compare Chinese word from txt file, 
 # convert the txt format to UTF-8 without BOM in Notepad++ first 
@@ -103,7 +102,8 @@
 
 # EXAMPLE 10, generator
 # tmp_gen = (i for i in range(50) if i%2)
-#  
+# print type(tmp_gen)
+# 
 # def add(item):
 #     return (item + 1)
 # tmp_gen_add = map(add, tmp_gen)
@@ -148,10 +148,10 @@
 
 
 # EXAMPLE 12, distinct
-# tmp_tup = [1, 1, 3, 4, 4, 5, 6, 7, 6]
+# tmp_tup = (1, 1, 3, 4, 4, 5, 6, 7, 6)
 # for item in set(tmp_tup):
 #     print item
-# 
+#  
 # tmp_list = [1, 1, 3, 4, 4, 5, 6, 7, 6]
 # for item in set(tmp_list):
 #     print item
