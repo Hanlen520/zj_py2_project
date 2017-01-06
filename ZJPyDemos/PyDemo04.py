@@ -34,15 +34,16 @@ Created on 2016-7-13
 
 # EXAMPLE 04, json loads and dumps
 # import json
-#   
+#    
 # json_data = '{"data":{"name":"zhengjin", "age":30, "skill":["Java", "Python", "C++"]}, "retCode":"200"}'
 # json_arr = json.loads(json_data, encoding='utf-8')
 # print json_arr['retCode']
 # print json_arr['data']['skill'][0]
-#  
+#   
 # json_obj = {'data': {'name': 'zhengjin', 'age': 30, 'skill': ['Java', 'Python', 'C++']}, 'retCode': '200'}
 # json_str = json.dumps(json_obj, encoding='utf-8');
 # print json_str
+# print str(json_obj)
 
 
 # EXAMPLE 05, encoded
