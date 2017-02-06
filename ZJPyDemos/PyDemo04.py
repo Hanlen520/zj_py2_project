@@ -348,22 +348,6 @@ Created on 2016-7-13
 # print '%d h, %d mins' %(int(total_time / 60), int(total_time % 60))
 
 
-# EXAMPLE 31, functional gromgram
-# cats = {'Mojo':84, 'Mao-Mao':34, 'Waffles':4, 'Pickles':6}
-# kittens = []
-# 
-# #1
-# # for k,v in cats.items():
-# #     if v < 7:
-# #         kittens.append(k)
-# #2
-# # kittens = [k for k, v in cats.items() if v < 7]
-# #3
-# kittens = map(lambda (k, v): k, filter(lambda (k, v):v < 7, cats.items()))
-# 
-# print kittens
-
-
 if __name__ == '__main__':
     # EXAMPLE 17
 #     g_var = 'update'
