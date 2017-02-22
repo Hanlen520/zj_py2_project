@@ -63,7 +63,7 @@ def try_to_connect_to_devices(g_device_ip):
 # Main
 # ----------------------------------------------------
 def replace_hosts_main():
-    g_device_ip = '172.17.5.133'
+    g_device_ip = '172.17.5.101'
     try_to_connect_to_devices(g_device_ip)
     adb_root()
     try_to_connect_to_devices(g_device_ip)
