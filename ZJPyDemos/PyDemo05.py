@@ -61,25 +61,25 @@ Created on 2017-2-6
 
 
 # EXAMPLE 05, insert sort
+# def move_ele_into_sroted_list(test_list, ele_pos):
+#     tmp_key = test_list[ele_pos]
+#     sub_pos = ele_pos - 1
+# 
+#     if tmp_key >= test_list[sub_pos]:
+#         return
+#     while sub_pos >= 0 and test_list[sub_pos] > tmp_key:
+#         test_list[sub_pos + 1] = test_list[sub_pos]
+#         sub_pos -= 1
+#     test_list[sub_pos + 1] = tmp_key
+# 
 # def insert_sort(test_list):
 #     list_len = len(test_list)
-#      
-#     for i in xrange(1, list_len):
-#         tmp_key = test_list[i];
-#         j = i - 1;
-#          
-#         if tmp_key >= test_list[j]:
-#             continue
-#         while j >= 0 and test_list[j] > tmp_key:
-#             test_list[j + 1] = test_list[j]
-#             j -= 1
-#    
-#         test_list[j + 1] = tmp_key
+#     for idx in xrange(1, list_len):
+#         move_ele_into_sroted_list(test_list, idx)
 #         print 'Sorting: ', test_list
-#     # end for
-#                 
+#                  
 #     return test_list
-#  
+#   
 # my_list = [13, 5, 43, 22, 11, 67, 43, 70, 39, 2]
 # print 'Before sort:', my_list
 # insert_sort(my_list)
@@ -87,22 +87,25 @@ Created on 2017-2-6
 
 
 # EXAMPLE 05, bubble sort
+# def move_max_val_to_end_by_bubble_com(test_list, end_pos):
+#     is_exchanged = False
+#     for j in xrange(end_pos):
+#         if test_list[j] > test_list[j+1]:
+#             test_list[j], test_list[j+1] = test_list[j+1], test_list[j]
+#             is_exchanged = True
+# 
+#     return is_exchanged
+# 
 # def bubble_sort(test_list):
 #     list_len = len(test_list)
-#   
 #     for i in xrange(list_len - 1):
-#         exchange = False
-#         for j in xrange(list_len - 1 - i):
-#             if test_list[j] > test_list[j+1]:
-#                 test_list[j], test_list[j+1] = test_list[j+1], test_list[j]
-#                 exchange = True
-#         if not exchange:
-#             break
+#         is_exchanged = move_max_val_to_end_by_bubble_com(test_list, (list_len-1-i))
 #         print 'Sorting: ', test_list
-#     # end for
-#       
+#         if not is_exchanged:
+#             break
+# 
 #     return test_list
-#   
+# 
 # my_list = [13, 5, 22, 43, 11, 67, 43, 70, 2, 39]
 # print 'Before sort:', my_list
 # bubble_sort(my_list)
@@ -141,14 +144,16 @@ Created on 2017-2-6
 
 # EXAMPLE 07, select sort
 # def select_sort_01(test_list):
+#     # get min value in start by select
 #     list_len = len(test_list)
 #     for i in xrange(list_len-1):
 #         for j in xrange((i+1), list_len):
 #             if test_list[i] > test_list[j]:
 #                 test_list[i], test_list[j] = test_list[j], test_list[i]
-#     
+#         print 'Sorting: ', test_list
+#      
 #     return test_list
-#     
+
 # def select_sort_02(test_list):
 #     list_len = len(test_list)
 #     for i in xrange(list_len-1):
@@ -157,9 +162,10 @@ Created on 2017-2-6
 #             if test_list[min_idx] > test_list[j]:
 #                 min_idx = j
 #         test_list[i], test_list[min_idx] = test_list[min_idx], test_list[i]
-#     
+#         print 'Sorting: ', test_list
+#      
 #     return test_list
-# 
+
 # my_list = [13, 5, 22, 43, 11, 67, 43, 70, 2, 39]
 # print 'Before sort:', my_list
 # # select_sort_01(my_list)
@@ -167,9 +173,22 @@ Created on 2017-2-6
 # print 'After sort: ', my_list
 
 
+# EXAMPLE 08, shell sort
 def shell_sort(test_list):
-    # TODO:
+    list_len = len(test_list)
+    step = 2
+    group = list_len / step
+ 
+    while group > 0:
+        # TODO
+        group = group / 2
+
     return test_list
+# 
+# my_list = [13, 5, 22, 43, 11, 67, 43, 70, 2, 39]
+# print 'Before sort:', my_list
+# shell_sort(my_list)
+# print 'After sort: ', my_list
 
 
 if __name__ == '__main__':
