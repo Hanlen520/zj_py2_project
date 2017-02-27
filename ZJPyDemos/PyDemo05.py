@@ -174,16 +174,30 @@ Created on 2017-2-6
 
 
 # EXAMPLE 08, shell sort
-def shell_sort(test_list):
-    list_len = len(test_list)
-    step = 2
-    group = list_len / step
- 
-    while group > 0:
-        # TODO
-        group = group / 2
-
-    return test_list
+# def shell_sort(test_list):
+#     list_len = len(test_list)
+#     group = list_len / 2
+#  
+#     while group > 0:
+#         i = 0
+#         while i < group:  # iterator for each grouped list
+#             j = i + group
+#             while j < list_len:  # iterator for each element in grouped list
+#                 k = j - group
+#                 while k >= 0:  # iterator for each element in sub grouped list
+#                     if test_list[k + group] < test_list[k]:  # insert sort by exchange
+#                         test_list[k + group], test_list[k] = test_list[k], test_list[k + group]
+#                     k -= group
+#                 # end while
+#                 j += group
+#             # end while
+#             i += 1
+#         # end while
+#         print 'Sorting: ', test_list
+#         group = group / 2
+#     # end while
+# 
+#     return test_list
 # 
 # my_list = [13, 5, 22, 43, 11, 67, 43, 70, 2, 39]
 # print 'Before sort:', my_list

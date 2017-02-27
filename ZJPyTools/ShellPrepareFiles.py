@@ -60,7 +60,7 @@ def push_files_to_shell(s_path,t_path):
 def prepare_files_main():
     
     # adb connect
-    if g_flag_adb_connect:
+    if not G_IS_ADB_CONNECTED:
         g_device_ip = '172.17.5.106'
         adb_connect_devices(g_device_ip)
         time.sleep(3)
@@ -73,7 +73,7 @@ def prepare_files_main():
     path_video_shell = '%s/testvideo' %(path_root_shell)
     path_music_shell = '%s/testmusic' %(path_root_shell)
     paths_shell = (path_root_shell,path_pics_shell,path_apps_shell,path_video_shell,path_music_shell)
-    if g_flag_mk_dir:
+    if not G_IS_DIR_EXIST:
         mk_multiple_dirs_on_shell(paths_shell)
 
     # push files to shell
@@ -100,8 +100,8 @@ def prepare_files_main():
 
 if __name__ == '__main__':
     
-    g_flag_adb_connect = True
-    g_flag_mk_dir = True
+    G_IS_ADB_CONNECTED = True
+    G_IS_DIR_EXIST = False
     prepare_files_main()
     
     print 'Prepare files for shell env, done!'
