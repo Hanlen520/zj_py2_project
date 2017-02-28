@@ -8,6 +8,8 @@ Push and replace the hosts file on shell, for TV system upgrade in testing ENV.
 '''
 
 import os
+import time
+import subprocess
 
 # ----------------------------------------------------
 # Adb Functions
@@ -22,7 +24,10 @@ def adb_connect_devices(g_device_ip):
 
 def adb_root():
     cmd = 'adb root'
-    run_system_cmd(cmd)
+    print 'run adb root and reconnect.'
+    p = subprocess.Popen(cmd,shell=True)
+    time.sleep(1)
+    p.kill()
 
 def adb_remount():
     cmd = 'adb remount'
@@ -63,14 +68,14 @@ def try_to_connect_to_devices(g_device_ip):
 # Main
 # ----------------------------------------------------
 def replace_hosts_main():
-    g_device_ip = '172.17.5.101'
+    g_device_ip = '172.17.5.86'
     try_to_connect_to_devices(g_device_ip)
     adb_root()
     try_to_connect_to_devices(g_device_ip)
     adb_remount()
     
     s_path = r'E:\Project_TV\device_hosts\host_upgrade\hosts'
-    t_path = 'system/etc/hosts'
+    t_path = '/system/etc/hosts'
     adb_push_file(s_path, t_path)
 
 

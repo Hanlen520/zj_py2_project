@@ -9,9 +9,9 @@ and generate monkey reports and system profile reports at the same time.
 
 '''
 
-import subprocess
 import os
 import time
+import subprocess
 import re
 import threading
 from ZJAndroidMonitor import MonitorRunner
@@ -214,8 +214,7 @@ def run_cmd_adb_disconnect():
     
 def run_cmd_adb_root_from_subprocess():
     cmd = 'adb root'
-    if g_flag_print_log:
-        print cmd
+    print 'run adb root and reconnect.'
     p = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
     p.wait()
 
@@ -240,6 +239,13 @@ def run_cmd_adb_root_from_subprocess():
         else:
             print 'Error, adb root failed.'
             return False
+
+def run_cmd_adb_root_from_subprocess_and_kill():
+    cmd = 'adb root'
+    print 'run adb root and reconnect.'
+    p = subprocess.Popen(cmd,shell=True)
+    time.sleep(1)
+    p.kill()
 
 def run_cmd_adb_logcat_from_subprocess():
     p = subprocess.Popen(build_command_logcat(),shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
@@ -279,7 +285,7 @@ def verify_adb_devices_serialno():
 def adb_connect_to_device():
     try_adb_connect_times = 3
     wait_time = 3
-    for i in range(0,try_adb_connect_times):
+    for i in xrange(0,try_adb_connect_times):
         run_cmd_adb_connect()
         print 'try to connect to adb device, %d times.' %(i + 1)
         if verify_adb_devices_serialno():  # verify connect success
@@ -292,14 +298,23 @@ def adb_connect_with_root():
     if not adb_connect_to_device():  # adb connect
         print 'Error, when adb connect to the device!'
         exit(1)
-        
-    if not run_cmd_adb_root_from_subprocess():
-        print 'Error, when run adb as root!'
-        exit(1)
+
+# fix pending issue when run adb root command
+#     if not run_cmd_adb_root_from_subprocess():
+#         print 'Error, when run adb as root!'
+#         exit(1)
+    run_cmd_adb_root_from_subprocess_and_kill()
 
     if not adb_connect_to_device():   # adb connect as root
         print 'Error, when adb connect to the device with root!'
         exit(1)
+
+def set_tv_audio_volume_low():
+    print 'setting tv audio volume to low ...'
+    cmd = 'adb shell input keyevent KEYCODE_VOLUME_DOWN'
+    for i in xrange(20):
+        run_system_command(cmd)
+        time.sleep(0.3)
 
 def get_monkey_process_id():
     process_id = ''
@@ -396,7 +411,7 @@ def wait_for_monkey_process_start():
     try_times = 3
     wait_time_for_monkey_launch = 3
     
-    for i in range(0,try_times):
+    for i in xrange(0,try_times):
         monkey_process_id = get_monkey_process_id()
         if monkey_process_id != '':
             break
@@ -534,6 +549,7 @@ def transform_log_level(level):
 def main_test_setup():
     init_path_vars()
     adb_connect_with_root()
+    set_tv_audio_volume_low()
     
     # shell env setup
     remove_anr_and_tombstone_files()
@@ -594,9 +610,9 @@ def cal_exec_time(fn):
 if __name__ == '__main__':
 
     # set the audio sound to low before run monkey
-    g_target_ip = '172.17.5.101'
+    g_target_ip = '172.17.5.86'
     g_run_num = '01'
-    g_run_mins = 60
+    g_run_mins = 5
 
     g_flag_monkey_for_package = False
     if g_flag_monkey_for_package:
