@@ -213,6 +213,16 @@ Created on 2017-2-6
 # PyDemo04.print_message()
 
 
+# EXAMPLE 10, built-in functions
+# import sys
+# print 'Module search paths:', sys.path
+# 
+# print 'Defined fields and methods:', dir()
+# 
+# print 'Access global fields:', globals()
+# print 'Access local fields:', locals()
+
+
 if __name__ == '__main__':
 
     import os
