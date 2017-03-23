@@ -348,6 +348,13 @@ Created on 2016-7-13
 # print '%d h, %d mins' %(int(total_time / 60), int(total_time % 60))
 
 
+# EXAMPLE 30, invoked from PyDemo05, EXAMPLE 09 import and reload
+# print 'code to be run when import or reload.'
+# 
+# def print_message():
+#     print 'import and reload test.'
+
+
 if __name__ == '__main__':
     # EXAMPLE 17
 #     g_var = 'update'

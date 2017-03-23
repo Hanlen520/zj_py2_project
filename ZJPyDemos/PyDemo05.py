@@ -205,8 +205,17 @@ Created on 2017-2-6
 # print 'After sort: ', my_list
 
 
+# EXAMPLE 09, import and reload
+# import PyDemo04
+# PyDemo04.print_message()
+# 
+# reload(PyDemo04)
+# PyDemo04.print_message()
+
+
 if __name__ == '__main__':
 
     import os
+    print __name__
     print '%s done!' % os.path.basename(__file__)
     pass
