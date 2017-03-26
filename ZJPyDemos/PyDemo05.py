@@ -223,6 +223,52 @@ Created on 2017-2-6
 # print 'Access local fields:', locals()
 
 
+# EXAMPLE 11, iteritems()
+# mapping = {1:'one', 2:'two', 3:'three', 4:'four'}
+# for key, val in mapping.iteritems():
+#     print 'key:', key, 'value:', val
+
+
+# EXAMPLE 12, method(*arg)
+# def mul(x, y):
+#     return x * y
+# 
+# tmp_lst = [2, 3]
+# print mul(*tmp_lst)
+
+
+# EXAMPLE 13, division
+# a = 1
+# print a / 2, a / float(2)
+
+# from __future__ import division
+# b = 1
+# print b // 2, b / 2
+
+
+# EXAMPLE 14, isinstance()
+# tmp_str = 'test'
+# if isinstance(tmp_str, basestring):
+#     print 'Type is string.'
+# 
+# tmp_lst = [1, 2, 3]
+# if isinstance(tmp_lst, (list, tuple)):
+#     print 'Type is collection.'
+
+
+# EXAMPLE 14, get char count in string
+# tmp_str = 'abracadabra'
+# freqs = {}
+# for ch in tmp_str:
+#     if ch in freqs:
+#         freqs[ch] += 1
+#     else:
+#         freqs[ch] = 1
+# 
+# for key, val in freqs.iteritems():
+#     print 'key: ', key, 'count: ', val
+
+
 if __name__ == '__main__':
 
     import os
