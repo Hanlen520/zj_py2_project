@@ -269,6 +269,11 @@ Created on 2017-2-6
 #     print 'key: ', key, 'count: ', val
 
 
+# EXAMPLE 15, print map
+# tmp_map = {'a':'testa', 'b':'testb', 'intc':1}
+# print 'map values: %(a)s, %(b)s, %(intc)d' % tmp_map
+
+
 if __name__ == '__main__':
 
     import os

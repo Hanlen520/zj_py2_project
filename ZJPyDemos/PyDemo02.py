@@ -7,6 +7,11 @@
 
 
 # EXAMPLE 02, enumerate
+# some_list = [(1, 2, 'def'), (2, -4, 'ghi'), (3, 6, 'abc')]
+# tmp_list = [(val[2], idx, val) for (idx, val) in enumerate(some_list)]
+# tmp_list.sort()
+# print tmp_list
+# 
 # my_phrase = ["No", "one", "expects", "the", "Spanish", "Inquisition"]
 # my_dict = {key : value for key, value in enumerate(my_phrase)}
 # print my_dict

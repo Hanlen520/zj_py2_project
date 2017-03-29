@@ -232,19 +232,21 @@ Created on 2016-7-13
 # EXAMPLE 23-1, sort
 # def sortby(somelist, n):
 #     nlist = [(x[n], x) for x in somelist]
-# #     nlist.sort(key=lambda x:x[0], reverse=True)
 #     nlist.sort()
 #     return [val for (key, val) in nlist]
-#    
+# 
 # def sortby_inplace(somelist, n):
 #     somelist[:] = [(x[n], x) for x in somelist]
 #     somelist.sort()
 #     somelist[:] = [val for (key, val) in somelist]
-#    
+#     
 # somelist = [(1, 2, 'def'), (2, -4, 'ghi'), (3, 6, 'abc')]
-# somelist.sort()
-# print somelist
-#  
+# # somelist.sort()
+# # print somelist
+# 
+# # somelist.sort(key=lambda x:x[2], reverse=False)
+# # print somelist
+#   
 # # print sortby(somelist, 2)
 # 
 # sortby_inplace(somelist, 2)
@@ -266,12 +268,18 @@ Created on 2016-7-13
 # # for word in oldlist:
 # #     newlist.append(word.upper())
 # # print newlist
-# # 
-# # newlist = [val.upper() for val in oldlist]
+# 
+# upper = str.upper
+# append = newlist.append
+# for word in oldlist:
+#     append(upper(word))
+# print newlist
+# 
+# # newlist = map(str.upper, oldlist)
 # # print newlist
 # 
-# newlist = map(str.upper, oldlist)
-# print newlist
+# # newlist = [val.upper() for val in oldlist]
+# # print newlist
 
 
 # EXAMPLE 25, iterator
