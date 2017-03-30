@@ -309,6 +309,7 @@ Created on 2016-7-13
 #         yield i
 # 
 # my_gen1 = generate_ints(10)
+# print 'Type:', type(my_gen1)
 # for ele in my_gen1:
 #     print 'Element:', ele
 #  
