@@ -302,15 +302,41 @@ Created on 2016-7-13
 # print filter(is_even, xrange(10))
 
 
-# EXAMPLE 27, generate, yield
+# EXAMPLE 27, generator
+# # 1, yield
 # def generate_ints(n):
 #     for i in xrange(n):
 #         yield i
+# 
+# my_gen1 = generate_ints(10)
+# for ele in my_gen1:
+#     print 'Element:', ele
 #  
-# gen = generate_ints(3)
-# print gen.next()
-# print gen.next()
-# print next(gen)
+# my_gen2 = generate_ints(3)
+# print 'Type:', type(my_gen2)
+# print my_gen2.next()
+# print my_gen2.next()
+# print next(my_gen2)
+# print next(my_gen2)  # StopIteration
+
+# # 2, pass value by send()
+# def counter(max_value):
+#     i = 0
+#     while i < max_value:
+#         val = (yield i)
+#         if val is not None:
+#             i = val
+#         else:
+#             i += 1
+#  
+# my_gen = counter(10)
+# print 'Type:', type(my_gen)
+#  
+# print my_gen.next()
+# print my_gen.next()
+# print my_gen.send(8)
+# print next(my_gen)
+# print next(my_gen)
 
 
 # EXAMPLE 28, iterator
@@ -356,7 +382,7 @@ Created on 2016-7-13
 # print '%d h, %d mins' %(int(total_time / 60), int(total_time % 60))
 
 
-# EXAMPLE 30, invoked from PyDemo05, EXAMPLE 09 import and reload
+# EXAMPLE 31, invoked from PyDemo05 - EXAMPLE 09 import and reload
 # print 'code to be run when import or reload.'
 # 
 # def print_message():

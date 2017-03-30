@@ -51,11 +51,14 @@ Created on 2017-2-6
 
 
 # EXAMPLE 04, zip, enumerate
-# li1 = ['k1', 'k2', 'k3']
-# li2 = ['a', 'b', 'c']
-# tmp_d = dict(zip(li1, li2))
-# print tmp_d
+# li1 = ('k1', 'k2', 'k3')
+# li2 = ('a', 'b', 'c')
+# tmp_ret = zip(li1, li2)
+# print tmp_ret
 # 
+# tmp_d = dict(tmp_ret)
+# print tmp_d
+
 # for idx, val in enumerate(li1):
 #     print 'position: %d value: %s' %(idx, val)
 
@@ -214,6 +217,7 @@ Created on 2017-2-6
 
 
 # EXAMPLE 10, built-in functions
+# 1
 # import sys
 # print 'Module search paths:', sys.path
 # 
@@ -221,6 +225,15 @@ Created on 2017-2-6
 # 
 # print 'Access global fields:', globals()
 # print 'Access local fields:', locals()
+
+# 2, map() and filter()
+# tmp_ret1 = map(lambda x: x.upper(), ('sentence', 'fragment'))
+# print 'Type:', type(tmp_ret1)
+# print 'Value:', tmp_ret1
+# 
+# tmp_ret2 = filter(lambda x: (x % 2) == 0, range(10))
+# print 'Type:', type(tmp_ret2)
+# print 'Value:', tmp_ret2
 
 
 # EXAMPLE 11, iteritems()
@@ -272,6 +285,59 @@ Created on 2017-2-6
 # EXAMPLE 15, print map
 # tmp_map = {'a':'testa', 'b':'testb', 'intc':1}
 # print 'map values: %(a)s, %(b)s, %(intc)d' % tmp_map
+
+
+# EXAMPLE 15, iterator
+# 1. loop on iterator
+# tmp_lst = ['a', 'b', 'c']
+# tmp_iterator = iter(tmp_lst)
+# print 'Type:', type(tmp_iterator)
+# 
+# print 'Elements:'
+# try:
+#     while 1:
+#         print next(tmp_iterator)
+# except StopIteration, e:
+#     print 'No more elements.'
+
+# 2. iterator to dict
+# tmp_lst = [('Italy', 'Rome'), ('France', 'Paris'), ('US', 'Washington DC')]
+# tmp_iterator = iter(tmp_lst)
+# print 'Type:', type(tmp_iterator)
+# print dict(tmp_iterator)
+
+# 3. iterator on file
+# import os
+# f_path = os.path.join(os.getcwd(), 'zjunittest.log')
+# with open(f_path, 'r') as tmp_f:
+#     for line in tmp_f:
+#         print line.strip('\r\n')
+
+
+# EXAMPLE 16
+# 1, Generator expression, List comprehension
+# line_list = ['  line 1\n', 'line 2  \n']
+#   
+# # Generator expression -- returns generator
+# stripped_iter = (line.strip() for line in line_list)
+# print 'Type: ', type(stripped_iter)
+# for item in stripped_iter:
+#     print 'item:', item
+# print 'Value as tuple: ', tuple(stripped_iter)
+#   
+# # List comprehension -- returns list
+# stripped_list = [line.strip() for line in line_list]
+# print 'Type: ', type(stripped_list)
+# print 'Value: ', stripped_list
+
+# 2, range and xrange
+# print 'range type:', type(range(10))
+# print 'xrange type:', type(xrange(10))
+
+
+# EXAMPLE 17, lambda
+# build_assign = lambda name, value: name + '=' + value
+# print build_assign('key_test', 'value_test')
 
 
 if __name__ == '__main__':
