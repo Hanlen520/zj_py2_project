@@ -340,70 +340,71 @@ Created on 2017-2-6
 # print build_assign('key_test', 'value_test')
 
 
-# EXAMPLE 18, class
+# EXAMPLE 18, python OO
 # class Person(object):
 #     """ class for test, Person """
-#     
+#      
 #     address = '=> China'
-#     
+#      
 #     @classmethod
 #     def myNation(cls):
 #         print 'Address: ' + cls.address
-# 
+#  
 #     def __init__(self, name, age):
 #         self.name = name
 #         self.age = age
-# 
+#  
 #     # for print
 #     def __str__(self):
 #         return 'Name: %s, Age: %d' % (self.name, self.age)
-# 
+#  
 #     def sayHello(self):
 #         return 'Hello!'
 # # class Person, end
-# 
+#  
 # class Tester(Person):
 #     """ class for test, Tester inherit from Person """
-#     
+#      
 #     address = '=> China WuHan'
-#     
+#      
 #     def __init__(self, name, age, company):
 #         Person.__init__(self, name, age)
 #         self.company = company
 #         self.__salary = 0  # private
 #         self.__skills = ['Java', 'C++', 'Python', 'JS']
-# 
+#  
 #     def __iter__(self):
-#         return iter(self.__skills)
-# 
+# #         return iter(self.__skills)
+#         return (v for v in self.__skills)
+#  
 #     # override
 #     def sayHello(self):
 #         tmp_list = [Person.sayHello(self), 'I am a tester.']
 #         return ' '.join(tmp_list)
-# 
+#  
 #     def setSalary(self, salary):
 #         self.__salary = salary
-# 
+#  
 #     def getSalary(self):
 #         return self.__salary
 # # class Tester, end
-# 
+#  
 # p = Person('henry', 27)
 # Person.myNation()
 # print p
 # print p.sayHello()
-# 
+#  
 # t = Tester('vieira', 29, 'ibm')
 # t.setSalary(5000)
 # Tester.myNation()
 # print t
 # print t.sayHello()
 # print 'Salary:', t.getSalary()
-# 
+#  
 # print 'Skills:'
 # for item in t:
 #     print item
-# 
+#  
 # print 'Document:', t.__doc__
 # print 'Fields:', t.__dict__
 # print t.__module__

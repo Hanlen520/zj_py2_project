@@ -293,6 +293,52 @@
 # print str(json_obj)
 
 
+# EXAMPLE 25, with as, class
+# class controlledExecution(object):
+#     '''
+#     customized class used in with as block
+#     '''
+#     
+#     def __init__(self, value):
+#         self.my_value = value
+#         
+#     def __str__(self):
+#         return 'Value: %s' % self.my_value
+#     
+#     def __enter__(self):
+#         '''
+#         run when enter into with as block, 
+#         and return value to var
+#         '''
+#         if str.isalnum(self.my_value):
+#             print 'value is a number.'
+#         elif str.isalpha(self.my_value):
+#             print 'value is a char.'
+#         else:
+#             print 'invalid value!'
+#         return self
+# 
+#     def __exit__(self, type, value, traceback):
+#         '''
+#         run when exit from with as block, 
+#         and we can raise exception here
+#         '''
+#         if self.my_value == 'None':
+#             raise Exception('value is none!')
+#         
+#         print 'value set to default.'
+#         self.my_value = None
+#         return True
+# 
+# input_val = 'None'
+# try:
+#     with controlledExecution(input_val) as tmp_var:
+# #         print tmp_var.__doc__
+#         print tmp_var
+# except Exception, ex:
+#     print 'Error message:', ex.message
+
+
 if __name__ == '__main__':
     
     import os

@@ -319,6 +319,27 @@ Created on 2014/9/24
 # print (datetime.datetime.now() + datetime.timedelta(hours=8)).strftime('%Y-%m-%d %H:%M')
 
 
+# EXAMPLE 33, list to dict
+# tmp_lst = ['Java', 'C#', 'C++', 'Python', 'JS']
+# tmp_dict = dict.fromkeys(tmp_lst, 1)
+# print 'Value:', tmp_dict
+# print dir(tmp_dict)
+# 
+# tmp_key = 'Python'
+# if tmp_key in tmp_dict:
+#     print 'Found'
+# print tmp_dict.has_key(tmp_key)
+
+
+# EXAMPLE 34, list to generator
+# tmp_lst = ['Java', 'C#', 'C++', 'Python', 'JS']
+# tmp_gen = (v for v in tmp_lst)
+# print 'Type:', type(tmp_gen)
+# 
+# for item in tmp_gen:
+#     print 'item:', item
+
+
 if __name__ == '__main__':
 
     import os
