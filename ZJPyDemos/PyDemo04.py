@@ -46,7 +46,7 @@ Created on 2016-7-13
 # print str(json_obj)
 
 
-# EXAMPLE 05, encoded
+# EXAMPLE 05, unicode and str
 # tmp_str = u'test'
 # print type(tmp_str)
 # print type(tmp_str.encode('utf-8'))
@@ -108,15 +108,17 @@ Created on 2016-7-13
 # print i
 
 
-# EXAMPLE 11, encoded, decoded
-# tmp_str_u = u'\u5317\u4eac'
-# print type(tmp_str_u)
-# print tmp_str_u
-# print tmp_str_u.encode('utf-8')
+# EXAMPLE 11, decode('unicode_escape')
+# tmp_u = u'\u5317\u4eac'
+# print type(tmp_u)
+# print tmp_u
+# print tmp_u.encode('utf-8')
 # 
 # tmp_str = '\u5317\u4eac'
 # print type(tmp_str)
-# print tmp_str.decode('unicode_escape')
+# tmp_str_u = tmp_str.decode('unicode_escape')
+# print type(tmp_str_u)
+# print tmp_str_u
 
 
 # EXAMPLE 12, with block

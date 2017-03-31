@@ -70,12 +70,26 @@
 #     print 'not found'
 
 
-# EXAMPLE 07, encoded
+# EXAMPLE 07
+# encoded
 # u = u'中文'
-# print u
-# print u.encode('gb2312')
-# print u.encode('utf-8')
-# print u.encode('utf-16')
+# print u  # ok for both command line and eclipse console
+# print u.encode('gbk')  # ok in command line with support gbk
+# print u.encode('utf-8')  # ok in eclipse console with support utf-8
+# print u.encode('utf-16')  # bad
+
+# default decode
+# tmp_str = '测试1'
+# # print tmp_str.encode('gbk')  # error, default decode as 'ascii'
+# print tmp_str.decode('utf-8').encode('gbk')  # manual set decode as 'utf-8'
+
+# sys.setdefaultencoding()
+# import sys
+# reload(sys)
+# sys.setdefaultencoding('utf-8')  # set default decode as 'utf-8'
+# 
+# tmp_str = '测试2'
+# print tmp_str.encode('gbk')
 
 
 # EXAMPLE 08, platform
@@ -302,5 +316,5 @@ def my_multiply(x, y):
 if __name__ == '__main__':
 
     import os
-    print '%s done!' %os.path.basename(__file__)
+    print '%s done!' % os.path.basename(__file__)
     pass

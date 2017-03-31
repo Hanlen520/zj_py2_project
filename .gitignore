@@ -1,8 +1,9 @@
 *.pyc
+*py.class
 
 #*.log
 ZJPyDemos/*.log
- 
+
 # report files
 #ZJAndroidMonitor/MonitorReports/
 #ZJMonkeyTest/MonkeyReprots/
