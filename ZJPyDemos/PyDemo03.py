@@ -308,6 +308,60 @@
 #         print line
 
 
+# EXAMPLE 21, build in str functions
+# print str.isalpha('a')
+# print str.isalpha('1')
+# 
+# print str.startswith('xyz', 'x')
+# print str.endswith('xyz', 'z')
+
+
+# EXAMPLE 22, get file status
+# import os, stat, time
+# from fnmatch import fnmatch
+# 
+# # 1, os.stat()
+# f_path = r'E:\FX_me.txt'
+# f_status = os.stat(f_path)
+# f_info = {'Size': f_status[stat.ST_SIZE], 
+#           'LastModified': time.ctime(f_status[stat.ST_MTIME]),
+#           'LastAccessed': time.ctime(f_status[stat.ST_ATIME]),
+#           'CreationTime': time.ctime(f_status[stat.ST_CTIME]),
+#           'Mode': f_status[stat.ST_MODE]}
+# 
+# for key, value in f_info.iteritems():
+#     print key + ': ' + str(value)
+# 
+# if stat.S_ISDIR(f_status[stat.ST_MODE]):
+#     print 'Directory'
+# else:
+#     print 'File'
+# 
+# # 2, os.path
+# if os.path.isdir(f_path):
+#     print 'Directory'
+# if os.path.isfile(f_path):
+#     print 'File'
+# 
+# # 3, os.listdir()
+# f_items = os.listdir(os.getcwd())
+# for f_name in f_items:
+#     if fnmatch(f_name, '*.py'):
+#         print f_name
+
+
+# EXAMPLE 23, os.walk()
+# import os
+# import fnmatch
+# root_dir = os.getcwd()
+# 
+# for root, folders, files in os.walk(root_dir):
+#     print 'Folder count:', len(folders)
+#     for file_name in files:
+#         if fnmatch.fnmatch(file_name, '*.py'):
+#             print os.path.join(root, file_name)
+
+
 # for unit test demo
 def my_multiply(x, y):
     return x * y

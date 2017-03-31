@@ -161,7 +161,7 @@ Created on 2014/9/24
 # EXAMPLE 19, RegExp
 # import re
 #  
-# tmp_str = '01_test';
+# tmp_str = '01_test'
 # if re.match(r'\d\d', tmp_str[0:2]):
 #     print 'matched'
 # else:
@@ -231,9 +231,9 @@ Created on 2014/9/24
 
 
 # EXAMPLE 25, round
-# print round(1.4);
-# print round(1.5);
-# print round(1.55);
+# print round(1.4)
+# print round(1.5)
+# print round(1.55)
 
 
 # EXAMPLE 26, iterator
@@ -249,7 +249,7 @@ Created on 2014/9/24
 
 
 # EXAMPLE 27, dict iterator
-# tmp_dict = {'key1':'value1', 'key2':'value2', 'key3':'value3'};
+# tmp_dict = {'key1':'value1', 'key2':'value2', 'key3':'value3'}
 # for k in tmp_dict.keys():
 #     print 'Key:', k
 # 
@@ -273,6 +273,50 @@ Created on 2014/9/24
 #     return 0, x + y
 # 
 # print my_fn(1, 3)
+
+
+# EXAMPLE 30, build connection str
+# params = {'server':'mpilgrim', 'database':'master', 'uid':'sa', 'pwd':'secret'}
+# print ';'.join('%s=%s' % (k, v) for k, v in params.iteritems())
+
+
+# EXAMPLE 31, print format str
+# tmp_str = 'abcdefg'
+# print '%.3s' % tmp_str
+# 
+# tmp_num = 10
+# print 'Hex=%x, Dec=%d, Oct=%o' % (tmp_num, tmp_num, tmp_num)
+# 
+# import fpformat
+# a = 0.0030000000005
+# b = fpformat.fix(a, 6)
+# print b
+# 
+# from decimal import Decimal
+# x = '2.26'
+# y = '2.29'
+# c = Decimal(x) - Decimal(y)
+# print c
+# print round(c / Decimal(x) * 100, 2)
+
+
+# EXAMPLE 32, time
+# 1. get current time and format
+# import time
+# print time.time()
+# print time.clock()
+# print time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+# 
+# import datetime
+# print datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+#  
+# # 2. time compare
+# t1 = time.strptime('2011-01-20 14:05', '%Y-%m-%d %H:%M')
+# t2 = time.strptime('2011-01-20 16:05', '%Y-%m-%d %H:%M')
+# print 't1 < t2:', t1 < t2
+#  
+# # 3. time delta
+# print (datetime.datetime.now() + datetime.timedelta(hours=8)).strftime('%Y-%m-%d %H:%M')
 
 
 if __name__ == '__main__':

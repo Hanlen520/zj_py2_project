@@ -140,7 +140,7 @@
 # 
 # # output 1
 # # for line in p2.stdout.readlines():
-# #     print line.rstrip();  # default: '\n','\r', '\t', ' '
+# #     print line.rstrip()  # default: '\n','\r', '\t', ' '
 # 
 # # output 2
 # out = p2.communicate()

@@ -38,7 +38,7 @@ def append_exit_cmd(cmds):
 def format_cmds_to_cmd_for_communicate(cmds):
     output = ''
     for cmd in cmds:
-        output += '%s\n' %(cmd)
+        output += '%s\n' % (cmd)
     return output
 
 # --------------------------------------------------------------
@@ -50,7 +50,7 @@ def run_multiple_cmds_from_one_shell_by_std_write(cmds):
     # write commands
     p_console = get_cmd_line_process()
     for cmd in l_cmds:
-        p_console.stdin.write('%s\n' %(cmd))
+        p_console.stdin.write('%s\n' % (cmd))
         p_console.stdin.flush()
         time.sleep(g_wait_time_between_cmds)
 
@@ -75,7 +75,7 @@ def run_multiple_cmds_from_one_shell_by_communicate(cmds):
     
     # run commands
     p_console = get_cmd_line_process()
-    outs,errs = p_console.communicate(l_cmd)
+    outs, errs = p_console.communicate(l_cmd)
     
     # handle output
     output = ''
@@ -89,7 +89,8 @@ def run_multiple_cmds_from_one_shell_by_communicate(cmds):
 
 def get_cmd_line_process():
     cmd_path = r'C:\Windows\system32\cmd.exe'
-    return subprocess.Popen(cmd_path, shell=False, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    return subprocess.Popen(cmd_path, shell=False, stdin=subprocess.PIPE,
+                            stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 # --------------------------------------------------------------
 #  Main
@@ -102,7 +103,7 @@ def test_run_multiple_cmds():
 
 def run_repeat_shell_send_key_cmds(key, times):
     cmds = ['adb shell']
-    cmd = 'input keyevent %s' %(key)
+    cmd = 'input keyevent %s' % (key)
     cmds = append_exit_cmd(build_repeat_cmd(cmds, cmd, times))  # exit shell ENV
 
     run_multiple_cmds_from_one_shell_by_communicate(cmds)
@@ -113,5 +114,5 @@ if __name__ == '__main__':
     test_run_multiple_cmds()
 #     run_repeat_shell_send_key_cmds(g_cmd_key_right, 70)
     
-    print '%s Done!' %(os.path.basename(__file__))
+    print '%s Done!' % (os.path.basename(__file__))
     pass
