@@ -174,10 +174,10 @@
 # EXAMPLE 13, get input opts and args
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# import sys,getopt
-#  
+# import sys, getopt
+# 
 # def usage():
-#     print '''''
+#     print '''
 #     Usage: analyse_stock.py [options...]
 #     Options:
 #     -e : Exchange Name
@@ -187,38 +187,42 @@
 #     -n : stock name
 #     -s : stock code
 #     -h : this help info
-#     test.py -s haha -n "HA Ha"
-#     ''' 
-#   
+#     >>> python test.py -s haha -n "HA Ha"
+#     '''
+# 
 # def test_main():
 #     try:
-#         opts, args = getopt.getopt(sys.argv[1:],'he:c:f:d:n:s:')
+#         opts, args = getopt.getopt(sys.argv[1:], 'he:c:f:d:n:s:')
+#         print 'input opts:', opts
+#         print 'input args:', args
 #     except getopt.GetoptError:
 #         usage()
-#         sys.exit()
+#         exit()
 #     if len(opts) == 0:
 #         usage()
-#         sys.exit()  
-#       
+#         exit()
+# 
+#     print 'output:'
 #     for opt, arg in opts:
 #         if opt in ('-h', '--help'):
 #             usage()
-#             sys.exit()
+#             exit()
 #         elif opt == '-d':
-#             print "del stock %s" % arg
+#             print 'del stock %s' % arg
 #         elif opt == '-f':
-#             print "read file %s" % arg
+#             print 'read file %s' % arg
 #         elif opt == '-c':
-#             print "user-defined %s " % arg
+#             print 'user-defined %s' % arg
 #         elif opt == '-e':
-#             print "Exchange Name %s" % arg
+#             print 'Exchange Name %s' % arg
 #         elif opt == '-s':
-#             print "Stock code %s" % arg
+#             print 'Stock code %s' % arg
 #         elif opt == '-n':
-#             print "Stock name %s" % arg  
-#       
-#     sys.exit()
+#             print 'Stock name %s' % arg
 # 
+#     exit()
+# # end test_main
+#  
 # test_main()
 
 

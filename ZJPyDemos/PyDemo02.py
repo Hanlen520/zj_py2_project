@@ -215,11 +215,10 @@
 #     if flag:  # 0 = false
 #         val = 1  
 #     else:  
-#         val = -1
+#         print 'test global'
 #     return val
-#  
+#   
 # print test_global(0)
-# print val
 
 
 # EXAMPLE 19, file append
