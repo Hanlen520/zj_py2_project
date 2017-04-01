@@ -339,6 +339,19 @@
 #     print 'Error message:', ex.message
 
 
+# EXAMPLE 26, == and is
+# tmp_lst1 = [1, 2, 3]
+# tmp_lst2 = [1, 2, 3]
+# print 'tmp_lst1 == tmp_lst2:', tmp_lst1 == tmp_lst2  # compare content
+# print 'tmp_lst1 is tmp_lst2:', tmp_lst1 is tmp_lst2  # compare reference value
+# 
+# # short string is shared
+# tmp_str1 = 'test'
+# tmp_str2 = 'test'
+# print 'tmp_str1 == tmp_str2:', tmp_str1 == tmp_str2
+# print 'tmp_str1 is tmp_str2:', tmp_str1 is tmp_str2
+
+
 if __name__ == '__main__':
     
     import os
