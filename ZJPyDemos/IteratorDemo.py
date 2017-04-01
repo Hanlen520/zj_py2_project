@@ -6,14 +6,14 @@ Created on 2016-5-5
 @author: zhengjin
 '''
 
-class ZrangeIterator:
+class MyRangeIterator(object):
     
     def __init__(self, n):
         self.i = 0
         self.n = n
 
-#     def __iter__(self):
-#         return self
+    def __iter__(self):
+        return self
     
     def next(self):
         if self.i < self.n:
@@ -23,26 +23,27 @@ class ZrangeIterator:
         else:
             raise StopIteration()
 
-class Zrange:
+class MyRangeGenerator(object):
     
     def __init__(self, n):
         self.n = n
         
     def __iter__(self):
-        return ZrangeIterator(self.n)
-#         return iter(ZrangeIterator(self.n))
+        for i in xrange(self.n):
+            yield i
 
 
 if __name__ == '__main__':
     
-    zrange = Zrange(3)
+    my_iter_cls = MyRangeIterator(3)
+    print 'Type:', type(my_iter_cls)
+    for item in my_iter_cls:
+        print 'item:', item
     
-    print zrange is iter(zrange)
-    print zrange
-    print iter(zrange)
-    
-    print [i for i in zrange]
-    print [i for i in zrange]
+    my_gen_cls = MyRangeGenerator(3)
+    print 'Type:', type(my_gen_cls)
+    for item in my_gen_cls:
+        print 'item:', item
 
     print 'Iterator demo done!'
     pass
