@@ -41,7 +41,7 @@ Created on 2016-7-13
 # print json_arr['data']['skill'][0]
 #   
 # json_obj = {'data': {'name': 'zhengjin', 'age': 30, 'skill': ['Java', 'Python', 'C++']}, 'retCode': '200'}
-# json_str = json.dumps(json_obj, encoding='utf-8');
+# json_str = json.dumps(json_obj, encoding='utf-8')
 # print json_str
 # print str(json_obj)
 
@@ -381,11 +381,11 @@ Created on 2016-7-13
 
 
 # EXAMPLE 30, time format
-# total_time = 45;
+# total_time = 45
 # print '%d h, %d mins' %(int(total_time / 60), int(total_time % 60))
 
 
-# EXAMPLE 31, invoked from PyDemo05 - EXAMPLE 09 import and reload
+# EXAMPLE 31, invoked from PyDemo05, EXAMPLE 09 import and reload
 # print 'code to be run when import or reload.'
 # 
 # def print_message():

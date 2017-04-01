@@ -16,19 +16,38 @@
 
 
 # EXAMPLE 02, decorate
+# # 1
 # def deco(func):
 #     def _deco():
 #         print 'before myfunc() called.'
 #         func()
 #         print '  after myfunc() called.'
 #     return _deco
-#  
+#   
 # @deco
 # def myfunc():
 #     print ' myfunc() called.'
+#  
+# myfunc()
+
+# 2
+# def jmilkfan(func):
+#     print 'func id: %x' % id(func)
+#     
+#     def in_jmilkfan(x, y):
+#         print 'call in_jmilkfan()'
+#         func(x, y)
+#     
+#     print 'call jmilkfan()'
+#     print 'in_jmilkfan(): %s' % in_jmilkfan.__closure__
+#     return in_jmilkfan
 # 
-# myfunc()
-# myfunc()
+# @jmilkfan
+# def chocolate(x, y):
+#     print 'chocolate(): %s' % chocolate.__closure__
+#     print "call chocolate(), the value is: %d" % (x + y)
+# 
+# chocolate(1, 2)
 
 
 # EXAMPLE 03, encoded

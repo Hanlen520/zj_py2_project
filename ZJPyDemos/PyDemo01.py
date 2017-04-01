@@ -340,6 +340,92 @@ Created on 2014/9/24
 #     print 'item:', item
 
 
+# EXAMPLE 35, closure
+# passline = 60
+# def my_func(val):
+#     print 'address(val): %x' % id(val)
+#     if val >= passline:
+#         print 'pass'
+#     else:
+#         print 'failed'
+#  
+#     def in_func():
+#         print val
+#      
+#     in_func()
+#     return in_func
+#  
+# tmp_fn = my_func(89)
+# tmp_fn()
+# print tmp_fn.__closure__  # keep var "val"
+
+
+# EXAMPLE 36, var context and closure
+# 1
+# def closure_without_default():
+#     acts = []
+#     for i in xrange(5):
+#         acts.append(lambda x: x ** i)
+#     return acts
+# 
+# acts = closure_without_default()
+# print acts[0](2)
+# print acts[1](2)
+# print acts[2](2)
+# 
+# # 2
+# def closure_with_default():
+#     acts = []
+#     for i in xrange(5):
+#         acts.append(lambda x, i=i: x ** i)
+#     return acts
+# 
+# acts2 = closure_with_default()
+# print acts2[0](2)
+# print acts2[1](2)
+# print acts2[2](2)
+
+
+# EXAMPLE 37, closure used as deco
+# def dec(func):
+#     print 'dec'
+#       
+#     def in_dec(*arg):
+#         print 'in_dec'
+#         if len(arg) == 0:
+#             return 0
+#         for val in arg:
+#             if not isinstance(val, int):
+#                 return 0
+#   
+#         return func(*arg)
+#     # end in_dec
+#     return in_dec
+# # end dec
+# 
+# def my_sum(*arg):
+#     print 'my_sum'
+#     print 'Type:', type(arg), 'Value:', arg
+#     return sum(arg)
+# 
+# # 1, call directly
+# print my_sum(1, 2, 3)
+# print '*' * 30
+# 
+# # 2, call with closure
+# my_sum_result = dec(my_sum)
+# print my_sum_result(1, 3, 4)
+# print '*' * 30
+# 
+# @dec
+# def my_average(*arg):
+#     print 'my_average'
+#     return sum(arg) / len(arg)
+# 
+# # 3, call with decorate
+# print my_average(1, 3, 4)
+
+
 if __name__ == '__main__':
 
     import os
