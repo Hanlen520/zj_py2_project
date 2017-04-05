@@ -339,17 +339,63 @@
 #     print 'Error message:', ex.message
 
 
-# EXAMPLE 26, == and is
-# tmp_lst1 = [1, 2, 3]
-# tmp_lst2 = [1, 2, 3]
-# print 'tmp_lst1 == tmp_lst2:', tmp_lst1 == tmp_lst2  # compare content
-# print 'tmp_lst1 is tmp_lst2:', tmp_lst1 is tmp_lst2  # compare reference value
+# EXAMPLE 26, with as, class
+# import time
 # 
-# # short string is shared
-# tmp_str1 = 'test'
-# tmp_str2 = 'test'
-# print 'tmp_str1 == tmp_str2:', tmp_str1 == tmp_str2
-# print 'tmp_str1 is tmp_str2:', tmp_str1 is tmp_str2
+# class MyTimer(object):
+#     
+#     def __init__(self, verbose=False, ignoreException=False):
+#         self.verbose = verbose
+#         self.ignoreException = ignoreException
+# 
+#     def __enter__(self):
+#         self.start = time.clock()
+#         return self
+#     
+#     def __exit__(self, *unused):
+#         if len(unused) > 0:
+#             print 'exception_type:', unused[0]
+#             print 'exception_value:', unused[1]
+#             print 'traceback:', unused[2]
+#         
+#         self.end = time.clock()
+#         self.secs = self.end - self.start
+#         self.msecs = self.secs * 1000
+# 
+#         if self.verbose:
+#             print 'elapsed time: %.2f ms' % round(self.msecs, 2)
+#         return self.ignoreException
+# # end class
+# 
+# # 1
+# def fib(n):
+#     if n in [1, 2]:
+#         return 1
+#     else:
+#         return fib(n - 1) + fib(n - 2)
+# 
+# with MyTimer(True):
+#     print fib(30)
+# 
+# # 2, raise exception
+# try:
+#     with MyTimer(True, False):
+#         print fib(30)
+#         raise Exception('Ex4Test')
+# except Exception, e:
+#     print 'Exception (%s) was caught' % e
+# else:
+#     print 'No Exception happened'
+# 
+# # 3, ignore exception        
+# try:
+#     with MyTimer(True, True):
+#         print fib(30)
+#         raise Exception('Ex4Test')
+# except Exception, e:
+#     print 'Exception (%s) was caught' % e
+# else:
+#     print 'No Exception happened'
 
 
 if __name__ == '__main__':

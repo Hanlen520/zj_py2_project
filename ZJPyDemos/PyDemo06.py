@@ -69,6 +69,115 @@ Created on 2017-4-2
 # print get_modules_name(sys.argv[1])
 
 
+# EXAMPLE 04, == and is
+# tmp_lst1 = [1, 2, 3]
+# tmp_lst2 = [1, 2, 3]
+# print 'tmp_lst1 == tmp_lst2:', tmp_lst1 == tmp_lst2  # compare content
+# print 'tmp_lst1 is tmp_lst2:', tmp_lst1 is tmp_lst2  # compare reference value
+# 
+# # short string is shared
+# tmp_str1 = 'test'
+# tmp_str2 = 'test'
+# print 'tmp_str1 == tmp_str2:', tmp_str1 == tmp_str2
+# print 'tmp_str1 is tmp_str2:', tmp_str1 is tmp_str2
+
+
+# EXAMPLE 05, *args, **kwargs, *lst
+# # 1
+# def my_print_args(*args):
+#     print 'Type:', type(args)
+#     print 'Value:', args
+# 
+# my_print_args('str1', 'str2', 1, 2)
+# 
+# # 2
+# def my_print_kwargs(**kwargs):
+#     print 'Type:', type(kwargs)
+#     for key, value in kwargs.iteritems():
+#         print 'key: %s, value: %s' % (key, value)
+# 
+# my_print_kwargs(str1='test1', str2='test2')
+# 
+# # 3
+# def my_print_three_lst_ele(ele1, ele2, ele3):
+#     print 'ele1 = %s, ele2 = %s, ele3 = %s' % (ele1, ele2, ele3)
+# 
+# tmp_lst = ['str1', 'str2', 'str3']
+# my_print_three_lst_ele(*tmp_lst)
+
+
+# EXAMPLE 06, *args, **kwargs in decorate
+# def deco(func):
+#     def _deco(*args, **kwargs):
+#         print 'before %s called.' % func.__name__
+#         ret = func(*args, **kwargs)
+#         print'after %s called. result: %s' % (func.__name__, ret)
+#         return ret
+#     return _deco
+# 
+# @deco
+# def my_func(a, b):
+#     print 'myfunc(%s,%s) called.' % (a, b)
+#     return a + b
+# 
+# @deco
+# def my_func2(a, b, c):
+#     print 'myfunc2(%s,%s,%s) called.' % (a, b, c)
+#     return a + b + c
+# 
+# my_func(1, 2)
+# print '*' * 40
+# my_func(3, 4)
+# print '*' * 40
+# my_func2(1, 2, 3)
+# print '*' * 40
+# my_func2(3, 4, 5)
+
+
+# EXAMPLE 07, RegExp basic
+# import re
+# 
+# # 1, match() and search()
+# # re.match() match from beginning
+# # re.search() match from anywhere
+# print re.match('c', 'abcdef')
+# print re.search('c', 'abcdef')
+# print re.match('a', 'abcdef')
+# print re.search('^a', 'abcdef')
+# print '*' * 40
+# 
+# # 2, if found, return match object; else, return None
+# m = re.search('abcd', '1abcd2abcd')
+# if m is not None:
+#     print 'Value:', m.group()
+#     print 'Start index:', m.start()
+#     print 'End index', m.end()
+# print '*' * 40
+# 
+# # 3, findall(), finditer(), split()
+# print re.findall('(\W+)d', '...dwords, words...d')  # return list
+# print re.finditer('(\W+)d', '...dwords, words...d')  # return iterator
+# 
+# print re.split('[a-z]', '0A3b9z')
+# print re.split('[a-z]', '0A3b9z', flags=re.IGNORECASE)
+# print '*' * 40
+# 
+# # 4, group()
+# m1 = re.match('(\w+) (\w+)', 'abcd efgh, chaj')
+# print m1.group()  # default as m1.group(0)
+# print m1.group(1)
+# print m1.group(2)
+# print m1.group(1, 2)
+# print m1.groups()
+# print '*' * 40
+# 
+# m2 = re.match('(?P<first_name>\w+) (?P<last_name>\w+)', 'sam lee')
+# print 'first name:', m2.group('first_name')
+# print 'last name', m2.group('last_name')
+# print m2.groupdict()
+# print '*' * 40
+
+
 if __name__ == '__main__':
 
     import os

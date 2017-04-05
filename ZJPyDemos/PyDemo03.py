@@ -145,7 +145,7 @@
 # print [i for i in tmp_gen_add]
 
 
-# EXAMPLE 11, RegExp
+# EXAMPLE 11, RegExp basic
 # import re
   
 # s = 'afkak1aafal12345adadsfa'
