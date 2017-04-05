@@ -36,19 +36,37 @@ Created on 2017-4-2
 
 
 # EXAMPLE 02, method override in class
-class OverrideTest(object):
+# class OverrideTest(object):
+# 
+#     def check(self):
+#         ''' only be invoked at first time'''
+#         print 'check Invoked'
+#         self.check = self.check_post  # re-assign
+# 
+#     def check_post(self):
+#         print 'check_post Invoked'
+# 
+# my_test = OverrideTest()
+# for i in xrange(5):
+#     my_test.check()
 
-    def check(self):
-        ''' only be invoked at first time'''
-        print 'check Invoked'
-        self.check = self.check_post  # re-assign
 
-    def check_post(self):
-        print 'check_post Invoked'
-
-my_test = OverrideTest()
-for i in xrange(5):
-    my_test.check()
+# EXAMPLE 03, get modules name
+# import os, sys, re
+#  
+# def get_modules_name(file_path):
+#     '''
+#     input argv from command line:
+#     >>> python PyDemo06.py __init__.py
+#     >>> python PyDemo06.py ..\ZJPyUtils\__init__.py
+#     '''
+#     dir_path = os.path.abspath(os.path.dirname(file_path))
+#     tmp_files = os.listdir(dir_path)
+#     pys = re.compile('.py$', re.IGNORECASE)
+#     tmp_files = filter(pys.search, tmp_files)
+#     return map(lambda f: os.path.splitext(f)[0], tmp_files)
+#      
+# print get_modules_name(sys.argv[1])
 
 
 if __name__ == '__main__':

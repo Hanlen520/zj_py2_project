@@ -213,13 +213,19 @@ Created on 2016-7-13
 
 
 # EXAMPLE 21, globals(), locals()
+# import os
+# print globals()['os']
+
+# from os.path import exists
+# print globals()['exists']
+
 # var_global = 'test1'
 # def my_print():
 #     var_local = 'test2'
 #     print var_local
-#     print globals()  # print global vars can be access
-#     print locals()  # print local vars can be access
-#      
+#     print globals()
+#     print locals()
+# 
 # my_print()
 
 
