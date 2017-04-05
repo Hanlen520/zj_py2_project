@@ -178,6 +178,69 @@ Created on 2017-4-2
 # print '*' * 40
 
 
+# EXAMPLE 08, __slots__ in class
+# # 1, with __slots__
+# class SlotTest(object):
+#     
+#     __slots__ = ('name', 'age')
+#     
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+# 
+#     def getName(self):
+#         return self.name
+#     
+#     def getAge(self):
+#         return self.age
+# # end class
+# 
+# st = SlotTest('henry', 25)
+# st.age = 27
+# print 'name: %s, age: %d' % (st.name, st.age)
+# try:
+#     st.score = 80
+#     print 'score:', st.score
+# except AttributeError, e:
+#     print 'Error:', e.message
+# print '*' * 40
+# 
+# # 2, without __slots__
+# class MyTest(object):
+# 
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+# 
+#     def getName(self):
+#         return self.name
+#     
+#     def getAge(self):
+#         return self.age
+# 
+# mytest = MyTest('henry', 25)
+# mytest.age = 27
+# print 'name: %s, age: %d' % (mytest.name, mytest.age)
+# mytest.score = 80
+# print 'score:', mytest.score
+
+
+# EXAMPLE 09, reflection by module 'inspect'
+# import inspect
+# import sys
+# 
+# print 'isbuiltin:', inspect.isbuiltin(abs)
+# print 'ismodule:', inspect.ismodule(sys)
+# 
+# class MyTestCls(object):
+#     pass
+# print 'isclass:', inspect.isclass(MyTestCls)
+# 
+# def MyTestMtd():
+#     pass
+# print 'isfunction:', inspect.isfunction(MyTestMtd)
+
+
 if __name__ == '__main__':
 
     import os
