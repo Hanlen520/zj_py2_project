@@ -179,50 +179,69 @@ Created on 2017-4-2
 
 
 # EXAMPLE 08, __slots__ in class
-# # 1, with __slots__
-# class SlotTest(object):
-#     
-#     __slots__ = ('name', 'age')
-#     
+# # 1, class without __slots__
+# class MyTest(object):
+#  
 #     def __init__(self, name, age):
 #         self.name = name
 #         self.age = age
-# 
+#  
 #     def getName(self):
 #         return self.name
-#     
+#      
+#     def getAge(self):
+#         return self.age
+#  
+# mytest = MyTest('henry', 25)
+# mytest.age = 27
+# print 'name: %s, age: %d' % (mytest.name, mytest.age)
+# 
+# # add an attribute dyn
+# mytest.score = 80
+# print 'score:', mytest.score
+# 
+# # remove an attribute dyn
+# del mytest.score
+# try:
+#     print 'score:', mytest.score
+# except AttributeError, e:
+#     print 'Error:', e.message
+# print '*' * 40
+# 
+# # 2, class with __slots__
+# class SlotTest(object):
+#      
+#     __slots__ = ('name', 'age')
+#      
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#  
+#     def getName(self):
+#         return self.name
+#      
 #     def getAge(self):
 #         return self.age
 # # end class
-# 
+#  
 # st = SlotTest('henry', 25)
 # st.age = 27
 # print 'name: %s, age: %d' % (st.name, st.age)
+# 
+# # cannot add an attribute dyn because of __slots__ definition
 # try:
 #     st.score = 80
 #     print 'score:', st.score
 # except AttributeError, e:
 #     print 'Error:', e.message
+# 
+# # remove an attribute dyn
+# del st.age
+# try:
+#     print 'age:', st.age
+# except AttributeError, e:
+#     print 'Error:', e.message
 # print '*' * 40
-# 
-# # 2, without __slots__
-# class MyTest(object):
-# 
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
-# 
-#     def getName(self):
-#         return self.name
-#     
-#     def getAge(self):
-#         return self.age
-# 
-# mytest = MyTest('henry', 25)
-# mytest.age = 27
-# print 'name: %s, age: %d' % (mytest.name, mytest.age)
-# mytest.score = 80
-# print 'score:', mytest.score
 
 
 # EXAMPLE 09, reflection by module 'inspect'
@@ -239,6 +258,53 @@ Created on 2017-4-2
 # def MyTestMtd():
 #     pass
 # print 'isfunction:', inspect.isfunction(MyTestMtd)
+
+
+# EXAMPLE 10, issubclass() and isinstance()
+# class MyTestSuper(object):
+#     pass
+# 
+# class MyTestChild(MyTestSuper):
+#     pass
+# 
+# my_child = MyTestChild()
+# print 'isinstance(my_child, MyTestChild):', isinstance(my_child, MyTestChild)
+# print 'isinstance(my_child, MyTestSuper):', isinstance(my_child, MyTestSuper)
+# 
+# print 'issubclass(MyTestChild, MyTestSuper):', issubclass(MyTestChild, MyTestSuper)
+
+
+# EXAMPLE 11, private var in class
+# class MySuper(object):
+#     
+#     def __init__(self):
+#         print type(self)
+#         self.__private()  # Private name mangling
+#         self.public()
+# 
+#     def __private(self):  # Private name mangling
+#         print 'MySuper.__private()'
+# 
+#     def public(self):
+#         print 'MySuper.public()'
+# # end class
+# 
+# class MyChild(MySuper):
+#     
+#     def __private(self):
+#         print 'MyChild.__private()'
+# 
+#     def public(self):
+#         print 'MyChild.public()'
+# # end class
+# 
+# print 'MySuper attributes\n:', '\n'.join(dir(MySuper))
+# print '*' * 40
+# print 'MyChild attributes:\n', '\n'.join(dir(MyChild))
+# print '*' * 40
+# 
+# c = MyChild()
+# print '*' * 40
 
 
 if __name__ == '__main__':
