@@ -307,6 +307,30 @@ Created on 2017-4-2
 # print '*' * 40
 
 
+# EXAMPLE 12, tuple initialize
+# tmp_t = 1, 2, 3
+# print 'Type:', type(tmp_t)
+# print 'Value:', tmp_t
+# 
+# print 'a=%d, b=%d, c=%d' % tmp_t  # tuple: (1, 2, 3)
+# 
+# x, y, z = tmp_t
+# print 'x=' + str(x), 'y=' + str(y), 'z=' + str(z)
+
+
+# EXAMPLE 13, list update
+# tmp_lst2 = ['1', '2', '3', '4']
+# tmp_lst2.insert(2, 'a')
+# print tmp_lst2
+# 
+# tmp_lst = ['1', '2', '3', '4']
+# print tmp_lst[0:2]
+# tmp_lst[0:2] = ['a', 'b', 'c']
+# print tmp_lst
+# 
+# print help(list)
+
+
 if __name__ == '__main__':
 
     import os
