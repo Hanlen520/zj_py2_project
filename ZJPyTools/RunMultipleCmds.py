@@ -4,7 +4,6 @@ Created on 2016-3-11
 
 @author: zhengjin
 '''
-
 import os
 import subprocess
 import time
@@ -12,7 +11,7 @@ import time
 # --------------------------------------------------------------
 # Vars
 # --------------------------------------------------------------
-g_wait_time_between_cmds = 1
+g_wait_between_cmds = 1
 
 # Key Events
 g_cmd_key_up = 'KEYCODE_DPAD_UP'
@@ -26,93 +25,103 @@ g_cmd_key_home = 'KEYCODE_HOME'
 # --------------------------------------------------------------
 #  Build And Format Commands
 # --------------------------------------------------------------
-def build_repeat_cmd(cmds, cmd, times):
-    for i in range(0, times):
-        cmds.append(cmd)
-    return cmds
+def format_cmds_with_new_line_and_ret_str(cmds):
+    return '\n'.join(cmds) + '\n'
 
-def append_exit_cmd(cmds):
-    cmds.append('exit')
-    return cmds
-
-def format_cmds_to_cmd_for_communicate(cmds):
-    output = ''
-    for cmd in cmds:
-        output += '%s\n' % (cmd)
-    return output
+def format_cmds_with_new_line_and_ret_list(cmds):
+    return ('%s\n' % cmd for cmd in cmds)
 
 # --------------------------------------------------------------
 #  Run Multiple Commands Utils
 # --------------------------------------------------------------
-def run_multiple_cmds_from_one_shell_by_std_write(cmds):
-    l_cmds = append_exit_cmd(cmds)
+def run_piped_cmds(first_cmd, second_cmd):
+    p1 = subprocess.Popen(first_cmd, stdin=subprocess.PIPE,
+                         stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    p2 = subprocess.Popen(second_cmd, stdin=p1.stdout,
+                          stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    out, err = p2.communicate()
     
-    # write commands
-    p_console = get_cmd_line_process()
-    for cmd in l_cmds:
-        p_console.stdin.write('%s\n' % (cmd))
-        p_console.stdin.flush()
-        time.sleep(g_wait_time_between_cmds)
-
-    # handle output    
-    output = ''
-    matched_key = 'exit'
-    max_times = 500
-    i = 0
-    while (not output.endswith(matched_key)) and (i < max_times):
-        char = p_console.stdout.read(1)
-        output += char
-        i += 1
-    
-#     print output.decode('gb2312').encode('utf-8')  # format gb2312 to utf-8
-    print output.decode('gb2312')  # utf-8 is default
-
-# cannot add sleep time between each command
-def run_multiple_cmds_from_one_shell_by_communicate(cmds):
-    # build command
-    l_cmds = append_exit_cmd(cmds)
-    l_cmd = format_cmds_to_cmd_for_communicate(l_cmds)
-    
-    # run commands
-    p_console = get_cmd_line_process()
-    outs, errs = p_console.communicate(l_cmd)
-    
-    # handle output
-    output = ''
-    for char in outs:
-        output += char
-    if errs is not None:
-        for char in errs:
-            output += char
-
-    print output.decode('gb2312')
+    if err is not None:
+        print 'Error', err
+    if len(out) == 0:
+        return 'null'
+    return out.replace('\r\n', '\n')
 
 def get_cmd_line_process():
-    cmd_path = r'C:\Windows\system32\cmd.exe'
-    return subprocess.Popen(cmd_path, shell=False, stdin=subprocess.PIPE,
-                            stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    cmd = r'C:\Windows\system32\cmd.exe'
+    return subprocess.Popen(cmd, shell=False, stdin=subprocess.PIPE,
+                            stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+
+def run_cmds_by_std_write(cmds):
+    ''' run commands in single shell ENV by using stdin.write() '''
+    # build commands
+    cmds.append('exit')
+    cmds = format_cmds_with_new_line_and_ret_list(cmds)
+    
+    # write commands
+    p_shell = get_cmd_line_process()
+    for cmd in cmds:
+        p_shell.stdin.write(cmd)
+        p_shell.stdin.flush()
+        time.sleep(g_wait_between_cmds)
+    
+    # get output
+    ret_output = ''
+    max_size = 16
+    for i in xrange(max_size):
+        tmp_str = p_shell.stdout.read(1024)
+        if len(tmp_str) == 0:
+            break
+        ret_output += tmp_str
+    
+    if len(ret_output) == 0:
+        return 'null'
+    return ret_output.decode('gbk')  # gbk encode in win shell ENV
+
+def run_cmds_by_communicate(cmds):
+    ''' run commands in single shell ENV by using communicate() '''
+    # build commands
+    cmds.append('exit')
+    tmp_cmd = format_cmds_with_new_line_and_ret_str(cmds)
+    
+    # write commands
+    p_shell = get_cmd_line_process()
+    out, err = p_shell.communicate(tmp_cmd)
+    
+    if err is not None:
+        print 'Error:', err
+    if len(out) == 0:
+        return 'null'
+    return out.decode('gbk')
 
 # --------------------------------------------------------------
 #  Main
 # --------------------------------------------------------------
-def test_run_multiple_cmds():
-    cmds = ['java -version', 'echo hi', 'echo zhengjin']
-    
-    run_multiple_cmds_from_one_shell_by_std_write(cmds)
-#     run_multiple_cmds_from_one_shell_by_communicate(cmds)
-
 def run_repeat_shell_send_key_cmds(key, times):
-    cmds = ['adb shell']
-    cmd = 'input keyevent %s' % (key)
-    cmds = append_exit_cmd(build_repeat_cmd(cmds, cmd, times))  # exit shell ENV
-
-    run_multiple_cmds_from_one_shell_by_communicate(cmds)
+    # build commands
+    cmds_lst = ['adb shell']
+    cmd_input = 'input keyevent ' + key
+    cmd_sleep = 'sleep 1'
+    for i in xrange(times):
+        cmds_lst.append(cmd_input)
+        cmds_lst.append(cmd_sleep)
+    cmds_lst.append('exit')
+    
+    run_cmds_by_communicate(cmds_lst)
 
 
 if __name__ == '__main__':
 
-    test_run_multiple_cmds()
-#     run_repeat_shell_send_key_cmds(g_cmd_key_right, 70)
+#     print run_piped_cmds('adb shell ps', 'findstr ott')
+
+    # prefer to use communicate() instead of std_write()
+#     cmds1 = ['echo hi', 'java -version', 'ipconfig']
+#     print run_cmds_by_std_write(cmds1)
+    
+    cmds2 = ['echo hi', 'java -version', 'node -v', 'ipconfig']
+    print run_cmds_by_communicate(cmds2)
+
+#     run_repeat_shell_send_key_cmds(g_cmd_key_right, 10)
     
     print '%s Done!' % (os.path.basename(__file__))
     pass
