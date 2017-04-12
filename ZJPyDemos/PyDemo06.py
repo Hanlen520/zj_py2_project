@@ -318,17 +318,49 @@ Created on 2017-4-2
 # print 'x=' + str(x), 'y=' + str(y), 'z=' + str(z)
 
 
-# EXAMPLE 13, list update
+# EXAMPLE 13, sub and modify list
+# tmp_lst = ['a', 'b', 'c', 'd']
+# for item in tmp_lst[1:]:
+#     print 'item:', item
+# 
 # tmp_lst2 = ['1', '2', '3', '4']
 # tmp_lst2.insert(2, 'a')
 # print tmp_lst2
+#  
+# tmp_lst3 = ['1', '2', '3', '4']
+# print tmp_lst3[0:2]
+# tmp_lst3[0:2] = ['a', 'b', 'c']
+# print tmp_lst3
 # 
-# tmp_lst = ['1', '2', '3', '4']
-# print tmp_lst[0:2]
-# tmp_lst[0:2] = ['a', 'b', 'c']
-# print tmp_lst
+# # print help(list)
+
+
+# EXAMPLE 14, try except block
+# def test_exception():
+#     raise Exception('test try except block')
+#  
+# def stub_function():
+#     pass
+#  
+# # 1
+# # try:
+# #     test_exception()
+# # except Exception, e:
+# #     print 'Exception:', e.message
+#  
+# # 2
+# try:
+#     test_exception()
+# except Exception as ex:
+#     print 'Exception:', ex.message
 # 
-# print help(list)
+# # 3
+# try:
+#     stub_function()
+# except Exception, e:
+#     print 'Exception:', e.message
+# else:
+#     print 'No error'
 
 
 if __name__ == '__main__':
