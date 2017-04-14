@@ -610,9 +610,9 @@ def cal_exec_time(fn):
 if __name__ == '__main__':
 
     # set the audio sound to low before run monkey
-    g_target_ip = '172.17.5.86'
+    g_target_ip = '172.17.5.63'
     g_run_num = '01'
-    g_run_mins = 60
+    g_run_mins = 90
 
     g_flag_monkey_for_package = False
     if g_flag_monkey_for_package:

@@ -6,5 +6,5 @@ ZJPyDemos/*.log
 
 # report files
 #ZJAndroidMonitor/MonitorReports/
-#ZJMonkeyTest/MonkeyReprots/
+ZJMonkeyTest/MonkeyReprots/
 #ZJMonkeyTest/MonitorReports/
