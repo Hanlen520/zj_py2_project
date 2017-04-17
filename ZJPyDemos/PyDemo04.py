@@ -52,25 +52,28 @@ Created on 2016-7-13
 # print 'Type:', type(unicode_cn)
 # print 'Type unicode:', isinstance(unicode_cn, unicode)
 # print 'Type string:', isinstance(unicode_cn, str)
-# print 'Length: %d bytes' % len(unicode_cn)
+# print 'Length: %d bytes' % len(unicode_cn)  # get number of chars
 # print 'Value:', unicode_cn
-# 
+#  
 # print '*' * 20, 'str utf8 test'
 # str_utf8_cn = '中文'
 # print 'Type:', type(str_utf8_cn)
 # print 'Type unicode:', isinstance(str_utf8_cn, unicode)
 # print 'Type string:', isinstance(str_utf8_cn, str)
+# # '\xe4\xb8\xad\xe6\x96\x87'
+# # for utf8, in hex, 3 bytes for one char
 # print 'Length: %d bytes' % len(str_utf8_cn)
 # print 'Value:', str_utf8_cn
-# 
+#  
 # print '*' * 20, 'str gbk test'
 # str_gbk_cn = u'中文'.encode('gbk')
 # print 'Type:', type(str_gbk_cn)
 # print 'Type unicode:', isinstance(str_gbk_cn, unicode)
 # print 'Type string:', isinstance(str_gbk_cn, str)
+# # for gbk, 2 bytes for one char
 # print 'Length: %d bytes' % len(str_gbk_cn)
 # print 'Value:', str_gbk_cn
-# 
+#  
 # print '*' * 20, 'setdefaultencoding test'
 # import sys
 # print 'default encode:', sys.getdefaultencoding()
@@ -78,7 +81,7 @@ Created on 2016-7-13
 # sys.setdefaultencoding('gbk')
 # print 'reset encode:', sys.getdefaultencoding()
 # print 'Value:', str_gbk_cn.encode('utf-8')  # default decode by 'gbk'
-# 
+#  
 # print '*' * 20, 'decode(unicode_escape) test'
 # str_unicode_1 = '\u0041'
 # print 'Length: %d bytes' % len(str_unicode_1)
@@ -86,10 +89,10 @@ Created on 2016-7-13
 # print 'Type:', type(str_unicode_escape)
 # print 'Length: %d bytes' % len(str_unicode_escape)
 # print 'Value:', str_unicode_escape
-#  
+#
 # str_unicode_2 = '\\u4e2d'
 # print 'Value:', str_unicode_2.decode('unicode_escape')
-#  
+#
 # # str_unicode_3 = '\\u4fee\\u6539\\u8282\\u70b9\\u72b6\\u6001\\u6210\\u529f'
 # str_unicode_3 = '\u4fee\u6539\u8282\u70b9\u72b6\u6001\u6210\u529f'
 # print 'Value:', str_unicode_3.decode('unicode_escape')
