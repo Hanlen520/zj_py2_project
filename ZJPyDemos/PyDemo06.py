@@ -363,6 +363,24 @@ Created on 2017-4-2
 #     print 'No error'
 
 
+# EXAMPLE 15, read ini properties
+# import os
+# import ConfigParser
+#  
+# conf_file = ConfigParser.ConfigParser()
+# conf_file.read(os.path.join(os.getcwd(), 'conf.ini'))
+#  
+# confs = {}
+# confs['sender'] = conf_file.get('email','sender')
+# confs['receiver'] = conf_file.get('email','receiver')
+# confs['smtpserver'] = conf_file.get('email','smtpserver')
+# confs['username'] = conf_file.get('email','username')
+# confs['password'] = conf_file.get('email','password')
+#  
+# for k,v in confs.iteritems():
+#     print 'key=%s, val=%s' % (k, v)
+
+
 if __name__ == '__main__':
 
     import os
