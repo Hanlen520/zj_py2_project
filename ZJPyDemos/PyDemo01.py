@@ -5,72 +5,102 @@ Created on 2014/9/24
 @author: zhengjin
 '''
 
+import os
 # from __future__ import division
 
 # EXAMPLE 01, struct
-# import struct
-# 
-# print(struct.calcsize("P"))
+is_ex01_run = False
+if is_ex01_run:
+    import struct
+    print(struct.calcsize('P'))
 
 
 # EXAMPLE 02, collection
-# tmp_tup = ('t')
-# print tmp_tup
-# 
-# tmp_arr = ['a']
-# print tmp_arr[0]
-# 
-# tests = {'name':'henry'}
-# tests['heigh'] = '173'
-# print tests['heigh']
+def ex02():
+    tmp_tup = ('t')
+    print tmp_tup
+     
+    tmp_arr = ['a']
+    print tmp_arr[0]
+     
+    tmp_dic = {'name':'henry'}
+    tmp_dic['heigh'] = '173'
+    print tmp_dic
+
+is_ex02_run = False
+if is_ex02_run:
+    ex02()
 
 
 # EXAMPLE 03, file append
-# f = open(r'd:\test.log', 'a')
-# name1 = 'henry'
-# name2 = 'vieira'
-# f.write('test %s \n' %(name1))
-# f.write('test %s' %(name2))
-# 
-# f.close()
+def ex03():
+    f = open(r'd:\test.log', 'a')
+    name1 = 'henry'
+    name2 = 'vieira'
+    f.write('test %s \n' % (name1))
+    f.write('test %s' % (name2))
+    f.close()
+
+is_ex03_run = False
+if is_ex03_run:
+    ex03()
 
 
 # EXAMPLE 04, print float
-# import math
-# print '%.3f' %math.pi
-# print '%.3f' %(5.0 / 4.0)
+is_ex04_run = False
+if is_ex04_run:
+    import math
+    print '%.3f' % math.pi
+    print '%.3f' % (5.0 / 4.0)
 
 
 # EXAMPLE 05, split
-# path = 'FramesLog_01_Baseline.log'
-# print path.split('.')[0]
+is_ex05_run = False
+if is_ex05_run:
+    tmp_path = 'FramesLog_01_Baseline.log'
+    print tmp_path.split('.')[0]
 
 
 # EXAMPLE 06, join
-# mylist = ['1','2','3','4','5']
-# mysublist = []
-# sublen = int(round(len(mylist) * 0.5))
-# mysublist = mylist[0:sublen]
-# 
-# print mysublist
-# print' : '.join(mylist)
+def ex06():
+    my_list = ['1', '2', '3', '4', '5']
+    print' : '.join(my_list)
+
+    sub_len = int(round(len(my_list) * 0.5))
+    print my_list[0:sub_len]
+
+is_ex06_run = False
+if is_ex06_run:
+    ex06()
 
 
 # EXAMPLE 07, subprocess
-# import subprocess
-# p = subprocess.Popen("java -version", shell=True)
+def ex07():
+    import subprocess
+    p = subprocess.Popen('java -version')
+    p.wait()
+
+is_ex07_run = False
+if is_ex07_run:
+    ex07()
 
 
 # EXAMPLE 08, os.path
-# import os
-# file_path = "e:\log.txt"
-# if not os.path.exists(file_path):
-#     print "The file (%s) is not found" %file_path
+def ex08():
+    file_path = 'e:\log.txt'
+    if not os.path.exists(file_path):
+        print 'The file (%s) is not found!' % file_path
+
+is_ex08_run = False
+if is_ex08_run:
+    ex08()
 
 
 # EXAMPLE 09, if
-# if (1==1) and (2==2):
-#     print "success"
+is_ex09_run = False
+if is_ex09_run:
+    if 1 == 1 and 2 == 2:
+        print 'pass'
 
 
 # EXAMPLE 10, file write
@@ -427,6 +457,5 @@ Created on 2014/9/24
 
 if __name__ == '__main__':
 
-    import os
     print os.path.basename(__file__), 'DONE!'
     pass
