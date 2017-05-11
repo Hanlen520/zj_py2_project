@@ -3,6 +3,8 @@
 Created on 2016-3-15
 
 @author: zhengjin
+
+Diff and get same records count.
 '''
 
 g_input_f_path = r'd:\music_list2.txt'
