@@ -92,7 +92,7 @@ def run_cmds_by_communicate(cmds):
         print 'Error:', err
     if len(out) == 0:
         return 'null'
-    return out.decode('gbk')
+    return out
 
 # --------------------------------------------------------------
 #  Main
@@ -119,7 +119,7 @@ if __name__ == '__main__':
 #     print run_cmds_by_std_write(cmds1)
     
     cmds2 = ['echo hi', 'java -version', 'node -v', 'ipconfig']
-    print run_cmds_by_communicate(cmds2)
+    print run_cmds_by_communicate(cmds2).decode('gbk')
 
 #     run_repeat_shell_send_key_cmds(g_cmd_key_right, 10)
     
