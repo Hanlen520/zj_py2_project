@@ -70,7 +70,7 @@ def get_upload_ott_statistics():
 if __name__ == '__main__':
     
     is_connected_device = True
-    device_ip = '172.17.5.91'
+    device_ip = '172.17.5.79'
     
     if not is_connected_device:
         connect_device(device_ip)
