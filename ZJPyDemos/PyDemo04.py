@@ -477,84 +477,108 @@ run_ex_by_flag(ex24)
 
 
 # EXAMPLE 25, generator
-# # 1, yield
-# def generate_ints(n):
-#     for i in xrange(n):
-#         yield i
-# 
-# my_gen1 = generate_ints(10)
-# print 'Type:', type(my_gen1)
-# for ele in my_gen1:
-#     print 'Element:', ele
-#  
-# my_gen2 = generate_ints(3)
-# print 'Type:', type(my_gen2)
-# print my_gen2.next()
-# print my_gen2.next()
-# print next(my_gen2)
-# print next(my_gen2)  # StopIteration
+def ex2501():
+    # 1, yield
+    def generate_ints(n):
+        for i in xrange(n):
+            yield i
+     
+    my_gen1 = generate_ints(10)
+    print 'Type:', type(my_gen1)
+    for ele in my_gen1:
+        print 'element:', ele
 
-# # 2, pass value by send()
-# def counter(max_value):
-#     i = 0
-#     while i < max_value:
-#         val = (yield i)
-#         if val is not None:
-#             i = val
-#         else:
-#             i += 1
-#  
-# my_gen = counter(10)
-# print 'Type:', type(my_gen)
-#  
-# print my_gen.next()
-# print my_gen.next()
-# print my_gen.send(8)
-# print next(my_gen)
-# print next(my_gen)
+    my_gen2 = generate_ints(3)
+    print 'Type:', type(my_gen2)
+    print my_gen2.next()
+    print my_gen2.next()
+    print next(my_gen2)
+    try:
+        print next(my_gen2)
+    except StopIteration, e:
+        print e
+
+run_ex_by_flag(ex2501)
+
+
+def ex2502():
+    # 2, pass value by send()
+    def counter(max_value):
+        i = 0
+        while i < max_value:
+            val = (yield i)
+            if val is not None:
+                i = val
+            else:
+                i += 1
+      
+    my_gen = counter(10)
+    print 'Type:', type(my_gen)
+      
+    print my_gen.next()
+    print my_gen.next()
+    print my_gen.send(8)
+    print next(my_gen)
+    try:
+        print next(my_gen)
+    except StopIteration, e:
+        print e
+
+run_ex_by_flag(ex2502)
 
 
 # EXAMPLE 26, iterator
-# tmp_items = ['11', '13', '15']
-#
-# import functools
-# def my_combine(a, b):
-#     print 'a:', a
-#     print 'b:', b
-#     return 0, int(a[1]) + int(b[1])
-# 
-# total = functools.reduce(my_combine, tmp_items)
-# print total[1]
+def ex26():
+    tmp_items = ['11', '13', '15']
 
-# total = 0
-# for a, b in tmp_items:
-#     print 'a =', a
-#     print 'b =', b
-#     total += int(b)
-# print total
+    print '*' * 20, 'case 1'
+    import functools
+    def my_combine(a, b):
+        print 'a:', a
+        print 'b:', b
+        return 0, int(a[1]) + int(b[1])
 
-# # total = sum([int(b) for a,b in tmp_items])
-# total = sum(int(b) for a,b in tmp_items)
-# print total
+    total = functools.reduce(my_combine, tmp_items)
+    print 'total:', total[1]
+
+    print '*' * 20, 'case 2'
+    total = 0
+    for a, b in tmp_items:
+        print 'a =', a
+        print 'b =', b
+        total += int(b)
+    print 'total:', total
+
+    print '*' * 20, 'case 3'
+    total = 0
+#     total = sum([int(b) for a,b in tmp_items])
+    total = sum(int(b) for a, b in tmp_items)
+    print 'total:', total
+
+run_ex_by_flag(ex26)
 
 
 # EXAMPLE 27, *argv
-# def parms_test(*argv):
-#     print 'Parms length:', len(argv)
-#     print 'Parms:', argv
-#     print 'Parms %s' %str(argv)
-#      
-#     for parm in argv:
-#         print 'Parm:', parm
-#      
-#     print 'Parms join:', ','.join(argv)
-#          
-# parms_test('parm1', 'parm2', '中文')
+def ex27():
+    def parms_test(*argv):
+        print 'length:', len(argv)
+        print 'type:', type(argv)
+        print 'arguments str:', ', '.join(argv)
+
+        for arg in argv:
+            print 'arg:', arg
+
+    parms_test('parm1', 'parm2', '中文')
+
+run_ex_by_flag(ex27)
 
 
 # EXAMPLE 28, time format
-# total_time = 145
-# print '%d h, %d mins' %(int(total_time / 60), int(total_time % 60))
+def ex28():
+    total_time = 145
+    print '%d h, %d mins' % (int(total_time / 60), int(total_time % 60))
+
+run_ex_by_flag(ex28)
 
 
 # EXAMPLE 29, invoked from PyDemo05, EXAMPLE 09 import and reload

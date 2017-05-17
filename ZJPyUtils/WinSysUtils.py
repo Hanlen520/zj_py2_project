@@ -96,7 +96,8 @@ def exec_fun_and_log_exec_time(fn, *argv):
                      % (fn.__name__, ','.join(argv), cost_min, cost_sec))
 
 def exec_fun_with_ret_and_log_exec_time(fn, *argv):
-    print '2016.11.17 TODO:'
+    # TODO: 2016.11.17
+    pass
 
 
 # --------------------------------------------------------------
