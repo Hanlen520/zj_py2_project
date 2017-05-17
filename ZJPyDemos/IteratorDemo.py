@@ -80,4 +80,3 @@ if __name__ == '__main__':
     print '*' * 40
 
     print 'Iterator demo done!'
-    pass
