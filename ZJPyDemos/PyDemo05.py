@@ -345,145 +345,189 @@ run_ex_by_flag(ex14)
 
 
 # EXAMPLE 15, get char count in string
-# tmp_str = 'abracadabra'
-# freqs = {}
-# for ch in tmp_str:
-#     if ch in freqs:
-#         freqs[ch] += 1
-#     else:
-#         freqs[ch] = 1
-# 
-# for key, val in freqs.iteritems():
-#     print 'key: ', key, 'count: ', val
+def ex15():
+    tmp_str = 'abracadabra'
+    freqs = {}
+    for ch in tmp_str:
+        if ch in freqs:
+            freqs[ch] += 1
+        else:
+            freqs[ch] = 1
+     
+    for key, val in freqs.iteritems():
+        print 'key:', key, 'count:', val
+
+run_ex_by_flag(ex15)
 
 
-# EXAMPLE 16, print map
-# tmp_map = {'a':'testa', 'b':'testb', 'intc':1}
-# print 'map values: %(a)s, %(b)s, %(intc)d' % tmp_map
+# EXAMPLE 16, print map value
+def ex16():
+    tmp_map = {'a':'testa', 'b':'testb', 'intc':1}
+    print 'map values: %(a)s, %(b)s, %(intc)d' % tmp_map
+
+run_ex_by_flag(ex16)
 
 
 # EXAMPLE 17, iterator
-# 1. loop on iterator
-# tmp_lst = ['a', 'b', 'c']
-# tmp_iterator = iter(tmp_lst)
-# print 'Type:', type(tmp_iterator)
-# 
-# print 'Elements:'
-# try:
-#     while 1:
-#         print next(tmp_iterator)
-# except StopIteration, e:
-#     print 'No more elements.'
+def ex1701():
+    # 1. loop on iterator
+    tmp_lst = ['a', 'b', 'c']
+    tmp_iterator = iter(tmp_lst)
+    print 'Type:', type(tmp_iterator)
+     
+    print 'Elements:'
+    try:
+        while 1:
+            print next(tmp_iterator)
+    except StopIteration, e:
+        print 'No more elements.', e
 
-# 2. iterator to dict
-# tmp_lst = [('Italy', 'Rome'), ('France', 'Paris'), ('US', 'Washington DC')]
-# tmp_iterator = iter(tmp_lst)
-# print 'Type:', type(tmp_iterator)
-# print dict(tmp_iterator)
+run_ex_by_flag(ex1701)
 
-# 3. iterator on file
-# import os
-# f_path = os.path.join(os.getcwd(), 'zjunittest.log')
-# with open(f_path, 'r') as tmp_f:
-#     for line in tmp_f:
-#         print line.strip('\r\n')
+
+def ex1702():
+    # 2. iterator to dict
+    tmp_lst = [('Italy', 'Rome'), ('France', 'Paris'), ('US', 'Washington DC')]
+    tmp_iterator = iter(tmp_lst)
+    print 'Type:', type(tmp_iterator)
+    print dict(tmp_iterator)
+
+run_ex_by_flag(ex1702)
+
+
+def ex1703():
+    # 3. iterator on file
+    f_path = os.path.join(os.getcwd(), 'zjunittest.log')
+    with open(f_path, 'r') as tmp_f:
+        if '__iter__' in dir(tmp_f):
+            for line in tmp_f:
+                print line.strip('\r\n')
+
+run_ex_by_flag(ex1703)
 
 
 # EXAMPLE 18
-# 1, Generator expression, List comprehension
-# line_list = ['  line 1\n', 'line 2  \n']
-#   
-# # Generator expression -- returns generator
-# stripped_iter = (line.strip() for line in line_list)
-# print 'Type: ', type(stripped_iter)
-# for item in stripped_iter:
-#     print 'item:', item
-# print 'Value as tuple: ', tuple(stripped_iter)
-#   
-# # List comprehension -- returns list
-# stripped_list = [line.strip() for line in line_list]
-# print 'Type: ', type(stripped_list)
-# print 'Value: ', stripped_list
+def ex1801():
+    # 1, Generator expression, List comprehension
+    line_list = ['  line 1\n', 'line 2  \n']
+       
+    # Generator expression -- returns generator
+    stripped_iter = (line.strip() for line in line_list)
+    print 'Type:', type(stripped_iter)
+    for item in stripped_iter:
+        print 'item:', item
+    print 'Value as tuple:', tuple(stripped_iter)  # ()
+
+    # List comprehension -- returns list
+    stripped_list = [line.strip() for line in line_list]
+    print 'Type:', type(stripped_list)
+    print 'Length:', len(stripped_list)
+    for item in stripped_list:
+        print 'item:', item
+
+run_ex_by_flag(ex1801)
+
 
 # 2, range and xrange
-# print 'range type:', type(range(10))
-# print 'xrange type:', type(xrange(10))
+def ex1802():
+    print 'range type:', type(range(10))
+    print 'xrange type:', type(xrange(10))
+
+run_ex_by_flag(ex1802)
 
 
 # EXAMPLE 19, lambda
-# build_assign = lambda name, value: name + '=' + value
-# print build_assign('key_test', 'value_test')
+def ex19():
+    build_assign = lambda name, value: name + '=' + value
+    print build_assign('key_test', 'value_test')
+
+run_ex_by_flag(ex19)
 
 
-# EXAMPLE 20, python OO
-# class Person(object):
-#     """ class for test, Person """
-#      
-#     address = '=> China'
-#      
-#     @classmethod
-#     def myNation(cls):
-#         print 'Address: ' + cls.address
-#  
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
-#  
-#     # for print
-#     def __str__(self):
-#         return 'Name: %s, Age: %d' % (self.name, self.age)
-#  
-#     def sayHello(self):
-#         return 'Hello!'
-# # class Person, end
-#  
-# class Tester(Person):
-#     """ class for test, Tester inherit from Person """
-#      
-#     address = '=> China WuHan'
-#      
-#     def __init__(self, name, age, company):
-#         Person.__init__(self, name, age)
-#         self.company = company
-#         self.__salary = 0  # private
-#         self.__skills = ['Java', 'C++', 'Python', 'JS']
-#  
-#     def __iter__(self):
-# #         return iter(self.__skills)
-#         return (v for v in self.__skills)
-#  
-#     # override
-#     def sayHello(self):
-#         tmp_list = [Person.sayHello(self), 'I am a tester.']
-#         return ' '.join(tmp_list)
-#  
-#     def setSalary(self, salary):
-#         self.__salary = salary
-#  
-#     def getSalary(self):
-#         return self.__salary
-# # class Tester, end
-#  
-# p = Person('henry', 27)
-# Person.myNation()
-# print p
-# print p.sayHello()
-#  
-# t = Tester('vieira', 29, 'ibm')
-# t.setSalary(5000)
-# Tester.myNation()
-# print t
-# print t.sayHello()
-# print 'Salary:', t.getSalary()
-#  
-# print 'Skills:'
-# for item in t:
-#     print item
-#  
-# print 'Document:', t.__doc__
-# print 'Fields:', t.__dict__
-# print t.__module__
-# print t.__class__
+# EXAMPLE 20, triple operation
+def ex20():
+    def triple_operation(val):
+        return '1' if val == 1 else 'not 1'
+    print 'results', triple_operation(2)
+
+run_ex_by_flag(ex20)
+
+
+# EXAMPLE 21, python OO
+class Person(object):
+    """ class for test, Person """
+
+    address = '=> China'
+
+    @classmethod
+    def myNation(cls):
+        print 'Address: ' + cls.address
+  
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    # for print
+    def __str__(self):
+        return 'Name: %s, Age: %d' % (self.name, self.age)
+
+    def sayHello(self):
+        return 'Hello!'
+# class Person, end
+  
+class Tester(Person):
+    """ class for test, Tester inherit from Person """
+
+    address = '=> China WuHan'
+
+    def __init__(self, name, age, company):
+        Person.__init__(self, name, age)
+        self.company = company
+        self.__salary = 0  # private
+        self.__skills = ['Java', 'C++', 'Python', 'JS']
+
+    def __iter__(self):
+#         return iter(self.__skills)
+        return (v for v in self.__skills)
+
+    # override
+    def sayHello(self):
+        tmp_list = [Person.sayHello(self), 'I am a tester.']
+        return ' '.join(tmp_list)
+  
+    def setSalary(self, salary):
+        self.__salary = salary
+
+    def getSalary(self):
+        return self.__salary
+# class Tester, end
+
+def ex21():
+    print '*' * 20, 'case 1'
+    p = Person('henry', 27)
+    Person.myNation()
+    print p
+    print p.sayHello()
+
+    print '*' * 20, 'case 2'
+    t = Tester('vieira', 29, 'ibm')
+    t.setSalary(5000)
+    Tester.myNation()
+    print t
+    print t.sayHello()
+    print 'Salary:', t.getSalary()
+      
+    print 'Skills:'
+    for item in t:
+        print item
+
+    print '*' * 20, 'case 3'
+    print 'Document:', t.__doc__
+    print 'Fields:', t.__dict__
+    print t.__module__
+    print t.__class__
+
+run_ex_by_flag(ex21)
 
 
 if __name__ == '__main__':
