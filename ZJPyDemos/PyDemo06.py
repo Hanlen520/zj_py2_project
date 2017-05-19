@@ -26,7 +26,7 @@ def ex01():
 
         return in_deco_func
 
-    my_func = deco_func(my_func)
+    my_func = deco_func(my_func)  # re-assign
     my_func('test override')
 
     print '*' * 30, 'case 3'
@@ -66,8 +66,8 @@ def ex03():
     def get_modules_name(file_name):
         '''
         input argv from command line:
-        >>> python PyDemo06.py __init__.py
-        >>> python PyDemo06.py ..\ZJPyUtils\__init__.py
+        $ python PyDemo06.py __init__.py
+        $ python PyDemo06.py ..\ZJPyUtils\__init__.py
         '''
         dir_path = os.path.abspath(os.path.dirname(file_name))
         tmp_files = os.listdir(dir_path)
@@ -103,18 +103,18 @@ def ex05():
         print 'Type:', type(args)
         print 'Value:', args
     my_print_args('str1', 'str2', 1, 2)
-     
+
     # 2
     def my_print_kwargs(**kwargs):
         print 'Type:', type(kwargs)
         for key, value in kwargs.iteritems():
             print 'key: %s, value: %s' % (key, value)
     my_print_kwargs(str1='test1', str2='test2')
-     
+
     # 3
     def my_print_three_lst_ele(ele1, ele2, ele3):
         print 'ele1 = %s, ele2 = %s, ele3 = %s' % (ele1, ele2, ele3)
-     
+
     tmp_lst = ['str1', 'str2', 'str3']
     my_print_three_lst_ele(*tmp_lst)
 
@@ -170,6 +170,7 @@ def ex07():
     print '*' * 20, 'case 2'
     m = re.search('abcd', '1abcd2abcd')
     if m is not None:
+        print 'Match object attributes:', [attr for attr in dir(m) if not attr.startswith('__')]
         print 'Value:', m.group()
         print 'Start index:', m.start()
         print 'End index', m.end()
@@ -177,10 +178,10 @@ def ex07():
     # 3, findall(), finditer(), split()
     print '*' * 20, 'case 3'
     print re.findall('(\W+)d', '...dwords, words...d')  # return list
-    
+
     tmp_iter = re.finditer('(\W+)d', '...dwords, words...d')  # return iterator
     for item in tmp_iter:
-        print 'element:', item.group(0, 1)
+        print 'element:', item.group(0, 1)  # 0 => matched str, 1 => matched group in str
 
     print re.split('[a-z]', '0A3b9z')
     print re.split('[a-z]', '0A3b9z', flags=re.IGNORECASE)
@@ -281,7 +282,7 @@ run_ex_by_flag(ex0802)
 def ex09():
     import inspect
     import sys
-     
+
     print 'isbuiltin:', inspect.isbuiltin(abs)
     print 'ismodule:', inspect.ismodule(sys)
 
@@ -301,15 +302,15 @@ def ex10():
     class MyTestSuper(object):
         pass
 
-    class MyTestChild(MyTestSuper):
+    class MyTestSub(MyTestSuper):
         pass
 
-    my_child = MyTestChild()
-    print 'isinstance(my_child, MyTestChild):', isinstance(my_child, MyTestChild)
-    print 'isinstance(my_child, MyTestSuper):', isinstance(my_child, MyTestSuper)
+    my_sub = MyTestSub()
+    print 'isinstance(my_child, MyTestChild):', isinstance(my_sub, MyTestSub)
+    print 'isinstance(my_child, MyTestSuper):', isinstance(my_sub, MyTestSuper)
 
-    print 'issubclass(MyTestChild, MyTestChild):', issubclass(MyTestChild, MyTestChild)
-    print 'issubclass(MyTestChild, MyTestSuper):', issubclass(MyTestChild, MyTestSuper)
+    print 'issubclass(MyTestChild, MyTestChild):', issubclass(MyTestSub, MyTestSub)
+    print 'issubclass(MyTestChild, MyTestSuper):', issubclass(MyTestSub, MyTestSuper)
 
 run_ex_by_flag(ex10)
 
@@ -354,80 +355,94 @@ run_ex_by_flag(ex11)
 
 
 # EXAMPLE 12, tuple initialize
-# tmp_t = 1, 2, 3
-# print 'Type:', type(tmp_t)
-# print 'Value:', tmp_t
-# 
-# print 'a=%d, b=%d, c=%d' % tmp_t  # tuple: (1, 2, 3)
-# 
-# x, y, z = tmp_t
-# print 'x=' + str(x), 'y=' + str(y), 'z=' + str(z)
+def ex12():
+    tmp_t = 1, 2, 3
+    print 'Type:', type(tmp_t)
+    print 'Value:', tmp_t
+
+    print 'a=%d, b=%d, c=%d' % tmp_t  # tuple: (1, 2, 3)
+     
+    x, y, z = tmp_t
+    print 'x=' + str(x), 'y=' + str(y), 'z=' + str(z)
+
+run_ex_by_flag(ex12)
 
 
-# EXAMPLE 13, sub and modify list
-# tmp_lst = ['a', 'b', 'c', 'd']
-# for item in tmp_lst[1:]:
-#     print 'item:', item
-# 
-# tmp_lst2 = ['1', '2', '3', '4']
-# tmp_lst2.insert(2, 'a')
-# print tmp_lst2
-#  
-# tmp_lst3 = ['1', '2', '3', '4']
-# print tmp_lst3[0:2]
-# tmp_lst3[0:2] = ['a', 'b', 'c']
-# print tmp_lst3
-# 
-# # print help(list)
+# EXAMPLE 13, sub and update list
+def ex13():
+    tmp_lst = ['a', 'b', 'c', 'd']
+    for item in tmp_lst[1:]:
+        print 'item:', item
+
+    tmp_lst.insert(2, 'a')
+    print tmp_lst
+
+    tmp_lst1 = ['1', '2', '3', '4']
+    print tmp_lst1[0:3]
+    tmp_lst1[0:3] = ['a', 'b', 'c']
+    print tmp_lst1
+
+    # print help(list)
+
+run_ex_by_flag(ex13)
 
 
 # EXAMPLE 14, try except block
-# def test_exception():
-#     raise Exception('test try except block')
-#  
-# def stub_function():
-#     pass
-#  
-# # 1
-# # try:
-# #     test_exception()
-# # except Exception, e:
-# #     print 'Exception:', e.message
-#  
-# # 2
-# try:
-#     test_exception()
-# except Exception as ex:
-#     print 'Exception:', ex.message
-# 
-# # 3
-# try:
-#     stub_function()
-# except Exception, e:
-#     print 'Exception:', e.message
-# else:
-#     print 'No error'
+def ex14():
+    def test_exception():
+        raise Exception('test try except block')
+      
+    def stub_function():
+        pass
+
+    # 1
+    try:
+        test_exception()
+    except Exception, e:
+        print 'e attributes:', [attr for attr in dir(e) if not attr.startswith('__')]
+        print 'Exception:', e.message
+
+    # 2
+    try:
+        test_exception()
+    except Exception as ex:
+        if '__str__' in dir(ex):
+            print 'Exception: ' + str(ex)
+        else:
+            print 'Exception:', e.message
+
+    # 3
+    try:
+        stub_function()
+    except Exception, e:
+        print 'Exception:', e.message
+    else:
+        print 'No error'
+
+run_ex_by_flag(ex14)
 
 
-# EXAMPLE 15, read ini properties
-# import os
-# import ConfigParser
-#  
-# conf_file = ConfigParser.ConfigParser()
-# conf_file.read(os.path.join(os.getcwd(), 'conf.ini'))
-#  
-# confs = {}
-# confs['sender'] = conf_file.get('email','sender')
-# confs['receiver'] = conf_file.get('email','receiver')
-# confs['smtpserver'] = conf_file.get('email','smtpserver')
-# confs['username'] = conf_file.get('email','username')
-# confs['password'] = conf_file.get('email','password')
-#  
-# for k,v in confs.iteritems():
-#     print 'key=%s, val=%s' % (k, v)
+# EXAMPLE 15, read config.ini properties
+def ex15():
+    import ConfigParser
+
+    conf_file = ConfigParser.ConfigParser()
+    conf_file.read(os.path.join(os.getcwd(), 'conf.ini'))
+
+    confs = {}
+    title = 'email'
+    confs['sender'] = conf_file.get(title, 'sender')
+    confs['receiver'] = conf_file.get(title, 'receiver')
+    confs['smtpserver'] = conf_file.get(title, 'smtpserver')
+    confs['username'] = conf_file.get(title, 'username')
+    confs['password'] = conf_file.get(title, 'password')
+
+    for k, v in confs.iteritems():
+        print 'key=%s, val=%s' % (k, v)
+
+run_ex_by_flag(ex15)
 
 
 if __name__ == '__main__':
 
     print '%s done!' % os.path.basename(__file__)
-    pass
