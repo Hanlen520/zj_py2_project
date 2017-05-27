@@ -443,6 +443,68 @@ def ex15():
 run_ex_by_flag(ex15)
 
 
+# EXAMPLE 16, multiple process
+import multiprocessing
+
+# 1, create instance of Process
+def test_hello(name):
+    import time
+    time.sleep(2)
+    p = multiprocessing.current_process()
+    print 'process name: %s, and id: %s' % (p.name, p.pid)
+    print 'Hello', name
+
+def ex1601():
+    p1 = multiprocessing.Process(target=test_hello, args=('ZhengJin',))
+    p1.daemon = True
+    p1.start()
+    p1.join(3)  # sync
+#     p1.terminate()
+
+# 2, inherit from Process
+class TestHello(multiprocessing.Process):
+    def __init__(self, test_name):
+        multiprocessing.Process.__init__(self)
+        self.test_name = test_name
+    
+    def run(self):
+        p = multiprocessing.current_process()
+        print 'process name: %s, and id: %s' % (p.name, p.pid)
+        print 'Hello', self.test_name
+        return
+
+def ex1602():
+    p2 = TestHello('Vieira')
+    p2.start()
+
+
+# EXAMPLE 17, pass args as tuple
+def ex17():
+    def test_args_tuple(args=()):
+        if len(args) == 0:
+            print 'args is empty!'
+        for arg in args:
+            print 'arg:', arg
+
+    test_args_tuple()
+    test_args_tuple(args=())
+
+    print '*' * 20
+    test_args_tuple('test')
+    print '*' * 20
+    test_args_tuple(args=('test'))
+    
+    print '*' * 20
+    test_args_tuple(('arg1',))
+    print '*' * 20
+    test_args_tuple(args=('arg1', 'arg2'))
+
+run_ex_by_flag(ex17)
+
+
 if __name__ == '__main__':
+
+    run_ex_by_flag(ex1601)
+    run_ex_by_flag(ex1602)
 
     print '%s done!' % os.path.basename(__file__)
