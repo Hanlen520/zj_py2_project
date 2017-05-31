@@ -38,6 +38,7 @@ encoding//ZJPyTools/DiffRecords02.py=utf-8
 encoding//ZJPyTools/QuerySqliteDb.py=utf-8
 encoding//ZJPyTools/ReplaceSysApp.py=utf-8
 encoding//ZJPyTools/RunInstrumentTests.py=utf-8
+encoding//ZJPyTools/SessionsAssert.py=utf-8
 encoding//ZJPyTools/ShellPrepareFiles.py=utf-8
 encoding//ZJPyTools/ShellReplaceHost.py=utf-8
 encoding//ZJPyUtils/AdbUtils.py=utf-8
