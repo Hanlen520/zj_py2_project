@@ -14,8 +14,8 @@ import time
 import subprocess
 import re
 import threading
-from ZJAndroidMonitor import MonitorRunner
-from ZJAndroidMonitor import MonitorUtils
+
+from ZJAndroidMonitor import MonitorRunner, MonitorUtils
 
 # --------------------------------------------------------------
 # Env vars
@@ -610,8 +610,8 @@ def cal_exec_time(fn):
 if __name__ == '__main__':
 
     # set the audio sound to low before run monkey
-    g_target_ip = '172.17.5.63'
-    g_run_num = '01'
+    g_target_ip = '172.17.5.103'
+    g_run_num = '02'
     g_run_mins = 90
 
     g_flag_monkey_for_package = False
@@ -629,4 +629,3 @@ if __name__ == '__main__':
         parse_logcat_log(g_warn, report_parse_keyword)
 
     print 'Monkey test FINISHED!'
-    pass
