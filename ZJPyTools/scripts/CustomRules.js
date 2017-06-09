@@ -159,13 +159,13 @@ class Handlers
     public static var TristateFalse = 0;  // Opens the file as ASCII
 
     public static var absFilePathSessionsData = "D:\\sessions_data.txt";
-    public static var absFilePathPyScript = "D:\\SessionsAssert.py";
+    public static var absFilePathPyScript = "E:\\Eclipse_Workspace\\ZJPyProject\\ZJPyTools\\SessionsAssert.py";
 
     // Customize context menu item
-    public static ContextAction("Save Selected Session to Disk")
+    public static ContextAction("Save Selected Sessions to Disk")
     function DoSaveSession(oSessions: Session[]) {
-        if (oSessions.Length > 1) {
-            MessageBox.Show("Only select a session.");
+        if (oSessions.Length == 0) {
+            MessageBox.Show("Please select a session.");
             return;
         }
         
@@ -180,18 +180,31 @@ class Handlers
             file = fso.CreateTextFile(absFilePathSessionsData, true, false);
         }
         
-        var session = oSessions[0];
-        file.writeLine("Request url: " + session.url);
-        file.writeLine("Request header: " + session.RequestHeaders);
         
-        var requestBody = session.GetRequestBodyAsString();
-        if (requestBody.Length > 0) {
-            file.writeLine("Request body: " + "\n" + session.GetRequestBodyAsString());
+        for (var i:int = 0; i < oSessions.Length; i++) {
+            var session = oSessions[i];
+            file.writeLine("Request url: " + session.url);
+            file.writeLine("Request header: " + session.RequestHeaders);
+            
+            var requestBody = session.GetRequestBodyAsString();
+            if (requestBody.Length > 0) {
+                file.writeLine("Request body: " + "\n" + requestBody);
+            }
+            
+            file.writeLine("Response code: " + session.responseCode);
+            
+            var responseHeaders = session.ResponseHeaders;
+            file.writeLine("Response header: " + responseHeaders);
+            
+            if (responseHeaders.ExistsAndContains("Content-Type", "text") || 
+                    responseHeaders.ExistsAndContains("Content-Type", "json")) {
+                var responseBody = session.GetResponseBodyAsString();
+                if (responseBody.Length > 0) {
+                    file.writeLine("Response body: " + "\n" + responseBody);
+                }
+            }
+            file.writeLine("\n");
         }
-        
-        file.writeLine("Response code: " + session.responseCode);
-        file.writeLine("Response body: " + "\n" + session.GetResponseBodyAsString());
-        file.writeLine("\n");
         file.close();
         
         // Py script, file content decode with 'unicode_escape'
@@ -200,9 +213,10 @@ class Handlers
     }
 
     // Constants, add by ZJ, at 20170525
-    public static var urlKeyword = "jo.funtv.bestv.com.cn";
+    public static var urlKeyword = "test_filter_keyword";
     public static var absFilePathSessionsRequest = "D:\\sessions_request.txt";
     public static var absFilePathSessionsResponse = "D:\\sessions_response.txt";
+    public static var absFilePathSessionsDump = "D:\\sessions_dump.txt";
 
     static function OnBeforeRequest(oSession: Session) {
         // Sample Rule: Color ASPX requests in RED
@@ -221,15 +235,15 @@ class Handlers
             var fso = new ActiveXObject("Scripting.FileSystemObject");
 
             var file;
-            if (fso.FileExists(absFilePathSessionsRequest)) {
-                file = fso.OpenTextFile(absFilePathSessionsRequest, ForAppending, false, TristateFalse);
+            var savePath = absFilePathSessionsDump;
+            if (fso.FileExists(savePath)) {
+                file = fso.OpenTextFile(savePath, ForAppending, false, TristateFalse);
             } else {
-                file = fso.CreateTextFile(absFilePathSessionsRequest, true, false);
+                file = fso.CreateTextFile(savePath, true, false);
             }
 
             file.writeLine("Request url: " + oSession.url);
             file.writeLine("Request header:" + "\n" + oSession.oRequest.headers);
-            
             var requestBody = oSession.GetRequestBodyAsString();
             if (requestBody.Length > 0) {
                 file.writeLine("Request body:" + "\n" + requestBody);
@@ -353,21 +367,32 @@ class Handlers
             var fso = new ActiveXObject("Scripting.FileSystemObject");
             
             var file;
-            if (fso.FileExists(absFilePathSessionsResponse)) {
-                file = fso.OpenTextFile(absFilePathSessionsResponse, ForAppending, false, TristateFalse);
+            var savePath = absFilePathSessionsDump;
+            if (fso.FileExists(savePath)) {
+                file = fso.OpenTextFile(savePath, ForAppending, false, TristateFalse);
             } else {
-                file = fso.CreateTextFile(absFilePathSessionsResponse, true, false);
+                file = fso.CreateTextFile(savePath, true, false);
             }
 
             file.writeLine("Response code: " + oSession.responseCode);
-            file.writeLine("Response header: " + oSession.ResponseHeaders);
-            file.writeLine("Response body:" + "\n" + oSession.GetResponseBodyAsString());
-            file.writeLine("\n");
+            
+            var responseHeaders = oSession.ResponseHeaders;
+            file.writeLine("Response header: " + responseHeaders);
+            
+            if (responseHeaders.ExistsAndContains("Content-Type", "text") || 
+                    responseHeaders.ExistsAndContains("Content-Type", "json")) {
+                var responseBody = oSession.GetResponseBodyAsString();
+                if (responseBody.Length > 0) {
+                    file.writeLine("Response body:" + "\n" + responseBody);
+                }
+                file.writeLine("\n");
+            }
+
             file.close();
             
             // Py script, file content filter
-            var shellRunTime = new ActiveXObject("WScript.Shell");
-            shellRunTime.Run("Python " + absFilePathPyScript + " -f " + absFilePathSessionsResponse);
+            //var shellRunTime = new ActiveXObject("WScript.Shell");
+            //shellRunTime.Run("Python " + absFilePathPyScript + " -t " + savePath);
         }
     }
 
