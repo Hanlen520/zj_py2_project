@@ -21,9 +21,9 @@ from ZJAndroidMonitor import MonitorUtils
 g_pkg_name_all = ''
 g_run_num_all = '01'
 g_run_time_all = 5 * MonitorUtils.g_min
-g_suffix_all = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num_all)
+g_suffix_all = '%s_%s' % (MonitorUtils.g_cur_date, g_run_num_all)
 
-g_threads = []   # holds all running threads
+g_threads = []  # holds all running threads
 
 
 # --------------------------------------------------------------
@@ -77,9 +77,9 @@ def set_env_for_mem_monitor_procrank():
 g_daemon_thread_sleep_time = 15
 
 def daemon_thread_main():
-    #LOOP
+    # LOOP
     while True:
-        print '%s, monitor runner process is running...' %(time.strftime(MonitorUtils.g_time_format))
+        print '%s, monitor runner process is running...' % (time.strftime(MonitorUtils.g_time_format))
         time.sleep(g_daemon_thread_sleep_time)
 
 
@@ -88,23 +88,23 @@ def daemon_thread_main():
 # --------------------------------------------------------------
 def build_daemon_thread():
     thread_name = 'monitor:daemon'
-    t = threading.Thread(name=thread_name,target=daemon_thread_main)
+    t = threading.Thread(name=thread_name, target=daemon_thread_main)
     t.setDaemon(True)
     return t
 
 def build_thread_mem_monitor_dumpsys():
     thread_name = 'mem:monitor:dumpsys'
-    t = threading.Thread(name=thread_name,target=MemMonitorDumpsys.mem_monitor_dumpsys_main)
+    t = threading.Thread(name=thread_name, target=MemMonitorDumpsys.mem_monitor_dumpsys_main)
     return t
 
 def build_thread_mem_monitor_procrank():
     thread_name = 'mem:monitor:procrank'
-    t = threading.Thread(name=thread_name,target=MemMonitorProcrank.mem_monitor_procrank_main)
+    t = threading.Thread(name=thread_name, target=MemMonitorProcrank.mem_monitor_procrank_main)
     return t
 
 def build_thread_cpu_monitor_top():
     thread_name = 'cpu:monitor:top'
-    t = threading.Thread(name=thread_name,target=CpuMonitorTop.cpu_monitor_top_main)
+    t = threading.Thread(name=thread_name, target=CpuMonitorTop.cpu_monitor_top_main)
     return t
 
 def add_thread_to_pool(t):
@@ -160,12 +160,11 @@ def monitor_runner_main():
 
 if __name__ == '__main__':
 
-    g_pkg_name_all = MonitorUtils.g_package_settings
+    g_pkg_name_all = MonitorUtils.g_pkg_name_settings
     g_run_num_all = '01'
     g_run_time_all = 5 * MonitorUtils.g_min
-    g_suffix_all = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num_all)
+    g_suffix_all = '%s_%s' % (MonitorUtils.g_cur_date, g_run_num_all)
     
     monitor_runner_main()
     
     print 'Monitor runner DONE!'
-    pass

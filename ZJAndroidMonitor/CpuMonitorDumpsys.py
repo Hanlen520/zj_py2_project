@@ -8,7 +8,6 @@ Created on 2016-6-17
 import os
 from ZJAndroidMonitor import MonitorUtils
 
-
 # --------------------------------------------------------------
 # Vars
 # --------------------------------------------------------------
@@ -63,9 +62,8 @@ def main():
 
 if __name__ == '__main__':
     
-    g_package_name = MonitorUtils.g_package_filemanager
+    g_package_name = MonitorUtils.g_pkg_name_filemanager
     
     main()
 
     print 'CPU monitor by dumpsys, DONE!'
-    pass
