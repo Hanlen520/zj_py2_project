@@ -44,7 +44,7 @@ g_flag_print_log = False
 # --------------------------------------------------------------
 # Path Vars
 # --------------------------------------------------------------
-g_suffix = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num)
+g_suffix = '%s_%s' % (MonitorUtils.g_cur_date, g_run_num)
 g_report_dir_path = ''
 g_report_file_path = ''
 g_category_report_file_path = ''
@@ -60,12 +60,12 @@ def init_path_vars():
     global g_path_app_process
     global g_path_app_sevice
     
-    g_report_dir_path = r'%s\procrank_mem_log_%s' %(MonitorUtils.g_root_path, g_suffix)
-    g_report_file_path = r'%s\procrank_mem_log_%s.txt' %(g_report_dir_path, g_suffix)
-    g_category_report_file_path = r'%s\procrank_category_log_%s.txt' %(g_report_dir_path, g_suffix)
-    g_path_total = r'%s\procrank_log_total_%s.txt' %(g_report_dir_path, g_suffix)
-    g_path_app_process = r'%s\procrank_log_app_process_%s.txt' %(g_report_dir_path, g_suffix)
-    g_path_app_sevice = r'%s\procrank_log_app_service_%s.txt' %(g_report_dir_path, g_suffix)
+    g_report_dir_path = r'%s\procrank_mem_log_%s' % (MonitorUtils.g_root_path, g_suffix)
+    g_report_file_path = r'%s\procrank_mem_log_%s.txt' % (g_report_dir_path, g_suffix)
+    g_category_report_file_path = r'%s\procrank_category_log_%s.txt' % (g_report_dir_path, g_suffix)
+    g_path_total = r'%s\procrank_log_total_%s.txt' % (g_report_dir_path, g_suffix)
+    g_path_app_process = r'%s\procrank_log_app_process_%s.txt' % (g_report_dir_path, g_suffix)
+    g_path_app_sevice = r'%s\procrank_log_app_service_%s.txt' % (g_report_dir_path, g_suffix)
 
 
 # --------------------------------------------------------------
@@ -83,29 +83,29 @@ def run_cmd_procrank():
     return lines
 
 def run_cmd_procrank_with_findstr_keyword(find_str):
-    cmd = 'adb shell procrank | findstr %s' %(find_str)
+    cmd = 'adb shell procrank | findstr %s' % find_str
     if g_flag_print_log:
         print cmd
 
     p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
     p.wait()
     lines = p.stdout.readlines()
-    
+
     return lines
     
 def run_cmd_procrank_with_findstr_all():
     # cannot use grep in windows command line, and use findstr instead
 #     cmd = 'adb shell procrank | grep -E "filemanager|TOTAL"'
     cmd_procrank = 'adb shell procrank' 
-    cmd_findstr = 'findstr /r "%s %s:"' %(g_package_name, g_keyword_ram)
-    cmd = '%s | %s' %(cmd_procrank, cmd_findstr)
+    cmd_findstr = 'findstr /r "%s %s:"' % (g_package_name, g_keyword_ram)
+    cmd = '%s | %s' % (cmd_procrank, cmd_findstr)
     if g_flag_print_log:
         print cmd
 
     p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
     p.wait()
     lines = p.stdout.readlines()
-    
+
     return lines
 
 
@@ -121,9 +121,9 @@ def init_default_content():
     global g_default_content_sevice
     global g_default_content_total
     
-    g_default_content_process = '%s null: the process (%s) is currently NOT running.' %(g_category_process, g_package_name)
-    g_default_content_sevice = '%s null: the sevice (%s:remote) is currently NOT running.' %(g_category_sevice, g_package_name)
-    g_default_content_total = '%s null: run procrank error, total line is NOT found.' %(g_category_total)
+    g_default_content_process = '%s null: the process (%s) is currently NOT running.' % (g_category_process, g_package_name)
+    g_default_content_sevice = '%s null: the service (%s:remote) is currently NOT running.' % (g_category_sevice, g_package_name)
+    g_default_content_total = '%s null: run procrank error, total line is NOT found.' % g_category_total
 
 def subprocess_run_cmd_and_write_report_for_process(f_report):
     lines = run_cmd_procrank_with_findstr_keyword(g_package_name)
@@ -195,7 +195,7 @@ def loop_for_subprocess(fn, f_report):
 
         during = int(time.clock()) - start
         if during >= g_run_time or during >= g_time_out:
-            print 'LOOP exit, and cost %d minutes %d seconds.' %((during/60), (during%60))
+            print 'LOOP exit, and cost %d minutes %d seconds.' % ((during / 60), (during % 60))
             return
 
 
@@ -222,15 +222,15 @@ def parse_output_total_line(line, limiter):
 
 def format_KtoM_for_record(item):
     mum_m = round(int(item) / 1024)
-    return '%dM' %(mum_m)
+    return '%dM' % mum_m
 
 def format_KtoM_for_total(item):
     index = item.find('K')
     item_m = format_KtoM_for_record(item[0:index])
-    return '%s%s' %(item_m, item[(index + 1):])
+    return '%s%s' % (item_m, item[(index + 1):])
 
 def format_prefix_with_category(category, line):
-    return '%s,%s' %(category, line)
+    return '%s,%s' % (category, line)
 
 
 # --------------------------------------------------------------
@@ -240,16 +240,16 @@ def create_report_header(f_report):
     if g_flag_print_log:
         print 'log: create report header.'
     
-    report_title_line = '******* PROCRANK MEMORY REPORT: %s' %(g_package_name)
+    report_title_line = '******* PROCRANK MEMORY REPORT: %s' % (g_package_name)
     report_cols_line = 'Time,Category,PID,Vss,Rss,Pss,Uss,cmdline'
 
     content_vss = 'VSS - Virtual Set Size,'
     content_rss = 'RSS - Resident Set Size,'
     content_pss = 'PSS - Proportional Set Size,'
     content_uss = 'USS - Unique Set Size'
-    report_exlain_line = MonitorUtils.g_tab.join((content_vss,content_rss,content_pss,content_uss))
+    report_exlain_line = MonitorUtils.g_tab.join((content_vss, content_rss, content_pss, content_uss))
 
-    write_single_line_report(f_report,report_title_line,report_exlain_line,report_cols_line)
+    write_single_line_report(f_report, report_title_line, report_exlain_line, report_cols_line)
 
 def create_report_trailer(f_report):
     if g_flag_print_log:
@@ -265,7 +265,7 @@ def write_single_line_report(f_report, *arg):
     for line in arg:
         if g_flag_print_report:
             print line
-        f_report.write('%s%s' %(line, MonitorUtils.g_new_line))
+        f_report.write('%s%s' % (line, MonitorUtils.g_new_line))
 
     f_report.flush()
 
@@ -277,12 +277,12 @@ def write_line_report_with_time(f_report, *arg):
     for line in arg:
         if g_flag_print_report:
             print_line_report_with_time(cur_time, line)
-        f_report.write('%s,%s%s' %(cur_time, line, MonitorUtils.g_new_line))
+        f_report.write('%s,%s%s' % (cur_time, line, MonitorUtils.g_new_line))
 
     f_report.flush()
 
 def print_line_report_with_time(cur_time, line):
-    print '%s,%s' %(cur_time, line)
+    print '%s,%s' % (cur_time, line)
 
 
 # --------------------------------------------------------------
@@ -294,7 +294,7 @@ def create_separated_report_for_process_service_total():
     
     lines = read_lines_from_file(g_report_file_path)
     if len(lines) == 0:
-        print 'Error, the file size is zero --> %s' %(g_report_file_path)
+        print 'Error, the file size is zero --> %s' % (g_report_file_path)
         return
 
     f_total = MonitorUtils.g_create_and_open_report_with_write(g_path_total)
@@ -309,7 +309,7 @@ def create_separated_report_for_process_service_total():
             elif g_category_sevice in line:
                 f_sevice.write(line)
     finally:
-        files_flush_and_close(f_process,f_sevice,f_total)
+        files_flush_and_close(f_process, f_sevice, f_total)
 
 def create_report_sorted_by_category():
     if g_flag_print_log:
@@ -317,7 +317,7 @@ def create_report_sorted_by_category():
     
     lines = read_lines_from_file(g_report_file_path)
     if len(lines) == 0:
-        print 'Error, the size of file is zero --> %s' %(g_report_file_path)
+        print 'Error, the size of file is zero --> %s' % (g_report_file_path)
         return
 
     lines_process = []
@@ -342,7 +342,7 @@ def create_report_sorted_by_category():
 
     f_category_report = MonitorUtils.g_create_and_open_report_with_write(g_category_report_file_path)
     try:
-        write_lines_into_file(f_category_report,lines_header,lines_process,lines_sevice,lines_total,lines_trailer)
+        write_lines_into_file(f_category_report, lines_header, lines_process, lines_sevice, lines_total, lines_trailer)
     finally:
         files_flush_and_close(f_category_report)
 
@@ -403,11 +403,10 @@ def mem_monitor_procrank_main():
 if __name__ == '__main__':
 
     # before execution, there has device adb connected
-    g_package_name = MonitorUtils.g_package_settings
+    g_package_name = MonitorUtils.g_pkg_name_filemanager
     g_run_num = '01'
-    g_run_time = 5 * MonitorUtils.g_min
-    g_suffix = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num)  # do not change
-    
+    g_run_time = 3 * MonitorUtils.g_min
+
     g_flag_build_report = True
     g_flag_parse_report = True
 
@@ -417,6 +416,5 @@ if __name__ == '__main__':
     g_flag_all = True
 
     mem_monitor_procrank_main()
-    
+
     print 'Memory monitor by procrank, DONE!'
-    pass

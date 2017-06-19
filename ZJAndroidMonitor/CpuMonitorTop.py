@@ -25,19 +25,18 @@ g_interval = MonitorUtils.g_long_interval
 
 g_flag_top = False
 g_flag_top_for_pkg = False
-g_flag_parse_report_for_pkg = False
 
-g_flag_print_log = False
+g_flag_print_log = True
 g_flag_print_report = True
 
 
 # --------------------------------------------------------------
 # Path Vars
 # --------------------------------------------------------------
-g_suffix = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num)
+g_suffix = '%s_%s' % (MonitorUtils.g_cur_date, g_run_num)
 g_report_dir_path = ''
 g_report_file_path_top = ''
-g_report_file_path_top_for_pkg = ''
+g_report_file_path_top_for_pkg = ''  # include total and package category
 g_report_file_path_total_category = ''
 g_report_file_path_pkg_category = ''
 
@@ -48,19 +47,19 @@ def init_path_vars():
     global g_report_file_path_total_category
     global g_report_file_path_pkg_category
     
-    g_report_dir_path = r'%s\top_cpu_log_%s' %(MonitorUtils.g_root_path, g_suffix)
-    g_report_file_path_top = r'%s\top_cpu_log_%s.txt' %(g_report_dir_path, g_suffix)
-    g_report_file_path_top_for_pkg = r'%s\top_for_package_cpu_log_%s.txt' %(g_report_dir_path, g_suffix)
-    g_report_file_path_total_category = r'%s\top_cpu_log_for_total_category_%s.txt' %(g_report_dir_path, g_suffix)
-    g_report_file_path_pkg_category = r'%s\top_cpu_log_for_pkg_category_%s.txt' %(g_report_dir_path, g_suffix)
-    
+    g_report_dir_path = r'%s\top_cpu_log_%s' % (MonitorUtils.g_root_path, g_suffix)
+    g_report_file_path_top = r'%s\top_cpu_log_%s.txt' % (g_report_dir_path, g_suffix)
+    g_report_file_path_top_for_pkg = r'%s\top_for_package_cpu_log_%s.txt' % (g_report_dir_path, g_suffix)
+    g_report_file_path_total_category = r'%s\top_cpu_log_for_total_category_%s.txt' % (g_report_dir_path, g_suffix)
+    g_report_file_path_pkg_category = r'%s\top_cpu_log_for_pkg_category_%s.txt' % (g_report_dir_path, g_suffix)
+
 
 # --------------------------------------------------------------
 # Functions: run commands
 # --------------------------------------------------------------
 def run_top_command():
     top_num = 3
-    cmd = 'adb shell top -n 1 -m %s' %(top_num)
+    cmd = 'adb shell top -n 1 -m %s' % top_num
     if g_flag_print_log:
         print cmd
     lines = os.popen(cmd).readlines()
@@ -72,8 +71,8 @@ def run_top_command():
 
 def run_top_command_for_pkg():
     cmd_top = 'adb shell top -n 1'
-    cmd_findstr = 'findstr -r "System PID %s"' %(g_package_name)
-    cmd = '%s | %s' %(cmd_top, cmd_findstr)
+    cmd_findstr = 'findstr -r "System PID %s"' % g_package_name
+    cmd = '%s | %s' % (cmd_top, cmd_findstr)
     if g_flag_print_log:
         print cmd
     lines = os.popen(cmd).readlines()
@@ -86,7 +85,7 @@ def run_top_command_for_pkg():
 
 def build_prefix_for_top_cmd_output_line():
     cur_time = MonitorUtils.g_get_current_time()
-    return '%s -----------------------------------' %(cur_time)
+    return '%s -----------------------------------' % (cur_time)
 
 def run_top_cmd_and_write_output(f_report):
     write_single_line_report(f_report, build_prefix_for_top_cmd_output_line())
@@ -109,7 +108,7 @@ def build_report_trailer_for_top_cmd():
     return '************** TOP CPU REPORT: END'
 
 def build_report_header_for_top_cmd_for_pkg():
-    return '************** TOP CPU REPORT FOR PACKAGE: %s' %(g_package_name)
+    return '************** TOP CPU REPORT FOR PACKAGE: %s' % g_package_name
 
 def build_report_trailer_for_top_cmd_for_pkg():
     return '************** TOP CPU REPORT FOR PACKAGE: END'
@@ -136,7 +135,7 @@ def read_lines_from_report(f_report):
         f_report.close()
 
     if len(lines) == 0:
-        print 'There is no record in %s' %(f_report.name)
+        print 'There is no record in %s' % f_report.name
         exit(1)
     return lines
 
@@ -187,7 +186,7 @@ def parse_lines_for_total(lines):
 # --------------------------------------------------------------
 def loop_process(fn, f_report):
     start = int(time.clock())
-     
+
     while True:
         fn(f_report)
         time.sleep(g_interval)
@@ -196,7 +195,7 @@ def loop_process(fn, f_report):
 
         during = int(time.clock()) - start
         if during >= g_run_time or during >= g_max_run_time:
-            print 'LOOP exit, and cost %d minutes %d seconds.' %((during/60), (during%60))
+            print 'LOOP exit, and cost %d minutes %d seconds.' % ((during / 60), (during % 60))
             break
 
 def run_top_cmd_main():
@@ -244,23 +243,19 @@ def cpu_monitor_top_main():
         run_top_cmd_main()
     if g_flag_top_for_pkg:
         run_top_cmd_for_pkg_main()
-   
-    if g_flag_parse_report_for_pkg:
         parse_top_for_pkg_report_main()
 
 
 if __name__ == '__main__':
 
-    g_package_name = MonitorUtils.g_package_settings
-    g_run_num = '01'
-    g_run_time = 10 * MonitorUtils.g_min
-    g_suffix = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num)  # do not change
+    g_package_name = MonitorUtils.g_pkg_name_filemanager
+    g_run_num = '02'
+    g_run_time = 3 * MonitorUtils.g_min
 
-    g_flag_top = False
-    g_flag_top_for_pkg = True
-    g_flag_parse_report_for_pkg = True
+    g_flag_top_for_pkg = False
+    if not g_flag_top_for_pkg:
+        g_flag_top = True
 
     cpu_monitor_top_main()
 
     print 'CPU monitor by top, DONE!'
-    pass

@@ -32,15 +32,15 @@ g_write_lines_buffer = 10
 # --------------------------------------------------------------
 # Path Vars
 # --------------------------------------------------------------
-g_suffix = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num)
+g_suffix = '%s_%s' % (MonitorUtils.g_cur_date, g_run_num)
 g_report_dir_path = ''
 g_report_file_path = ''
 
 def init_path_vars():
     global g_report_dir_path
     global g_report_file_path
-    g_report_dir_path = r'%s\dumpsys_mem_log_%s' %(MonitorUtils.g_root_path, g_suffix)
-    g_report_file_path = r'%s\dumpsys_mem_log_%s.txt' %(g_report_dir_path, g_suffix)
+    g_report_dir_path = r'%s\dumpsys_mem_log_%s' % (MonitorUtils.g_root_path, g_suffix)
+    g_report_file_path = r'%s\dumpsys_mem_log_%s.txt' % (g_report_dir_path, g_suffix)
 
     if g_flag_print_log:
         print g_report_dir_path
@@ -56,11 +56,11 @@ def dumpsys_meminfo_and_parse(f_report):
     output_lines = run_dumpsys_meminfo_command()
     parse_line = parse_report_line(output_lines)
     write_single_line_report(f_report, parse_line)
-  
+
 def run_getprop_cmd():
     cmd = 'adb shell getprop | findstr -r "heapstartsize heapgrowthlimit dalvik.vm.heapsize"'
     if g_flag_print_log:
-        print 'log: %s' %(cmd)
+        print 'log: %s' % cmd
         
     lines = os.popen(cmd).readlines()
     return lines
@@ -76,12 +76,12 @@ def get_app_vm_size_limit():
         exit(1)
 
 def run_dumpsys_meminfo_command():
-    cmd_dumpsys = 'adb shell dumpsys meminfo %s' %(g_package_name)
+    cmd_dumpsys = 'adb shell dumpsys meminfo %s' % g_package_name
     cmd_findstr = 'findstr -r \"Dalvik TOTAL Views: Activities:\"'
-    cmd = '%s | %s' %(cmd_dumpsys, cmd_findstr)
-       
+    cmd = '%s | %s' % (cmd_dumpsys, cmd_findstr)
+
     if g_flag_print_log:
-        print 'log: %s' %(cmd)
+        print 'log: %s' % cmd
     lines = os.popen(cmd).readlines()
     return lines
 
@@ -91,7 +91,7 @@ def parse_report_line(lines):
     total_mem = g_default_content
     app_views = g_default_content
     app_activities = g_default_content
-       
+
     for line in lines:
         if 'Heap' in line:
             java_vm_heap_size, java_vm_heap_alloc = parse_java_vm_heap_size(line)
@@ -141,9 +141,9 @@ def parse_app_activities(line):
         return str(words[3])
    
 def format_mem_size(size):
-    return '%sK' %(size)
-   
-   
+    return '%sK' % size
+
+
 # --------------------------------------------------------------
 # Functions: create report
 # --------------------------------------------------------------
@@ -156,7 +156,7 @@ def create_report_header(f_report):
     if g_flag_print_log:
         print 'log: create report header.'
 
-    header_title = '************** DUMPSYS MEMINFO REPORT: %s' %(g_package_name)
+    header_title = '************** DUMPSYS MEMINFO REPORT: %s' % (g_package_name)
 
     col0 = 'Time'
     col1 = 'MemTotal(Pss)'
@@ -164,7 +164,7 @@ def create_report_header(f_report):
     col3 = 'HeapAlloc'
     col4 = 'AppActivities'
     col5 = 'AppViews'
-    header_col = MonitorUtils.g_report_limiter.join((col0,col1,col2,col3,col4,col5))
+    header_col = MonitorUtils.g_report_limiter.join((col0, col1, col2, col3, col4, col5))
 
     write_single_line_report(f_report, header_title)
     for line in get_app_vm_size_limit():
@@ -191,15 +191,15 @@ def write_single_line_report(f_report, line):
 def force_write_line_report(f_report):
     if g_flag_print_log:
         print 'force write line to the report file.'
-     
+
     if len(g_write_lines) == 0:
         return
-     
+
     f_report.writelines(g_write_lines)
-    f_report.flush()   # force to write content into file
+    f_report.flush()  # force to write content into file
     del g_write_lines[:]
- 
- 
+
+
 # --------------------------------------------------------------
 # Loop functions
 # --------------------------------------------------------------
@@ -212,7 +212,7 @@ def loop_process(fn, f_report):
  
         during = int(time.clock()) - start
         if during >= g_run_time or during >= g_max_run_time:
-            print 'LOOP exit, and cost %d minutes %d seconds.' %((during/60), (during%60))
+            print 'LOOP exit, and cost %d minutes %d seconds.' % ((during / 60), (during % 60))
             break
 
 
@@ -233,13 +233,11 @@ def mem_monitor_dumpsys_main():
 
 
 if __name__ == '__main__':
-    
-    g_package_name = MonitorUtils.g_package_filemanager
+
+    g_package_name = MonitorUtils.g_pkg_name_filemanager
     g_run_num = '01'
-    g_run_time = 10 * MonitorUtils.g_min
-    g_suffix = '%s_%s' %(MonitorUtils.g_cur_date, g_run_num)  # do not change
-    
+    g_run_time = 3 * MonitorUtils.g_min
+
     mem_monitor_dumpsys_main()
 
     print 'Memory monitor by dumpsys, DONE!'
-    pass
