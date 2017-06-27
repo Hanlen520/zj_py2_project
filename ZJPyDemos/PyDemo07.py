@@ -88,6 +88,7 @@ def ex04():
 
 run_ex_by_flag(ex04)
 
+
 # EXAMPLE 05, namedtuple
 def ex05():
     from collections import namedtuple
@@ -102,6 +103,146 @@ def ex05():
     print tokyo[1]
 
 run_ex_by_flag(ex05)
+
+
+# tools
+# EXAMPLE 06, functools
+def ex06_01():
+    from functools import partial
+
+    print int('10010', base=2)
+    base_2 = partial(int, base=2)
+    print base_2('10010')
+run_ex_by_flag(ex06_01)
+
+
+def ex06_02():
+    def my_decorator(f):
+        from functools import wraps
+        @wraps(f)
+        def wrapper():
+            """wrapper_doc"""
+            print 'Calling decorated function'
+            return f()
+        return wrapper
+
+    @my_decorator
+    def example():
+        """example_doc"""
+        print 'Called example function'
+
+    example()
+    print example.__name__
+    print example.__doc__
+run_ex_by_flag(ex06_02)
+
+
+def clock(func):
+    import functools
+    @functools.wraps(func)
+    def clocked(*args, **kwargs):
+        import time
+        t0 = time.time()
+        result = func(*args, **kwargs)
+        elapsed = time.time() - t0
+        name = func.__name__
+        
+        arg_lst = []
+        if args:
+            arg_lst.append(', '.join((repr(arg) for arg in args)))
+        if kwargs:
+            pairs = ('%s=%s' % (k, w) for k, w in kwargs)
+            arg_lst.append(', '.join(pairs))
+        arg_str = ', '.join(arg_lst)
+        print '[%0.8fs] %s(%s) -> %r ' % (elapsed, name, arg_str, result)
+        return result
+    return clocked
+
+def ex06_03():
+    @clock
+    def fibonacci(n):
+        if n < 2:
+            return n
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+    print fibonacci(6)
+run_ex_by_flag(ex06_03)
+
+
+# EXAMPLE 07, itertools
+# repeat
+def ex07_01():
+    from itertools import count, repeat
+    for i, s in zip(count(1), repeat('over-and-over', 5)):
+        print i, s
+run_ex_by_flag(ex07_01)
+
+# islice
+def ex07_02():
+    from itertools import islice
+    for i in islice(range(60), 0, 100, 10):
+        print i
+run_ex_by_flag(ex07_02)
+
+# starmap
+def ex07_03():
+    from itertools import starmap
+    my_iter = starmap(os.path.join,
+                      [('/bin', 'python'), ('/usr', 'bin', 'java'),
+                       ('/usr', 'bin', 'perl'), ('/usr', 'bin', 'ruby')])
+    print list(my_iter)
+run_ex_by_flag(ex07_03)
+
+
+# operator
+# EXAMPLE 08
+class Student(object):
+    def __init__(self, name, grade, age):
+        self.name = name
+        self.grade = grade
+        self.age = age
+
+    def __repr__(self):
+        return repr((self.name, self.grade, self.age))
+
+    def student_print(self, text):
+        return '%s, %s, your grade: %s' % (text, self.name, self.grade)
+
+def ex08_01():
+    # attrgetter
+    student_objects = [Student('john', 'A', 15), Student('jane', 'B', 12), Student('dave', 'B', 10), ]
+    
+    print sorted(student_objects, key=lambda student: student.age)
+    from operator import attrgetter
+    print sorted(student_objects, key=attrgetter('age'))
+    print sorted(student_objects, key=attrgetter('grade', 'age'))
+
+    f1 = attrgetter('name', 'age')
+    s1 = Student('john', 'A', 15)
+    print f1(s1)
+    
+    # itemgetter
+    print '*' * 20
+    student_tuples = [('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10), ]
+    print sorted(student_tuples, key=lambda student: student[2])
+    from operator import itemgetter
+    print sorted(student_tuples, key=itemgetter(2))
+    print sorted(student_tuples, key=itemgetter(1, 2))
+    
+    f2 = itemgetter(0)
+    s2 = ('john', 'A', 15)
+    print f2(s2)
+
+run_ex_by_flag(ex08_01)
+
+
+def ex08_02():
+    from operator import methodcaller
+    f = methodcaller('student_print', 'hello')
+    s = Student('john', 'A', 15)
+    print f(s)
+
+run_ex_by_flag(ex08_02)
 
 
 if __name__ == '__main__':
