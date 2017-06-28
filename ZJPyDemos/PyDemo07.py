@@ -194,8 +194,7 @@ def ex07_03():
 run_ex_by_flag(ex07_03)
 
 
-# operator
-# EXAMPLE 08
+# EXAMPLE 08, operator
 class Student(object):
     def __init__(self, name, grade, age):
         self.name = name
@@ -243,6 +242,127 @@ def ex08_02():
     print f(s)
 
 run_ex_by_flag(ex08_02)
+
+
+# EXAMPLE 09, __get__
+class RevealAccess(object):
+    def __get__(self, obj, obj_type):
+        print 'self in RevealAccess __get__: {}'.format(self)
+        print 'self: {}\tobj: {}\tobjtype: {}'.format(self, obj, obj_type)
+
+    def __set__(self, obj, value):
+        print 'self in RevealAccess __set__: {}'.format(self)
+        print 'self: {}\tobj: {}\tvalue: {}'.format(self, obj, value)
+
+class MyClass(object):
+    x = RevealAccess()
+    def test(self):
+        print 'self in MyClass: {}'.format(self)
+
+def ex09():
+    m = MyClass()
+    m.test()
+
+    print '*' * 20
+    m.x  # __getattribute__() -> __get__(obj, type(obj))
+    print '*' * 20
+    m.x = 'test instance'
+
+    print '*' * 20
+    MyClass.x  # __getattribute__() -> __get__(None, self)
+    print '*' * 20
+    MyClass.x = 'test class'
+
+run_ex_by_flag(ex09)
+
+
+# EXAMPLE 10, property
+class AccountTest1(object):
+    def __init__(self):
+        self._acct_num = None
+    
+    def get_acct_num(self):
+        print 'AccountTest1, get account number.'
+        return self._acct_num
+    def set_acct_num(self, value):
+        from decimal import Decimal
+        print 'AccountTest1, set account number.'
+        if isinstance(value, Decimal):
+            self._acct_num = str(value)
+        else:
+            self._acct_num = value
+    def del_acct_num(self):
+        print 'AccountTest1, del account number.'
+        del self._acct_num
+
+    acct_num = property(get_acct_num, set_acct_num, del_acct_num, '_acct_num property')
+
+def ex10():
+    acct = AccountTest1()
+    acct.acct_num = 100
+    print acct.acct_num
+
+run_ex_by_flag(ex10)
+
+
+# EXAMPLE 11, property
+class AccountTest2(object):
+    def __init__(self):
+        self._acct_num = None
+        
+    @property
+    def acct_num(self):
+        print 'AccountTest2, get account number.'
+        return self._acct_num
+    @acct_num.setter
+    def acct_num(self, value):
+        from decimal import Decimal
+        print 'AccountTest2, set account number.'
+        if isinstance(value, Decimal):
+            self._acct_num = str(value)
+        else:
+            self._acct_num = value
+    @acct_num.deleter
+    def acct_num(self):
+        print 'AccountTest2, del account number.'
+        del self._acct_num
+
+def ex11():
+    acct = AccountTest2()
+    acct.acct_num = 100
+    print acct.acct_num
+
+run_ex_by_flag(ex11)
+
+
+# EXAMPLE 12, __getattr__
+class MyDict(dict):
+    def __getattr__(self, key):
+        try:
+            return self[key]
+        except KeyError as k:
+            raise AttributeError(k)
+    
+    def __setattr__(self, key, value):
+        self[key] = value
+        
+    def __delattr__(self, key):
+        try:
+            del self[key]
+        except KeyError as k:
+            raise AttributeError(k)
+
+    def __repr__(self):
+        return '<MyDict ' + dict.__repr__(self) + '>'
+
+def ex12():
+    d = MyDict(a=1)
+    print d['a']
+    
+    d.a = 2
+    print d.a
+
+run_ex_by_flag(ex12)
 
 
 if __name__ == '__main__':
