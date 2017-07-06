@@ -36,7 +36,7 @@ g_flag_monkey_crash_ignore = True  # ignore crash or error for monkey
 g_flag_monkey_for_package = False
 g_flag_monkey_for_whitelist = False
 
-g_max_run_time = 3600 * 4  # seconds, max execution time is 4 hours
+g_max_run_time = 3600 * 12  # seconds, max execution time is 12 hours
 g_loop_wait_time = 60  # seconds, wait time in loop
 
 g_flag_capture = False
@@ -610,13 +610,13 @@ def cal_exec_time(fn):
 if __name__ == '__main__':
 
     # set the audio sound to low before run monkey
-    g_target_ip = '172.17.5.86'
+    g_target_ip = '172.17.5.54'
     g_run_num = '01'
-    g_run_mins = 90
+    g_run_mins = 120
 
     g_flag_monkey_for_package = False
     if g_flag_monkey_for_package:
-        g_package_name = g_pkg_tv_guide
+        g_package_name = 'tv.ismar.daisy'
     else:
         g_flag_monkey_for_whitelist = True
 
