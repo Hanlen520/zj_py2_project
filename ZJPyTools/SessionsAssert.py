@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 '''
 Created on 2017/5/25
-Invoke from scripts/CustomRules.js, which is Fiddler built-in script
 
 @author: zhengjin
+
+Invoke from scripts/CustomRules.js (Fiddler built-in script).
+1) filter
+2) decode
 '''
 
 import os

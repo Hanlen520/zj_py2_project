@@ -84,4 +84,3 @@ if __name__ == '__main__':
     replace_hosts_main()
 
     print 'Replace hosts file done!'
-    pass

@@ -135,4 +135,5 @@ if __name__ == '__main__':
 #     test_class = ALL_TEST_CASES_SUITE
 
     main_instument_test()
+
     print os.path.basename(__file__), 'DONE!'
