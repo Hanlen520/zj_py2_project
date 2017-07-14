@@ -41,5 +41,4 @@ if __name__ == '__main__':
     logging.debug('debug message')
     logging.info('info message')
 
-    print '%s DONE!' %(os.path.basename(__file__))
-    pass
+    print os.path.basename(__file__), 'DONE!'

@@ -116,4 +116,3 @@ if __name__ == '__main__':
     main_push_app()
     
     print 'Push app to android /system done!'
-    pass
