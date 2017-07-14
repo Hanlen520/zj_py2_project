@@ -20,6 +20,7 @@ from ZJPyUtils import AdbUtils
 G_SQLITE_TAG = 'sqlite>'
 G_FUNTV_TAG = '|fun_tv|'
 
+
 # ----------------------------------------------------
 # Functions
 # ----------------------------------------------------
@@ -50,6 +51,7 @@ def parse_results(input_lines):
         raise Exception('Return value is empty.')
     return ret_lst
 
+
 # ----------------------------------------------------
 # Main
 # ----------------------------------------------------
@@ -70,11 +72,9 @@ def get_upload_ott_statistics():
 if __name__ == '__main__':
     
     is_connected_device = True
-    device_ip = '172.17.5.79'
-    
     if not is_connected_device:
-        connect_device(device_ip)
+        connect_device('172.17.5.79')
     
     get_upload_ott_statistics()
     
-    print os.path.basename(__file__), 'done'
+    print os.path.basename(__file__), 'DONE'

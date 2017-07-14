@@ -124,4 +124,3 @@ if __name__ == '__main__':
 #     run_repeat_shell_send_key_cmds(g_cmd_key_right, 10)
     
     print '%s Done!' % (os.path.basename(__file__))
-    pass

@@ -25,7 +25,7 @@ def send_get_request_and_return(url, data, flag_urlencode=True):
     else:
         parms = data
 
-    resp = urllib.urlopen('%s?%s' %(url, parms))
+    resp = urllib.urlopen('%s?%s' % (url, parms))
     content = resp.read()
     
     if (content):
@@ -36,13 +36,13 @@ def send_get_request_and_return(url, data, flag_urlencode=True):
 
 def send_get_request_with_header_and_return(url, header_parms, request_parms):
     parms = urllib.urlencode(request_parms)
-    req = urllib2.Request('%s?%s' %(url, parms))
-    for key,value in header_parms.items():
+    req = urllib2.Request('%s?%s' % (url, parms))
+    for key, value in header_parms.items():
         req.add_header(key, value)
 
     resp = urllib2.urlopen(req)
     content = resp.read()
-    if (content):
+    if content:
         return content
     else:
         logging.warn('The response request_parms from baidu service is null!')
@@ -90,7 +90,7 @@ def test_baidu_weather_api_with_key():
     header_parms = {'apikey':'7705cca8df9fb3dbe696ce2310979a62'}
     req_parms = {'cityid':'101010100'}
     
-    resp = send_get_request_with_header_and_return(url,header_parms,req_parms)
+    resp = send_get_request_with_header_and_return(url, header_parms, req_parms)
     print resp
     json_arr = json_parse(resp)
     print json_arr['retData']['today']['date']

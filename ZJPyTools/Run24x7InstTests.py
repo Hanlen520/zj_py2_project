@@ -3,6 +3,8 @@
 Created on 2016-8-10
 
 @author: zhengjin
+
+Repeat run specified test case by specified time (24 x 7 case).
 '''
 import os
 import sys
@@ -105,7 +107,7 @@ def run_instrument_tests_v2(cmd):
     
     output_lines = []
     for line in input_lines:
-        output_lines.append(line.rstrip('\r\n')  + '\n')
+        output_lines.append(line.rstrip('\r\n') + '\n')
     FileUtils.append_lines_to_file(g_local_inst_run_log_file_path, (output_lines))
     
     check_test_case_force_closed(output_lines)
@@ -207,4 +209,3 @@ if __name__ == '__main__':
     main(run_time)
 
     print '%s done!' % (os.path.basename(__file__))
-    pass

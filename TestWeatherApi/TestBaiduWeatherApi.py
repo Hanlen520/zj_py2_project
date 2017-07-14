@@ -6,6 +6,8 @@ Created on 2016-7-18
 @author: Vieira
 
 Verify data from Baidu weather API for each city.
+1) get data success
+2) get data within 3 times
 '''
 
 import os
@@ -54,20 +56,20 @@ def init_log_config(main_log_level, file_log_level, file_path):
     short_date_format = '%d %b %H:%M:%S'
 
     # log main handler
-    logging.basicConfig(level=main_log_level,format=short_format,datefmt=short_date_format)
+    logging.basicConfig(level=main_log_level, format=short_format, datefmt=short_date_format)
 
     # set the file handler
     log_file = logging.FileHandler(filename=file_path, mode='w')
     log_file.setLevel(file_log_level)
-    log_file.setFormatter(logging.Formatter(fmt=long_format,datefmt=long_date_format))
+    log_file.setFormatter(logging.Formatter(fmt=long_format, datefmt=long_date_format))
     logging.getLogger('').addHandler(log_file)
 
 def logging_pass(text):
-    logging.info('Pass, %s' %text)
+    logging.info('Pass, %s' % text)
 
 def logging_failed(text, reason):
-    logging.error('Failed, %s' %text)
-    logging.error('Reason: %s' %reason)
+    logging.error('Failed, %s' % text)
+    logging.error('Reason: %s' % reason)
 
 
 # ------------------------------------------------
@@ -87,14 +89,14 @@ def test_weather_data(city_id, city_name):
     resp = None
     json_arr = None
     flag_connect_validate = False
-    for i in range(1,(g_request_try_time + 1)):
-        logging.debug('Try to send request to Baidu weather API for %d times.' %i)
+    for i in range(1, (g_request_try_time + 1)):
+        logging.debug('Try to send request to Baidu weather API for %d times.' % i)
         try:
             resp = HttpJsonUtils.send_get_request_with_header_and_return(
                 g_baidu_weather_service_url, g_baidu_service_request_header_parms, {'cityid':str(city_id)})
             json_arr = HttpJsonUtils.json_parse(resp)
         except Exception, e:
-            logging.error('Exception: %s' %e)
+            logging.error('Exception: %s' % e)
 
         if verify_response_content_type_json(resp) and verify_response_return_code_and_msg(json_arr):
             flag_connect_validate = True
@@ -133,7 +135,7 @@ def verify_response_fields(json_arr):
             g_total_num_of_failed_verification_for_cur_temp = g_total_num_of_failed_verification_for_cur_temp + 1
             return True
     except Exception, e:
-        logging.error('Exception: %s' %e)
+        logging.error('Exception: %s' % e)
         return False
     
     return True
@@ -156,10 +158,10 @@ def verify_response_return_code_and_msg(json_arr):
             logging_pass(msg)
             return True
         else:
-            logging_failed(msg, ('Response return message is %s' %get_response_ret_msg(json_arr)))
+            logging_failed(msg, ('Response return message is %s' % get_response_ret_msg(json_arr)))
             return False
     else:
-        logging_failed(msg, ('Response return code is %d' %get_response_ret_num(json_arr)))
+        logging_failed(msg, ('Response return code is %d' % get_response_ret_num(json_arr)))
         return False
 
 def verify_response_cur_date(json_arr):
@@ -172,7 +174,7 @@ def verify_response_cur_date(json_arr):
         logging_pass(msg)
         return True
     else:
-        logging_failed(msg, ('The current date is %s' %cur_date))
+        logging_failed(msg, ('The current date is %s' % cur_date))
         return False
 
 def verify_response_temperature(json_arr):
@@ -180,14 +182,14 @@ def verify_response_temperature(json_arr):
     
     today_weather = get_json_today_weather_data(json_arr)
     cur_temp = get_int_from_temp(today_weather['curTemp'])
-    high_temp  = get_int_from_temp(today_weather['hightemp'])
+    high_temp = get_int_from_temp(today_weather['hightemp'])
     low_temp = get_int_from_temp(today_weather['lowtemp'])
     
     if (cur_temp >= low_temp) and (cur_temp <= high_temp): 
         logging_pass(msg)
         return True
     else:
-        logging_failed(msg, ('The current temperature is %d, high is %d, low is %d' %(cur_temp,high_temp,low_temp)))
+        logging_failed(msg, ('The current temperature is %d, high is %d, low is %d' % (cur_temp, high_temp, low_temp)))
         return False
 
 
@@ -214,7 +216,7 @@ def get_json_today_weather_data(data):
 def get_city_list():
     city_list_file_path = os.path.join(os.getcwd(), 'data', g_city_list_file_name)
     if not os.path.exists(city_list_file_path):
-        logging.error('The city list file (%s) is NOT found!' %city_list_file_path)
+        logging.error('The city list file (%s) is NOT found!' % city_list_file_path)
         exit(1)
     
     city_list = []
@@ -222,7 +224,7 @@ def get_city_list():
     try:
         city_list = f.readlines()
     except Exception, e:
-        logging.error('Exception: %s' %e)
+        logging.error('Exception: %s' % e)
         logging.error('Exception when read lines from city list file.')
         exit(1)
     finally:
@@ -242,15 +244,15 @@ def get_city_list():
 # Daemon thread
 # ------------------------------------------------
 def daemon_thread_main():
-    #LOOP
+    # LOOP
     sleep_time = 15
     while True:
         time.sleep(sleep_time)
-        logging.debug('***** Current, verify %d city of total %d.' %(g_cur_num_of_city, g_total_num_of_city))
+        logging.debug('***** Current, verify %d city of total %d.' % (g_cur_num_of_city, g_total_num_of_city))
 
 def build_daemon_thread():
     thread_name = 'baiduservicetest:daemon'
-    t = threading.Thread(name=thread_name,target=daemon_thread_main)
+    t = threading.Thread(name=thread_name, target=daemon_thread_main)
     t.setDaemon(True)
     return t
 
@@ -259,7 +261,7 @@ def build_daemon_thread():
 # Test main
 # ------------------------------------------------
 def setup_main():
-    file_name = 'baidu_city_weather_data_verification_%s.log' %(time.strftime('%y-%m-%d_%H-%M-%S'))
+    file_name = 'baidu_city_weather_data_verification_%s.log' % (time.strftime('%y-%m-%d_%H-%M-%S'))
     file_path = os.path.join(os.getcwd(), 'logs', file_name)
     init_log_config(logging.DEBUG, logging.INFO, file_path)
     
@@ -273,9 +275,9 @@ def test_main():
         city_id = tmp_list[0]
         city_name = tmp_list[1]
 
-        logging.info('---> START: verify weather data for city id: %s, city name: %s' %(city_id,city_name))
+        logging.info('---> START: verify weather data for city id: %s, city name: %s' % (city_id, city_name))
         test_weather_data(city_id, city_name)
-        logging.info('---> END: verify weather data for city id: %s, city name: %s\n' %(city_id,city_name))
+        logging.info('---> END: verify weather data for city id: %s, city name: %s\n' % (city_id, city_name))
         
         g_cur_num_of_city += 1
         time.sleep(g_sleep_time_between_requests)
@@ -292,34 +294,34 @@ def main(fn):
 
 def log_execution_time(during):
     logging.info('Verify baidu city weather data DONE, %s cost %d minutes %d seconds.\n' 
-                 %(os.path.basename(__file__), (during/60), (during%60)))
+                 % (os.path.basename(__file__), (during / 60), (during % 60)))
 
 def log_verification_summary():
     logging.info('SUMMARY')
-    logging.info('The total number of cities is: %d' %g_total_num_of_city)
+    logging.info('The total number of cities is: %d' % g_total_num_of_city)
     
     logging.info('The total number of pass is: %d' 
-                 %(g_total_num_of_city - g_total_num_of_failed_connect - g_total_num_of_failed_verification))
-    logging.info('The number of cities retry 1 times connect is: %d' %g_num_of_city_retry_one_times_connect)
-    logging.info('The number of cities retry 2 times connect is: %d' %g_num_of_city_retry_two_times_connect)
-    logging.info('The number of cities retry 3 times connect is: %d' %g_num_of_city_retry_three_times_connect)
+                 % (g_total_num_of_city - g_total_num_of_failed_connect - g_total_num_of_failed_verification))
+    logging.info('The number of cities retry 1 times connect is: %d' % g_num_of_city_retry_one_times_connect)
+    logging.info('The number of cities retry 2 times connect is: %d' % g_num_of_city_retry_two_times_connect)
+    logging.info('The number of cities retry 3 times connect is: %d' % g_num_of_city_retry_three_times_connect)
     
-    logging.info('The number of failed connect is： %d' %g_total_num_of_failed_connect)
-    logging.info('The number of failed verification is： %d' %g_total_num_of_failed_verification)
+    logging.info('The number of failed connect is： %d' % g_total_num_of_failed_connect)
+    logging.info('The number of failed verification is： %d' % g_total_num_of_failed_verification)
     logging.info('Warn: the number of failed verification for current temperature is： %d\n' 
-                 %g_total_num_of_failed_verification_for_cur_temp)
+                 % g_total_num_of_failed_verification_for_cur_temp)
     
 def log_failed_cities():
     if len(g_failed_connect_cities) > 0:
         logging.info('Failed connect cities: id,name')
-        for k,v in g_failed_connect_cities.items():
-            logging.info('%s,%s' %(str(k), v))
+        for k, v in g_failed_connect_cities.items():
+            logging.info('%s,%s' % (str(k), v))
 
     if len(g_failed_verification_cities) > 0:
         logging.info('')
         logging.info('Failed verification cities: id,name')
-        for k,v in g_failed_verification_cities.items():
-            logging.info('%s,%s' %(str(k), v))
+        for k, v in g_failed_verification_cities.items():
+            logging.info('%s,%s' % (str(k), v))
 
 
 if __name__ == '__main__':
@@ -328,4 +330,3 @@ if __name__ == '__main__':
     main(test_main)
 
     logging.debug('Verify baidu weather service DONE.')
-    pass

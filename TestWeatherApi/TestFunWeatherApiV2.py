@@ -3,6 +3,9 @@
 Created on 2016-11-17
 
 @author: zhengjin
+
+Verify the city weather data from Funshion API V2.
+1) get data success
 '''
 
 import os
@@ -129,5 +132,3 @@ if __name__ == '__main__':
 
     main_test_fun_weather_api()
     logging.debug('%s Done!' % (os.path.basename(__file__)))
-
-    pass
