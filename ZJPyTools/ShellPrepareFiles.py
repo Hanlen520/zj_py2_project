@@ -105,4 +105,3 @@ if __name__ == '__main__':
     prepare_files_main()
     
     print 'Prepare files for shell env, done!'
-    pass
