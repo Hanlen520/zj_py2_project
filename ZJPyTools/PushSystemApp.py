@@ -4,7 +4,7 @@ Created on 2016-11-9
 
 @author: zhengjin
 
-Push local App to the android /system/app
+Push local App to the android shell system directory.
 
 '''
 
@@ -129,4 +129,4 @@ if __name__ == '__main__':
 
     main_push_app()
     
-    print 'Push app to android /system done!'
+    print 'Push app to shell /system done!'

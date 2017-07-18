@@ -34,7 +34,6 @@ def run_sys_cmd(cmd):
     if not ret == 0:
         logging.warn('Failed, run command %s, return code is %d' % (cmd, ret))
         return False
-
     return True
 
 def run_sys_cmd_and_ret_lines(cmd):
