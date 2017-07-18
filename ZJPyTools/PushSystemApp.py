@@ -49,31 +49,37 @@ def remount_system_partition():
         print 'Failed to remount /system partition!'
         exit(1)
 
-def push_app_to_sdcard():
-    print 'Start to push app to andorid sdcard.'
+def push_app_to_shell_tmp_dir():
+    print 'Start to push app to shell /data/local/tmp/'
     app_full_path = os.path.join(TARGET_APP_DIR_PATH, target_app_name)
     cmd = 'adb push %s %s' % (app_full_path, SHELL_TMP_DIR_PATH)
     
     if not WinSysUtils.run_sys_cmd(cmd):
-        print 'Failed to push app to sdcard!'
+        print 'Failed to push app to /data/local/tmp/ !'
         exit(1)
 
-def check_app_push_to_sdcard():
+def check_app_push_to_shell_tmp_dir():
     cmd = 'adb shell ls %s | findstr %s' % (SHELL_TMP_DIR_PATH, target_app_name)
     output = WinSysUtils.run_sys_cmd_and_ret_content(cmd);
     
     if not target_app_name in output:
-        print 'Check failed for push app to sdcard!'
+        print 'Check failed for push app to /data/local/tmp/ !'
         exit(1)
 
-def copy_app_from_sdcard_to_system_app():
-    print 'Copying app from sdcard to /system/app'
+def copy_app_to_system_app_dir():
+    print 'Copying app from sdcard to /system/app/'
     cmd = 'adb shell cp %s%s %s' % (SHELL_TMP_DIR_PATH, target_app_name, SHELL_SYSTEM_APP_DIR_PATH)
     if not WinSysUtils.run_sys_cmd(cmd):
-        print 'Failed to copy app from sdcard to /system/app'
+        print 'Failed to copy app from sdcard to /system/app/'
         exit(1)
+
+def remove_exit_apk_files_in_system_app_dir():
+    file_pattern = '%s.*' % target_app_name.split('.')[0]
+    cmd = 'adb shell rm ' + SHELL_SYSTEM_APP_DIR_PATH + file_pattern
+    print cmd
+    WinSysUtils.run_sys_cmd(cmd)
         
-def check_app_copy_to_system_app():
+def check_app_copy_to_system_app_dir():
     cmd = 'adb shell ls %s | findstr %s' % (SHELL_SYSTEM_APP_DIR_PATH, target_app_name)
     output = WinSysUtils.run_sys_cmd_and_ret_content(cmd);
     
@@ -104,13 +110,14 @@ def check_change_mod_for_app():
 def main_push_app():
     connect_to_device_with_root()
     remount_system_partition()
-      
-    push_app_to_sdcard()
-    check_app_push_to_sdcard()
- 
-    copy_app_from_sdcard_to_system_app()
-    check_app_copy_to_system_app()
-     
+    
+    push_app_to_shell_tmp_dir()
+    check_app_push_to_shell_tmp_dir()
+    
+    remove_exit_apk_files_in_system_app_dir()
+    copy_app_to_system_app_dir()
+    check_app_copy_to_system_app_dir()
+    
     change_mod_for_app_in_system()
     check_change_mod_for_app()
 
