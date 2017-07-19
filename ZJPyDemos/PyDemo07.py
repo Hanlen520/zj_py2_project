@@ -399,6 +399,14 @@ def ex13():
 run_ex_by_flag(ex13)
 
 
+# EXAMPLE 14, empty function
+def ex14():
+    def empty_func():
+        pass
+    print empty_func()  # None
+run_ex_by_flag(ex14)
+
+
 if __name__ == '__main__':
 
     print '%s done!' % os.path.basename(__file__)
