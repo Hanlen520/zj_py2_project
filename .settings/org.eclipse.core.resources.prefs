@@ -46,6 +46,6 @@ encoding//ZJPyUtils/AdbUtils.py=utf-8
 encoding//ZJPyUtils/FileUtils.py=utf-8
 encoding//ZJPyUtils/HttpJsonUtils.py=utf-8
 encoding//ZJPyUtils/LogUtils.py=utf-8
-encoding//ZJPyUtils/RunMultipleCmds.py=utf-8
+encoding//ZJPyUtils/RunCmds.py=utf-8
 encoding//ZJPyUtils/WinSysUtils.py=utf-8
 encoding/<project>=UTF-8

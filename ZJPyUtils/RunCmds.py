@@ -3,13 +3,15 @@
 Created on 2016-3-11
 
 @author: zhengjin
+
+Run multiple commands in cmd line.
 '''
 import os
 import subprocess
 import time
 
 # --------------------------------------------------------------
-# Vars
+# Constants
 # --------------------------------------------------------------
 g_wait_between_cmds = 1
 
@@ -22,6 +24,7 @@ g_cmd_key_enter = 'KEYCODE_ENTER'
 g_cmd_key_back = 'KEYCODE_BACK'
 g_cmd_key_home = 'KEYCODE_HOME'
 
+
 # --------------------------------------------------------------
 #  Build And Format Commands
 # --------------------------------------------------------------
@@ -31,8 +34,9 @@ def format_cmds_with_new_line_and_ret_str(cmds):
 def format_cmds_with_new_line_and_ret_list(cmds):
     return ('%s\n' % cmd for cmd in cmds)
 
+
 # --------------------------------------------------------------
-#  Run Multiple Commands Utils
+#  Run Multiple Commands Functions
 # --------------------------------------------------------------
 def run_piped_cmds(first_cmd, second_cmd):
     p1 = subprocess.Popen(first_cmd, stdin=subprocess.PIPE,
@@ -94,6 +98,7 @@ def run_cmds_by_communicate(cmds):
         return 'null'
     return out
 
+
 # --------------------------------------------------------------
 #  Main
 # --------------------------------------------------------------
@@ -123,4 +128,4 @@ if __name__ == '__main__':
 
 #     run_repeat_shell_send_key_cmds(g_cmd_key_right, 10)
     
-    print '%s Done!' % (os.path.basename(__file__))
+    print os.path.basename(__file__), 'Done!'
