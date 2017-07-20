@@ -407,6 +407,11 @@ def ex14():
 run_ex_by_flag(ex14)
 
 
+g_test_var = 'init from beginning'
+
 if __name__ == '__main__':
 
-    print '%s done!' % os.path.basename(__file__)
+    g_test_var = 'init in main'
+    print g_test_var
+
+    print os.path.basename(__file__), 'DONE!'

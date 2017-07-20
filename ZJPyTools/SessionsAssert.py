@@ -15,7 +15,7 @@ import codecs
 import sys, getopt
 
 # --------------------------------------------------------------
-# Contants
+# Constants
 # --------------------------------------------------------------
 g_results_file_abs_path = r'd:\session_assert_results.txt'
 
