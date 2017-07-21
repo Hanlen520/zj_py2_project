@@ -1,71 +1,38 @@
 # -*- coding: utf-8 -*-
 '''
-Created on 2016-1-26
+Created on 2017-7-21
 
 @author: zhengjin
 
-Parse and build the memory info by using procrank.
-
+Get the memory info by using procrank.
+1) get all memory info.
+2) get memory info for process.
 '''
 
-import subprocess
+import os
 import time
 from ZJAndroidMonitor import MonitorUtils
 
 # --------------------------------------------------------------
-# Env Vars
+# Path Variables
 # --------------------------------------------------------------
-g_package_name = ''
-g_keyword_ram = 'RAM'
-g_keyword_sevice = 'remote'
+TIME_OUT = 60 * MonitorUtils.g_min
 
-g_category_process = 'app_process'
-g_category_sevice = 'app_service'
-g_category_total = 'sys_mem'
-
-g_run_num = '01'
-g_run_time = 10 * MonitorUtils.g_min
-g_time_out = 60 * MonitorUtils.g_min
-g_mointor_interval = MonitorUtils.g_short_interval
-
-
-g_flag_build_report = False
-g_flag_parse_report = False
-
-g_flag_only_process = False
-g_flag_only_total = False
-g_flag_process_total = False
-g_flag_all = False
-
-g_flag_print_report = True
-g_flag_print_log = False
-
-
-# --------------------------------------------------------------
-# Path Vars
-# --------------------------------------------------------------
-g_suffix = '%s_%s' % (MonitorUtils.g_cur_date, g_run_num)
+g_suffix = ''
 g_report_dir_path = ''
-g_report_file_path = ''
-g_category_report_file_path = ''
-g_path_total = ''
-g_path_app_process = ''
-g_path_app_sevice = ''
+g_report_file_for_all_path = ''
+g_report_file_for_process_path = ''
 
 def init_path_vars():
+    global g_suffix
     global g_report_dir_path
-    global g_report_file_path
-    global g_category_report_file_path
-    global g_path_total
-    global g_path_app_process
-    global g_path_app_sevice
+    global g_report_file_for_all_path
+    global g_report_file_for_process_path
     
-    g_report_dir_path = r'%s\procrank_mem_log_%s' % (MonitorUtils.g_root_path, g_suffix)
-    g_report_file_path = r'%s\procrank_mem_log_%s.txt' % (g_report_dir_path, g_suffix)
-    g_category_report_file_path = r'%s\procrank_category_log_%s.txt' % (g_report_dir_path, g_suffix)
-    g_path_total = r'%s\procrank_log_total_%s.txt' % (g_report_dir_path, g_suffix)
-    g_path_app_process = r'%s\procrank_log_app_process_%s.txt' % (g_report_dir_path, g_suffix)
-    g_path_app_sevice = r'%s\procrank_log_app_service_%s.txt' % (g_report_dir_path, g_suffix)
+    g_suffix = '%s_%s' % (MonitorUtils.g_cur_date, g_run_num)
+    g_report_dir_path = r'%s\mem_procrank_log_%s' % (MonitorUtils.g_root_path, g_suffix)
+    g_report_file_for_all_path = r'%s\mem_procrank_for_all_%s.txt' % (g_report_dir_path, g_suffix)
+    g_report_file_for_process_path = r'%s\mem_procrank_app_process_%s.txt' % (g_report_dir_path, g_suffix)
 
 
 # --------------------------------------------------------------
@@ -73,175 +40,63 @@ def init_path_vars():
 # --------------------------------------------------------------
 def run_cmd_procrank():
     cmd = 'adb shell procrank'
-    if g_flag_print_log:
-        print cmd
-    
-    p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
-    p.wait()
-    lines = p.stdout.readlines()
+    return os.popen(cmd).readlines()
 
-    return lines
+def run_cmd_procrank_for_pkg():
+    cmd = 'adb shell procrank | findstr %s' % g_pkg_name
+    tmp_lines = os.popen(cmd).readlines()
+    if len(tmp_lines) != 1:
+        print 'Warn, the process(%s) is not exist!' % g_pkg_name
+        return None
+    return tmp_lines[0]
 
-def run_cmd_procrank_with_findstr_keyword(find_str):
-    cmd = 'adb shell procrank | findstr %s' % find_str
-    if g_flag_print_log:
-        print cmd
-
-    p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
-    p.wait()
-    lines = p.stdout.readlines()
-
-    return lines
-    
-def run_cmd_procrank_with_findstr_all():
-    # cannot use grep in windows command line, and use findstr instead
-#     cmd = 'adb shell procrank | grep -E "filemanager|TOTAL"'
-    cmd_procrank = 'adb shell procrank' 
-    cmd_findstr = 'findstr /r "%s %s:"' % (g_package_name, g_keyword_ram)
-    cmd = '%s | %s' % (cmd_procrank, cmd_findstr)
-    if g_flag_print_log:
-        print cmd
-
-    p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
-    p.wait()
-    lines = p.stdout.readlines()
-
-    return lines
+def run_cmd_procrank_for_total_and_pkg():
+    # 'adb shell procrank | grep -E "filemanager|TOTAL"'
+    cmd = 'adb shell procrank | findstr /r "%s %s:"' % (g_pkg_name, 'RAM')
+    return os.popen(cmd).readlines()
 
 
 # --------------------------------------------------------------
 # Functions: run commands and write files
 # --------------------------------------------------------------
-g_default_content_process = ''
-g_default_content_sevice = ''
-g_default_content_total = ''
+def run_cmd_and_write_report_for_process(f_report):
+    tmp_line = run_cmd_procrank_for_pkg()
+    if tmp_line is None:
+        default_content = 'null: process (%s) NOT running.' % g_pkg_name
+        write_report_line_with_time_in_file(f_report, default_content)
+    write_report_line_with_time_in_file(f_report, tmp_line)
 
-def init_default_content():
-    global g_default_content_process
-    global g_default_content_sevice
-    global g_default_content_total
-    
-    g_default_content_process = '%s null: the process (%s) is currently NOT running.' % (g_category_process, g_package_name)
-    g_default_content_sevice = '%s null: the service (%s:remote) is currently NOT running.' % (g_category_sevice, g_package_name)
-    g_default_content_total = '%s null: run procrank error, total line is NOT found.' % g_category_total
+def run_cmd_and_write_report_for_all(f_report):
+    f_report.writelines(build_prefix_line_for_procrank_cmd_output())
+    f_report.writelines(trim_lines(run_cmd_procrank()))
+    f_report.flush()
 
-def subprocess_run_cmd_and_write_report_for_process(f_report):
-    lines = run_cmd_procrank_with_findstr_keyword(g_package_name)
+def trim_lines(input_lines):
+    return [line.replace('\r\n', '\n') for line in input_lines]
 
-    content_record = g_default_content_process
-    for line in lines:
-        if check_is_process_line(line):
-            content_record = format_prefix_with_category(g_category_process, parse_output_process_line(line))
-            
-    write_line_report_with_time(f_report, content_record)
+def build_prefix_line_for_procrank_cmd_output():
+    cur_datetime = MonitorUtils.g_get_current_datetime()
+    return '\n%s -----------------------------------\n' % cur_datetime
 
-def subprocess_run_cmd_and_write_report_for_total(f_report):
-    lines = run_cmd_procrank_with_findstr_keyword(g_keyword_ram)
-
-    content_record = g_default_content_total
-    for line in lines:
-        if check_is_total_line(line):
-            content_record = format_prefix_with_category(g_category_total, parse_output_total_line(line, MonitorUtils.g_report_limiter))
-            
-    write_line_report_with_time(f_report, content_record)
-
-def subprocess_run_cmd_and_write_report_for_process_and_total(f_report):
-    lines = run_cmd_procrank()
-
-    content_record = g_default_content_process
-    content_total = g_default_content_total
-    
-    for line in lines:
-        if check_is_process_line(line):
-            content_record = format_prefix_with_category(g_category_process, parse_output_process_line(line))
-        elif check_is_total_line(line):
-            content_total = format_prefix_with_category(g_category_total, parse_output_total_line(line, MonitorUtils.g_report_limiter))
-
-    write_line_report_with_time(f_report, content_record, content_total)
-
-def subprocess_run_cmd_and_write_report_for_all(f_report):
-    lines = run_cmd_procrank_with_findstr_all()
-
-    content_record = g_default_content_process
-    content_service = g_default_content_sevice
-    content_total = g_default_content_total
-
-    for line in lines:
-        if check_is_process_line(line):
-            content_record = format_prefix_with_category(g_category_process, parse_output_process_line(line))
-        elif check_is_sevice_line(line):
-            content_service = format_prefix_with_category(g_category_sevice, parse_output_process_line(line))
-        elif check_is_total_line(line):
-            content_total = format_prefix_with_category(g_category_total, parse_output_total_line(line, MonitorUtils.g_report_limiter))
-
-    write_line_report_with_time(f_report, content_record, content_service, content_total)
-
-def check_is_process_line(line):
-    return ((g_package_name in line) and (g_keyword_sevice not in line))
-
-def check_is_sevice_line(line):
-    return ((g_package_name in line) and (g_keyword_sevice in line))
-
-def check_is_total_line(line):
-    return (line.startswith(g_keyword_ram))
-
-def loop_for_subprocess(fn, f_report):
-    # LOOP
+def loop_for_subprocess(fn_subprocess_run_cmd, f_report):
     start = int(time.clock())
-
-    while True:
-        fn(f_report)
+    while 1:
+        fn_subprocess_run_cmd(f_report)
         time.sleep(g_mointor_interval)
 
         during = int(time.clock()) - start
-        if during >= g_run_time or during >= g_time_out:
-            print 'LOOP exit, and cost %d minutes %d seconds.' % ((during / 60), (during % 60))
+        if during >= g_run_time or during >= TIME_OUT:
+            print 'Mem monitor(procrank) exit, and cost %d minutes %d seconds.' % ((during / 60), (during % 60))
             return
+        print 'Mem monitor(procrank) is running, %d minutes %d seconds.' % ((during / 60, during % 60))
 
 
 # --------------------------------------------------------------
-# Functions: parser and format line
+# Functions: create report and IOs
 # --------------------------------------------------------------
-def parse_output_process_line(line):
-    items = line.split()
-    parse_items = []
-    for i in range(1, 5):
-        item = items[i].strip()
-        parse_items.append(format_KtoM_for_record(item[0:(len(item) - 1)]))
-    parse_items.append(items[len(items) - 1])
-    
-    return MonitorUtils.g_report_limiter.join(parse_items)
-
-def parse_output_total_line(line, limiter):
-    items = line[5:].split(limiter, 6)
-    parse_items = []
-    for item in items:
-        parse_items.append(format_KtoM_for_total(item.strip()))
-
-    return MonitorUtils.g_report_limiter.join(parse_items)
-
-def format_KtoM_for_record(item):
-    mum_m = round(int(item) / 1024)
-    return '%dM' % mum_m
-
-def format_KtoM_for_total(item):
-    index = item.find('K')
-    item_m = format_KtoM_for_record(item[0:index])
-    return '%s%s' % (item_m, item[(index + 1):])
-
-def format_prefix_with_category(category, line):
-    return '%s,%s' % (category, line)
-
-
-# --------------------------------------------------------------
-# Functions: create report
-# --------------------------------------------------------------
-def create_report_header(f_report):
-    if g_flag_print_log:
-        print 'log: create report header.'
-    
-    report_title_line = '******* PROCRANK MEMORY REPORT: %s' % (g_package_name)
-    report_cols_line = 'Time,Category,PID,Vss,Rss,Pss,Uss,cmdline'
+def create_report_header_for_process(f_report):
+    print 'Create report header for process.'
+    report_title_line = '******* PROCRANK MEMORY REPORT: %s' % g_pkg_name
 
     content_vss = 'VSS - Virtual Set Size,'
     content_rss = 'RSS - Resident Set Size,'
@@ -249,116 +104,32 @@ def create_report_header(f_report):
     content_uss = 'USS - Unique Set Size'
     report_exlain_line = MonitorUtils.g_tab.join((content_vss, content_rss, content_pss, content_uss))
 
-    write_single_line_report(f_report, report_title_line, report_exlain_line, report_cols_line)
+    report_cols_line = 'Time   PID       Vss      Rss      Pss      Uss  cmdline'
+
+    write_report_lines_in_file(f_report, report_title_line, report_exlain_line, report_cols_line)
+
+def create_report_header_for_all(f_report):
+    print 'Create report header for all.'
+    report_title_line = '******* PROCRANK MEMORY REPORT: START'
+    write_report_lines_in_file(f_report, report_title_line)
 
 def create_report_trailer(f_report):
-    if g_flag_print_log:
-        print 'log: create report trailer.'
-
+    print 'Create report trailer.'
     trailer_line = '************** PROCRANK MEMORY REPORT END'
-    write_single_line_report(f_report, trailer_line)
+    write_report_lines_in_file(f_report, trailer_line)
 
-def write_single_line_report(f_report, *arg):
-    if g_flag_print_log:
-        print 'log: write line to the report file.'
-    
+def write_report_lines_in_file(f_report, *arg):
     for line in arg:
-        if g_flag_print_report:
-            print line
+        print line
         f_report.write('%s%s' % (line, MonitorUtils.g_new_line))
-
     f_report.flush()
 
-def write_line_report_with_time(f_report, *arg):
-    if g_flag_print_log:
-        print 'log: write line to the report file with time.'
-    
-    cur_time = time.strftime(MonitorUtils.g_time_format)
-    for line in arg:
-        if g_flag_print_report:
-            print_line_report_with_time(cur_time, line)
-        f_report.write('%s,%s%s' % (cur_time, line, MonitorUtils.g_new_line))
-
+def write_report_line_with_time_in_file(f_report, line):
+    cur_time = MonitorUtils.g_get_current_time()
+    tmp_line = '  '.join((cur_time, line.replace('\r\n', '\n')))
+    print tmp_line
+    f_report.write(tmp_line)
     f_report.flush()
-
-def print_line_report_with_time(cur_time, line):
-    print '%s,%s' % (cur_time, line)
-
-
-# --------------------------------------------------------------
-# Functions: parse report
-# --------------------------------------------------------------
-def create_separated_report_for_process_service_total():
-    if g_flag_print_log:
-        print 'log: create separate report for APP process, service, and total.'
-    
-    lines = read_lines_from_file(g_report_file_path)
-    if len(lines) == 0:
-        print 'Error, the file size is zero --> %s' % (g_report_file_path)
-        return
-
-    f_total = MonitorUtils.g_create_and_open_report_with_write(g_path_total)
-    f_process = MonitorUtils.g_create_and_open_report_with_write(g_path_app_process)
-    f_sevice = MonitorUtils.g_create_and_open_report_with_write(g_path_app_sevice)
-    try:
-        for line in lines:
-            if g_category_process in line:
-                f_process.write(line)
-            elif g_category_total in line:
-                f_total.write(line)
-            elif g_category_sevice in line:
-                f_sevice.write(line)
-    finally:
-        files_flush_and_close(f_process, f_sevice, f_total)
-
-def create_report_sorted_by_category():
-    if g_flag_print_log:
-        print 'log: create report sorted by category: APP process, service, and total.'
-    
-    lines = read_lines_from_file(g_report_file_path)
-    if len(lines) == 0:
-        print 'Error, the size of file is zero --> %s' % (g_report_file_path)
-        return
-
-    lines_process = []
-    lines_sevice = []
-    lines_total = []
-    lines_header = []
-    lines_trailer = []
-    keyword_end = 'END'
-    for line in lines:
-        if g_category_process in line:
-            lines_process.append(line)
-        elif g_category_sevice in line:
-            lines_sevice.append(line)
-        elif g_category_total in line:
-            lines_total.append(line)
-        elif keyword_end in line:
-            lines_trailer.append(line)
-        else:
-            lines_header.append(line)
-
-#     lines.sort(key=lambda x:x.split(',')[1])
-
-    f_category_report = MonitorUtils.g_create_and_open_report_with_write(g_category_report_file_path)
-    try:
-        write_lines_into_file(f_category_report, lines_header, lines_process, lines_sevice, lines_total, lines_trailer)
-    finally:
-        files_flush_and_close(f_category_report)
-
-def read_lines_from_file(g_report_file_path):
-    lines = []
-    f_report = MonitorUtils.g_open_report_with_read(g_report_file_path)
-    try:
-        lines = f_report.readlines()
-    finally:
-        f_report.close()
-    
-    return lines
-
-def write_lines_into_file(f_report, *arg):
-    for lines in arg:
-        f_report.writelines(lines)
 
 def files_flush_and_close(*arg):
     for f in arg:
@@ -370,50 +141,45 @@ def files_flush_and_close(*arg):
 # --------------------------------------------------------------
 # Main
 # --------------------------------------------------------------
-def mem_monitor_procrank_main():
-    init_path_vars()
-    
-    if g_flag_build_report:
-        MonitorUtils.g_create_report_dir(g_report_dir_path)
-        f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_path)
+def mem_monitor_procrank_main_for_process():
+    f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_for_process_path)
+    try:
+        create_report_header_for_process(f_report)
+        loop_for_subprocess(run_cmd_and_write_report_for_process, f_report)
+        create_report_trailer(f_report)
+    finally:
+        f_report.close()
 
-        try:
-            create_report_header(f_report)
-            init_default_content()
-            if g_flag_only_process:
-                loop_for_subprocess(subprocess_run_cmd_and_write_report_for_process, f_report)
-            elif g_flag_only_total:
-                loop_for_subprocess(subprocess_run_cmd_and_write_report_for_total, f_report)
-            elif g_flag_process_total:
-                loop_for_subprocess(subprocess_run_cmd_and_write_report_for_process_and_total, f_report)
-            elif g_flag_all:
-                loop_for_subprocess(subprocess_run_cmd_and_write_report_for_all, f_report)
-            else:
-                print 'Error: no monitor flag set and exit.'
-                exit(1)
-        finally:
-            create_report_trailer(f_report)
-            f_report.close()
+def mem_monitor_procrank_main_for_all():
+    f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_for_all_path)
+    try:
+        create_report_header_for_all(f_report)
+        loop_for_subprocess(run_cmd_and_write_report_for_all, f_report)
+        create_report_trailer(f_report)
+    finally:
+        f_report.close()
+
+def mem_monitor_procrank_setup():
+    init_path_vars()
+    MonitorUtils.g_create_report_dir(g_report_dir_path)
+
+def mem_monitor_procrank_main():
+    mem_monitor_procrank_setup()
     
-    if g_flag_parse_report:
-#         create_report_sorted_by_category()
-        create_separated_report_for_process_service_total()
+    if g_is_process:
+        mem_monitor_procrank_main_for_process()
+    else:
+        mem_monitor_procrank_main_for_all()
 
 
 if __name__ == '__main__':
 
-    # before execution, there has device adb connected
-    g_package_name = MonitorUtils.g_pkg_name_filemanager
+    g_pkg_name = 'com.bestv.ott'
     g_run_num = '01'
-    g_run_time = 3 * MonitorUtils.g_min
+    g_run_time = 60 * MonitorUtils.g_min
+    g_mointor_interval = MonitorUtils.g_short_interval
 
-    g_flag_build_report = True
-    g_flag_parse_report = True
-
-    g_flag_only_process = False
-    g_flag_only_total = False
-    g_flag_process_total = False
-    g_flag_all = True
+    g_is_process = True
 
     mem_monitor_procrank_main()
 
