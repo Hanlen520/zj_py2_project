@@ -413,10 +413,27 @@ def print_global_var():
     print g_test_var
 
 def print_external_var():
-    # method invokded from demo06 main
+    # method invoked from demo06 main
     # external var defined from demo06 main
     global g_ext_test_var
     print g_ext_test_var
+
+
+# EXAMPLE 16, chart
+def ex15():
+    import numpy
+    print numpy.__version__
+
+    import matplotlib
+    print matplotlib.__version__
+
+    import pylab as pl
+    x = [1, 2, 3, 4, 5]
+    y = [1, 4, 9, 16, 25]
+    pl.plot(x, y)
+    pl.show()
+
+run_ex_by_flag(ex15)
 
 
 if __name__ == '__main__':
