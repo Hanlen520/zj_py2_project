@@ -407,11 +407,21 @@ def ex14():
 run_ex_by_flag(ex14)
 
 
+# EXAMPLE 15, global and external vars
 g_test_var = 'init from beginning'
+def print_global_var():
+    print g_test_var
+
+def print_external_var():
+    # method invokded from demo06 main
+    # external var defined from demo06 main
+    global g_ext_test_var
+    print g_ext_test_var
+
 
 if __name__ == '__main__':
 
     g_test_var = 'init in main'
-    print g_test_var
+    print_global_var()
 
     print os.path.basename(__file__), 'DONE!'

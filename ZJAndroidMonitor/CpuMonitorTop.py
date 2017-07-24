@@ -13,11 +13,12 @@ Get CPU usage info by using top.
 import os
 import time
 from ZJAndroidMonitor import MonitorUtils
+from ZJPyUtils import AdbUtils
 
 # --------------------------------------------------------------
 # Variables
 # --------------------------------------------------------------
-MAX_RUN_TIME = 8 * 60 * MonitorUtils.g_min  # 8 hours
+MAX_RUN_TIME = 12 * MonitorUtils.g_hour  # 8 hours
 
 g_suffix = ''
 g_report_dir_path = ''
@@ -75,9 +76,26 @@ def run_top_command_for_total_and_pkg():
 # --------------------------------------------------------------
 # Functions: create reports, and IOs
 # --------------------------------------------------------------
+DIV_LINE = '*' * 30
+
+def build_report_header_for_top_cmd():
+    return DIV_LINE + ' TOP CPU REPORT: START'
+
+def build_report_trailer_for_top_cmd():
+    return DIV_LINE + ' TOP CPU REPORT: END'
+
+def build_report_header_for_top_cmd_for_pkg():
+    return DIV_LINE + ' TOP CPU REPORT FOR PACKAGE: %s' % g_pkg_name
+
+def build_report_trailer_for_top_cmd_for_pkg():
+    return DIV_LINE + ' TOP CPU REPORT FOR PACKAGE: END'
+
+def build_report_title_for_top_cmd_for_pkg():
+    return 'TIME  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name'
+
 def build_prefix_line_for_top_cmd_output():
     cur_datetime = MonitorUtils.g_get_current_datetime()
-    return '%s -----------------------------------' % cur_datetime
+    return cur_datetime + ' ' + '-' * 40
 
 def run_top_cmd_and_write_output(f_report):
     write_single_line_report(f_report, build_prefix_line_for_top_cmd_output())
@@ -85,7 +103,7 @@ def run_top_cmd_and_write_output(f_report):
     f_report.flush()
 
 def run_top_cmd_for_pkg_and_write_output(f_report):
-    write_line = '  '.join((MonitorUtils.g_get_current_time(), run_top_command_for_pkg()))
+    write_line = '%s   %s' % (MonitorUtils.g_get_current_time(), run_top_command_for_pkg())
     write_single_line_report(f_report, write_line)
     f_report.flush()
 
@@ -93,21 +111,6 @@ def run_top_cmd_for_total_pkg_and_write_output(f_report):
     write_single_line_report(f_report, build_prefix_line_for_top_cmd_output())
     write_multiple_lines_report(f_report, run_top_command_for_total_and_pkg())
     f_report.flush()
-
-def build_report_header_for_top_cmd():
-    return '************** TOP CPU REPORT: START' 
-
-def build_report_trailer_for_top_cmd():
-    return '************** TOP CPU REPORT: END'
-
-def build_report_header_for_top_cmd_for_pkg():
-    return '************** TOP CPU REPORT FOR PACKAGE: %s' % g_pkg_name
-
-def build_report_trailer_for_top_cmd_for_pkg():
-    return '************** TOP CPU REPORT FOR PACKAGE: END'
-
-def build_report_title_for_top_cmd_for_pkg():
-    return 'TIME  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name'
 
 def write_multiple_lines_report(f_report, lines):
     if len(lines) == 0:
@@ -145,7 +148,7 @@ def loop_process(run_top_fn, f_report):
         during = int(time.clock()) - start
         if during >= g_run_time or during >= MAX_RUN_TIME:
             print 'CPU monitor(top) exit, cost %d minutes %d seconds.' % (during / 60, during % 60)
-            break
+            return
         print 'CPU monitor(top) is running, %d minutes %d seconds.' % (during / 60, during % 60)
 
 def run_top_cmd_main():
@@ -177,22 +180,25 @@ def run_top_cmd_for_total_pkg_main():
         file_flush_and_close(f_report)
 
 def cpu_monitor_top_setup():
+    if not AdbUtils.verify_adb_devices_connect():
+        print 'Error, no adb devices connected!'
+        exit(1)
+    
     init_path_vars()
     MonitorUtils.g_create_report_dir(g_report_dir_path)
 
 def cpu_monitor_top_main():
     cpu_monitor_top_setup()
-  
     if g_is_top_for_pkg:
         run_top_cmd_for_pkg_main()
     else:
-#         run_top_cmd_main()
-        run_top_cmd_for_total_pkg_main()
+        run_top_cmd_main()
+#         run_top_cmd_for_total_pkg_main()
 
 
 if __name__ == '__main__':
 
-    g_pkg_name = 'com.bestv.ott'
+    g_pkg_name = 'tv.ismar.daisy'
     g_run_num = '01'
     g_interval = MonitorUtils.g_interval
     g_run_time = 60 * MonitorUtils.g_min

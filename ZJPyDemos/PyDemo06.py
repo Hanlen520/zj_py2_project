@@ -507,4 +507,8 @@ if __name__ == '__main__':
     run_ex_by_flag(ex1601)
     run_ex_by_flag(ex1602)
 
+    import PyDemo07
+    PyDemo07.g_ext_test_var = 'init from demo06'
+    PyDemo07.print_external_var()
+
     print '%s done!' % os.path.basename(__file__)

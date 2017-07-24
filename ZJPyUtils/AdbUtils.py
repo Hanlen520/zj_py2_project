@@ -12,7 +12,7 @@ import os
 import time
 import logging
 
-from ZJPyUtils import WinSysUtils, RunMultipleCmds
+from ZJPyUtils import WinSysUtils, RunCmds
 
 # --------------------------------------------------------------
 # adb functions
@@ -108,7 +108,7 @@ def dump_logcat_for_app_by_package(pkg_name, log_file_abs_path, timeout=10):
 
     cmd_get_pids = 'ps | grep %s | busybox awk \'{print $2}\'' % pkg_name
     cmds = ['adb shell', cmd_get_pids, 'exit']
-    ret_content = RunMultipleCmds.run_cmds_by_communicate(cmds)
+    ret_content = RunCmds.run_cmds_by_communicate(cmds)
     pids = get_pids_from_result(ret_content)
     
     filter_str = ''
