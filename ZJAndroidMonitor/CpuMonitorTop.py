@@ -18,7 +18,7 @@ from ZJPyUtils import AdbUtils
 # --------------------------------------------------------------
 # Variables
 # --------------------------------------------------------------
-MAX_RUN_TIME = 12 * MonitorUtils.g_hour  # 8 hours
+MAX_RUN_TIME = 12 * MonitorUtils.g_hour  # 12 hours
 
 g_suffix = ''
 g_report_dir_path = ''
@@ -143,7 +143,7 @@ def loop_process(run_top_fn, f_report):
 
     while 1:
         run_top_fn(f_report)
-        time.sleep(g_interval)
+        time.sleep(g_monitor_interval)
 
         during = int(time.clock()) - start
         if during >= g_run_time or during >= MAX_RUN_TIME:
@@ -200,7 +200,7 @@ if __name__ == '__main__':
 
     g_pkg_name = 'tv.ismar.daisy'
     g_run_num = '01'
-    g_interval = MonitorUtils.g_interval
+    g_monitor_interval = MonitorUtils.g_interval
     g_run_time = 60 * MonitorUtils.g_min
     
     g_is_top_for_pkg = False

@@ -83,7 +83,7 @@ def loop_for_subprocess(fn_subprocess_run_cmd, f_report):
     start = int(time.clock())
     while 1:
         fn_subprocess_run_cmd(f_report)
-        time.sleep(g_mointor_interval)
+        time.sleep(g_monitor_interval)
 
         during = int(time.clock()) - start
         if during >= g_run_time or during >= RUN_TIME_OUT:
@@ -114,7 +114,7 @@ def create_and_write_report_header_for_all(f_report):
     write_report_lines_in_file(f_report, report_title_line)
 
 def create_and_write_report_trailer(f_report):
-    trailer_line = DIV_LINE + ' PROCRANK MEMORY REPORT END'
+    trailer_line = DIV_LINE + ' PROCRANK MEMORY REPORT: END'
     write_report_lines_in_file(f_report, trailer_line)
 
 def write_report_lines_in_file(f_report, *arg):
@@ -178,7 +178,7 @@ if __name__ == '__main__':
     g_pkg_name = 'tv.ismar.daisy'
     g_run_num = '01'
     g_run_time = 30 * MonitorUtils.g_min
-    g_mointor_interval = MonitorUtils.g_interval
+    g_monitor_interval = MonitorUtils.g_interval
 
     g_is_process = True
 

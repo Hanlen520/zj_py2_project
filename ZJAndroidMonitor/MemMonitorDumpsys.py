@@ -17,7 +17,7 @@ from ZJPyUtils import AdbUtils
 # Constants
 # --------------------------------------------------------------
 DEFAULT_NULL_CONTENT = 'null'
-MAX_RUN_TIME = 60 * MonitorUtils.g_min
+MAX_RUN_TIME = 12 * MonitorUtils.g_hour
 
 WRITE_LINES = []
 WRITE_LINES_BUF = 20
@@ -143,7 +143,7 @@ def create_report_header(f_report):
     write_single_line_in_report(f_report, header_cols_line)
 
 def create_report_trailer(f_report):
-    trailer_line = DIV_LINE + ' DUMPSYS MEMINFO REPORT END'
+    trailer_line = DIV_LINE + ' DUMPSYS MEMINFO REPORT: END'
     write_single_line_in_report(f_report, trailer_line)
 
 def write_single_line_in_report(f_report, write_line):
@@ -165,8 +165,8 @@ def loop_process(monitor_fn, f_report):
     start = int(time.clock())
     while 1:
         monitor_fn(f_report)
-        time.sleep(g_interval)
- 
+        time.sleep(g_monitor_interval)
+
         during = int(time.clock()) - start
         msg_cost_time = 'and cost %d minutes %d seconds.' % (during / 60, during % 60)
         if during > g_run_time or during > MAX_RUN_TIME:
@@ -197,9 +197,8 @@ if __name__ == '__main__':
 
     g_pkg_name = 'tv.ismar.daisy'
     g_run_num = '01'
-    g_interval = MonitorUtils.g_interval
+    g_monitor_interval = MonitorUtils.g_interval
     g_run_time = 3 * MonitorUtils.g_min
-
     mem_monitor_dumpsys_main()
 
     print 'Memory monitor by dumpsys meminfo, DONE!'
