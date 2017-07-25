@@ -422,8 +422,8 @@ def print_external_var():
 # EXAMPLE 16, chart
 def ex16_01():
     import matplotlib.pylab as pl
-    # use number elements
-    # x and y have same length
+    # use numbers as elements
+    # x and y must have same length
     x_int_arr = [1, 2, 3, 4, 5, 6]
     y_int_arr = [1, 4, 9, 16, 25, 36]
     pl.plot(x_int_arr, y_int_arr)
@@ -467,11 +467,12 @@ def ex16_03():
     
     plt.title('Performance Monitor')
     plt.xlabel('Time')
-    plt.ylabel('CPU Usage')
+    plt.ylabel('CPU Usage%')
     
     plt.plot(x_arr, y_arr, color='green')
     plt.grid(True, color='black', linestyle='--', linewidth='1')
     plt.show()
+#     plt.savefig(r'd:\chart_test.png')
 run_ex_by_flag(ex16_03)
 
 
