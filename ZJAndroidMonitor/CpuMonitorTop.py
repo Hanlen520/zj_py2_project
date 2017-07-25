@@ -145,7 +145,6 @@ def file_flush_and_close(f):
 # --------------------------------------------------------------
 def loop_process(run_top_fn, f_report):
     start = int(time.clock())
-
     while 1:
         run_top_fn(f_report)
         time.sleep(g_monitor_interval)

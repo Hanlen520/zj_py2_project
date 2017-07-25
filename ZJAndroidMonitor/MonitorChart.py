@@ -11,7 +11,7 @@ import os
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter, MaxNLocator
 
-import CpuMonitorTop, MemMonitorProcrank
+import CpuMonitorTop, MemMonitorProcrank, MemMonitorDumpsys
 
 # --------------------------------------------------------------
 # Constants
@@ -52,6 +52,23 @@ def get_xy_data_from_mem_procrank_log(run_num):
         x_arr.append(tmp_fields[0])
         mem_uss = tmp_fields[5]
         y_arr.append(format_mem_value(mem_uss))
+
+    if len(x_arr) != len(y_arr):
+        print ERROR_MSG_ARR_LENGTH_NOT_EQUAL
+        exit(1)
+    return x_arr, y_arr
+
+def get_xy_data_from_mem_dumpsys_log(run_num):
+    results_file_path = MemMonitorDumpsys.get_report_file_path_mem_dumpsys(run_num)
+    results_lines = get_results_lines_from_src_file(results_file_path)
+    
+    x_arr = []
+    y_arr = []
+    for line in results_lines:
+        tmp_fields = line.split(',')
+        x_arr.append(tmp_fields[0])
+        mem_pss = tmp_fields[1]
+        y_arr.append(format_mem_value(mem_pss))
 
     if len(x_arr) != len(y_arr):
         print ERROR_MSG_ARR_LENGTH_NOT_EQUAL
@@ -112,6 +129,11 @@ def create_monitor_results_chart_for_cpu_top_main():
 
 def create_monitor_results_chart_for_mem_procrank_main():
     x_arr, y_arr = get_xy_data_from_mem_procrank_log(run_num)
+    y_label_text = 'Memory Usage - USS (MB)'
+    generate_chart_from_xy_data(x_arr, y_arr, y_label_text)
+
+def create_monitor_results_chart_for_mem_dumpsys_main():
+    x_arr, y_arr = get_xy_data_from_mem_dumpsys_log(run_num)
     y_label_text = 'Memory Usage - PSS (MB)'
     generate_chart_from_xy_data(x_arr, y_arr, y_label_text)
 
@@ -120,6 +142,8 @@ def monitor_results_chart_main():
         create_monitor_results_chart_for_cpu_top_main()
     elif is_create_monitor_chart_for_mem_procrank:
         create_monitor_results_chart_for_mem_procrank_main()
+    elif is_create_monitor_chart_for_mem_dumpsys:
+        create_monitor_results_chart_for_mem_dumpsys_main()
 
 
 if __name__ == '__main__':
@@ -127,6 +151,7 @@ if __name__ == '__main__':
     run_num = '01'
     is_create_monitor_chart_for_cpu_top = False
     is_create_monitor_chart_for_mem_procrank = True
+    is_create_monitor_chart_for_mem_dumpsys = False
 
     monitor_results_chart_main()
     

@@ -33,21 +33,29 @@ def set_env_vars_for_cpu_monitor_top():
     CpuMonitorTop.g_pkg_name = pkg_name
     CpuMonitorTop.g_run_num = run_number
     CpuMonitorTop.g_run_time = run_time
-    CpuMonitorTop.g_monitor_interval = monitor_interval
+    CpuMonitorTop.g_monitor_interval = get_monitor_interval_time()
     CpuMonitorTop.g_is_top_for_pkg = g_is_for_pkg
 
 def set_env_vars_for_mem_monitor_dumpsys():
     MemMonitorDumpsys.g_pkg_name = pkg_name
     MemMonitorDumpsys.g_run_num = run_number
     MemMonitorDumpsys.g_run_time = run_time
-    MemMonitorDumpsys.g_monitor_interval = monitor_interval
+    MemMonitorDumpsys.g_monitor_interval = get_monitor_interval_time()
 
 def set_env_vars_for_mem_monitor_procrank():
     MemMonitorProcrank.g_pkg_name = pkg_name
     MemMonitorProcrank.g_run_num = run_number
     MemMonitorProcrank.g_run_time = run_time
-    MemMonitorProcrank.g_monitor_interval = monitor_interval
+    MemMonitorProcrank.g_monitor_interval = get_monitor_interval_time()
     MemMonitorProcrank.g_is_process = g_is_for_pkg
+
+def get_monitor_interval_time():
+    global monitor_interval
+    try:
+        return monitor_interval
+    except Exception:
+        # if 'monitor_interval' does not define
+        return MonitorUtils.g_interval
 
 
 # --------------------------------------------------------------
@@ -140,10 +148,10 @@ if __name__ == '__main__':
     pkg_name = 'com.bestv.ott'
     run_number = '02'
     run_time = 10 * MonitorUtils.g_min
-    monitor_interval = MonitorUtils.g_interval
+#     monitor_interval = MonitorUtils.g_short_interval
     
     g_is_for_pkg = True
-    g_is_mem_monitor_by_dumpsys = True
+    g_is_mem_monitor_by_dumpsys = False
     
     monitor_runner_main()
     

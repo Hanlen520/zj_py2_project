@@ -29,14 +29,18 @@ WRITE_LINES_BUF = 20
 g_report_dir_path = ''
 g_report_file_path = ''
 
-def init_path_vars():
+def init_path_vars(run_num):
     global g_suffix
     global g_report_dir_path
     global g_report_file_path
 
-    g_suffix = '%s_%s' % (MonitorUtils.g_cur_date, g_run_num)
+    g_suffix = '%s_%s' % (MonitorUtils.g_cur_date, run_num)
     g_report_dir_path = r'%s\mem_dumpsys_log_%s' % (MonitorUtils.g_root_path, g_suffix)
     g_report_file_path = r'%s\mem_dumpsys_log_%s.txt' % (g_report_dir_path, g_suffix)
+
+def get_report_file_path_mem_dumpsys(run_num):
+    init_path_vars(run_num)
+    return g_report_file_path
 
 
 # --------------------------------------------------------------
@@ -178,7 +182,7 @@ def mem_monitor_dumpsys_setup():
     if not AdbUtils.verify_adb_devices_connect():
         print 'No adb devices connected!'
         exit(1)
-    init_path_vars()
+    init_path_vars(g_run_num)
 
 def mem_monitor_dumpsys_main():
     mem_monitor_dumpsys_setup()
