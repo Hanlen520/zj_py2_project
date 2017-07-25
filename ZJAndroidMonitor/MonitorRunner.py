@@ -137,13 +137,13 @@ def monitor_runner_main():
 
 if __name__ == '__main__':
 
-    pkg_name = 'tv.ismar.daisy'
-    run_number = '01'
+    pkg_name = 'com.bestv.ott'
+    run_number = '02'
     run_time = 10 * MonitorUtils.g_min
     monitor_interval = MonitorUtils.g_interval
     
     g_is_for_pkg = True
-    g_is_mem_monitor_by_dumpsys = False
+    g_is_mem_monitor_by_dumpsys = True
     
     monitor_runner_main()
     

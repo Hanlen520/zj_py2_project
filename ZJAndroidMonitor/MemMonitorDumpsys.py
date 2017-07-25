@@ -131,9 +131,9 @@ def create_report_header(f_report):
     tmp_line = get_app_mem_size_limit()
     if tmp_line != DEFAULT_NULL_CONTENT:
         for line in tmp_line:
-            write_single_line_in_report(f_report, line.strip('\r\n'))
+            write_single_line_in_report(f_report, '*' + line.strip('\r\n'))
     
-    col0 = 'Time'
+    col0 = '*Time'
     col1 = 'MemTotal(Pss)'
     col2 = 'DalvikHeapSize'
     col3 = 'DalvikHeapAlloc'

@@ -420,20 +420,59 @@ def print_external_var():
 
 
 # EXAMPLE 16, chart
-def ex15():
-    import numpy
-    print numpy.__version__
+def ex16_01():
+    import matplotlib.pylab as pl
+    # use number elements
+    # x and y have same length
+    x_int_arr = [1, 2, 3, 4, 5, 6]
+    y_int_arr = [1, 4, 9, 16, 25, 36]
+    pl.plot(x_int_arr, y_int_arr)
+    pl.show()
+run_ex_by_flag(ex16_01)
+
+def ex16_02():
+    import numpy as np
+    print np.__version__
 
     import matplotlib
+    import matplotlib.pyplot as plt
     print matplotlib.__version__
 
-    import pylab as pl
-    x = [1, 2, 3, 4, 5]
-    y = [1, 4, 9, 16, 25]
-    pl.plot(x, y)
-    pl.show()
+    x_arr = [x for x in range(0, 11)]
+    y_arr = [x for x in range(0, 101, 10)]
+    plt.plot(x_arr, y_arr, linestyle='--', color='green')
+    plt.grid(True, color='g', linestyle='--', linewidth='1')
+    plt.show()
+run_ex_by_flag(ex16_02)
 
-run_ex_by_flag(ex15)
+def ex16_03():
+    import matplotlib.pyplot as plt
+    from matplotlib.ticker import FuncFormatter, MaxNLocator
+
+    x_labels = ['09:58:10', '09:58:15', '09:58:20', '09:58:25', '09:58:30']
+    x_arr = range(len(x_labels))  # length of labels
+    y_arr = [27, 1, 3, 5, 14]  # y for actual values
+    
+    tmp_figure = plt.figure()
+    ax = tmp_figure.add_subplot(111)
+    
+    def format_fn(x_val, x_pos):
+        if int(x_val) in x_arr:
+            return x_labels[int(x_val)]
+        else:
+            return ''
+
+    ax.xaxis.set_major_formatter(FuncFormatter(format_fn))
+    ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+    
+    plt.title('Performance Monitor')
+    plt.xlabel('Time')
+    plt.ylabel('CPU Usage')
+    
+    plt.plot(x_arr, y_arr, color='green')
+    plt.grid(True, color='black', linestyle='--', linewidth='1')
+    plt.show()
+run_ex_by_flag(ex16_03)
 
 
 if __name__ == '__main__':

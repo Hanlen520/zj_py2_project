@@ -39,6 +39,13 @@ def init_path_vars():
     g_report_file_path_top_for_pkg = r'%s\top_for_pkg_%s.txt' % (g_report_dir_path, g_suffix)
     g_report_file_path_top_for_pkg_and_total = r'%s\top_for_total_pkg_%s.txt' % (g_report_dir_path, g_suffix)
 
+def get_report_file_path_top_for_pkg(run_num):
+    # invoked from external
+    global g_run_num
+    g_run_num = run_num
+    init_path_vars()
+    return g_report_file_path_top_for_pkg
+
 
 # --------------------------------------------------------------
 # Functions: run commands
@@ -91,7 +98,7 @@ def build_report_trailer_for_top_cmd_for_pkg():
     return DIV_LINE + ' TOP CPU REPORT FOR PACKAGE: END'
 
 def build_report_title_for_top_cmd_for_pkg():
-    return 'TIME  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name'
+    return '*TIME  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name'
 
 def build_prefix_line_for_top_cmd_output():
     cur_datetime = MonitorUtils.g_get_current_datetime()

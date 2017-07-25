@@ -99,9 +99,9 @@ DIV_LINE = '*' * 30
 
 def create_and_write_report_header_for_process(f_report):
     report_title_line = DIV_LINE + ' PROCRANK MEMORY REPORT: %s' % g_pkg_name
-    report_cols_line = 'Time   PID       Vss      Rss      Pss      Uss  cmdline'
+    report_cols_line = '*Time   PID       Vss      Rss      Pss      Uss  cmdline'
 
-    content_vss = 'VSS - Virtual Set Size,'
+    content_vss = '*VSS - Virtual Set Size,'
     content_rss = 'RSS - Resident Set Size,'
     content_pss = 'PSS - Proportional Set Size,'
     content_uss = 'USS - Unique Set Size'
