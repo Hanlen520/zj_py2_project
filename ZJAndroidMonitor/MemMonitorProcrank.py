@@ -24,16 +24,20 @@ g_report_dir_path = ''
 g_report_file_for_all_path = ''
 g_report_file_for_process_path = ''
 
-def init_path_vars():
+def init_path_vars(run_num):
     global g_suffix
     global g_report_dir_path
     global g_report_file_for_all_path
     global g_report_file_for_process_path
     
-    g_suffix = '%s_%s' % (MonitorUtils.g_cur_date, g_run_num)
+    g_suffix = '%s_%s' % (MonitorUtils.g_cur_date, run_num)
     g_report_dir_path = r'%s\mem_procrank_log_%s' % (MonitorUtils.g_root_path, g_suffix)
     g_report_file_for_all_path = r'%s\mem_procrank_for_all_%s.txt' % (g_report_dir_path, g_suffix)
     g_report_file_for_process_path = r'%s\mem_procrank_app_process_%s.txt' % (g_report_dir_path, g_suffix)
+
+def get_report_file_path_mem_procrank_for_process(run_num):
+    init_path_vars(run_num)
+    return g_report_file_for_process_path
 
 
 # --------------------------------------------------------------
@@ -162,7 +166,7 @@ def mem_monitor_procrank_setup():
         print 'No adb devices connected!'
         exit(1)
 
-    init_path_vars()
+    init_path_vars(g_run_num)
     MonitorUtils.g_create_report_dir(g_report_dir_path)
 
 def mem_monitor_procrank_main():

@@ -26,14 +26,14 @@ g_report_file_path_top_for_all = ''
 g_report_file_path_top_for_pkg = ''
 g_report_file_path_top_for_pkg_and_total = ''
 
-def init_path_vars():
+def init_path_vars(run_num):
     global g_suffix
     global g_report_dir_path
     global g_report_file_path_top_for_all
     global g_report_file_path_top_for_pkg
     global g_report_file_path_top_for_pkg_and_total
     
-    g_suffix = '%s_%s' % (MonitorUtils.g_cur_date, g_run_num)
+    g_suffix = '%s_%s' % (MonitorUtils.g_cur_date, run_num)
     g_report_dir_path = r'%s\cpu_top_log_%s' % (MonitorUtils.g_root_path, g_suffix)
     g_report_file_path_top_for_all = r'%s\top_for_all_%s.txt' % (g_report_dir_path, g_suffix)
     g_report_file_path_top_for_pkg = r'%s\top_for_pkg_%s.txt' % (g_report_dir_path, g_suffix)
@@ -41,9 +41,7 @@ def init_path_vars():
 
 def get_report_file_path_top_for_pkg(run_num):
     # invoked from external
-    global g_run_num
-    g_run_num = run_num
-    init_path_vars()
+    init_path_vars(run_num)
     return g_report_file_path_top_for_pkg
 
 
@@ -191,7 +189,7 @@ def cpu_monitor_top_setup():
         print 'Error, no adb devices connected!'
         exit(1)
     
-    init_path_vars()
+    init_path_vars(g_run_num)
     MonitorUtils.g_create_report_dir(g_report_dir_path)
 
 def cpu_monitor_top_main():
