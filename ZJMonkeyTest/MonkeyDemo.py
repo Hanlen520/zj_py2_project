@@ -30,7 +30,7 @@ def stopLogcat():
     os.system(cmd)
 
 # --------------------------------------------------------------
-# functions: Anr tarces files
+# functions: Anr traces files
 # --------------------------------------------------------------
 anr_path = r'/data/anr/traces.txt'
 
@@ -93,4 +93,3 @@ def Main():
 if __name__ == '__main__':
     
     Main()
-    pass

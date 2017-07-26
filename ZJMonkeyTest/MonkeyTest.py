@@ -287,7 +287,7 @@ def get_rom_properties_and_write_file():
 
 
 # --------------------------------------------------------------
-# Function: IO, and report files
+# Functions: IO and report files
 # --------------------------------------------------------------
 def verify_device_is_busy(lines):
     for line in lines:
@@ -342,7 +342,7 @@ def pull_captures():
 
 
 # --------------------------------------------------------------
-# Threads main
+# Threads
 # --------------------------------------------------------------
 def wait_for_monkey_process_start():
     monkey_process_id = ''
@@ -416,7 +416,7 @@ def kill_subprocess(p):
 
 
 # --------------------------------------------------------------
-# Monkey test main
+# Monkey Test Main
 # --------------------------------------------------------------
 def main_test_setup():
     adb_connect_with_root(g_target_ip)
@@ -468,12 +468,12 @@ def monkey_test_main():
 
 if __name__ == '__main__':
 
-    g_target_ip = '172.17.5.104'
+    g_target_ip = '172.17.5.112'
     g_run_num = '01'
     g_run_mins = 60
 
     # if false, run monkey for whitelist as default
-    g_flag_monkey_for_package = False
+    g_flag_monkey_for_package = True
     g_package_name = PKG_NAME_LAUNCHER
 
     g_flag_profile_monitor = True

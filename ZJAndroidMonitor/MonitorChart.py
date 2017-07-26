@@ -155,10 +155,10 @@ def monitor_results_chart_main():
 
 if __name__ == '__main__':
     
-    run_num = '02'
-    report_root_path = r'E:\Eclipse_Workspace\ZJPyProject\ZJMonkeyTest\MonkeyReprots\20170726\20170726_02\profile_logs'
+    run_num = '01'
+#     report_root_path = r'E:\Eclipse_Workspace\ZJPyProject\ZJMonkeyTest\MonkeyReprots\20170726\20170726_01\profile_logs'
 
-    is_create_monitor_chart_for_cpu_top = False
+    is_create_monitor_chart_for_cpu_top = True
     is_create_monitor_chart_for_mem_procrank = True
     is_create_monitor_chart_for_mem_dumpsys = False
 
