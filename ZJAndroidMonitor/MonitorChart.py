@@ -11,7 +11,7 @@ import os
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter, MaxNLocator
 
-import CpuMonitorTop, MemMonitorProcrank, MemMonitorDumpsys
+import MonitorUtils, CpuMonitorTop, MemMonitorProcrank, MemMonitorDumpsys
 
 # --------------------------------------------------------------
 # Constants
@@ -24,8 +24,8 @@ ERROR_MSG_ARR_LENGTH_NOT_EQUAL = 'Error, the numbers of elements for x_arr and y
 # --------------------------------------------------------------
 # Functions: get source data
 # --------------------------------------------------------------
-def get_xy_data_from_cpu_top_log(run_num):
-    results_file_path = CpuMonitorTop.get_report_file_path_top_for_pkg(run_num)
+def get_xy_data_from_cpu_top_log(run_num, root_path):
+    results_file_path = CpuMonitorTop.get_report_file_path_top_for_pkg(run_num, root_path)
     results_lines = get_results_lines_from_src_file(results_file_path)
     
     x_arr = []
@@ -41,8 +41,8 @@ def get_xy_data_from_cpu_top_log(run_num):
         exit(1)
     return x_arr, y_arr
 
-def get_xy_data_from_mem_procrank_log(run_num):
-    results_file_path = MemMonitorProcrank.get_report_file_path_mem_procrank_for_process(run_num)
+def get_xy_data_from_mem_procrank_log(run_num, root_path):
+    results_file_path = MemMonitorProcrank.get_report_file_path_mem_procrank_for_process(run_num, root_path)
     results_lines = get_results_lines_from_src_file(results_file_path)
     
     x_arr = []
@@ -58,8 +58,8 @@ def get_xy_data_from_mem_procrank_log(run_num):
         exit(1)
     return x_arr, y_arr
 
-def get_xy_data_from_mem_dumpsys_log(run_num):
-    results_file_path = MemMonitorDumpsys.get_report_file_path_mem_dumpsys(run_num)
+def get_xy_data_from_mem_dumpsys_log(run_num, root_path):
+    results_file_path = MemMonitorDumpsys.get_report_file_path_mem_dumpsys(run_num, root_path)
     results_lines = get_results_lines_from_src_file(results_file_path)
     
     x_arr = []
@@ -123,17 +123,17 @@ def generate_chart_from_xy_data(x_labels, y_arr, y_label_text):
 # Main
 # --------------------------------------------------------------
 def create_monitor_results_chart_for_cpu_top_main():
-    x_arr, y_arr = get_xy_data_from_cpu_top_log(run_num)
+    x_arr, y_arr = get_xy_data_from_cpu_top_log(run_num, prj_root_path)
     y_label_text = 'CPU Usage%'
     generate_chart_from_xy_data(x_arr, y_arr, y_label_text)
 
 def create_monitor_results_chart_for_mem_procrank_main():
-    x_arr, y_arr = get_xy_data_from_mem_procrank_log(run_num)
+    x_arr, y_arr = get_xy_data_from_mem_procrank_log(run_num, prj_root_path)
     y_label_text = 'Memory Usage - USS (MB)'
     generate_chart_from_xy_data(x_arr, y_arr, y_label_text)
 
 def create_monitor_results_chart_for_mem_dumpsys_main():
-    x_arr, y_arr = get_xy_data_from_mem_dumpsys_log(run_num)
+    x_arr, y_arr = get_xy_data_from_mem_dumpsys_log(run_num, prj_root_path)
     y_label_text = 'Memory Usage - PSS (MB)'
     generate_chart_from_xy_data(x_arr, y_arr, y_label_text)
 
@@ -149,6 +149,8 @@ def monitor_results_chart_main():
 if __name__ == '__main__':
     
     run_num = '01'
+    prj_root_path = MonitorUtils.g_get_project_root_path()
+
     is_create_monitor_chart_for_cpu_top = False
     is_create_monitor_chart_for_mem_procrank = True
     is_create_monitor_chart_for_mem_dumpsys = False

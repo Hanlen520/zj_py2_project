@@ -28,11 +28,6 @@ g_short_interval = 1
 g_interval = 3
 g_long_interval = 5
 
-g_date_format = '%Y%m%d'
-g_cur_date = time.strftime(g_date_format)
-
-g_root_path = os.path.join(os.getcwd(), 'MonitorReports', g_cur_date)
-
 
 # --------------------------------------------------------------
 # Global Functions
@@ -73,9 +68,16 @@ def g_get_current_datetime():
     g_datetime_format = '%y-%m-%d %H:%M:%S'
     return time.strftime(g_datetime_format)
 
+def g_get_current_date():
+    g_date_format = '%Y%m%d'
+    return time.strftime(g_date_format)
+
 def g_get_current_time():
     g_time_format = '%H:%M:%S'
     return time.strftime(g_time_format)
+
+def g_get_project_root_path():
+    return os.path.join(os.getcwd(), 'MonitorReports', g_get_current_date())
 
 
 # --------------------------------------------------------------
@@ -83,4 +85,4 @@ def g_get_current_time():
 # --------------------------------------------------------------
 if __name__ == '__main__':
 
-    print os.path.basename(__file__), 'done!'
+    print os.path.basename(__file__), 'DONE!'

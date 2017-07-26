@@ -26,22 +26,22 @@ g_report_file_path_top_for_all = ''
 g_report_file_path_top_for_pkg = ''
 g_report_file_path_top_for_pkg_and_total = ''
 
-def init_path_vars(run_num):
+def init_path_vars(run_num, root_path):
     global g_suffix
     global g_report_dir_path
     global g_report_file_path_top_for_all
     global g_report_file_path_top_for_pkg
     global g_report_file_path_top_for_pkg_and_total
     
-    g_suffix = '%s_%s' % (MonitorUtils.g_cur_date, run_num)
-    g_report_dir_path = r'%s\cpu_top_log_%s' % (MonitorUtils.g_root_path, g_suffix)
+    g_suffix = '%s_%s' % (MonitorUtils.g_get_current_date(), run_num)
+    g_report_dir_path = r'%s\cpu_top_log_%s' % (root_path, g_suffix)
     g_report_file_path_top_for_all = r'%s\top_for_all_%s.txt' % (g_report_dir_path, g_suffix)
     g_report_file_path_top_for_pkg = r'%s\top_for_pkg_%s.txt' % (g_report_dir_path, g_suffix)
     g_report_file_path_top_for_pkg_and_total = r'%s\top_for_total_pkg_%s.txt' % (g_report_dir_path, g_suffix)
 
-def get_report_file_path_top_for_pkg(run_num):
+def get_report_file_path_top_for_pkg(run_num, root_path):
     # invoked from external
-    init_path_vars(run_num)
+    init_path_vars(run_num, root_path)
     return g_report_file_path_top_for_pkg
 
 
@@ -188,7 +188,7 @@ def cpu_monitor_top_setup():
         print 'Error, no adb devices connected!'
         exit(1)
     
-    init_path_vars(g_run_num)
+    init_path_vars(g_run_num, MonitorUtils.g_get_project_root_path())
     MonitorUtils.g_create_report_dir(g_report_dir_path)
 
 def cpu_monitor_top_main():
