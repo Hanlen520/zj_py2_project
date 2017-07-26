@@ -10,10 +10,8 @@ Runner to execute multiple monitor scripts concurrently.
 
 import time
 import threading
-from ZJAndroidMonitor import MemMonitorDumpsys
-from ZJAndroidMonitor import MemMonitorProcrank
-from ZJAndroidMonitor import CpuMonitorTop
-from ZJAndroidMonitor import MonitorUtils
+
+import MonitorUtils, MemMonitorDumpsys, MemMonitorProcrank, CpuMonitorTop
 
 # --------------------------------------------------------------
 # Constants
@@ -30,6 +28,7 @@ def monitor_runner_env_vars_setup():
     set_env_vars_for_mem_monitor_procrank()
 
 def set_env_vars_for_cpu_monitor_top():
+    CpuMonitorTop.g_report_root_path = report_root_path
     CpuMonitorTop.g_pkg_name = pkg_name
     CpuMonitorTop.g_run_num = run_number
     CpuMonitorTop.g_run_time = run_time
@@ -37,12 +36,14 @@ def set_env_vars_for_cpu_monitor_top():
     CpuMonitorTop.g_is_top_for_pkg = g_is_for_pkg
 
 def set_env_vars_for_mem_monitor_dumpsys():
+    MemMonitorDumpsys.g_report_root_path = report_root_path
     MemMonitorDumpsys.g_pkg_name = pkg_name
     MemMonitorDumpsys.g_run_num = run_number
     MemMonitorDumpsys.g_run_time = run_time
     MemMonitorDumpsys.g_monitor_interval = get_monitor_interval_time()
 
 def set_env_vars_for_mem_monitor_procrank():
+    MemMonitorProcrank.g_report_root_path = report_root_path
     MemMonitorProcrank.g_pkg_name = pkg_name
     MemMonitorProcrank.g_run_num = run_number
     MemMonitorProcrank.g_run_time = run_time
@@ -145,10 +146,12 @@ def monitor_runner_main():
 
 if __name__ == '__main__':
 
-    pkg_name = 'com.bestv.ott'
-    run_number = '02'
-    run_time = 10 * MonitorUtils.g_min
+    report_root_path = MonitorUtils.g_get_report_root_path()
 #     monitor_interval = MonitorUtils.g_short_interval
+
+    pkg_name = 'com.bestv.ott'
+    run_number = '01'
+    run_time = 10 * MonitorUtils.g_min
     
     g_is_for_pkg = True
     g_is_mem_monitor_by_dumpsys = False

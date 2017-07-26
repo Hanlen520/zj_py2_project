@@ -11,6 +11,7 @@ Get the memory info by using procrank.
 
 import os
 import time
+
 from ZJAndroidMonitor import MonitorUtils
 from ZJPyUtils import AdbUtils
 
@@ -166,7 +167,7 @@ def mem_monitor_procrank_setup():
         print 'No adb devices connected!'
         exit(1)
 
-    init_path_vars(g_run_num, MonitorUtils.g_get_project_root_path())
+    init_path_vars(g_run_num, g_report_root_path)
     MonitorUtils.g_create_report_dir(g_report_dir_path)
 
 def mem_monitor_procrank_main():
@@ -179,10 +180,12 @@ def mem_monitor_procrank_main():
 
 if __name__ == '__main__':
 
+    g_report_root_path = MonitorUtils.g_get_report_root_path()
+    g_monitor_interval = MonitorUtils.g_interval
+
     g_pkg_name = 'tv.ismar.daisy'
     g_run_num = '01'
-    g_run_time = 30 * MonitorUtils.g_min
-    g_monitor_interval = MonitorUtils.g_interval
+    g_run_time = 60 * MonitorUtils.g_min
 
     g_is_process = True
 

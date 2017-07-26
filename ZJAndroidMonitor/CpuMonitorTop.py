@@ -12,6 +12,7 @@ Get CPU usage info by using top.
 
 import os
 import time
+
 from ZJAndroidMonitor import MonitorUtils
 from ZJPyUtils import AdbUtils
 
@@ -188,7 +189,7 @@ def cpu_monitor_top_setup():
         print 'Error, no adb devices connected!'
         exit(1)
     
-    init_path_vars(g_run_num, MonitorUtils.g_get_project_root_path())
+    init_path_vars(g_run_num, g_report_root_path)
     MonitorUtils.g_create_report_dir(g_report_dir_path)
 
 def cpu_monitor_top_main():
@@ -202,12 +203,14 @@ def cpu_monitor_top_main():
 
 if __name__ == '__main__':
 
+    g_report_root_path = MonitorUtils.g_get_report_root_path()
+    g_monitor_interval = MonitorUtils.g_interval
+
     g_pkg_name = 'tv.ismar.daisy'
     g_run_num = '01'
-    g_monitor_interval = MonitorUtils.g_interval
     g_run_time = 60 * MonitorUtils.g_min
     
-    g_is_top_for_pkg = False
+    g_is_top_for_pkg = True
 
     cpu_monitor_top_main()
 

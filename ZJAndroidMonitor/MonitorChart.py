@@ -123,19 +123,26 @@ def generate_chart_from_xy_data(x_labels, y_arr, y_label_text):
 # Main
 # --------------------------------------------------------------
 def create_monitor_results_chart_for_cpu_top_main():
-    x_arr, y_arr = get_xy_data_from_cpu_top_log(run_num, prj_root_path)
+    x_arr, y_arr = get_xy_data_from_cpu_top_log(run_num, get_report_root_dir_path())
     y_label_text = 'CPU Usage%'
     generate_chart_from_xy_data(x_arr, y_arr, y_label_text)
 
 def create_monitor_results_chart_for_mem_procrank_main():
-    x_arr, y_arr = get_xy_data_from_mem_procrank_log(run_num, prj_root_path)
+    x_arr, y_arr = get_xy_data_from_mem_procrank_log(run_num, get_report_root_dir_path())
     y_label_text = 'Memory Usage - USS (MB)'
     generate_chart_from_xy_data(x_arr, y_arr, y_label_text)
 
 def create_monitor_results_chart_for_mem_dumpsys_main():
-    x_arr, y_arr = get_xy_data_from_mem_dumpsys_log(run_num, prj_root_path)
+    x_arr, y_arr = get_xy_data_from_mem_dumpsys_log(run_num, get_report_root_dir_path())
     y_label_text = 'Memory Usage - PSS (MB)'
     generate_chart_from_xy_data(x_arr, y_arr, y_label_text)
+
+def get_report_root_dir_path():
+    try:
+        global report_root_path
+        return report_root_path
+    except Exception:
+        return MonitorUtils.g_get_report_root_path()
 
 def monitor_results_chart_main():
     if is_create_monitor_chart_for_cpu_top:
@@ -148,8 +155,8 @@ def monitor_results_chart_main():
 
 if __name__ == '__main__':
     
-    run_num = '01'
-    prj_root_path = MonitorUtils.g_get_project_root_path()
+    run_num = '02'
+    report_root_path = r'E:\Eclipse_Workspace\ZJPyProject\ZJMonkeyTest\MonkeyReprots\20170726\20170726_02\profile_logs'
 
     is_create_monitor_chart_for_cpu_top = False
     is_create_monitor_chart_for_mem_procrank = True

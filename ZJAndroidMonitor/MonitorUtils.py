@@ -76,7 +76,7 @@ def g_get_current_time():
     g_time_format = '%H:%M:%S'
     return time.strftime(g_time_format)
 
-def g_get_project_root_path():
+def g_get_report_root_path():
     return os.path.join(os.getcwd(), 'MonitorReports', g_get_current_date())
 
 

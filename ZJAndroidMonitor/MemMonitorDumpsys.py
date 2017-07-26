@@ -10,6 +10,7 @@ Get the memory info for process by using dumpsys meminfo.
 
 import os
 import time
+
 from ZJAndroidMonitor import MonitorUtils
 from ZJPyUtils import AdbUtils
 
@@ -182,7 +183,7 @@ def mem_monitor_dumpsys_setup():
     if not AdbUtils.verify_adb_devices_connect():
         print 'No adb devices connected!'
         exit(1)
-    init_path_vars(g_run_num, MonitorUtils.g_get_project_root_path())
+    init_path_vars(g_run_num, g_report_root_path)
 
 def mem_monitor_dumpsys_main():
     mem_monitor_dumpsys_setup()
@@ -199,10 +200,13 @@ def mem_monitor_dumpsys_main():
 
 if __name__ == '__main__':
 
+    g_report_root_path = MonitorUtils.g_get_report_root_path()
+    g_monitor_interval = MonitorUtils.g_interval
+
     g_pkg_name = 'tv.ismar.daisy'
     g_run_num = '01'
-    g_monitor_interval = MonitorUtils.g_interval
-    g_run_time = 3 * MonitorUtils.g_min
+    g_run_time = 60 * MonitorUtils.g_min
+
     mem_monitor_dumpsys_main()
 
     print 'Memory monitor by dumpsys meminfo, DONE!'
