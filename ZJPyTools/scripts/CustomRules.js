@@ -180,7 +180,6 @@ class Handlers
             file = fso.CreateTextFile(absFilePathSessionsData, true, false);
         }
         
-        
         for (var i:int = 0; i < oSessions.Length; i++) {
             var session = oSessions[i];
             file.writeLine("Request url: " + session.url);
