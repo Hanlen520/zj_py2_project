@@ -20,6 +20,9 @@ PERF_MONITOR_CHART_TITLE = 'Performance Monitor'
 X_LABEL_TIME = 'Execution Time'
 ERROR_MSG_ARR_LENGTH_NOT_EQUAL = 'Error, the numbers of elements for x_arr and y_arr do not equal!'
 
+PKG_NAME = 'null'
+MONITOR_INTERVAL = 'null'
+
 
 # --------------------------------------------------------------
 # Functions: get source data
@@ -86,11 +89,29 @@ def get_results_lines_from_src_file(src_file_path):
     
     with open(src_file_path, 'r') as f_results_file:
         tmp_lines = f_results_file.readlines()
-        results_lines = [line for line in tmp_lines if not line.startswith('*')]
+        parse_info_line_and_set_global_vars(tmp_lines)  # get package name and interval
+        
+        results_lines = [line for line in tmp_lines if verify_record_line(line)]
         if len(results_lines) == 0:
             print 'Error, the file (%s) is empty!' % src_file_path
             exit(1)
         return results_lines
+
+def verify_record_line(line):
+    if not line.startswith('*') and not line.startswith('###'):
+        return True
+    return False
+
+def parse_info_line_and_set_global_vars(input_lines):
+    global PKG_NAME
+    global MONITOR_INTERVAL
+    
+    for line in input_lines:
+        if line.startswith('###'):
+            kvs = line.split()
+            PKG_NAME = kvs[1].split('=')[1]
+            MONITOR_INTERVAL = kvs[2].split('=')[1]
+            return
 
 
 # --------------------------------------------------------------
@@ -109,8 +130,8 @@ def generate_chart_from_xy_data(x_labels, y_arr, y_label_text):
     ax.xaxis.set_major_formatter(FuncFormatter(format_fn))
     ax.xaxis.set_major_locator(MaxNLocator(integer=True))
     
-    plt.title(PERF_MONITOR_CHART_TITLE)
-    plt.xlabel(X_LABEL_TIME)
+    plt.title('%s (%s)' % (PERF_MONITOR_CHART_TITLE, PKG_NAME))
+    plt.xlabel('%s (per %s seconds)' % (X_LABEL_TIME, MONITOR_INTERVAL))
     plt.ylabel(y_label_text)
     
     x_arr = range(len(x_labels))
@@ -163,5 +184,5 @@ if __name__ == '__main__':
     is_create_monitor_chart_for_mem_dumpsys = False
 
     monitor_results_chart_main()
-    
+
     print os.path.basename(__file__), 'DONE!'

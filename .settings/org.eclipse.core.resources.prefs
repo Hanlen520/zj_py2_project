@@ -35,6 +35,7 @@ encoding//ZJPyTools/CopyFilesPerDir.py=utf-8
 encoding//ZJPyTools/DiffCityList.py=utf-8
 encoding//ZJPyTools/DiffRecords01.py=utf-8
 encoding//ZJPyTools/DiffRecords02.py=utf-8
+encoding//ZJPyTools/DumpLogcatForApp.py=utf-8
 encoding//ZJPyTools/QuerySqliteDb.py=utf-8
 encoding//ZJPyTools/Run24x7InstTests.py=utf-8
 encoding//ZJPyTools/RunAndroidInstTests.py=utf-8

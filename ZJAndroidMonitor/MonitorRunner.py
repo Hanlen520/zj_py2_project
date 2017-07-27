@@ -147,10 +147,10 @@ def monitor_runner_main():
 if __name__ == '__main__':
 
     report_root_path = MonitorUtils.g_get_report_root_path()
-#     monitor_interval = MonitorUtils.g_short_interval
+    monitor_interval = MonitorUtils.g_short_interval
 
     pkg_name = 'com.bestv.ott'
-    run_number = '01'
+    run_number = '02'
     run_time = 10 * MonitorUtils.g_min
     
     g_is_for_pkg = True

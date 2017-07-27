@@ -102,21 +102,21 @@ def loop_for_subprocess(fn_subprocess_run_cmd, f_report):
 DIV_LINE = '*' * 30
 
 def create_and_write_report_header(f_report):
-    info_line = '### package_name=%s monitor_interval=%s' % (g_pkg_name, g_monitor_interval)
-    
-    explain_line = ''
+    content_vss = '*VSS - Virtual Set Size,'
+    content_rss = 'RSS - Resident Set Size,'
+    content_pss = 'PSS - Proportional Set Size,'
+    content_uss = 'USS - Unique Set Size'
+    explain_line = MonitorUtils.g_tab.join((content_vss, content_rss, content_pss, content_uss))
+
     if g_is_process:
         title_line = DIV_LINE + ' PROCRANK MEMORY REPORT FOR PACKAGE: START'
-        content_vss = '*VSS - Virtual Set Size,'
-        content_rss = 'RSS - Resident Set Size,'
-        content_pss = 'PSS - Proportional Set Size,'
-        content_uss = 'USS - Unique Set Size'
-        explain_line = MonitorUtils.g_tab.join((content_vss, content_rss, content_pss, content_uss))
+        info_line = '### package_name=%s monitor_interval=%s' % (g_pkg_name, g_monitor_interval)
         cols_line = '*Time   PID       Vss      Rss      Pss      Uss  cmdline'
-        write_report_lines_in_file(f_report, title_line, explain_line, info_line, cols_line)
+        write_report_lines_in_file(f_report, title_line, info_line, explain_line, cols_line)
     else:
         title_line = DIV_LINE + ' PROCRANK MEMORY REPORT: START'
-        write_report_lines_in_file(f_report, title_line, info_line)
+        info_line = '### package_name=%s monitor_interval=%s' % ('All', g_monitor_interval)
+        write_report_lines_in_file(f_report, title_line, info_line, explain_line)
 
 def create_and_write_report_trailer(f_report):
     trailer_line = DIV_LINE + ' PROCRANK MEMORY REPORT: END'
@@ -163,8 +163,8 @@ def mem_monitor_procrank_main_for_all():
         file_flush_and_close(f_report)
 
 def mem_monitor_procrank_setup():
-    if not AdbUtils.verify_adb_devices_serialno():
-        print 'No adb devices connected!'
+    if not AdbUtils.verify_adb_devices_connect():
+        print 'Error, no adb devices connected!'
         exit(1)
 
     init_path_vars(g_run_num, g_report_root_path)

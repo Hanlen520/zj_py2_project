@@ -12,7 +12,7 @@ import os
 import time
 import logging
 
-from ZJPyUtils import WinSysUtils, RunCmds
+from ZJPyUtils import WinSysUtils
 
 # --------------------------------------------------------------
 # adb functions
@@ -30,10 +30,12 @@ def verify_adb_devices_serialno():
     logging.debug('verify adb devices connected.')
     
     cmd = 'adb get-serialno'
-    if 'unknown' in WinSysUtils.run_sys_cmd_and_ret_content(cmd):
+    ret_content = WinSysUtils.run_sys_cmd_and_ret_content(cmd)
+    if len(ret_content) == 0:
         return False
-    else:
-        return True
+    if ('unknown' in ret_content) or ('error' in ret_content):
+        return False
+    return True
 
 def adb_connect_to_device(device_ip):
     cmd = 'adb connect %s' % device_ip
@@ -92,7 +94,7 @@ def adb_stop():
     WinSysUtils.run_sys_cmd(cmd)
 
 # --------------------------------------------------------------
-# adb logcat functions
+# adb external functions
 # --------------------------------------------------------------
 def adb_logcat_by_tag_and_ret_process(tag, file_path):
     cmd = 'adb logcat -c && adb logcat -s %s -v time -d > %s' % (tag, file_path)
@@ -103,47 +105,14 @@ def open_app_details_settings(pkg_name):
     cmd = 'adb shell am start -a "%s" -d "package:%s"' % (action, pkg_name)
     WinSysUtils.run_sys_cmd(cmd)
 
-def dump_logcat_for_app_by_package(pkg_name, log_file_abs_path, timeout=10):
-    import subprocess
-
-    cmd_get_pids = 'ps | grep %s | busybox awk \'{print $2}\'' % pkg_name
-    cmds = ['adb shell', cmd_get_pids, 'exit']
-    ret_content = RunCmds.run_cmds_by_communicate(cmds)
-    pids = get_pids_from_result(ret_content)
-    
-    filter_str = ''
-    if len(pids) == 0:
-        raise Exception('PID for package %s is not found!' % pkg_name)
-    elif len(pids) == 1:
-        filter_str = pids[0]
-    else:
-        filter_str = ' | '.join(pids)
-    
-    cmd_logcat = 'adb logcat -v time | findstr -r "%s" > %s' % (filter_str, log_file_abs_path)
-    p = subprocess.Popen(cmd_logcat, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    print 'dump log and wait %d seconds ...' % timeout
-    time.sleep(timeout)
-    p.kill()
-    # stop adb
-
-def get_pids_from_result(input_content):
-    import re
-    
-    pids = []
-    tmp_lines = input_content.replace('\r', '').split('\n')
-    for line in tmp_lines:
-        m = re.search(r'^[0-9]{4}', line)
-        if m is not None:
-            pids.append(m.group())
-    return pids
-
 
 # --------------------------------------------------------------
 # Main
 # --------------------------------------------------------------
 if __name__ == '__main__':
 
-    open_app_details_settings('tv.fun.settings')
+    print verify_adb_devices_serialno()
+#     open_app_details_settings('tv.fun.settings')
 #     dump_logcat_for_app_by_package('tv.fun.settings', 'd:\log.test.txt')
 
-    print '%s DONE!' % (os.path.basename(__file__))
+    print os.path.basename(__file__), 'DONE!'
