@@ -393,6 +393,7 @@ def build_thread_for_profile_monitor():
     MonitorRunner.pkg_name = g_package_name
     MonitorRunner.run_number = g_run_num
     MonitorRunner.run_time = g_run_mins * 60
+    MonitorRunner.monitor_interval = 1
     
     MonitorRunner.g_is_for_pkg = True
     MonitorRunner.g_is_mem_monitor_by_dumpsys = False
@@ -468,15 +469,14 @@ def monkey_test_main():
 
 if __name__ == '__main__':
 
-    g_target_ip = '172.17.5.112'
+    g_target_ip = '172.17.5.104'
     g_run_num = '01'
     g_run_mins = 60
 
     # if false, run monkey for whitelist as default
-    g_flag_monkey_for_package = True
+    g_flag_monkey_for_package = False
+    g_flag_profile_monitor = True
     g_package_name = PKG_NAME_LAUNCHER
 
-    g_flag_profile_monitor = True
-    
     monkey_test_main()
     print 'Monkey test DONE!'

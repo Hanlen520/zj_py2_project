@@ -45,9 +45,9 @@ def stop_logcat_log(p):
     if not is_logcat_log:
         return
     
-    AdbUtils.adb_stop()
     if p is not None:
         p.kill()
+    AdbUtils.adb_stop()
 
 def delete_old_instrument_run_listener_logs():
     cmd = 'adb shell rm -rf ' + SHELL_TEST_LOG_DIR_PATH
