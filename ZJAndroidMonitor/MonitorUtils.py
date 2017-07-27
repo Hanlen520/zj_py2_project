@@ -15,6 +15,7 @@ import time
 # --------------------------------------------------------------
 g_pkg_name_settings = 'tv.fun.settings'
 g_pkg_name_filemanager = 'tv.fun.filemanager'
+g_pkg_name_launcher = 'com.bestv.ott'
 
 g_report_limiter = ','
 g_new_line = '\n'
@@ -22,6 +23,7 @@ g_tab = '    '
 
 g_min = 60
 g_hour = 60 * g_min
+g_max_run_time = 12 * g_hour
 
 # seconds
 g_short_interval = 1

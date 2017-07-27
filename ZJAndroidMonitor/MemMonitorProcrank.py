@@ -18,8 +18,6 @@ from ZJPyUtils import AdbUtils
 # --------------------------------------------------------------
 # Variables
 # --------------------------------------------------------------
-RUN_TIME_OUT = 12 * MonitorUtils.g_hour
-
 g_suffix = ''
 g_report_dir_path = ''
 g_report_file_for_all_path = ''
@@ -91,10 +89,11 @@ def loop_for_subprocess(fn_subprocess_run_cmd, f_report):
         time.sleep(g_monitor_interval)
 
         during = int(time.clock()) - start
-        if during >= g_run_time or during >= RUN_TIME_OUT:
-            print 'Mem monitor(procrank) exit, and cost %d minutes %d seconds.' % ((during / 60), (during % 60))
+        msg_run_time = '%d minutes %d seconds.' % (during / 60, during % 60)
+        if during >= g_run_time or during >= MonitorUtils.g_max_run_time:
+            print 'Mem monitor(procrank) exit, ' + msg_run_time
             return
-        print 'Mem monitor(procrank) is running, %d minutes %d seconds.' % ((during / 60, during % 60))
+        print 'Mem monitor(procrank) is running... ' + msg_run_time
 
 
 # --------------------------------------------------------------
@@ -102,21 +101,22 @@ def loop_for_subprocess(fn_subprocess_run_cmd, f_report):
 # --------------------------------------------------------------
 DIV_LINE = '*' * 30
 
-def create_and_write_report_header_for_process(f_report):
-    report_title_line = DIV_LINE + ' PROCRANK MEMORY REPORT: %s' % g_pkg_name
-    report_cols_line = '*Time   PID       Vss      Rss      Pss      Uss  cmdline'
-
-    content_vss = '*VSS - Virtual Set Size,'
-    content_rss = 'RSS - Resident Set Size,'
-    content_pss = 'PSS - Proportional Set Size,'
-    content_uss = 'USS - Unique Set Size'
-    report_exlain_line = MonitorUtils.g_tab.join((content_vss, content_rss, content_pss, content_uss))
-
-    write_report_lines_in_file(f_report, report_title_line, report_exlain_line, report_cols_line)
-
-def create_and_write_report_header_for_all(f_report):
-    report_title_line = DIV_LINE + ' PROCRANK MEMORY REPORT: START'
-    write_report_lines_in_file(f_report, report_title_line)
+def create_and_write_report_header(f_report):
+    info_line = '### package_name=%s monitor_interval=%s' % (g_pkg_name, g_monitor_interval)
+    
+    explain_line = ''
+    if g_is_process:
+        title_line = DIV_LINE + ' PROCRANK MEMORY REPORT FOR PACKAGE: START'
+        content_vss = '*VSS - Virtual Set Size,'
+        content_rss = 'RSS - Resident Set Size,'
+        content_pss = 'PSS - Proportional Set Size,'
+        content_uss = 'USS - Unique Set Size'
+        explain_line = MonitorUtils.g_tab.join((content_vss, content_rss, content_pss, content_uss))
+        cols_line = '*Time   PID       Vss      Rss      Pss      Uss  cmdline'
+        write_report_lines_in_file(f_report, title_line, explain_line, info_line, cols_line)
+    else:
+        title_line = DIV_LINE + ' PROCRANK MEMORY REPORT: START'
+        write_report_lines_in_file(f_report, title_line, info_line)
 
 def create_and_write_report_trailer(f_report):
     trailer_line = DIV_LINE + ' PROCRANK MEMORY REPORT: END'
@@ -147,7 +147,7 @@ def file_flush_and_close(f_report):
 def mem_monitor_procrank_main_for_process():
     f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_for_process_path)
     try:
-        create_and_write_report_header_for_process(f_report)
+        create_and_write_report_header(f_report)
         loop_for_subprocess(run_cmd_and_write_report_for_process, f_report)
         create_and_write_report_trailer(f_report)
     finally:
@@ -156,7 +156,7 @@ def mem_monitor_procrank_main_for_process():
 def mem_monitor_procrank_main_for_all():
     f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_for_all_path)
     try:
-        create_and_write_report_header_for_all(f_report)
+        create_and_write_report_header(f_report)
         loop_for_subprocess(run_cmd_and_write_report_for_all, f_report)
         create_and_write_report_trailer(f_report)
     finally:
@@ -181,11 +181,11 @@ def mem_monitor_procrank_main():
 if __name__ == '__main__':
 
     g_report_root_path = MonitorUtils.g_get_report_root_path()
-    g_monitor_interval = MonitorUtils.g_interval
+    g_monitor_interval = MonitorUtils.g_short_interval
 
-    g_pkg_name = 'tv.ismar.daisy'
+    g_pkg_name = MonitorUtils.g_pkg_name_launcher
     g_run_num = '01'
-    g_run_time = 60 * MonitorUtils.g_min
+    g_run_time = 5 * MonitorUtils.g_min
 
     g_is_process = True
 

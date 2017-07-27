@@ -19,8 +19,6 @@ from ZJPyUtils import AdbUtils
 # --------------------------------------------------------------
 # Variables
 # --------------------------------------------------------------
-MAX_RUN_TIME = 12 * MonitorUtils.g_hour  # 12 hours
-
 g_suffix = ''
 g_report_dir_path = ''
 g_report_file_path_top_for_all = ''
@@ -84,24 +82,24 @@ def run_top_command_for_total_and_pkg():
 # --------------------------------------------------------------
 DIV_LINE = '*' * 30
 
-def build_report_header_for_top_cmd():
-    return DIV_LINE + ' TOP CPU REPORT: START'
+def build_report_header_title_line_for_top():
+    if g_is_top_for_pkg:
+        return DIV_LINE + ' TOP CPU REPORT FOR PACKAGE: START'
+    else:
+        return DIV_LINE + ' TOP CPU REPORT: START'
 
-def build_report_trailer_for_top_cmd():
-    return DIV_LINE + ' TOP CPU REPORT: END'
+def build_report_header_info_line_for_top(pkg_name, interval):
+    return '### package_name=%s monitor_interval=%s' % (pkg_name, interval)
 
-def build_report_header_for_top_cmd_for_pkg():
-    return DIV_LINE + ' TOP CPU REPORT FOR PACKAGE: %s' % g_pkg_name
-
-def build_report_trailer_for_top_cmd_for_pkg():
-    return DIV_LINE + ' TOP CPU REPORT FOR PACKAGE: END'
-
-def build_report_title_for_top_cmd_for_pkg():
+def build_report_header_cols_line_for_top_pkg():
     return '*TIME  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name'
 
 def build_prefix_line_for_top_cmd_output():
     cur_datetime = MonitorUtils.g_get_current_datetime()
     return cur_datetime + ' ' + '-' * 40
+
+def build_report_trailer_line_for_top():
+    return DIV_LINE + ' TOP CPU REPORT: END'
 
 def run_top_cmd_and_write_output(f_report):
     write_single_line_report(f_report, build_prefix_line_for_top_cmd_output())
@@ -151,36 +149,43 @@ def loop_process(run_top_fn, f_report):
         time.sleep(g_monitor_interval)
 
         during = int(time.clock()) - start
-        if during >= g_run_time or during >= MAX_RUN_TIME:
-            print 'CPU monitor(top) exit, cost %d minutes %d seconds.' % (during / 60, during % 60)
+        msg_run_time = '%d minutes %d seconds.' % (during / 60, during % 60)
+        if during >= g_run_time or during >= MonitorUtils.g_max_run_time:
+            print 'CPU monitor(top) exit, ' + msg_run_time
             return
-        print 'CPU monitor(top) is running, %d minutes %d seconds.' % (during / 60, during % 60)
+        print 'CPU monitor(top) is running...' + msg_run_time
 
 def run_top_cmd_main():
     f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_path_top_for_all)
     try:
-        write_single_line_report(f_report, build_report_header_for_top_cmd())
+        title_line = build_report_header_title_line_for_top()
+        info_line = build_report_header_info_line_for_top('All', g_monitor_interval)
+        write_multiple_lines_report(f_report, (title_line, info_line))
         loop_process(run_top_cmd_and_write_output, f_report)
-        write_single_line_report(f_report, build_report_trailer_for_top_cmd())
+        write_single_line_report(f_report, build_report_trailer_line_for_top())
     finally:
         file_flush_and_close(f_report)
 
 def run_top_cmd_for_pkg_main():
     f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_path_top_for_pkg)
     try:
-        write_single_line_report(f_report, build_report_header_for_top_cmd_for_pkg())
-        write_single_line_report(f_report, build_report_title_for_top_cmd_for_pkg())
+        title_line = build_report_header_title_line_for_top()
+        info_line = build_report_header_info_line_for_top(g_pkg_name, g_monitor_interval)
+        cols_line = build_report_header_cols_line_for_top_pkg()
+        write_multiple_lines_report(f_report, (title_line, info_line, cols_line))
         loop_process(run_top_cmd_for_pkg_and_write_output, f_report)
-        write_single_line_report(f_report, build_report_trailer_for_top_cmd_for_pkg())
+        write_single_line_report(f_report, build_report_trailer_line_for_top())
     finally:
         file_flush_and_close(f_report)
 
 def run_top_cmd_for_total_pkg_main():
     f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_path_top_for_pkg_and_total)
     try:
-        write_single_line_report(f_report, build_report_header_for_top_cmd_for_pkg())
+        title_line = build_report_header_title_line_for_top()
+        info_line = build_report_header_info_line_for_top(g_pkg_name, g_monitor_interval)
+        write_multiple_lines_report(f_report, (title_line, info_line))
         loop_process(run_top_cmd_for_total_pkg_and_write_output, f_report)
-        write_single_line_report(f_report, build_report_trailer_for_top_cmd_for_pkg())
+        write_single_line_report(f_report, build_report_trailer_line_for_top())
     finally:
         file_flush_and_close(f_report)
 
@@ -204,12 +209,12 @@ def cpu_monitor_top_main():
 if __name__ == '__main__':
 
     g_report_root_path = MonitorUtils.g_get_report_root_path()
-    g_monitor_interval = MonitorUtils.g_interval
+    g_monitor_interval = MonitorUtils.g_short_interval
 
-    g_pkg_name = 'tv.ismar.daisy'
+    g_pkg_name = MonitorUtils.g_pkg_name_launcher
     g_run_num = '01'
-    g_run_time = 60 * MonitorUtils.g_min
-    
+    g_run_time = 5 * MonitorUtils.g_min
+
     g_is_top_for_pkg = True
 
     cpu_monitor_top_main()

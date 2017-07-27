@@ -18,7 +18,6 @@ from ZJPyUtils import AdbUtils
 # Constants
 # --------------------------------------------------------------
 DEFAULT_NULL_CONTENT = 'null'
-MAX_RUN_TIME = 12 * MonitorUtils.g_hour
 
 WRITE_LINES = []
 WRITE_LINES_BUF = 20
@@ -130,13 +129,14 @@ def prepare_report_file():
     return f_report
 
 def create_report_header(f_report):
-    header_title = DIV_LINE + ' DUMPSYS MEMINFO REPORT: %s' % (g_pkg_name)
-    write_single_line_in_report(f_report, header_title)
+    title_line = DIV_LINE + ' PACKAGE DUMPSYS MEMINFO REPORT: START'
+    write_single_line_in_report(f_report, title_line)
 
-    tmp_line = get_app_mem_size_limit()
-    if tmp_line != DEFAULT_NULL_CONTENT:
-        for line in tmp_line:
-            write_single_line_in_report(f_report, '*' + line.strip('\r\n'))
+    info_line = '### package_name=%s monitor_interval=%s' % (g_pkg_name, g_monitor_interval)
+    write_single_line_in_report(f_report, info_line)
+
+    for line in get_app_mem_size_limit():
+        write_single_line_in_report(f_report, '*' + line.strip('\r\n'))
     
     col0 = '*Time'
     col1 = 'MemTotal(Pss)'
@@ -144,11 +144,11 @@ def create_report_header(f_report):
     col3 = 'DalvikHeapAlloc'
     col4 = 'AppActivities'
     col5 = 'AppViews'
-    header_cols_line = MonitorUtils.g_report_limiter.join((col0, col1, col2, col3, col4, col5))
-    write_single_line_in_report(f_report, header_cols_line)
+    cols_line = MonitorUtils.g_report_limiter.join((col0, col1, col2, col3, col4, col5))
+    write_single_line_in_report(f_report, cols_line)
 
 def create_report_trailer(f_report):
-    trailer_line = DIV_LINE + ' DUMPSYS MEMINFO REPORT: END'
+    trailer_line = DIV_LINE + ' PACKAGE DUMPSYS MEMINFO REPORT: END'
     write_single_line_in_report(f_report, trailer_line)
 
 def write_single_line_in_report(f_report, write_line):
@@ -173,11 +173,11 @@ def loop_process(monitor_fn, f_report):
         time.sleep(g_monitor_interval)
 
         during = int(time.clock()) - start
-        msg_cost_time = 'and cost %d minutes %d seconds.' % (during / 60, during % 60)
-        if during > g_run_time or during > MAX_RUN_TIME:
-            print 'Monitor(dumpsys meminfo) exit, ' + msg_cost_time
+        msg_run_time = '%d minutes %d seconds.' % (during / 60, during % 60)
+        if during > g_run_time or during > MonitorUtils.g_max_run_time:
+            print 'Monitor(dumpsys meminfo) exit, ' + msg_run_time
             return
-        print 'Monitor(dumpsys meminfo) is running, ' + msg_cost_time
+        print 'Monitor(dumpsys meminfo) is running... ' + msg_run_time
 
 def mem_monitor_dumpsys_setup():
     if not AdbUtils.verify_adb_devices_connect():
@@ -203,9 +203,9 @@ if __name__ == '__main__':
     g_report_root_path = MonitorUtils.g_get_report_root_path()
     g_monitor_interval = MonitorUtils.g_interval
 
-    g_pkg_name = 'tv.ismar.daisy'
+    g_pkg_name = MonitorUtils.g_pkg_name_launcher
     g_run_num = '01'
-    g_run_time = 60 * MonitorUtils.g_min
+    g_run_time = 5 * MonitorUtils.g_min
 
     mem_monitor_dumpsys_main()
 
