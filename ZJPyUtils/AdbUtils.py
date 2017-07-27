@@ -60,7 +60,6 @@ def adb_connect_with_root(device_ip):
     if not adb_connect_to_device(device_ip):  # adb connect as root
         logging.error('Failed to connect to device with root!')
         return False
-    
     return True
 
 def adb_root():
@@ -86,23 +85,25 @@ def adb_remount():
     output = WinSysUtils.run_sys_cmd_and_ret_content(cmd)
     if ('succeeded' in output):
         return True
-    
     return False
 
 def adb_stop():
     cmd = 'adb kill-server'
-    WinSysUtils.run_sys_cmd(cmd)
+    return WinSysUtils.run_sys_cmd(cmd)
+
 
 # --------------------------------------------------------------
 # adb external functions
 # --------------------------------------------------------------
-def adb_logcat_by_tag_and_ret_process(tag, file_path):
+def dump_logcat_by_tag(tag, file_path):
     cmd = 'adb logcat -c && adb logcat -s %s -v time -d > %s' % (tag, file_path)
+    print cmd
     WinSysUtils.run_sys_cmd(cmd)
 
 def open_app_details_settings(pkg_name):
     action = 'android.settings.APPLICATION_DETAILS_SETTINGS'
     cmd = 'adb shell am start -a "%s" -d "package:%s"' % (action, pkg_name)
+    print cmd
     WinSysUtils.run_sys_cmd(cmd)
 
 
@@ -111,8 +112,7 @@ def open_app_details_settings(pkg_name):
 # --------------------------------------------------------------
 if __name__ == '__main__':
 
-    print verify_adb_devices_serialno()
-#     open_app_details_settings('tv.fun.settings')
-#     dump_logcat_for_app_by_package('tv.fun.settings', 'd:\log.test.txt')
+#     print verify_adb_devices_serialno()
+    open_app_details_settings('com.bestv.ott')
 
     print os.path.basename(__file__), 'DONE!'
