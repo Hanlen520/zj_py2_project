@@ -12,30 +12,24 @@ Get the memory info by using procrank.
 import os
 import time
 
-from ZJAndroidMonitor import MonitorUtils
+from ZJAndroidMonitor import MonitorUtils as MUtils
 from ZJPyUtils import AdbUtils
 
 # --------------------------------------------------------------
 # Variables
 # --------------------------------------------------------------
-g_suffix = ''
-g_report_dir_path = ''
 g_report_file_for_all_path = ''
 g_report_file_for_process_path = ''
 
-def init_path_vars(run_num, root_path):
-    global g_suffix
-    global g_report_dir_path
+def init_path_vars(root_path):
     global g_report_file_for_all_path
     global g_report_file_for_process_path
     
-    g_suffix = '%s_%s' % (MonitorUtils.g_get_current_date(), run_num)
-    g_report_dir_path = r'%s\mem_procrank_log_%s' % (root_path, g_suffix)
-    g_report_file_for_all_path = r'%s\mem_procrank_for_all_%s.txt' % (g_report_dir_path, g_suffix)
-    g_report_file_for_process_path = r'%s\mem_procrank_app_process_%s.txt' % (g_report_dir_path, g_suffix)
+    g_report_file_for_all_path = r'%s\mem_procrank_for_all.log' % root_path
+    g_report_file_for_process_path = r'%s\mem_procrank_for_package.log' % root_path
 
-def get_report_file_path_mem_procrank_for_process(run_num, root_path):
-    init_path_vars(run_num, root_path)
+def get_report_file_path_mem_procrank_for_pkg(root_path):
+    init_path_vars(root_path)
     return g_report_file_for_process_path
 
 
@@ -79,7 +73,7 @@ def trim_lines(input_lines):
     return [line.replace('\r\n', '\n') for line in input_lines]
 
 def build_prefix_line_for_procrank_cmd_output():
-    cur_datetime = MonitorUtils.g_get_current_datetime()
+    cur_datetime = MUtils.g_get_current_datetime()
     return '%s %s\n' % (cur_datetime, '-' * 40)
 
 def loop_for_subprocess(fn_subprocess_run_cmd, f_report):
@@ -90,7 +84,7 @@ def loop_for_subprocess(fn_subprocess_run_cmd, f_report):
 
         during = int(time.clock()) - start
         msg_run_time = '%d minutes %d seconds.' % (during / 60, during % 60)
-        if during >= g_run_time or during >= MonitorUtils.g_max_run_time:
+        if during >= g_run_time or during >= MUtils.g_max_run_time:
             print 'Mem monitor(procrank) exit, ' + msg_run_time
             return
         print 'Mem monitor(procrank) is running... ' + msg_run_time
@@ -106,7 +100,7 @@ def create_and_write_report_header(f_report):
     content_rss = 'RSS - Resident Set Size,'
     content_pss = 'PSS - Proportional Set Size,'
     content_uss = 'USS - Unique Set Size'
-    explain_line = MonitorUtils.g_tab.join((content_vss, content_rss, content_pss, content_uss))
+    explain_line = MUtils.g_tab.join((content_vss, content_rss, content_pss, content_uss))
 
     if g_is_process:
         title_line = DIV_LINE + ' PROCRANK MEMORY REPORT FOR PACKAGE: START'
@@ -125,11 +119,11 @@ def create_and_write_report_trailer(f_report):
 def write_report_lines_in_file(f_report, *arg):
     for line in arg:
         print line
-        f_report.write(line + MonitorUtils.g_new_line)
+        f_report.write(line + MUtils.g_new_line)
     f_report.flush()
 
 def write_report_line_with_time_in_file(f_report, write_line):
-    cur_time = MonitorUtils.g_get_current_time()
+    cur_time = MUtils.g_get_current_time()
     tmp_line = cur_time + '  ' + write_line.replace('\r\n', '\n')
     print tmp_line
     f_report.write(tmp_line)
@@ -145,7 +139,7 @@ def file_flush_and_close(f_report):
 # Main
 # --------------------------------------------------------------
 def mem_monitor_procrank_main_for_process():
-    f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_for_process_path)
+    f_report = MUtils.g_create_and_open_report_with_append(g_report_file_for_process_path)
     try:
         create_and_write_report_header(f_report)
         loop_for_subprocess(run_cmd_and_write_report_for_process, f_report)
@@ -154,7 +148,7 @@ def mem_monitor_procrank_main_for_process():
         file_flush_and_close(f_report)
 
 def mem_monitor_procrank_main_for_all():
-    f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_for_all_path)
+    f_report = MUtils.g_create_and_open_report_with_append(g_report_file_for_all_path)
     try:
         create_and_write_report_header(f_report)
         loop_for_subprocess(run_cmd_and_write_report_for_all, f_report)
@@ -167,8 +161,8 @@ def mem_monitor_procrank_setup():
         print 'Error, no adb devices connected!'
         exit(1)
 
-    init_path_vars(g_run_num, g_report_root_path)
-    MonitorUtils.g_create_report_dir(g_report_dir_path)
+    init_path_vars(g_report_root_path)
+    MUtils.g_create_report_dir(g_report_root_path)
 
 def mem_monitor_procrank_main():
     mem_monitor_procrank_setup()
@@ -180,14 +174,14 @@ def mem_monitor_procrank_main():
 
 if __name__ == '__main__':
 
-    g_report_root_path = MonitorUtils.g_get_report_root_path()
-    g_monitor_interval = MonitorUtils.g_short_interval
-
-    g_pkg_name = MonitorUtils.g_pkg_name_launcher
-    g_run_num = '01'
-    g_run_time = 5 * MonitorUtils.g_min
-
     g_is_process = True
+    g_pkg_name = MUtils.g_pkg_name_launcher
+
+    g_run_time = 5 * MUtils.g_min
+    g_monitor_interval = MUtils.g_short_interval
+
+    g_run_num = '01'
+    g_report_root_path = r'%s\%s_%s' % (MUtils.g_get_report_root_path(), MUtils.g_get_current_date(), g_run_num)
 
     mem_monitor_procrank_main()
 

@@ -13,34 +13,28 @@ Get CPU usage info by using top.
 import os
 import time
 
-from ZJAndroidMonitor import MonitorUtils
+from ZJAndroidMonitor import MonitorUtils as MUtils
 from ZJPyUtils import AdbUtils
 
 # --------------------------------------------------------------
 # Variables
 # --------------------------------------------------------------
-g_suffix = ''
-g_report_dir_path = ''
 g_report_file_path_top_for_all = ''
 g_report_file_path_top_for_pkg = ''
 g_report_file_path_top_for_pkg_and_total = ''
 
-def init_path_vars(run_num, root_path):
-    global g_suffix
-    global g_report_dir_path
+def init_path_vars(root_path):
     global g_report_file_path_top_for_all
     global g_report_file_path_top_for_pkg
     global g_report_file_path_top_for_pkg_and_total
     
-    g_suffix = '%s_%s' % (MonitorUtils.g_get_current_date(), run_num)
-    g_report_dir_path = r'%s\cpu_top_log_%s' % (root_path, g_suffix)
-    g_report_file_path_top_for_all = r'%s\top_for_all_%s.txt' % (g_report_dir_path, g_suffix)
-    g_report_file_path_top_for_pkg = r'%s\top_for_pkg_%s.txt' % (g_report_dir_path, g_suffix)
-    g_report_file_path_top_for_pkg_and_total = r'%s\top_for_total_pkg_%s.txt' % (g_report_dir_path, g_suffix)
+    g_report_file_path_top_for_all = r'%s\cpu_top_for_all.log' % root_path
+    g_report_file_path_top_for_pkg = r'%s\cpu_top_for_package.log' % root_path
+    g_report_file_path_top_for_pkg_and_total = r'%s\cpu_top_for_total_pkg.log' % root_path
 
-def get_report_file_path_top_for_pkg(run_num, root_path):
+def get_report_file_path_top_for_pkg(root_path):
     # invoked from external
-    init_path_vars(run_num, root_path)
+    init_path_vars(root_path)
     return g_report_file_path_top_for_pkg
 
 
@@ -95,7 +89,7 @@ def build_report_header_cols_line_for_top_pkg():
     return '*TIME  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name'
 
 def build_prefix_line_for_top_cmd_output():
-    cur_datetime = MonitorUtils.g_get_current_datetime()
+    cur_datetime = MUtils.g_get_current_datetime()
     return cur_datetime + ' ' + '-' * 40
 
 def build_report_trailer_line_for_top():
@@ -107,7 +101,7 @@ def run_top_cmd_and_write_output(f_report):
     f_report.flush()
 
 def run_top_cmd_for_pkg_and_write_output(f_report):
-    write_line = '%s   %s' % (MonitorUtils.g_get_current_time(), run_top_command_for_pkg())
+    write_line = '%s   %s' % (MUtils.g_get_current_time(), run_top_command_for_pkg())
     write_single_line_report(f_report, write_line)
     f_report.flush()
 
@@ -124,14 +118,15 @@ def write_multiple_lines_report(f_report, lines):
         line = line.rstrip('\r\n')
         if len(line) > 0:
             print line
-            f_report.write(line + MonitorUtils.g_new_line)
+            f_report.write(line + MUtils.g_new_line)
 
 def write_single_line_report(f_report, line):
     if len(line) == 0:
         return
+
     line = line.rstrip('\r\n')
     print line
-    f_report.write(line + MonitorUtils.g_new_line)
+    f_report.write(line + MUtils.g_new_line)
 
 def file_flush_and_close(f):
     if f is not None:
@@ -150,13 +145,17 @@ def loop_process(run_top_fn, f_report):
 
         during = int(time.clock()) - start
         msg_run_time = '%d minutes %d seconds.' % (during / 60, during % 60)
-        if during >= g_run_time or during >= MonitorUtils.g_max_run_time:
+        if during >= g_run_time or during >= MUtils.g_max_run_time:
             print 'CPU monitor(top) exit, ' + msg_run_time
             return
-        print 'CPU monitor(top) is running...' + msg_run_time
+        print 'CPU monitor(top) is running... ' + msg_run_time
 
 def run_top_cmd_main():
-    f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_path_top_for_all)
+    if g_report_file_path_top_for_all == '':
+        print 'Error, g_report_file_path_top_for_all is null!'
+        exit(1)
+    f_report = MUtils.g_create_and_open_report_with_append(g_report_file_path_top_for_all)
+    
     try:
         title_line = build_report_header_title_line_for_top()
         info_line = build_report_header_info_line_for_top('All', g_monitor_interval)
@@ -167,7 +166,11 @@ def run_top_cmd_main():
         file_flush_and_close(f_report)
 
 def run_top_cmd_for_pkg_main():
-    f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_path_top_for_pkg)
+    if g_report_file_path_top_for_pkg == '':
+        print 'Error, g_report_file_path_top_for_pkg is null!'
+        exit(1)
+    f_report = MUtils.g_create_and_open_report_with_append(g_report_file_path_top_for_pkg)
+    
     try:
         title_line = build_report_header_title_line_for_top()
         info_line = build_report_header_info_line_for_top(g_pkg_name, g_monitor_interval)
@@ -179,7 +182,11 @@ def run_top_cmd_for_pkg_main():
         file_flush_and_close(f_report)
 
 def run_top_cmd_for_total_pkg_main():
-    f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_path_top_for_pkg_and_total)
+    if g_report_file_path_top_for_pkg_and_total == '':
+        print 'Error, g_report_file_path_top_for_pkg_and_total is null!'
+        exit(1)
+    f_report = MUtils.g_create_and_open_report_with_append(g_report_file_path_top_for_pkg_and_total)
+    
     try:
         title_line = build_report_header_title_line_for_top()
         info_line = build_report_header_info_line_for_top(g_pkg_name, g_monitor_interval)
@@ -194,8 +201,8 @@ def cpu_monitor_top_setup():
         print 'Error, no adb devices connected!'
         exit(1)
     
-    init_path_vars(g_run_num, g_report_root_path)
-    MonitorUtils.g_create_report_dir(g_report_dir_path)
+    init_path_vars(g_report_root_path)
+    MUtils.g_create_report_dir(g_report_root_path)
 
 def cpu_monitor_top_main():
     cpu_monitor_top_setup()
@@ -208,14 +215,14 @@ def cpu_monitor_top_main():
 
 if __name__ == '__main__':
 
-    g_report_root_path = MonitorUtils.g_get_report_root_path()
-    g_monitor_interval = MonitorUtils.g_short_interval
-
-    g_pkg_name = MonitorUtils.g_pkg_name_launcher
-    g_run_num = '01'
-    g_run_time = 5 * MonitorUtils.g_min
-
     g_is_top_for_pkg = True
+    g_pkg_name = MUtils.g_pkg_name_launcher
+
+    g_run_time = 5 * MUtils.g_min
+    g_monitor_interval = MUtils.g_short_interval
+
+    g_run_num = '01'
+    g_report_root_path = r'%s\%s_%s' % (MUtils.g_get_report_root_path(), MUtils.g_get_current_date(), g_run_num)
 
     cpu_monitor_top_main()
 

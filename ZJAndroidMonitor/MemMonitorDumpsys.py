@@ -11,7 +11,7 @@ Get the memory info for process by using dumpsys meminfo.
 import os
 import time
 
-from ZJAndroidMonitor import MonitorUtils
+from ZJAndroidMonitor import MonitorUtils as MUtils
 from ZJPyUtils import AdbUtils
 
 # --------------------------------------------------------------
@@ -26,20 +26,14 @@ WRITE_LINES_BUF = 20
 # --------------------------------------------------------------
 # Path Variables
 # --------------------------------------------------------------
-g_report_dir_path = ''
 g_report_file_path = ''
 
-def init_path_vars(run_num, root_path):
-    global g_suffix
-    global g_report_dir_path
+def init_path_vars(root_path):
     global g_report_file_path
+    g_report_file_path = r'%s\mem_dumpsys_for_package.log' % root_path
 
-    g_suffix = '%s_%s' % (MonitorUtils.g_get_current_date(), run_num)
-    g_report_dir_path = r'%s\mem_dumpsys_log_%s' % (root_path, g_suffix)
-    g_report_file_path = r'%s\mem_dumpsys_log_%s.txt' % (g_report_dir_path, g_suffix)
-
-def get_report_file_path_mem_dumpsys(run_num, root_path):
-    init_path_vars(run_num, root_path)
+def get_report_file_path_mem_dumpsys(root_path):
+    init_path_vars(root_path)
     return g_report_file_path
 
 
@@ -92,9 +86,9 @@ def parse_report_line(lines):
     java_vm_heap_size = format_mem_size(java_vm_heap_size)
     java_vm_heap_alloc = format_mem_size(java_vm_heap_alloc)
     total_mem = format_mem_size(total_mem)
-    cur_time = MonitorUtils.g_get_current_time()
+    cur_time = MUtils.g_get_current_time()
     tmp_fields = (cur_time, total_mem, java_vm_heap_size, java_vm_heap_alloc, app_activities, app_views)
-    return MonitorUtils.g_report_limiter.join(tmp_fields)
+    return MUtils.g_report_limiter.join(tmp_fields)
 
 def parse_java_vm_heap_size(line):
     words = line.split()
@@ -124,8 +118,8 @@ def format_mem_size(size):
 DIV_LINE = '*' * 30
 
 def prepare_report_file():
-    MonitorUtils.g_create_report_dir(g_report_dir_path)
-    f_report = MonitorUtils.g_create_and_open_report_with_append(g_report_file_path)
+    MUtils.g_create_report_dir(g_report_root_path)
+    f_report = MUtils.g_create_and_open_report_with_append(g_report_file_path)
     return f_report
 
 def create_report_header(f_report):
@@ -144,7 +138,7 @@ def create_report_header(f_report):
     col3 = 'DalvikHeapAlloc'
     col4 = 'AppActivities'
     col5 = 'AppViews'
-    cols_line = MonitorUtils.g_report_limiter.join((col0, col1, col2, col3, col4, col5))
+    cols_line = MUtils.g_report_limiter.join((col0, col1, col2, col3, col4, col5))
     write_single_line_in_report(f_report, cols_line)
 
 def create_report_trailer(f_report):
@@ -153,7 +147,7 @@ def create_report_trailer(f_report):
 
 def write_single_line_in_report(f_report, write_line):
     print write_line
-    WRITE_LINES.append(write_line + MonitorUtils.g_new_line)
+    WRITE_LINES.append(write_line + MUtils.g_new_line)
     if (len(WRITE_LINES) > WRITE_LINES_BUF):
         force_write_lines_in_report(f_report)
 
@@ -174,7 +168,7 @@ def loop_process(monitor_fn, f_report):
 
         during = int(time.clock()) - start
         msg_run_time = '%d minutes %d seconds.' % (during / 60, during % 60)
-        if during > g_run_time or during > MonitorUtils.g_max_run_time:
+        if during > g_run_time or during > MUtils.g_max_run_time:
             print 'Monitor(dumpsys meminfo) exit, ' + msg_run_time
             return
         print 'Monitor(dumpsys meminfo) is running... ' + msg_run_time
@@ -183,7 +177,7 @@ def mem_monitor_dumpsys_setup():
     if not AdbUtils.verify_adb_devices_connect():
         print 'No adb devices connected!'
         exit(1)
-    init_path_vars(g_run_num, g_report_root_path)
+    init_path_vars(g_report_root_path)
 
 def mem_monitor_dumpsys_main():
     mem_monitor_dumpsys_setup()
@@ -200,12 +194,12 @@ def mem_monitor_dumpsys_main():
 
 if __name__ == '__main__':
 
-    g_report_root_path = MonitorUtils.g_get_report_root_path()
-    g_monitor_interval = MonitorUtils.g_interval
+    g_pkg_name = MUtils.g_pkg_name_launcher
+    g_run_time = 5 * MUtils.g_min
+    g_monitor_interval = 3
 
-    g_pkg_name = MonitorUtils.g_pkg_name_launcher
     g_run_num = '01'
-    g_run_time = 5 * MonitorUtils.g_min
+    g_report_root_path = r'%s\%s_%s' % (MUtils.g_get_report_root_path(), MUtils.g_get_current_date(), g_run_num)
 
     mem_monitor_dumpsys_main()
 

@@ -11,7 +11,8 @@ Runner to execute multiple monitor scripts concurrently.
 import time
 import threading
 
-import MonitorUtils, MemMonitorDumpsys, MemMonitorProcrank, CpuMonitorTop
+import MonitorUtils as MUtils
+import MemMonitorDumpsys, MemMonitorProcrank, CpuMonitorTop
 
 # --------------------------------------------------------------
 # Constants
@@ -56,7 +57,7 @@ def get_monitor_interval_time():
         return monitor_interval
     except Exception:
         # if 'monitor_interval' does not define
-        return MonitorUtils.g_interval
+        return MUtils.g_interval
 
 
 # --------------------------------------------------------------
@@ -65,7 +66,7 @@ def get_monitor_interval_time():
 def daemon_thread_main():
     g_daemon_thread_sleep_time = 15  # seconds
     while 1:
-        print MonitorUtils.g_get_current_time() + ', monitor runner process is running...'
+        print MUtils.g_get_current_time() + ', monitor runner process is running...'
         time.sleep(g_daemon_thread_sleep_time)
 
 
@@ -146,15 +147,15 @@ def monitor_runner_main():
 
 if __name__ == '__main__':
 
-    report_root_path = MonitorUtils.g_get_report_root_path()
-    monitor_interval = MonitorUtils.g_short_interval
-
     pkg_name = 'com.bestv.ott'
-    run_number = '02'
-    run_time = 10 * MonitorUtils.g_min
+    run_time = 10 * MUtils.g_min
+    monitor_interval = MUtils.g_short_interval
     
     g_is_for_pkg = True
     g_is_mem_monitor_by_dumpsys = False
+    
+    run_number = '01'
+    report_root_path = r'%s\%s_%s' % (MUtils.g_get_report_root_path(), MUtils.g_get_current_date(), run_number)
     
     monitor_runner_main()
     

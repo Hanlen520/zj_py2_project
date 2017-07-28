@@ -70,14 +70,13 @@ g_whitelist_file_path_for_shell = ''
 
 def init_path_vars():
     cur_date = WinSysUtils.get_current_date()
-    suffix = '%s_%s' % (cur_date, g_run_num)
     
     global g_log_root_path
     global g_log_dir_path_for_win
     global g_log_dir_path_for_shell
     g_log_root_path = os.path.join(os.getcwd(), 'MonkeyReprots', cur_date)
-    g_log_dir_path_for_win = r'%s\%s' % (g_log_root_path, suffix)
-    g_log_dir_path_for_shell = '/sdcard/test_logs'
+    g_log_dir_path_for_win = r'%s\%s_%s' % (g_log_root_path, cur_date, g_run_num)
+    g_log_dir_path_for_shell = '/sdcard/monkey_test_logs'
     
     # profile log path
     global g_profile_log_dir_path
@@ -93,19 +92,15 @@ def init_path_vars():
     
     # logcat log path
     global g_logcat_log_path_for_shell
-    g_logcat_log_path_for_shell = '%s/logcat_log_%s.log' % (g_log_dir_path_for_shell, suffix)
+    g_logcat_log_path_for_shell = '%s/logcat_log.log' % g_log_dir_path_for_shell
     
     # monkey log, local
     global g_monkey_log_path
-    g_monkey_log_path = r'%s\monkey_log_%s.log' % (g_log_dir_path_for_win, suffix)
+    g_monkey_log_path = r'%s\monkey_log.log' % g_log_dir_path_for_win
     
     # rom props path, local
     global g_rom_props_file_path
-    g_rom_props_file_path = r'%s\rom_props_%s.log' % (g_log_dir_path_for_win, suffix)
-    
-    # parsed log path, local
-    global g_logcat_parse_log_for_win
-    g_logcat_parse_log_for_win = r'%s\logcat_parse_log_%s.log' % (g_log_dir_path_for_win, suffix)
+    g_rom_props_file_path = r'%s\rom_props.log' % g_log_dir_path_for_win
     
     # whitelist path
     global g_whitelist_file_path_for_win
@@ -258,20 +253,27 @@ def set_tv_audio_volume_to_low():
         time.sleep(0.3)
 
 def get_monkey_process_id():
+    monkey_p_name = 'monkey'
+    return get_process_id_by_name(monkey_p_name)
+
+def get_logcat_process_id():
+    logcat_p_name = 'logcat'
+    return get_process_id_by_name(logcat_p_name)
+
+def get_process_id_by_name(p_name):
     process_id = ''
-    monkey_process_name = 'monkey'
-    cmd = 'adb shell ps | findstr %s' % monkey_process_name
+    cmd = 'adb shell ps | findstr %s' % p_name
     if IS_PRINT_LOG:
         print cmd
 
     for line in os.popen(cmd).readlines():
-        if monkey_process_name in line:
-            process_id = line[10:].split(' ')[0]
+        if p_name in line:
+            process_id = line.split()[1]
             return process_id
     return process_id
 
-def kill_monkey_process(process_id):
-    cmd = 'adb shell kill %s' % process_id
+def kill_process_by_id(p_id):
+    cmd = 'adb shell kill %s' % p_id
     run_system_command(cmd)
 
 def get_rom_properties_and_write_file():
@@ -324,12 +326,16 @@ def push_whitelist_file_to_shell():
     run_system_command(cmd)
     
 def pull_all_testing_logs():
-    cmd_pull_log_files = 'adb pull %s %s' % (g_log_dir_path_for_shell, g_log_dir_path_for_win)
     # the adb connection maybe disconnect when running the monkey
     if not AdbUtils.verify_adb_devices_connect():
         print 'Warn, no devices connected, NO files pulled!'
         return
-    run_system_command(cmd_pull_log_files)
+
+    cmd_pull_logcat_log = 'adb pull %s %s' % (g_logcat_log_path_for_shell, g_log_dir_path_for_win)
+    run_system_command(cmd_pull_logcat_log)
+    cmd_pull_whitelist = 'adb pull %s %s' % (g_whitelist_file_path_for_shell, g_log_dir_path_for_win)
+    run_system_command(cmd_pull_whitelist)
+
     run_system_command(build_command_pull_anr_file())
     run_system_command(build_command_pull_tombstone_file())
 
@@ -362,8 +368,8 @@ def thread_main_monkey_monitor_at_interval():
         print 'Warn, spec_time must be less than max_time(4 hours)!'
         exit(1)
 
-    monkey_process_id = wait_for_monkey_process_start()
-    if monkey_process_id == '':
+    monkey_p_id = wait_for_monkey_process_start()
+    if monkey_p_id == '':
         print 'Error, the monkey process is NOT started!'
         exit(1)
     
@@ -379,8 +385,7 @@ def thread_main_monkey_monitor_at_interval():
         current_time = int(time.clock()) - start
         print 'Monkey is running... %d minutes and %d seconds' % ((current_time / 60), (current_time % 60))
         if (current_time >= spec_run_time) or (current_time >= MAX_RUN_TIME):
-            # Kill monkey after specific time
-            kill_monkey_process(monkey_process_id)
+            kill_process_by_id(monkey_p_id)  # Kill monkey after specific time
             break
         time.sleep(WAIT_TIME_IN_LOOP)
 
@@ -441,6 +446,7 @@ def main_test_setup():
     
 def main_test_clearup():
     pull_all_testing_logs()
+    kill_process_by_id(get_logcat_process_id())  # stop logcat
 
 def main_test():
     logcat_sub_process = run_cmd_logcat_from_subprocess_and_ret_process()
@@ -464,7 +470,7 @@ def monkey_test_main():
     main_test_clearup()
 
     during = int(time.clock()) - start
-    print 'Monkey finish and execution time: %d minutes %d seconds.' % ((during / 60), (during % 60))
+    print 'Monkey finish and execution time: %d minutes %d seconds' % ((during / 60), (during % 60))
 
 
 if __name__ == '__main__':
@@ -473,12 +479,12 @@ if __name__ == '__main__':
     g_run_num = '01'
     g_run_mins = 60
 
-    g_profile_monitor_interval = 1  # default is 3 seconds
-
     # if false, run monkey for whitelist as default
     g_is_monkey_for_package = False
-    g_is_profile_monitor = True
     g_package_name = PKG_NAME_LAUNCHER  # for both monkey and profile monitor
+
+    g_is_profile_monitor = True
+    g_profile_monitor_interval = 1
 
     monkey_test_main()
     

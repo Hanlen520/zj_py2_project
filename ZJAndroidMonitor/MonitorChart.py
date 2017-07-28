@@ -11,7 +11,8 @@ import os
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter, MaxNLocator
 
-import MonitorUtils, CpuMonitorTop, MemMonitorProcrank, MemMonitorDumpsys
+import MonitorUtils as MUtils
+import CpuMonitorTop, MemMonitorProcrank, MemMonitorDumpsys
 
 # --------------------------------------------------------------
 # Constants
@@ -27,8 +28,8 @@ MONITOR_INTERVAL = 'null'
 # --------------------------------------------------------------
 # Functions: get source data
 # --------------------------------------------------------------
-def get_xy_data_from_cpu_top_log(run_num, root_path):
-    results_file_path = CpuMonitorTop.get_report_file_path_top_for_pkg(run_num, root_path)
+def get_xy_data_from_cpu_top_log():
+    results_file_path = CpuMonitorTop.get_report_file_path_top_for_pkg(report_root_path)
     results_lines = get_results_lines_from_src_file(results_file_path)
     
     x_arr = []
@@ -44,8 +45,8 @@ def get_xy_data_from_cpu_top_log(run_num, root_path):
         exit(1)
     return x_arr, y_arr
 
-def get_xy_data_from_mem_procrank_log(run_num, root_path):
-    results_file_path = MemMonitorProcrank.get_report_file_path_mem_procrank_for_process(run_num, root_path)
+def get_xy_data_from_mem_procrank_log():
+    results_file_path = MemMonitorProcrank.get_report_file_path_mem_procrank_for_pkg(report_root_path)
     results_lines = get_results_lines_from_src_file(results_file_path)
     
     x_arr = []
@@ -61,8 +62,8 @@ def get_xy_data_from_mem_procrank_log(run_num, root_path):
         exit(1)
     return x_arr, y_arr
 
-def get_xy_data_from_mem_dumpsys_log(run_num, root_path):
-    results_file_path = MemMonitorDumpsys.get_report_file_path_mem_dumpsys(run_num, root_path)
+def get_xy_data_from_mem_dumpsys_log():
+    results_file_path = MemMonitorDumpsys.get_report_file_path_mem_dumpsys(report_root_path)
     results_lines = get_results_lines_from_src_file(results_file_path)
     
     x_arr = []
@@ -144,26 +145,19 @@ def generate_chart_from_xy_data(x_labels, y_arr, y_label_text):
 # Main
 # --------------------------------------------------------------
 def create_monitor_results_chart_for_cpu_top_main():
-    x_arr, y_arr = get_xy_data_from_cpu_top_log(run_num, get_report_root_dir_path())
+    x_arr, y_arr = get_xy_data_from_cpu_top_log()
     y_label_text = 'CPU Usage%'
     generate_chart_from_xy_data(x_arr, y_arr, y_label_text)
 
 def create_monitor_results_chart_for_mem_procrank_main():
-    x_arr, y_arr = get_xy_data_from_mem_procrank_log(run_num, get_report_root_dir_path())
+    x_arr, y_arr = get_xy_data_from_mem_procrank_log()
     y_label_text = 'Memory Usage - USS (MB)'
     generate_chart_from_xy_data(x_arr, y_arr, y_label_text)
 
 def create_monitor_results_chart_for_mem_dumpsys_main():
-    x_arr, y_arr = get_xy_data_from_mem_dumpsys_log(run_num, get_report_root_dir_path())
+    x_arr, y_arr = get_xy_data_from_mem_dumpsys_log()
     y_label_text = 'Memory Usage - PSS (MB)'
     generate_chart_from_xy_data(x_arr, y_arr, y_label_text)
-
-def get_report_root_dir_path():
-    try:
-        global report_root_path
-        return report_root_path
-    except Exception:
-        return MonitorUtils.g_get_report_root_path()
 
 def monitor_results_chart_main():
     if is_create_monitor_chart_for_cpu_top:
@@ -176,12 +170,13 @@ def monitor_results_chart_main():
 
 if __name__ == '__main__':
     
-    run_num = '01'
-#     report_root_path = r'E:\Eclipse_Workspace\ZJPyProject\ZJMonkeyTest\MonkeyReprots\20170726\20170726_01\profile_logs'
-
-    is_create_monitor_chart_for_cpu_top = True
+    is_create_monitor_chart_for_cpu_top = False
     is_create_monitor_chart_for_mem_procrank = True
-    is_create_monitor_chart_for_mem_dumpsys = False
+    is_create_monitor_chart_for_mem_dumpsys = True
+
+    run_num = '01'
+    report_root_path = r'%s\%s_%s' % (MUtils.g_get_report_root_path(), MUtils.g_get_current_date(), run_num)
+#     report_root_path = r'E:\Eclipse_Workspace\ZJPyProject\ZJMonkeyTest\MonkeyReprots\20170728\20170728_03\profile_logs'
 
     monitor_results_chart_main()
 

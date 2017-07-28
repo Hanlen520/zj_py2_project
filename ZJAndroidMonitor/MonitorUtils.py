@@ -39,8 +39,14 @@ def g_create_report_dir(dir_path):
     if os.path.exists(dir_path):
         print 'Warn, the report directory (%s) is exist!' % dir_path
     else:
-        os.makedirs(dir_path)
-        time.sleep(1)
+        try:
+            os.makedirs(dir_path)
+            time.sleep(1)
+        except Exception:
+            if os.path.exists(dir_path):
+                return
+            else:
+                print 'make dir (%s) failed!' % dir_path
 
 def g_create_and_open_report_with_append(file_path):
     if os.path.exists(file_path):
