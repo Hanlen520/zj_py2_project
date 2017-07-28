@@ -128,7 +128,7 @@ def build_monkey_command():
         '--pct-majornav 30 --pct-syskeys 10 --pct-appswitch 0 --pct-flip 0 --pct-anyevent 0'
     monkey_format = '-v -v -v %s > %s' % (MONKEY_TOTAL_RUN_TIMES, g_monkey_log_path)
 
-    if g_flag_monkey_for_package:
+    if g_is_monkey_for_package:
         if IS_MONKEY_CRASH_IGNORE:
             return ' '.join((monkey_cmd_for_package, monkey_launch_params, monkey_ignore, monkey_actions_pct, monkey_format))
         else:
@@ -393,7 +393,7 @@ def build_thread_for_profile_monitor():
     MonitorRunner.pkg_name = g_package_name
     MonitorRunner.run_number = g_run_num
     MonitorRunner.run_time = g_run_mins * 60
-    MonitorRunner.monitor_interval = 1
+    MonitorRunner.monitor_interval = g_profile_monitor_interval
     
     MonitorRunner.g_is_for_pkg = True
     MonitorRunner.g_is_mem_monitor_by_dumpsys = False
@@ -429,7 +429,7 @@ def main_test_setup():
     remove_testing_log_files_for_shell()
 
     create_log_dir_for_shell(g_log_dir_path_for_shell)
-    if not g_flag_monkey_for_package:
+    if not g_is_monkey_for_package:
         push_whitelist_file_to_shell()
     if IS_CAPTURE:
         create_log_dir_for_shell(g_captures_dir_path_for_shell)
@@ -446,7 +446,7 @@ def main_test():
     logcat_sub_process = run_cmd_logcat_from_subprocess_and_ret_process()
     
     threads = []
-    if g_flag_profile_monitor:
+    if g_is_profile_monitor:
         threads.append(build_thread_for_profile_monitor())
     threads.append(build_thread_for_monkey_monitor())
     start_all_threads_in_pool(threads)
@@ -473,10 +473,13 @@ if __name__ == '__main__':
     g_run_num = '01'
     g_run_mins = 60
 
+    g_profile_monitor_interval = 1  # default is 3 seconds
+
     # if false, run monkey for whitelist as default
-    g_flag_monkey_for_package = False
-    g_flag_profile_monitor = True
-    g_package_name = PKG_NAME_LAUNCHER
+    g_is_monkey_for_package = False
+    g_is_profile_monitor = True
+    g_package_name = PKG_NAME_LAUNCHER  # for both monkey and profile monitor
 
     monkey_test_main()
+    
     print 'Monkey test DONE!'
