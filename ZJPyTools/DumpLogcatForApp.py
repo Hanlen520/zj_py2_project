@@ -85,7 +85,7 @@ def dump_logcat_for_app_main(pkg_name, file_path):
 if __name__ == '__main__':
 
     pkg_name = PKG_NAME_FILEMANAGER
-    file_path = os.path.join(os.getcwd(), 'logs', 'logcat_for_app.txt')
+    file_path = os.path.join(os.getcwd(), 'logs', 'logcat_for_app_id.txt')
     
     dump_logcat_for_app_main(pkg_name, file_path)
 
