@@ -5,13 +5,13 @@ Created on 2017-5-11
 
 @author: zhengjin
 
-Query data in sqlite3 DB by sql.
+Query data in sqlite3 DB by sql (Android).
 '''
 
 import os
 import time
 
-from ZJPyUtils import RunMultipleCmds
+from ZJPyUtils import RunCmds
 from ZJPyUtils import AdbUtils
 
 # ----------------------------------------------------
@@ -33,7 +33,7 @@ def query_table(db_file_abs_path, sql_text):
     cmd_exit_db = '.quit'
     cmds = [cmd_conn_db, sql_text, cmd_exit_db]
     
-    ret_content = RunMultipleCmds.run_cmds_by_communicate(cmds)
+    ret_content = RunCmds.run_cmds_by_communicate(cmds)
     tmp_lines = ret_content.replace('\r', '').split('\n')
     return parse_results(tmp_lines)
 
@@ -77,4 +77,4 @@ if __name__ == '__main__':
     
     get_upload_ott_statistics()
     
-    print os.path.basename(__file__), 'DONE'
+    print os.path.basename(__file__), 'DONE!'

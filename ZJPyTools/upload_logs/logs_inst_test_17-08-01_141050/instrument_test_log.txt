@@ -1,0 +1,495 @@
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01_01AboutInfoPageTitle
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01_01AboutInfoPageTitle
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01_02HiddenAppsVersionItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01_02HiddenAppsVersionItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01_03OpenHiddenAppsVersionSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01_03OpenHiddenAppsVersionSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test02ProductInfoItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test02ProductInfoItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test03TitleAndQrCodeOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test03TitleAndQrCodeOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_01TvNameOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+Error in test04_01TvNameOnProductInfoSubPage(com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage):
+junit.framework.ComparisonFailure: Verify the device name item value. expected:<[风行电视]> but was:<[funshionTV-test]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage.test04_01TvNameOnProductInfoSubPage(TestAboutInfoPage.java:191)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1701)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_01TvNameOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: Verify the device name item value. expected:<[风行电视]> but was:<[funshionTV-test]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage.test04_01TvNameOnProductInfoSubPage(TestAboutInfoPage.java:191)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1701)
+
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_02TvModelOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_02TvModelOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_03TvRomSizeOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_03TvRomSizeOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_04TvSeriesIdOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_04TvSeriesIdOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_05HiddenFullInfoOnProductInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_05HiddenFullInfoOnProductInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test06NetworkInfoItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test06NetworkInfoItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test07NetworkStatusInfoOnSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test07NetworkStatusInfoOnSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test08NetworkWiredInfoOnSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test08NetworkWiredInfoOnSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test09NetworkWirelessInfoMacOnSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test09NetworkWirelessInfoMacOnSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11QuestionFeedbackItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=15
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11QuestionFeedbackItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=15
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12ContentAndMenuInQuestionFeedbackSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=16
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12ContentAndMenuInQuestionFeedbackSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=16
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13ButtonsInFeedbackMenuOfSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=17
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13ButtonsInFeedbackMenuOfSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=17
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14StartAndStopCatchLogOnFeedbackSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=18
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14StartAndStopCatchLogOnFeedbackSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=18
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15DumpLogToDiskOnFeedbackSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=19
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15DumpLogToDiskOnFeedbackSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=19
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17SystemVersionItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=20
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17SystemVersionItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=20
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test18PlayControllerItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=21
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test18PlayControllerItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=21
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21LawInfoItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=22
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21LawInfoItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=22
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test22TitleAndItemsOnLawInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=23
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test22TitleAndItemsOnLawInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=23
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23TitleAndContentOnCopyRightProtectSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=24
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23TitleAndContentOnCopyRightProtectSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=24
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test24TitleAndContentOnPrivacyPolicySubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=25
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test24TitleAndContentOnPrivacyPolicySubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=25
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25TitleAndContentOnUserAgreementSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=26
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25TitleAndContentOnUserAgreementSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=26
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=27
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=27
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=27
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 936.944
+There was 1 failure:
+1) test04_01TvNameOnProductInfoSubPage(com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage)
+junit.framework.ComparisonFailure: Verify the device name item value. expected:<[风行电视]> but was:<[funshionTV-test]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage.test04_01TvNameOnProductInfoSubPage(TestAboutInfoPage.java:191)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1701)
+
+FAILURES!!!
+Tests run: 27,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

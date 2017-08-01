@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding="utf-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
+  <xsl:template match="/"> 
+    <html lang="cn"> 
+      <head> 
+        <title>Test Results AllTestsSuite</title>  
+        <style type="text/css">
+          body {
+            margin: 0 auto;
+            padding: 0;
+            text-align: left;
+            height: 100%
+          }
+          
+          #header ul {
+            display: inline;
+            white-space: nowrap
+          }
+          
+          #header ul li {
+            padding: 10px 20px;
+            display: inline-block;
+            white-space: nowrap
+		  }
+        </style> 
+      </head>
+      <body> 
+        <div id="header"> 
+		  <h1 align="center">AllTestsSuite</h1>
+		  <div id="test_summary">
+            <ul style="background: #DCDCDC">
+              <strong> 
+                <li>START AT: <xsl:value-of select="testsuites/@datetime"/>
+			    </li>
+                <li>TOTAL: <xsl:value-of select="testsuites/summary/@total"/>
+			    </li>  
+                <li><font color="green">PASSED: <xsl:value-of select="testsuites/summary/@totalpass"/></font>
+			    </li> 
+                <li><font color="red">FAILED: <xsl:value-of select="testsuites/summary/@totalfailed"/></font>
+			    </li>
+                <li><font color="yellow">IGNORED: <xsl:value-of select="testsuites/summary/@ignore"/></font>
+			    </li>
+                <li>TOTAL RUN TIME: <xsl:value-of select="testsuites/summary/@runtime"/>
+			    </li>
+              </strong> 
+            </ul>
+		  </div>
+		  <div id="env_summary">
+		    <ul style="background: #E0FFFF">
+		      <strong>
+			    <li>DEVICE TYPE: <xsl:value-of select="testsuites/systeminfo/@devicetype"/>
+			    </li>
+			    <li>ANDROID VERSION: <xsl:value-of select="testsuites/systeminfo/@sdkversion"/>
+			    </li>
+			  </strong>
+		    </ul>
+		  </div>
+        </div>  
+        <div id="content">  
+          <table id="main_table" border="0.5" style="width:100%"> 
+            <th>TestsSuite</th>  
+            <th>TestCases</th>  
+            <th>TestResults</th>
+            <th>RunTime</th>
+			<th>Exception</th>
+            <xsl:for-each select="testsuites/testsuite/testcase"> 
+              <tr> 
+                <td><xsl:value-of select="@classname"/>
+                </td>  
+                <td><xsl:value-of select="@methodname"/>
+                </td>
+                <td id="result"><xsl:value-of select="@testresult"/>
+                </td> 
+                <td><xsl:value-of select="@time"/>
+                </td> 
+				<td><xsl:value-of select="failure/trace"/>
+                </td> 
+              </tr> 
+            </xsl:for-each> 
+          </table>  
+        </div>
+		<div id="footer">
+		  <h1 align="center">END</h1>
+		</div>
+        <script type="text/javascript">
+          var table = document.getElementById('main_table');
+          var curRow, resultCell;
+		  
+          for(var i=1, length=table.rows.length; i&lt;length; i++) { 
+            curRow = table.rows[i];
+			resultCell = curRow.cells[2];
+			
+			if (resultCell.innerText === 'failed') {
+			  curRow.style.backgroundColor = '#A52A2A';
+			  continue;
+			}
+			
+			resultCell.style.color = 'green';
+            if (i%2 === 0) { 
+              curRow.style.backgroundColor = '#E0FFFF'; 
+            } else {
+              curRow.style.backgroundColor = '#DCDCDC';
+            }
+          }
+        </script> 
+      </body> 
+    </html> 
+  </xsl:template> 
+</xsl:stylesheet>

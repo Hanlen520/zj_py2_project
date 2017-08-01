@@ -8,8 +8,9 @@ Run Andorid instrument UI test cases.
 1) Run test cases and dump execution logs.
 2) Start and dump logcat log.
 3) Pull run listener results files and snapshots.
-
+4) Generate html test report.
 '''
+
 import os
 import time
 import subprocess
@@ -30,6 +31,10 @@ INST_TEST_LOG_FILE_PATH = os.path.join(REPORT_DIR_PATH, INST_TEST_LOG_FILE_NAME)
 SHELL_TEST_LOG_DIR_PATH = '/sdcard/auto_test_logs/'
 SHELL_SNAPSHOTS_DIR_PATH = SHELL_TEST_LOG_DIR_PATH + '.snapshots'
 SHELL_SNAPSHOTS_DIR_NEW_PATH = SHELL_TEST_LOG_DIR_PATH + 'snapshots'
+
+DATA_DIR_PATH = os.path.join(os.getcwd(), 'data')
+JAR_FILE_PATH = os.path.join(DATA_DIR_PATH, 'XmlTransform.jar')
+XSLT_FILE_PATH = os.path.join(DATA_DIR_PATH, 'testsuites.xstl')
 
 TEST_CLASS_PARENT = 'com.example.zhengjin.funsettingsuitest.testcases.'
 TEST_SUITE_PARENT = 'com.example.zhengjin.funsettingsuitest.testsuites.'
@@ -54,12 +59,11 @@ def delete_old_instrument_run_listener_logs():
     print cmd
     WinSysUtils.run_sys_cmd(cmd)
 
-def pull_instrument_run_listener_results_files():
+def pull_results_file_and_create_report():
     for f_name in get_instrument_run_listener_results_files_name():
-        shell_path = SHELL_TEST_LOG_DIR_PATH + f_name
-        cmd = 'adb pull %s %s' % (shell_path, REPORT_DIR_PATH)
-        print cmd
-        WinSysUtils.run_sys_cmd(cmd)
+        pull_instrument_run_listener_results_file(f_name)
+        time.sleep(1)
+        create_html_report(os.path.join(REPORT_DIR_PATH, f_name))
 
 def get_instrument_run_listener_results_files_name():
     cmd = 'adb shell ls %s' % SHELL_TEST_LOG_DIR_PATH
@@ -67,12 +71,23 @@ def get_instrument_run_listener_results_files_name():
     ret_lines = WinSysUtils.run_sys_cmd_and_ret_lines(cmd)
     return [line.rstrip('\r\n') for line in ret_lines if line.rstrip('\r\n').endswith('.xml')]
 
+def pull_instrument_run_listener_results_file(file_name):
+    cmd = 'adb pull %s %s' % (SHELL_TEST_LOG_DIR_PATH + file_name, REPORT_DIR_PATH)
+    print cmd
+    WinSysUtils.run_sys_cmd(cmd)
+
+def create_html_report(src_results):
+    cmd = 'java -jar %s -f=%s -x=%s' % (JAR_FILE_PATH, src_results, XSLT_FILE_PATH)
+    print cmd
+    WinSysUtils.run_sys_cmd(cmd)
+
 def pull_instrument_run_snapshorts():
     cmd = 'adb shell rename %s %s' % (SHELL_SNAPSHOTS_DIR_PATH, SHELL_SNAPSHOTS_DIR_NEW_PATH)
     print cmd
-    WinSysUtils.run_sys_cmd(cmd)
+    if not WinSysUtils.run_sys_cmd(cmd):
+        return
+
     time.sleep(1)
-    
     cmd = 'adb pull %s %s' % (SHELL_SNAPSHOTS_DIR_NEW_PATH, REPORT_DIR_PATH)
     print cmd
     WinSysUtils.run_sys_cmd(cmd)
@@ -99,7 +114,7 @@ def is_instrument_test_process_alive():
     if len(ret_lines) == 1:
         return True
     elif len(ret_lines) == 0:
-        print 'Error, instrument test process exit!'
+        print 'Instrument test process exit.'
         return False
     else:
         print 'Error, more than one instrument test process running!'
@@ -119,8 +134,8 @@ def main_instument_setup():
     delete_old_instrument_run_listener_logs()
 
 def main_instument_clearup():
-    pull_instrument_run_listener_results_files()
     pull_instrument_run_snapshorts()
+    pull_results_file_and_create_report()
 
 def main_loop(p):
     t_start = int(time.clock())
@@ -152,8 +167,10 @@ def main_instument_test():
 if __name__ == '__main__':
 
     is_logcat_log = True
+
 #     test_class = TEST_CLASS_PARENT + 'TestAboutInfoPage#test01_01AboutInfoPageTitle'
-    test_class = ALL_TEST_CASES_SUITE
+    test_class = TEST_CLASS_PARENT + 'TestAboutInfoPage'
+#     test_class = ALL_TEST_CASES_SUITE
 
     main_instument_test()
 
