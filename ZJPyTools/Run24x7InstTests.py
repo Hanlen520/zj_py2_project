@@ -10,11 +10,12 @@ import os
 import sys
 import time
 import logging
+import subprocess
 
 from ZJPyUtils import WinSysUtils, AdbUtils, LogUtils, FileUtils
 
 # ----------------------------------------------------
-# Global vars
+# Global variables
 # ----------------------------------------------------
 g_device_ip = '172.17.5.133'
 
@@ -28,8 +29,6 @@ g_total_failed = 0
 g_remote_tmp_dir_path = '/data/local/tmp'
 g_remote_tmp_captures_dir_name = 'AutoTestCaptures'
 g_remote_tmp_captures_dir_path = '%s/%s' % (g_remote_tmp_dir_path, g_remote_tmp_captures_dir_name)
-
-g_inst_runner_logcat_tag = 'TestRunner'
 
 
 # ----------------------------------------------------
@@ -138,8 +137,9 @@ def create_report_summary():
     logging.info('Total failed: %d' % g_total_failed)
 
 def start_logcat_log():
-    p = AdbUtils.adb_logcat_by_tag_and_ret_process(g_inst_runner_logcat_tag, g_local_logcat_log_file_path)
-    return p
+    cmd = 'adb logcat -c && adb logcat -v time *:I > %s' % g_local_logcat_log_file_path
+    print cmd
+    return subprocess.Popen(cmd, shell=True)
 
 def stop_logcat_log(p):
     AdbUtils.adb_stop()

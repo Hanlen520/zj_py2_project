@@ -104,4 +104,4 @@ if __name__ == '__main__':
     G_IS_DIR_EXIST = False
     prepare_files_main()
     
-    print 'Prepare files for shell env, done!'
+    print 'Prepare files for shell env, DONE!'

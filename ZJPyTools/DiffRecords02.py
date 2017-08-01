@@ -5,11 +5,6 @@ Created on 2016-3-3
 @author: zhengjin
 '''
 
-# set input file format as 'UTF-8 without BOM' for compare in Notepad++
-path1 = r'd:\music_list1.txt'
-path2 = r'd:\music_list2.txt'
-output = r'd:\music_diff_output1.txt'
-
 # ----------------------------------------------------
 # Functions
 # ----------------------------------------------------
@@ -50,11 +45,11 @@ def diff_compare(list1_records, list2_records):
 def write_output(same_list, diff_list):
     try:
         f = open(output, 'a')
-        f.write('Same list %d: \n' %(len(same_list)))
+        f.write('Same list %d: \n' % (len(same_list)))
         f.writelines(same_list)
         f.write('\r\n')
         
-        f.write('Diff list %d: \n' %(len(diff_list)))
+        f.write('Diff list %d: \n' % (len(diff_list)))
         f.writelines(diff_list)
     finally:
         f.close()
@@ -69,6 +64,11 @@ def records_diff():
 # Main
 # ----------------------------------------------------
 if __name__ == '__main__':
+    
+    # set input file format as 'UTF-8 without BOM' for compare in Notepad++
+    path1 = r'd:\music_list1.txt'
+    path2 = r'd:\music_list2.txt'
+    output = r'd:\music_diff_output1.txt'
     records_diff()
+
     print 'Diff compare DONE!'
-    pass

@@ -7,8 +7,6 @@ Created on 2016-3-15
 Diff and get same records count.
 '''
 
-g_input_f_path = r'd:\music_list2.txt'
-
 def file_readlines(f_path):
     f_list = open(f_path, 'r')
     try:
@@ -20,8 +18,8 @@ def file_readlines(f_path):
 
 # get the count for distinct and non-distinct records in file
 def get_records_count():
-    lines_1 = file_readlines(g_input_f_path)
-    lines_2 = file_readlines(g_input_f_path)
+    lines_1 = file_readlines(input_f_path)
+    lines_2 = file_readlines(input_f_path)
     
     distinct_count = 0
     non_distinct_count = 0
@@ -34,20 +32,22 @@ def get_records_count():
             if line_1 == line_2:
                 record_count = record_count + 1
         if record_count > distinct_num:
-            print 'count --> %d, line --> %s' %(record_count, line_1)
+            print 'count --> %d, line --> %s' % (record_count, line_1)
             non_distinct_count = non_distinct_count + 1
         else:
-            print 'distinct line --> %s' %(line_1)
+            print 'distinct line --> %s' % (line_1)
             distinct_count = distinct_count + 1
     
     lines_1 = None
     lines_2 = None
 
-    print 'distinct count --> %d' %(distinct_count)
-    print 'non distinct count --> %d' %(non_distinct_count)
+    print 'distinct count --> %d' % (distinct_count)
+    print 'non distinct count --> %d' % (non_distinct_count)
 
 
 if __name__ == '__main__':
+    
+    input_f_path = r'd:\music_list2.txt'
     get_records_count()
+
     print 'same records count DONE!'
-    pass
