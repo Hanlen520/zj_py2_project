@@ -1,0 +1,8 @@
+# whitelist for monkey
+#tv.ismar.daisy
+com.bestv.ott
+com.funshion.mediaplayer
+tv.fun.settings
+tv.fun.filemanager
+tv.fun.weather
+#tv.fun.instructions
