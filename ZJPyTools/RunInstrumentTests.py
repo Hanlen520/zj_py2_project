@@ -8,7 +8,7 @@ Run Andorid instrument UI test cases.
 1) Run test cases and dump execution logs.
 2) Start and dump logcat log.
 3) Pull run listener results files and snapshots.
-4) Generate html test report.
+4) Generate html testing report.
 '''
 
 import os
@@ -169,8 +169,8 @@ if __name__ == '__main__':
     is_logcat_log = True
 
 #     test_class = TEST_CLASS_PARENT + 'TestAboutInfoPage#test01_01AboutInfoPageTitle'
-    test_class = TEST_CLASS_PARENT + 'TestAboutInfoPage'
-#     test_class = ALL_TEST_CASES_SUITE
+#     test_class = TEST_CLASS_PARENT + 'TestAboutInfoPage'
+    test_class = ALL_TEST_CASES_SUITE
 
     main_instument_test()
 

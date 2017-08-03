@@ -88,7 +88,6 @@ def print_usage_and_exit(exit_code=0):
 
 def sessions_assert_main():
     time.sleep(1)
-
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'hd:f:t:')
     except getopt.GetoptError, e:
