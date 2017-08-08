@@ -38,6 +38,9 @@ XSLT_FILE_PATH = os.path.join(DATA_DIR_PATH, 'testsuites.xstl')
 
 TEST_CLASS_PARENT = 'com.example.zhengjin.funsettingsuitest.testcases.'
 TEST_SUITE_PARENT = 'com.example.zhengjin.funsettingsuitest.testsuites.'
+TEST_CLASS_MAP = {'about':'TestAboutInfoPage', 'settings':'TestGeneralSettings',
+                  'image':'TestImageAndSoundConfigs', 'network':'TestNetworkConfigs',
+                  'file':'TestFileManager', 'weather':'TestWeather', 'home':'TestHomeVideoTab'}
 ALL_TEST_CASES_SUITE = TEST_SUITE_PARENT + 'AllTestsSuite'
 
 
@@ -166,11 +169,11 @@ def main_instument_test():
 
 if __name__ == '__main__':
 
-    is_logcat_log = True
+    is_logcat_log = False
 
 #     test_class = TEST_CLASS_PARENT + 'TestAboutInfoPage#test01_01AboutInfoPageTitle'
-#     test_class = TEST_CLASS_PARENT + 'TestAboutInfoPage'
-    test_class = ALL_TEST_CASES_SUITE
+    test_class = TEST_CLASS_PARENT + TEST_CLASS_MAP['weather']
+#     test_class = ALL_TEST_CASES_SUITE
 
     main_instument_test()
 
