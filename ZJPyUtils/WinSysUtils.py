@@ -5,7 +5,7 @@ Created on 2016-7-20
 
 @author: Vieira
 
-Include the utils on Windows env.
+Include the UTILS for Windows ENV.
 
 '''
 
@@ -32,7 +32,7 @@ def run_sys_cmd(cmd):
 
     ret = os.system(cmd)
     if not ret == 0:
-        logging.warn('Failed, run command %s, return code is %d' % (cmd, ret))
+        logging.warn('Failed, run command => %s, return code is %d' % (cmd, ret))
         return False
     return True
 
@@ -41,7 +41,7 @@ def run_sys_cmd_and_ret_lines(cmd):
     
     lines = os.popen(cmd).readlines()
     if len(lines) == 0:
-        logging.warn('The output is null for command %s' % cmd)
+        logging.warn('The output is null for command => %s' % cmd)
     return lines
 
 def run_sys_cmd_and_ret_content(cmd):
@@ -49,7 +49,7 @@ def run_sys_cmd_and_ret_content(cmd):
 
     content = os.popen(cmd).read()
     if content is None or content == '':
-        logging.warn('The output is null for command %s' % cmd)
+        logging.warn('The output is null for command => %s' % cmd)
         content = ''
 
     return content
@@ -66,7 +66,7 @@ def run_sys_cmd_in_subprocess(cmd):
         return lines_error
     if len(lines_output) > 0:
         return lines_output
-    logging.warn('The output is null for command %s' % cmd)
+    logging.warn('The output is null for command => %s' % cmd)
     return ''
 
 
