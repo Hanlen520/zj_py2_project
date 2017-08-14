@@ -371,6 +371,9 @@ def wait_for_monkey_process_start():
     return monkey_process_id
 
 def thread_main_monkey_monitor_loop():
+    def _is_monkey_process_killed():
+        return get_monkey_process_id() == ''
+
     spec_run_time = g_run_mins * 60
     if spec_run_time >= MAX_RUN_TIME:
         print 'Warn, spec_time must be less than max_time(4 hours)!'
@@ -384,7 +387,7 @@ def thread_main_monkey_monitor_loop():
     # LOOP
     start = int(time.clock())
     while 1:
-        if is_monkey_process_killed():
+        if _is_monkey_process_killed():
             print 'Error, the monkey process is NOT running!'
             return
         if not is_testing_package_on_top(g_package_name):
@@ -400,9 +403,6 @@ def thread_main_monkey_monitor_loop():
             break
         time.sleep(WAIT_TIME_IN_LOOP)
     
-    def is_monkey_process_killed():
-        return get_monkey_process_id() == ''
-
 def build_thread_for_monkey_monitor():
     t = threading.Thread(target=thread_main_monkey_monitor_loop)
     return t
