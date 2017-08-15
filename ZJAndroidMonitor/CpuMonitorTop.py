@@ -86,7 +86,7 @@ def build_report_header_info_line_for_top(pkg_name, interval):
     return '### package_name=%s monitor_interval=%s' % (pkg_name, interval)
 
 def build_report_header_cols_line_for_top_pkg():
-    return '*TIME  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name'
+    return '*TIME  PID PR CPU% S  #THR     VSS     RSS PCY UID      NAME'
 
 def build_prefix_line_for_top_cmd_output():
     cur_datetime = MUtils.g_get_current_datetime()

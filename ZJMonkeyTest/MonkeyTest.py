@@ -272,9 +272,17 @@ def get_process_id_by_name(p_name):
             return process_id
     return process_id
 
-def kill_process_by_id(p_id):
+def kill_process_by_pid(p_id):
     cmd = 'adb shell kill %s' % p_id
     run_system_command(cmd)
+
+def is_testing_package_on_top(pkg_name):
+    cmd = 'adb shell dumpsys activity | findstr mFocusedActivity | findstr ' + pkg_name
+    tmp_lines = WinSysUtils.run_sys_cmd_and_ret_lines(cmd)
+    
+    if len(tmp_lines) == 0:
+        return False
+    return True
 
 def get_rom_properties_and_write_file():
     dir_path = os.path.dirname(g_rom_props_file_path)
@@ -286,14 +294,6 @@ def get_rom_properties_and_write_file():
     
     cmd = 'adb shell getprop > %s' % g_rom_props_file_path  # override existing file content
     run_system_command(cmd)
-
-def is_testing_package_on_top(pkg_name):
-    cmd = 'adb shell dumpsys activity | findstr mFocusedActivity | findstr ' + pkg_name
-    tmp_lines = WinSysUtils.run_sys_cmd_and_ret_lines(cmd)
-    
-    if len(tmp_lines) == 0:
-        return False
-    return True
 
 
 # --------------------------------------------------------------
@@ -358,7 +358,7 @@ def pull_captures():
 # --------------------------------------------------------------
 # Threads
 # --------------------------------------------------------------
-def wait_for_monkey_process_start():
+def wait_for_monkey_process_started():
     monkey_process_id = ''
     try_times = 3
     wait_time_for_monkey_launch = 3
@@ -379,7 +379,7 @@ def thread_main_monkey_monitor_loop():
         print 'Warn, spec_time must be less than max_time(4 hours)!'
         exit(1)
 
-    monkey_p_id = wait_for_monkey_process_start()
+    monkey_p_id = wait_for_monkey_process_started()
     if monkey_p_id == '':
         print 'Error, the monkey process is NOT started!'
         exit(1)
@@ -390,16 +390,17 @@ def thread_main_monkey_monitor_loop():
         if _is_monkey_process_killed():
             print 'Error, the monkey process is NOT running!'
             return
-        if not is_testing_package_on_top(g_package_name):
-            print 'Error, the package under test is NOT on top!'
-            return
+#         if not is_testing_package_on_top(g_package_name):
+#             print 'Error, the package under test is NOT on top!'
+#             kill_process_by_id(monkey_p_id)
+#             return
         if IS_CAPTURE:
             run_cmd_screen_capture()
         
         current_time = int(time.clock()) - start
         print 'Monkey is running... %d minutes and %d seconds' % ((current_time / 60), (current_time % 60))
         if (current_time >= spec_run_time) or (current_time >= MAX_RUN_TIME):
-            kill_process_by_id(monkey_p_id)  # Kill monkey after specific time
+            kill_process_by_pid(monkey_p_id)  # Kill monkey after run time in sub process
             break
         time.sleep(WAIT_TIME_IN_LOOP)
     
@@ -460,7 +461,7 @@ def main_test_setup():
     
 def main_test_clearup():
     pull_all_testing_logs()
-    kill_process_by_id(get_logcat_process_id())  # stop logcat
+    kill_process_by_pid(get_logcat_process_id())  # stop logcat
 
 def main_test():
     logcat_sub_process = run_cmd_logcat_from_subprocess_and_ret_process()
@@ -489,9 +490,9 @@ def monkey_test_main():
 
 if __name__ == '__main__':
 
-    g_target_ip = '172.17.5.104'
+    g_target_ip = '172.17.5.84'
     g_run_num = '01'
-    g_run_mins = 60
+    g_run_mins = 90
 
     # if false, run monkey for whitelist as default
     g_is_monkey_for_package = False
