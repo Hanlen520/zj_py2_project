@@ -3,6 +3,9 @@
 Created on 2017-8-16
 
 @author: zhengjin
+
+Get FPS by shell command "service call SurfaceFlinger 1013".
+Note: need root authority to run the command.
 '''
 
 import time
