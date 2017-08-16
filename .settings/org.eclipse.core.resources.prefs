@@ -5,6 +5,7 @@ encoding//TestWeatherApi/TestBaiduWeatherApi.py=utf-8
 encoding//TestWeatherApi/TestFunWeatherApi.py=utf-8
 encoding//TestWeatherApi/TestFunWeatherApiV2.py=utf-8
 encoding//ZJAndroidMonitor/CpuMonitorTop.py=utf-8
+encoding//ZJAndroidMonitor/FpsMonitorSurfaceFlinger.py=utf-8
 encoding//ZJAndroidMonitor/MemMonitorDumpsys.py=utf-8
 encoding//ZJAndroidMonitor/MemMonitorProcrank.py=utf-8
 encoding//ZJAndroidMonitor/MonitorChart.py=utf-8
