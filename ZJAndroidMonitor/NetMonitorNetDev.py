@@ -4,7 +4,7 @@ Created on 2016-6-21
 
 @author: zhengjin
 
-Get network up and down data flow from /proc/pid/net/dev.
+Get network Receive and Transmit data flow from /proc/pid/net/dev.
 '''
 
 import os
@@ -23,7 +23,7 @@ DIV_FOUR_SPACES = '    '
 DIV_LINE = '*' * 30
 STR_KB = ' KB'
 
-g_data_from_beginning = INIT_NETWORK_DATA
+g_data_at_start = INIT_NETWORK_DATA
 g_data_at_end = INIT_NETWORK_DATA
 
 
@@ -54,7 +54,7 @@ def get_process_id_by_pkg_name(pkg_name):
     return tmp_lines[0].split()[1]
 
 def get_network_data_flow(pkg_name, is_wifi=False):
-    ''' return (int, int) as Kb
+    ''' return: (int receive_data, int transmit_data), KB
     '''
     def _get_filter_keyword(is_wifi):
         if is_wifi:
@@ -78,9 +78,9 @@ def get_network_data_flow(pkg_name, is_wifi=False):
     for line in tmp_lines:
         tmp_fields = line.split()
         if tmp_fields[0].strip().startswith(filter_keyword):
-            tmp_up_data = _parse_net_data(tmp_fields[1])
-            tmp_down_data = _parse_net_data(tmp_fields[9])
-            return (tmp_up_data, tmp_down_data)
+            tmp_receive_data = _parse_net_data(tmp_fields[1])
+            tmp_transmit_data = _parse_net_data(tmp_fields[9])
+            return (tmp_receive_data, tmp_transmit_data)
     return INIT_NETWORK_DATA
 
 
@@ -94,25 +94,26 @@ def build_report_header_info_line(pkg_name, run_time):
     return '### package=%s, run_time=%s' % (pkg_name, run_time)
 
 def build_report_cols_lines():
-    return DIV_FOUR_SPACES.join(('*Time', 'TotalUp', 'DeltaUp', 'TotalDown', 'DeltaDown'))
+    return DIV_FOUR_SPACES.join(('*Time', 'Receive', 'Delta_Receive', 'Transmit', 'Delta_Transmit'))
 
 def build_report_summary_line():
-    total_up = int(g_data_at_end[0]) - int(g_data_from_beginning[0])
-    total_down = int(g_data_at_end[1]) - int(g_data_from_beginning[1])
-    total_data = total_up + total_down
-    return '### total up data: %dkB, total down data: %dkB, total data: %dkB' % (total_up, total_down, total_data)
+    total_receive = int(g_data_at_end[0]) - int(g_data_at_start[0])
+    total_transmit = int(g_data_at_end[1]) - int(g_data_at_start[1])
+    total_data = total_receive + total_transmit
+    tmp_data_arr = (total_receive, total_transmit, total_data)
+    return '### total receive data: %dKB, total transmit data: %dKB, total data: %dKB' % tmp_data_arr
 
 def build_report_trailer_line():
     return DIV_LINE + 'NETWORK DATAFLOW MONITOR REPORT: END'
 
 def build_report_record_line(new_data, old_data):
     cur_time = mutils.g_get_current_time()
-    total_up = str(new_data[0]) + STR_KB
-    total_down = str(new_data[1]) + STR_KB
-    delta_up = str(new_data[0] - old_data[0]) + STR_KB
-    delta_down = str(new_data[1] - old_data[1]) + STR_KB
+    total_receive = str(new_data[0]) + STR_KB
+    total_transmit = str(new_data[1]) + STR_KB
+    delta_receive = str(new_data[0] - old_data[0]) + STR_KB
+    delta_transmit = str(new_data[1] - old_data[1]) + STR_KB
     
-    return DIV_FOUR_SPACES.join((cur_time, total_up, delta_up, total_down, delta_down))
+    return DIV_FOUR_SPACES.join((cur_time, total_receive, delta_receive, total_transmit, delta_transmit))
 
 class write_utils(object):
     def __init__(self, f_report):
@@ -128,15 +129,15 @@ class write_utils(object):
 
 
 # --------------------------------------------------------------
-# Main
+# Main Process
 # --------------------------------------------------------------
-def monitor_process_loop(w_instance, pkg_name, run_time, wait_time=10):
+def monitor_process_loop(w_instance, pkg_name, run_time, wait_time):
     def _set_start_data():
         tmp_data = get_network_data_flow(pkg_name)
         w_instance.write_new_lines(build_report_record_line(tmp_data, tmp_data))
         
-        global g_data_from_beginning
-        g_data_from_beginning = tmp_data
+        global g_data_at_start
+        g_data_at_start = tmp_data
         
         return tmp_data
         
@@ -190,15 +191,27 @@ def net_monitor_main(pkg_name, run_time, wait_time):
         f_report.close()
 
 
+# --------------------------------------------------------------
+# Main
+# --------------------------------------------------------------
+def main():
+    net_monitor_setup(root_dir_path)
+    
+    global loop_interval
+    if loop_interval < 10:
+        loop_interval = 10
+    net_monitor_main(pkg_name, run_time, loop_interval)
+
+
 if __name__ == '__main__':
     
     run_num = '01'
     root_dir_path = r'%s\%s_%s' % (mutils.g_get_report_root_path(), mutils.g_get_current_date(), run_num)
-    net_monitor_setup(root_dir_path)
     
-    pkg_name = 'adbd'
-    run_time = 120  # seconds
-    loop_interval = 15  # default 10
-    net_monitor_main(pkg_name, run_time, loop_interval)
+    pkg_name = 'com.infocus.nova.launcher:sharpmain'
+    run_time = 60  # seconds
+    loop_interval = 15  #  >= 10
+    
+    main()
     
     print 'Network data monitor, DONE!'

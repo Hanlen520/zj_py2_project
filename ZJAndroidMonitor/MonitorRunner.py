@@ -11,8 +11,8 @@ Runner to execute multiple monitor scripts concurrently.
 import time
 import threading
 
-import MonitorUtils as MUtils
-import MemMonitorDumpsys, MemMonitorProcrank, CpuMonitorTop
+import MonitorUtils as mutils
+import MemMonitorDumpsys, MemMonitorProcrank, CpuMonitorTop, NetMonitorNetDev
 
 # --------------------------------------------------------------
 # Constants
@@ -27,6 +27,7 @@ def monitor_runner_env_vars_setup():
     set_env_vars_for_cpu_monitor_top()
     set_env_vars_for_mem_monitor_dumpsys()
     set_env_vars_for_mem_monitor_procrank()
+    set_env_vars_for_net_monitor_dev()
 
 def set_env_vars_for_cpu_monitor_top():
     CpuMonitorTop.g_report_root_path = report_root_path
@@ -51,13 +52,20 @@ def set_env_vars_for_mem_monitor_procrank():
     MemMonitorProcrank.g_monitor_interval = get_monitor_interval_time()
     MemMonitorProcrank.g_is_process = g_is_for_pkg
 
+def set_env_vars_for_net_monitor_dev():
+    NetMonitorNetDev.root_dir_path = report_root_path
+    NetMonitorNetDev.pkg_name = pkg_name
+    NetMonitorNetDev.run_num = run_number
+    NetMonitorNetDev.run_time = run_time
+    NetMonitorNetDev.loop_interval = get_monitor_interval_time()
+
 def get_monitor_interval_time():
     global monitor_interval
     try:
         return monitor_interval
     except Exception:
         # if 'monitor_interval' does not define
-        return MUtils.g_interval
+        return mutils.g_interval
 
 
 # --------------------------------------------------------------
@@ -66,7 +74,7 @@ def get_monitor_interval_time():
 def daemon_thread_main():
     g_daemon_thread_sleep_time = 15  # seconds
     while 1:
-        print MUtils.g_get_current_time() + ', monitor runner process is running...'
+        print mutils.g_get_current_time() + ', monitor runner process is running...'
         time.sleep(g_daemon_thread_sleep_time)
 
 
@@ -94,47 +102,49 @@ def build_thread_cpu_monitor_top():
     t = threading.Thread(name=thread_name, target=CpuMonitorTop.cpu_monitor_top_main)
     return t
 
-def add_thread_to_pool(t):
-    THREADS_LIST.append(t)
-
-
-# --------------------------------------------------------------
-# Action threads
-# --------------------------------------------------------------
-def start_daemon_thread(t_daemon):
-    t_daemon.start()
-
-def start_all_threads_in_pool():
-    for t in THREADS_LIST:
-        t.start()
-
-def wait_all_threads_exit_in_pool():
-    for t in THREADS_LIST:
-        t.join()
+def build_thread_net_monitor_dev():
+    thread_name = 'net:monitor:dev'
+    t = threading.Thread(name=thread_name, target=NetMonitorNetDev.main)
+    return t
 
 
 # --------------------------------------------------------------
 # Main
 # --------------------------------------------------------------
 def monitor_runner_setup():
+    def _start_daemon_thread(t_daemon):
+        t_daemon.start()
+
+    def _add_thread_to_pool(t):
+        THREADS_LIST.append(t)
+
     t_daemon = build_daemon_thread()
-    start_daemon_thread(t_daemon)
+    _start_daemon_thread(t_daemon)
     
-    add_thread_to_pool(build_thread_cpu_monitor_top())
+    _add_thread_to_pool(build_thread_cpu_monitor_top())
+    _add_thread_to_pool(build_thread_net_monitor_dev())
     if g_is_mem_monitor_by_dumpsys:
-        add_thread_to_pool(build_thread_mem_monitor_dumpsys())
+        _add_thread_to_pool(build_thread_mem_monitor_dumpsys())
     else:
-        add_thread_to_pool(build_thread_mem_monitor_procrank())
+        _add_thread_to_pool(build_thread_mem_monitor_procrank())
 
     monitor_runner_env_vars_setup()
     
 def monitor_runner_execution():
+    def _start_all_threads_in_pool():
+        for t in THREADS_LIST:
+            t.start()
+    
+    def _wait_all_threads_exit_in_pool():
+        for t in THREADS_LIST:
+            t.join()
+
     if len(THREADS_LIST) == 0:
         print 'Error, there is no thread in the pool!'
         exit(1)
 
-    start_all_threads_in_pool()
-    wait_all_threads_exit_in_pool()
+    _start_all_threads_in_pool()
+    _wait_all_threads_exit_in_pool()
 
 def monitor_runner_clearup():
     del THREADS_LIST[:]
@@ -147,15 +157,15 @@ def monitor_runner_main():
 
 if __name__ == '__main__':
 
-    pkg_name = 'com.bestv.ott'
-    run_time = 10 * MUtils.g_min
-    monitor_interval = MUtils.g_short_interval
+    pkg_name = 'com.infocus.nova.launcher:sharpmain'
+    run_time = 10 * mutils.g_min
+    monitor_interval = mutils.g_short_interval
     
     g_is_for_pkg = True
     g_is_mem_monitor_by_dumpsys = False
     
     run_number = '01'
-    report_root_path = r'%s\%s_%s' % (MUtils.g_get_report_root_path(), MUtils.g_get_current_date(), run_number)
+    report_root_path = r'%s\%s_%s' % (mutils.g_get_report_root_path(), mutils.g_get_current_date(), run_number)
     
     monitor_runner_main()
     

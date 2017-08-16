@@ -44,6 +44,7 @@ def get_report_file_path_top_for_pkg(root_path):
 def run_top_command():
     number_of_process = 10
     cmd = 'adb shell top -n 1 -m %s' % number_of_process
+    
     ret_lines = os.popen(cmd).readlines()
     if len(ret_lines) == 0:
         print 'Run top command failed!'
@@ -52,6 +53,7 @@ def run_top_command():
 
 def run_top_command_for_pkg():
     cmd = 'adb shell top -n 1 | findstr ' + g_pkg_name
+    
     ret_lines = os.popen(cmd).readlines()
     if len(ret_lines) != 1:
         print 'Process %s is not running!' % g_pkg_name
