@@ -1,0 +1,2911 @@
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11TitleNameOfSettingsPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11TitleNameOfSettingsPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12DeviceNameDefaultValue
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12DeviceNameDefaultValue
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13DeviceNameSubValues
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13DeviceNameSubValues
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14_01SelectDeviceName
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14_01SelectDeviceName
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14_02SelfDefineDeviceNameAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14_02SelfDefineDeviceNameAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14_03SelfDefineDeviceNameAndConfirm
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14_03SelfDefineDeviceNameAndConfirm
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14_04SelfDefineEmptyNameAndConfirm
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14_04SelfDefineEmptyNameAndConfirm
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15_01OpenAdvancedSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15_01OpenAdvancedSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15_02FullScreenSettingItemOnAdvance
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15_02FullScreenSettingItemOnAdvance
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15_03ScreenProjectionSettingItemOnAdvance
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15_03ScreenProjectionSettingItemOnAdvance
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15_04ExternalSettingItemsIsHidden
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15_04ExternalSettingItemsIsHidden
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test16_01SleepTimeDefaultValue
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test16_01SleepTimeDefaultValue
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test16_02SleepTimeSubValues
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test16_02SleepTimeSubValues
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test16_03SelectSleepTime
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test16_03SelectSleepTime
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_01TitleAndValueOfSetShutDownTime
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=15
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_01TitleAndValueOfSetShutDownTime
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=15
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_02TitleAndTipsOnSetShutDownTimeDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=16
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_02TitleAndTipsOnSetShutDownTimeDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=16
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_03ShutDownTimeCheckboxOnDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=17
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_03ShutDownTimeCheckboxOnDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=17
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_04TimesControlOnShutDownTimeDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=18
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_04TimesControlOnShutDownTimeDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=18
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_05EditHoursControlOnShutDownTimeDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=19
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_05EditHoursControlOnShutDownTimeDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=19
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_06EditMinutesControlOnSetShutDownTimeDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=20
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_06EditMinutesControlOnSetShutDownTimeDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=20
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_11SetShutDownTimeAndSave
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=21
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_11SetShutDownTimeAndSave
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=21
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_12SetShutDownTimeEqualCurTime
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=22
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_12SetShutDownTimeEqualCurTime
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=22
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_13SetShutDownTimeLessThanCurTime
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=23
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_13SetShutDownTimeLessThanCurTime
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=23
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_14UnsetShutDownTime
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=24
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_14UnsetShutDownTime
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=24
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_15SetShutDownTimeLessThanFiveMinutes
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=25
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17_15SetShutDownTimeLessThanFiveMinutes
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=25
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test18_01ScreenSaverDefaultValue
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=26
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test18_01ScreenSaverDefaultValue
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=26
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test18_02SelectScreenSaver
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=27
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test18_02SelectScreenSaver
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=27
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test18_03ScreenSaverSubValues
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=28
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test18_03ScreenSaverSubValues
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=28
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21InstallUnknownAppDefaultValue
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=29
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21InstallUnknownAppDefaultValue
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=29
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test22AllowedInstallUnknownAppAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=30
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test22AllowedInstallUnknownAppAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=30
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23AllowedInstallUnknownAppAndConfirm
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=31
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23AllowedInstallUnknownAppAndConfirm
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=31
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test24ForbiddenInstallUnknownApp
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=32
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test24ForbiddenInstallUnknownApp
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=32
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25SystemRecoverDialogAndClickCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=33
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25SystemRecoverDialogAndClickCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=33
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test26SaveInfoOnSystemRecoverDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=34
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test26SaveInfoOnSystemRecoverDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=34
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test31WallpaperDefaultValue
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=35
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test31WallpaperDefaultValue
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=35
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test32SubWallpapersOnSelectPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=36
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test32SubWallpapersOnSelectPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=36
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test33SelectWallpaper
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=37
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test33SelectWallpaper
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=37
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test34InputMethodDefaultValue
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=38
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test34InputMethodDefaultValue
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=38
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test35SelectInputMethod
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=39
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test35SelectInputMethod
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=39
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41SystemLanguageSettingItemOnAdvance
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=40
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41SystemLanguageSettingItemOnAdvance
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=40
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test42SubValuesOfSystemLanguageSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=41
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test42SubValuesOfSystemLanguageSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=41
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test43SetSystemLanguageAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=42
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test43SetSystemLanguageAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=42
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test44ItemsTitleOnAdvanceAfterSetLanguageAsEnglish
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=43
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test44ItemsTitleOnAdvanceAfterSetLanguageAsEnglish
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=43
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test45ItemsTitleOnMainAfterSetLanguageAsEnglish
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=44
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test45ItemsTitleOnMainAfterSetLanguageAsEnglish
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=44
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=45
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestGeneralSettings
+INSTRUMENTATION_STATUS: current=45
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01_01AboutInfoPageTitle
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=46
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01_01AboutInfoPageTitle
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=46
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01_02HiddenAppsVersionItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=47
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01_02HiddenAppsVersionItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=47
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01_03OpenHiddenAppsVersionSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=48
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01_03OpenHiddenAppsVersionSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=48
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test02ProductInfoItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=49
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test02ProductInfoItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=49
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test03TitleAndQrCodeOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=50
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test03TitleAndQrCodeOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=50
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_01TvNameOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=51
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_01TvNameOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=51
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_02TvModelOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=52
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+Error in test04_02TvModelOnProductInfoSubPage(com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage):
+junit.framework.AssertionFailedError: Verify the device model item value.
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage.test04_02TvModelOnProductInfoSubPage(TestAboutInfoPage.java:214)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_02TvModelOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: Verify the device model item value.
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage.test04_02TvModelOnProductInfoSubPage(TestAboutInfoPage.java:214)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+
+INSTRUMENTATION_STATUS: current=52
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_03TvRomSizeOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=53
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_03TvRomSizeOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=53
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_04TvSeriesIdOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=54
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_04TvSeriesIdOnProductInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=54
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_05HiddenFullInfoOnProductInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=55
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+Error in test04_05HiddenFullInfoOnProductInfo(com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage):
+junit.framework.AssertionFailedError: Verify device model value on hidden product information page.
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage.test04_05HiddenFullInfoOnProductInfo(TestAboutInfoPage.java:296)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04_05HiddenFullInfoOnProductInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: Verify device model value on hidden product information page.
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage.test04_05HiddenFullInfoOnProductInfo(TestAboutInfoPage.java:296)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+
+INSTRUMENTATION_STATUS: current=55
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test06NetworkInfoItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=56
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test06NetworkInfoItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=56
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test07NetworkStatusInfoOnSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=57
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test07NetworkStatusInfoOnSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=57
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test08NetworkWiredInfoOnSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=58
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test08NetworkWiredInfoOnSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=58
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test09NetworkWirelessInfoMacOnSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=59
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test09NetworkWirelessInfoMacOnSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=59
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11QuestionFeedbackItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=60
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11QuestionFeedbackItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=60
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12ContentAndMenuInQuestionFeedbackSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=61
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12ContentAndMenuInQuestionFeedbackSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=61
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13ButtonsInFeedbackMenuOfSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=62
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13ButtonsInFeedbackMenuOfSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=62
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14StartAndStopCatchLogOnFeedbackSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=63
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14StartAndStopCatchLogOnFeedbackSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=63
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15DumpLogToDiskOnFeedbackSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=64
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15DumpLogToDiskOnFeedbackSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=64
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17SystemVersionItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=65
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test17SystemVersionItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=65
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test18PlayControllerItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=66
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test18PlayControllerItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=66
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21LawInfoItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=67
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21LawInfoItemOnAboutInfo
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=67
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test22TitleAndItemsOnLawInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=68
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test22TitleAndItemsOnLawInfoSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=68
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23TitleAndContentOnCopyRightProtectSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=69
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23TitleAndContentOnCopyRightProtectSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=69
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test24TitleAndContentOnPrivacyPolicySubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=70
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test24TitleAndContentOnPrivacyPolicySubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=70
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25TitleAndContentOnUserAgreementSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=71
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25TitleAndContentOnUserAgreementSubPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=71
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=72
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage
+INSTRUMENTATION_STATUS: current=72
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01TitleOfImageAndSoundSettingsPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=73
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01TitleOfImageAndSoundSettingsPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=73
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test02TitleOfImageParamsSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=74
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test02TitleOfImageParamsSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=74
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test03TitleAndDefaultValueOfPressKeySoundSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=75
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test03TitleAndDefaultValueOfPressKeySoundSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=75
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04TurnOffPressKeySoundSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=76
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04TurnOffPressKeySoundSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=76
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test05TitleAndDefaultValueOfAudioAroundSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=77
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test05TitleAndDefaultValueOfAudioAroundSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=77
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test06TurnOnAudioAroundSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=78
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test06TurnOnAudioAroundSettingItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=78
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test07ShowSavePowerModeHiddenItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=79
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test07ShowSavePowerModeHiddenItem
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=79
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test08TitleAndValueOfCECRemoteControl
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=80
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test08TitleAndValueOfCECRemoteControl
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=80
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test0901TitleAndDefaultValueOfPlayClarity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=81
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test0901TitleAndDefaultValueOfPlayClarity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=81
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test0902SubValuesOfPlayClarity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=82
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test0902SubValuesOfPlayClarity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=82
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11TitleAndDefaultValueOfColorTmpOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=83
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11TitleAndDefaultValueOfColorTmpOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=83
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12SubValuesOfColorTmpOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=84
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12SubValuesOfColorTmpOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=84
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13TitleAndDefaultValueOfBackLightOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=85
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13TitleAndDefaultValueOfBackLightOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=85
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14SetValueOfBackLightOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=86
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+Error in test14SetValueOfBackLightOnImageParams(com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs):
+junit.framework.ComparisonFailure: expected:<[9]> but was:<[8]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs.test14SetValueOfBackLightOnImageParams(TestImageAndSoundConfigs.java:358)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14SetValueOfBackLightOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: expected:<[9]> but was:<[8]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs.test14SetValueOfBackLightOnImageParams(TestImageAndSoundConfigs.java:358)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+
+INSTRUMENTATION_STATUS: current=86
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21TitleAndDefaultValueOfBrightnessOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=87
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21TitleAndDefaultValueOfBrightnessOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=87
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test22SetValueOfBrightnessOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=88
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test22SetValueOfBrightnessOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=88
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23TitleAndDefaultValueOfContrastOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=89
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23TitleAndDefaultValueOfContrastOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=89
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test24SetValueOfContrastOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=90
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test24SetValueOfContrastOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=90
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25TitleAndDefaultValueOfSaturationOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=91
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25TitleAndDefaultValueOfSaturationOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=91
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test26SetValueOfSaturationOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=92
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test26SetValueOfSaturationOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=92
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test27TitleOfResetAllToDefaultOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=93
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test27TitleOfResetAllToDefaultOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=93
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test28ValuesSetToDefaultAfterResetOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=94
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test28ValuesSetToDefaultAfterResetOnImageParams
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=94
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=95
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs
+INSTRUMENTATION_STATUS: current=95
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01TitleTextOfNetworkConfigsPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=96
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test01TitleTextOfNetworkConfigsPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=96
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test02WiredNetworkItemTitleAndStatusConnected
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=97
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test02WiredNetworkItemTitleAndStatusConnected
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=97
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test03ManualSettingOffOnWiredNetworkConfigsPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=98
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test03ManualSettingOffOnWiredNetworkConfigsPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=98
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04IpAndMaskOnWiredNetworkConfigsPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=99
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test04IpAndMaskOnWiredNetworkConfigsPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=99
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test05GatewayAndDnsOnWiredNetworkConfigsPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=100
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test05GatewayAndDnsOnWiredNetworkConfigsPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=100
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test06WifiHotSpotItemTitleAndStatusOff
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=101
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test06WifiHotSpotItemTitleAndStatusOff
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=101
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test07TitleAndItemOnWifiHotSpotPageWhenOff
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=102
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test07TitleAndItemOnWifiHotSpotPageWhenOff
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=102
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11WifiHotSpotsListWhenWifiDefaultOpened
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=103
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11WifiHotSpotsListWhenWifiDefaultOpened
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=103
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12TurnOffAndOnWifiNetwork
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=104
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12TurnOffAndOnWifiNetwork
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=104
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15OpenAndConfigItemsOfQuickConnectView
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=105
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15OpenAndConfigItemsOfQuickConnectView
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=105
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=106
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestNetworkConfigs
+INSTRUMENTATION_STATUS: current=106
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestFileManager:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11FileManagerHomeTabShow
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=107
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestFileManager:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11FileManagerHomeTabShow
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=107
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13OpenAllFilesCardFromSdcardTab
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=108
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13OpenAllFilesCardFromSdcardTab
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=108
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14NavigateToSpecifiedPath
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=109
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14NavigateToSpecifiedPath
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=109
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15OpenSpecifiedPicture
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=110
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15OpenSpecifiedPicture
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=110
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test16OpenUnknownTypeFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=111
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test16OpenUnknownTypeFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=111
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21MenuHideBtnExistForDir
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=112
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21MenuHideBtnExistForDir
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=112
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test22MenuRemoveAndHideBtnExistForFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=113
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test22MenuRemoveAndHideBtnExistForFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=113
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23HideAndShowDirectory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=114
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23HideAndShowDirectory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=114
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test24HideAndShowFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=115
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test24HideAndShowFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=115
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25RemoveFileAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=116
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25RemoveFileAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=116
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test26RemoveFileAndConfirm
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=117
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test26RemoveFileAndConfirm
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=117
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test27HideAndShowOnlyFileOfDirectory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=118
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test27HideAndShowOnlyFileOfDirectory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=118
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test28RemoveOnlyFileOfDirectory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=119
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test28RemoveOnlyFileOfDirectory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=119
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test31MessageWhenEmptyForAppCard
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=120
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test31MessageWhenEmptyForAppCard
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=120
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test32VideoCardNameAndItemsCount
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=121
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test32VideoCardNameAndItemsCount
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=121
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_01HideVideoFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=122
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_01HideVideoFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=122
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_02ShowVideoFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=123
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_02ShowVideoFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=123
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_03HideVideoDirectory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=124
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_03HideVideoDirectory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=124
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_04ShowVideoDirectory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=125
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_04ShowVideoDirectory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=125
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_05RemoveVideoFileFromLocalDir
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=126
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_05RemoveVideoFileFromLocalDir
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=126
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_06RemoveVideoFileFromVideoCategory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=127
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_06RemoveVideoFileFromVideoCategory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=127
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_07MessageWhenEmptyForVideoCard
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=128
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test41_07MessageWhenEmptyForVideoCard
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=128
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test42_01OpenPictureFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=129
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test42_01OpenPictureFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=129
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test42_02RemovePictureFileFromLocalDir
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=130
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test42_02RemovePictureFileFromLocalDir
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=130
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test42_03RemovePictureFileFromPicCategory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=131
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test42_03RemovePictureFileFromPicCategory
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=131
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test42_04MessageWhenEmptyForPictureCard
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=132
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test42_04MessageWhenEmptyForPictureCard
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=132
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test43_01HideMusicFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=133
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test43_01HideMusicFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=133
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test43_02MessageWhenEmptyForMusicCard
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=134
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test43_02MessageWhenEmptyForMusicCard
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=134
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test44_01HideApkFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=135
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test44_01HideApkFile
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=135
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=136
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestFileManager
+INSTRUMENTATION_STATUS: current=136
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestWeather:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11DefaultLocatedCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=137
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11DefaultLocatedCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=137
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12BottomTipOnWeatherHome
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=138
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12BottomTipOnWeatherHome
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=138
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13WeatherForecastDates
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=139
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13WeatherForecastDates
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=139
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14FunctionButtonsInMenu
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=140
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14FunctionButtonsInMenu
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=140
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15UpdateWeatherData
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=141
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test15UpdateWeatherData
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=141
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21_01TitleAndLocationListOnAddCityPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=142
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21_01TitleAndLocationListOnAddCityPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=142
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21_02AddCityAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=143
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21_02AddCityAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=143
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21_03AddNewCityWeather
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=144
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21_03AddNewCityWeather
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=144
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21_04AddDuplicatedCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=145
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21_04AddDuplicatedCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=145
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23_01TitleAndLocationListOnAddDefaultPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=146
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23_01TitleAndLocationListOnAddDefaultPage
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=146
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23_02AddDefaultCityAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=147
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23_02AddDefaultCityAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=147
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23_03AddDefaultCityWeather
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=148
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23_03AddDefaultCityWeather
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=148
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23_04HomeCityAfterAddDefaultCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=149
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23_04HomeCityAfterAddDefaultCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=149
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25_01ModifyDefaultCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=150
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25_01ModifyDefaultCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=150
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25_02HomeCityAfterModifyDefaultCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=151
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25_02HomeCityAfterModifyDefaultCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=151
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25_03ReAddDefaultCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=152
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test25_03ReAddDefaultCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=152
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test27CityListSequenceAfterUpdates
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=153
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test27CityListSequenceAfterUpdates
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=153
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test31DeleteButtonOnMenu
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=154
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test31DeleteButtonOnMenu
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=154
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test32_01DeleteCityAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=155
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test32_01DeleteCityAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=155
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test32_02DeleteCityAndConfirm
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=156
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test32_02DeleteCityAndConfirm
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=156
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test33_01DeleteDefaultCityAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=157
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test33_01DeleteDefaultCityAndCancel
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=157
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test33_02DeleteDefaultCityAndConfirm
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=158
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test33_02DeleteDefaultCityAndConfirm
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=158
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test36HomeCityAndDeleteBtnNotExistForOnlyOneCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=159
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test36HomeCityAndDeleteBtnNotExistForOnlyOneCity
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=159
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=160
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestWeather
+INSTRUMENTATION_STATUS: current=160
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11OpenFilmCardOfLeftArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=161
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test11OpenFilmCardOfLeftArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=161
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12OpenTvSerialCardOfLeftArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=162
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test12OpenTvSerialCardOfLeftArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=162
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13OpenChildrenCardOfLeftArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=163
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test13OpenChildrenCardOfLeftArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=163
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14OpenVarietyCardOfLeftArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=164
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test14OpenVarietyCardOfLeftArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=164
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21OpenFollowingLatestTvSerialOfRightArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=165
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test21OpenFollowingLatestTvSerialOfRightArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=165
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test22OpenDailyNewsOfRightArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=166
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test22OpenDailyNewsOfRightArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=166
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23OpenNewlyUpdatesIn7DaysOfRightArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=167
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test23OpenNewlyUpdatesIn7DaysOfRightArea
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=167
+INSTRUMENTATION_STATUS_CODE: -3
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test31OpenFactoryMenuFromSignalSourceDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=168
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+Error in test31OpenFactoryMenuFromSignalSourceDialog(com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab):
+junit.framework.AssertionFailedError: navigateToSpecifiedMainTab, failed to focus on tab: 电视
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.example.zhengjin.funsettingsuitest.testuitasks.TaskLauncher.navigateToSpecifiedMainTab(TaskLauncher.java:130)
+	at com.example.zhengjin.funsettingsuitest.testuitasks.TaskVideoHomeTab.focusedOnSignalSourceCardOnHomeTvTab(TaskVideoHomeTab.java:257)
+	at com.example.zhengjin.funsettingsuitest.testuitasks.TaskVideoHomeTab.openSignalSourceDialog(TaskVideoHomeTab.java:249)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab.test31OpenFactoryMenuFromSignalSourceDialog(TestHomeVideoTab.java:200)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test31OpenFactoryMenuFromSignalSourceDialog
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: navigateToSpecifiedMainTab, failed to focus on tab: 电视
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.example.zhengjin.funsettingsuitest.testuitasks.TaskLauncher.navigateToSpecifiedMainTab(TaskLauncher.java:130)
+	at com.example.zhengjin.funsettingsuitest.testuitasks.TaskVideoHomeTab.focusedOnSignalSourceCardOnHomeTvTab(TaskVideoHomeTab.java:257)
+	at com.example.zhengjin.funsettingsuitest.testuitasks.TaskVideoHomeTab.openSignalSourceDialog(TaskVideoHomeTab.java:249)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab.test31OpenFactoryMenuFromSignalSourceDialog(TestHomeVideoTab.java:200)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+
+INSTRUMENTATION_STATUS: current=168
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=169
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=169
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=test99ClearUpAfterAllTestCasesDone
+INSTRUMENTATION_STATUS: class=com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab
+INSTRUMENTATION_STATUS: current=169
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 3,876.305
+There were 4 failures:
+1) test04_02TvModelOnProductInfoSubPage(com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage)
+junit.framework.AssertionFailedError: Verify the device model item value.
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage.test04_02TvModelOnProductInfoSubPage(TestAboutInfoPage.java:214)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+2) test04_05HiddenFullInfoOnProductInfo(com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage)
+junit.framework.AssertionFailedError: Verify device model value on hidden product information page.
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestAboutInfoPage.test04_05HiddenFullInfoOnProductInfo(TestAboutInfoPage.java:296)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+3) test14SetValueOfBackLightOnImageParams(com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs)
+junit.framework.ComparisonFailure: expected:<[9]> but was:<[8]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestImageAndSoundConfigs.test14SetValueOfBackLightOnImageParams(TestImageAndSoundConfigs.java:358)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+4) test31OpenFactoryMenuFromSignalSourceDialog(com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab)
+junit.framework.AssertionFailedError: navigateToSpecifiedMainTab, failed to focus on tab: 电视
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.example.zhengjin.funsettingsuitest.testuitasks.TaskLauncher.navigateToSpecifiedMainTab(TaskLauncher.java:130)
+	at com.example.zhengjin.funsettingsuitest.testuitasks.TaskVideoHomeTab.focusedOnSignalSourceCardOnHomeTvTab(TaskVideoHomeTab.java:257)
+	at com.example.zhengjin.funsettingsuitest.testuitasks.TaskVideoHomeTab.openSignalSourceDialog(TaskVideoHomeTab.java:249)
+	at com.example.zhengjin.funsettingsuitest.testcases.TestHomeVideoTab.test31OpenFactoryMenuFromSignalSourceDialog(TestHomeVideoTab.java:200)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+
+FAILURES!!!
+Tests run: 154,  Failures: 4
+
+
+INSTRUMENTATION_CODE: -1
