@@ -407,16 +407,38 @@ def ex14():
 run_ex_by_flag(ex14)
 
 
-# EXAMPLE 15, global and external vars
-g_test_var = 'init from beginning'
-def print_global_var():
-    print g_test_var
+# EXAMPLE 15, customized number
+class myNumber(object):
+    def __init__(self, value, percent):
+        self.value = value
+        self.percent = percent
 
-def print_external_var():
-    # method invoked from demo06 main
-    # external var defined from demo06 main
-    global g_ext_test_var
-    print g_ext_test_var
+    def __eq__(self, other):
+        print 'myNumber.__eq__() invoked.'
+        return (self.value * self.percent) == (other.value * other.percent)
+
+    def __ne__(self, other):
+        print 'myNumber.__ne__() invoked.'
+        return (self.value * self.percent) != (other.value * other.percent)
+
+    def __add__(self, other):
+        print 'myNumber.__add__() invoked.'
+        return (self.value + other.value) * max(self.percent, other.percent)
+
+    def __sub__(self, other):
+        print 'myNumber.__sub__() invoked.'
+        return abs(self.value - other.value)
+
+def ex15():
+    num1 = myNumber(100, 0.1)
+    num2 = myNumber(150, 0.3)
+
+    print 'num1 == num2: ' + str(num1 == num2)
+    print 'num1 != num2: ' + str(num1 != num2)
+    print 'num1 + num2: ' + str(num1 + num2)
+    print 'num1 - num2: ' + str(num1 - num2)
+
+run_ex_by_flag(ex15)
 
 
 # EXAMPLE 16, chart
@@ -474,6 +496,18 @@ def ex16_03():
     plt.show()
 #     plt.savefig(r'd:\chart_test.png')
 run_ex_by_flag(ex16_03)
+
+
+# EXAMPLE 17, global and external vars
+g_test_var = 'init from beginning'
+def print_global_var():
+    print g_test_var
+
+def print_external_var():
+    # method invoked from demo06 main
+    # external var defined from demo06 main
+    global g_ext_test_var
+    print g_ext_test_var
 
 
 if __name__ == '__main__':

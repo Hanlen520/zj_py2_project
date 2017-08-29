@@ -23,10 +23,10 @@ if is_ex01_run:
 def ex02():
     tmp_tup = ('t')
     print tmp_tup
-     
-    tmp_arr = ['a']
-    print tmp_arr[0]
-     
+
+    tmp_arr = ['a', 'b']
+    print tmp_arr[1]
+
     tmp_dic = {'name':'henry'}
     tmp_dic['heigh'] = '173'
     print tmp_dic
@@ -39,8 +39,8 @@ def ex03():
     f = open(r'd:\test.log', 'a')
     name1 = 'henry'
     name2 = 'vieira'
-    f.write('test %s \n' % (name1))
-    f.write('test %s' % (name2))
+    f.write('test %s \n' % name1)
+    f.write('test ' + name2)
     f.close()
 
 run_ex_by_flag(ex03)
