@@ -36,6 +36,21 @@ def ex0103():
 run_ex_by_flag(ex0103)
 
 
+# EXAMPLE 02, get prime number
+def ex02():
+    num = 30
+    tmp_lst = []
+    for i in xrange(3, num):
+        for j in xrange(2, i):
+            if i % j == 0:
+                break
+        else:
+            tmp_lst.append(i)
+    print tmp_lst
+
+run_ex_by_flag(ex02)
+
+
 if __name__ == '__main__':
     
     print os.path.basename(__file__), 'DONE!'
