@@ -51,6 +51,27 @@ def ex02():
 run_ex_by_flag(ex02)
 
 
+# EXAMPLE 03, classmethod and staticmethod
+def ex03():
+    class TestSuper(object):
+        @staticmethod
+        def getMessage():
+            return 'in super:'
+        @classmethod
+        def printMessage(cls):
+            print cls.getMessage(), cls.__name__
+    
+    class TestSub(TestSuper):
+        @staticmethod
+        def getMessage():
+            return 'in sub:'
+
+    TestSuper.printMessage()
+    TestSub.printMessage()
+
+run_ex_by_flag(ex03)
+
+
 if __name__ == '__main__':
     
     print os.path.basename(__file__), 'DONE!'
