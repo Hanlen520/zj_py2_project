@@ -175,8 +175,13 @@ if __name__ == '__main__':
     is_create_monitor_chart_for_mem_dumpsys = True
 
     run_num = '01'
-    report_root_path = r'%s\%s_%s' % (MUtils.g_get_report_root_path(), MUtils.g_get_current_date(), run_num)
-#     report_root_path = r'E:\Eclipse_Workspace\ZJPyProject\ZJMonkeyTest\MonkeyReprots\20170728\20170728_03\profile_logs'
+    
+    is_local = False
+    if is_local:
+        report_root_path = r'%s\%s_%s' % (MUtils.g_get_report_root_path(), MUtils.g_get_current_date(), run_num)
+    else:
+        report_root_path = os.path.join(os.path.dirname(os.getcwd()), 'ZJMonkeyTest', 'UploadReports')
+        report_root_path += r'\20170801\20170801_01\profile_logs'
 
     monitor_results_chart_main()
 
