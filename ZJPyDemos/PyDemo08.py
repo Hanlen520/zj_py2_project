@@ -164,6 +164,105 @@ def ex0602():
 run_ex_by_flag(ex0602)
 
 
+# EXAMPLE 07, Hackers
+def ex0701():
+    import time
+
+    # Default parameter values are evaluated when the function definition is executed.
+    # same value
+    def _print_time_01(when=time.time()):
+        return when
+    print _print_time_01()
+    time.sleep(1)
+    print _print_time_01()
+
+    # different value
+    def _print_time_02(when=None):
+        if when is None:
+            when = time.time()
+        return when
+    print _print_time_02()
+    time.sleep(2)
+    print _print_time_02()
+run_ex_by_flag(ex0701)
+
+
+def ex0702():
+    tmp_object_01 = (1)
+    print type(tmp_object_01)
+
+    # define tuple with one element
+    tmp_object_02 = (1,)
+    print type(tmp_object_02)
+run_ex_by_flag(ex0702)
+
+
+def ex0703():
+    def _modify_lst(lst):
+        for idx, elem in enumerate(lst):
+            if elem % 3 == 0:
+                print 'delete element at:', idx
+                del lst[idx]
+    
+    # update list (remove element) when iterator, element move forward
+    tmpLst01 = [1, 2, 3, 5, 4, 6]
+    _modify_lst(tmpLst01)
+    print tmpLst01
+    
+    tmpLst02 = [1, 2, 3, 6, 5, 4]
+    _modify_lst(tmpLst02)
+    print tmpLst02
+    
+    # list comprehension
+    tmpLst03 = [1, 2, 3, 6, 5, 4]
+    print [elem for elem in tmpLst03 if elem % 3 != 0]
+run_ex_by_flag(ex0703)
+
+
+def ex0704():
+    # closure
+    def _create_multipliers_01():
+        return [lambda base: base * i for i in xrange(5)]
+    print 'iterator 01:'
+    for fn_multiplier in _create_multipliers_01():
+        print fn_multiplier(2)
+
+    def _create_multipliers_02():
+        return [lambda base, val = i: base * val for i in xrange(5)]
+    print 'iterator 02:'
+    for fn_multiplier in _create_multipliers_02():
+        print fn_multiplier(2)
+        
+    def _fn_multiplier(value, base=2):
+        return base * value
+    print 'results:', _fn_multiplier(base=3, value=5)
+    print 'results:', _fn_multiplier(value=6)
+run_ex_by_flag(ex0704)
+
+
+def ex0705():
+    import sys
+    sys.path.append(os.getcwd())
+    print sys.path
+    
+    def _test_import_01():
+        import IteratorDemo
+        print id(IteratorDemo)
+    _test_import_01()
+
+    def _test_import_02():
+        import IteratorDemo as module
+        print id(module)
+    _test_import_02()
+
+    # get different id value as above "imports", so they are different module objects
+    def _test_import_03():
+        from ZJPyDemos import IteratorDemo
+        print id(IteratorDemo)
+    _test_import_03()
+run_ex_by_flag(ex0705)
+
+
 if __name__ == '__main__':
     
     print os.path.basename(__file__), 'DONE!'
