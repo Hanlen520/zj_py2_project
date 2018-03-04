@@ -26,7 +26,7 @@ class test_multiply_2(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         logging.debug('class setup.')
-        logging.info('start to run test class: %s' %(os.path.basename(__file__)))
+        logging.info('start to run test class: %s' % (os.path.basename(__file__)))
 
     @classmethod
     def tearDownClass(cls):
@@ -34,7 +34,7 @@ class test_multiply_2(unittest.TestCase):
 
     def test_0_x_1(self):
         logging.warn('Verify multiply 0 and 1.')
-        self.assertEquals(PyDemo03.my_multiply(0,1), 0)
+        self.assertEquals(PyDemo03.my_multiply(0, 1), 0)
 
 
 # ------------------------------------------------
@@ -43,5 +43,4 @@ class test_multiply_2(unittest.TestCase):
 if __name__ == '__main__':
 
     unittest.main(verbosity=1)
-
-    pass
+    print 'unit test DONE.'

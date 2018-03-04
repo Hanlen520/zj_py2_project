@@ -29,7 +29,7 @@ class test_multiply(unittest.TestCase):
     def setUpClass(cls):
         super(test_multiply, cls).setUpClass()
         logging.debug('class setup.')
-        logging.info('start to run test class: %s' %(os.path.basename(__file__)))
+        logging.info('start to run test class: %s' % (os.path.basename(__file__)))
 
     @classmethod
     def tearDownClass(cls):
@@ -38,12 +38,18 @@ class test_multiply(unittest.TestCase):
 
     def test_3_x_4(self):
         logging.info('Verify multiply 3 and 4.')
-        self.assertEquals(PyDemo03.my_multiply(3,4), 12)
+        self.assertEquals(PyDemo03.my_multiply(3, 4), 12)
 
     def test_a_x_3(self):
         logging.info('Verify multiply 3 and a.')
-        logging.warn('This test will be failed(失败).')
-        self.assertEquals(PyDemo03.my_multiply(3,'a'), 'aa')
+        logging.warn('This test will be failed.')
+        self.assertEquals(PyDemo03.my_multiply(3, 'a'), 'aa')
+
+    @unittest.skip("skip failed test case.")
+    def test_b_x_3(self):
+        logging.info('Verify multiply 3 and a.')
+        logging.warn('This test will be failed.')
+        self.assertEquals(PyDemo03.my_multiply(3, 'b'), 'bb')
 
 
 # ------------------------------------------------
@@ -52,5 +58,4 @@ class test_multiply(unittest.TestCase):
 if __name__ == '__main__':
 
     unittest.main(verbosity=1)
-
-    pass
+    print 'unit test DONE.'

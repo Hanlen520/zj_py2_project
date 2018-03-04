@@ -30,17 +30,32 @@ def init_log_config():
 
     # set the file handler
 #     log_file = logging.FileHandler(filename=os.path.join(os.getcwd(),'zjunittest.log'),mode='w',encoding='utf-8')
-    log_file = logging.FileHandler(filename='zjunittest.log',mode='w')
+    log_file = logging.FileHandler(filename='unittest_log.txt', mode='w')
     log_file.setLevel(logging.WARN)
     log_file.setFormatter(logging.Formatter(fmt=long_format, datefmt=long_date_format))
     logging.getLogger('').addHandler(log_file)
 
 def discover():
     loader = unittest.TestLoader()
-    suite1 = loader.discover(start_dir=os.getcwd(),pattern='Unittest*.py')
-    all_test = unittest.TestSuite(suite1)
+    test_cases = loader.discover(start_dir=os.getcwd(), pattern='Unittest*.py')
+    test_suite = unittest.TestSuite(test_cases)
+    return test_suite
+
+def run_with_text_report():
+    test_suite = discover()
+    test_results = unittest.TextTestRunner(verbosity=2).run(test_suite)
+    print '*** Total test cases:', test_results.testsRun
+    print '*** Total failed test cases:', len(test_results.failures)
+
+def run_with_html_report():
+    import HTMLTestRunner as Runner
     
-    return unittest.TextTestRunner(verbosity=2).run(all_test)
+    report_path = os.path.join(os.getcwd(), "unittest_report.html")
+    with open(report_path, "wb") as f:
+        runner = Runner.HTMLTestRunner(stream=f, title="ZhengJin Unit Test Demo",
+                                       description="Test Cases execution details:") 
+        runner.run(discover())
+    # end-with
 
 
 # ------------------------------------------------
@@ -49,6 +64,6 @@ def discover():
 if __name__ == '__main__':
 
     init_log_config()
-    discover()
-
-    pass
+#     run_with_text_report()
+    run_with_html_report()
+    print 'unit test execution DONE.'
