@@ -263,6 +263,26 @@ def ex0705():
 run_ex_by_flag(ex0705)
 
 
+# EXAMPLE 08, generate dict
+def ex08():
+    d = dict(((1, 'one'), (2, 'two'), (3, 'three')))
+    print 'dict:', d
+    
+    names = ['jim', 'tom', 'henry', 'tid']
+    
+    def _say_hello(name):
+        return 'hello ' + name
+
+    name_to_msg1 = dict((name, _say_hello(name)) for name in names)
+    print 'type:', type(name_to_msg1)
+    print 'value:', name_to_msg1
+    
+    name_to_msg2 = {name: _say_hello(name) for name in names}
+    print 'type:', type(name_to_msg2)
+    print 'value:', name_to_msg2
+run_ex_by_flag(ex08, True)
+
+
 if __name__ == '__main__':
     
     print os.path.basename(__file__), 'DONE!'
