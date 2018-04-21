@@ -209,11 +209,12 @@ def ex0703():
     _modify_lst(tmpLst01)
     print tmpLst01
     
+    # bad
     tmpLst02 = [1, 2, 3, 6, 5, 4]
     _modify_lst(tmpLst02)
     print tmpLst02
     
-    # list comprehension
+    # ok, list comprehension
     tmpLst03 = [1, 2, 3, 6, 5, 4]
     print [elem for elem in tmpLst03 if elem % 3 != 0]
 run_ex_by_flag(ex0703)
@@ -280,9 +281,26 @@ def ex08():
     name_to_msg2 = {name: _say_hello(name) for name in names}
     print 'type:', type(name_to_msg2)
     print 'value:', name_to_msg2
-run_ex_by_flag(ex08, True)
+run_ex_by_flag(ex08)
+
+
+# EXAMPLE 09, global
+a = 1
+def ex09():
+    def _test_print1():
+        global a
+        a += 1
+        print 'value:', a
+
+    def _test_print2():
+        ret = a + 1
+        print 'return value:', ret
+
+    _test_print1()
+    _test_print2()
+run_ex_by_flag(ex09)
 
 
 if __name__ == '__main__':
-    
+
     print os.path.basename(__file__), 'DONE!'
