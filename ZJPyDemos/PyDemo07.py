@@ -450,7 +450,9 @@ def ex16_01():
     y_int_arr = [1, 4, 9, 16, 25, 36]
     pl.plot(x_int_arr, y_int_arr)
     pl.show()
+
 run_ex_by_flag(ex16_01)
+
 
 def ex16_02():
     import numpy as np
@@ -465,7 +467,9 @@ def ex16_02():
     plt.plot(x_arr, y_arr, linestyle='--', color='green')
     plt.grid(True, color='g', linestyle='--', linewidth='1')
     plt.show()
+
 run_ex_by_flag(ex16_02)
+
 
 def ex16_03():
     import matplotlib.pyplot as plt
@@ -495,6 +499,7 @@ def ex16_03():
     plt.grid(True, color='black', linestyle='--', linewidth='1')
     plt.show()
 #     plt.savefig(r'd:\chart_test.png')
+
 run_ex_by_flag(ex16_03)
 
 

@@ -19,12 +19,14 @@ def ex0101():
     print 'No:'
     for k in my_map.keys():
         print 'key:', k
+
 run_ex_by_flag(ex0101)
 
 def ex0102():
     def condition_exp_test(cond):
         return 'Yes' if cond else 'No'
     print 'results:', condition_exp_test(False)
+
 run_ex_by_flag(ex0102)
 
 def ex0103():
@@ -33,6 +35,7 @@ def ex0103():
               'this is test2, '
               'this is test3, ' 'this is test4')
     print 'output:', my_str
+
 run_ex_by_flag(ex0103)
 
 
@@ -184,6 +187,7 @@ def ex0701():
     print _print_time_02()
     time.sleep(2)
     print _print_time_02()
+
 run_ex_by_flag(ex0701)
 
 
@@ -194,6 +198,7 @@ def ex0702():
     # define tuple with one element
     tmp_object_02 = (1,)
     print type(tmp_object_02)
+
 run_ex_by_flag(ex0702)
 
 
@@ -217,6 +222,7 @@ def ex0703():
     # ok, list comprehension
     tmpLst03 = [1, 2, 3, 6, 5, 4]
     print [elem for elem in tmpLst03 if elem % 3 != 0]
+
 run_ex_by_flag(ex0703)
 
 
@@ -238,6 +244,7 @@ def ex0704():
         return base * value
     print 'results:', _fn_multiplier(base=3, value=5)
     print 'results:', _fn_multiplier(value=6)
+
 run_ex_by_flag(ex0704)
 
 
@@ -261,6 +268,7 @@ def ex0705():
         from ZJPyDemos import IteratorDemo
         print id(IteratorDemo)
     _test_import_03()
+
 run_ex_by_flag(ex0705)
 
 
@@ -281,6 +289,7 @@ def ex08():
     name_to_msg2 = {name: _say_hello(name) for name in names}
     print 'type:', type(name_to_msg2)
     print 'value:', name_to_msg2
+
 run_ex_by_flag(ex08)
 
 
@@ -298,7 +307,164 @@ def ex09():
 
     _test_print1()
     _test_print2()
+
 run_ex_by_flag(ex09)
+
+
+# EXAMPLE 10, itertools
+def ex1001():
+    # map, starmap
+    lst = map(lambda x: x * 2, [1, 2, 3, 4, 5])
+    print type(lst)
+    print 'value:', lst
+
+    from itertools import starmap
+    it = starmap(os.path.join,
+            [('/bin', 'python'), ('/usr', 'bin', 'java'),
+             ('/usr', 'bin', 'perl'), ('/usr', 'bin', 'ruby')])
+    print type(it)
+    print 'value:', list(it)
+
+run_ex_by_flag(ex1001)
+
+
+def ex1002():
+    # 1, chain
+    from itertools import chain
+    lst = [1, 2, 3] + ['a', 'b', 'c']
+    print type(lst)
+    print 'value:', lst
+    
+    print 'chain list:', list(chain([1, 2, 3], ['a', 'b', 'c']))
+    
+    # 2, zip_longest
+    r1 = range(2)
+    r2 = range(3)
+    print 'zip as list:', list(zip(r1, r2))
+#     from itertools import zip_longest
+    print 'zip as dict:', dict(zip(r1, r2))
+
+run_ex_by_flag(ex1002)
+
+
+# EXAMPLE 11, operator
+def ex11():
+    class Student(object):
+        def __init__(self, name, grade, age):
+            self.name = name
+            self.grade = grade
+            self.age = age
+            
+        def __repr__(self):
+            return repr((self.name, self.grade, self.age))
+#             return 'name: %s grade: %s age: %d' % (self.name, self.grade, self.age)
+
+    from operator import attrgetter, itemgetter
+    student_objects = [Student('john', 'A', 15), Student('jane', 'B', 12), Student('dave', 'B', 10), ]
+    print 'sorted by lambda:', sorted(student_objects, key=lambda s:s.age)
+    print 'sorted by attrgetter:', sorted(student_objects, key=attrgetter('grade', 'age'))
+    
+    student_tuples = [('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10), ]
+    print 'sorted by lambda:', sorted(student_tuples, key=lambda s:s[2])
+    print 'sorted by itemgetter:', sorted(student_tuples, key=itemgetter(1, 2))
+
+run_ex_by_flag(ex11)
+
+
+# EXAMPLE 12, collections
+def ex1201():
+    # 1. defaultdict
+    from collections import defaultdict
+    
+    s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+    d1 = defaultdict(list)
+    for k, v in s:
+        d1[k].append(v)
+    print sorted(d1.iteritems())
+    
+    # 2
+    d2 = {}
+    for k, v in s:
+        d2.setdefault(k, []).append(v)
+    print sorted(d2.iteritems())
+
+run_ex_by_flag(ex1201)
+
+
+def ex1202():
+    # OrderedDict
+    from collections import OrderedDict
+    from operator import itemgetter
+    d = {'banana': 3, 'apple': 4, 'pear': 1, 'orange': 2}
+    order = OrderedDict(sorted(d.iteritems(), key=itemgetter(1)))
+    print order
+    print order.popitem(last=True)
+    print 'after update:', order
+
+run_ex_by_flag(ex1202)
+
+
+def ex1203():
+    # deque
+    from collections import deque
+    q = deque(range(10), maxlen=10)
+    print q
+    q.appendleft(-1)
+    print 'after append:', q
+    q.extend([10, 11, 12, ])
+    print 'after extend:', q
+
+run_ex_by_flag(ex1203)
+
+
+def ex1204():
+    # Counter
+    from collections import Counter
+    c = Counter('abracadabra')
+    print c
+    c.update('aaaaazzz')
+    print 'after update:', c
+    print c.most_common(2)
+
+run_ex_by_flag(ex1204)
+
+
+# EXAMPLE 13, custom dict
+def ex13():
+    d1 = dict([('one', 1), ('two', 2), ('three', 3), ])
+    print d1
+    print 'element:', d1['one']
+    
+    class MyDict(dict):
+        """
+        A MyDict object is like a dictionary except "obj.foo" can be used in addition to "obj['foo']".
+        """
+        def __getattr__(self, key):
+            try:
+                return self[key]
+            except KeyError as k:
+                raise AttributeError(k)
+
+        def __setattr__(self, key, value):
+            self[key] = value
+
+        def __delattr__(self, key):
+            try:
+                del self[key]
+            except KeyError as k:
+                raise AttributeError(k)
+
+        def __repr__(self):
+            return '<MyDict %s>' % dict.__repr__(self)
+    
+    d2 = MyDict([('one', 1), ('two', 2), ('three', 3), ])
+    print 'access by index:', d2['two']
+    print 'access by attr:', d2.two
+    
+    del d2.two
+    print d2
+
+run_ex_by_flag(ex13)
 
 
 if __name__ == '__main__':
